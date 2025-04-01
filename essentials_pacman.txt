@@ -4,6 +4,7 @@ make
 base-devel
 gnupg
 curl
+less
 unzip
 tar
 wget

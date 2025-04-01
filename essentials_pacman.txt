@@ -1,0 +1,11 @@
+git
+git-lfs
+make
+base-devel
+curl
+unzip
+tar
+wget
+gcc
+python-pip
+wine

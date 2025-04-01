@@ -1,19 +1,14 @@
 apps=(
-  "unzip"
   "appimage_launcher"
   "audacious"
   "brave"
   "discord"
   "firefox"
-  "git"
-  "github_desktop"
   "gmail"
-  #"mega"
   "nvidia"
   "orange"
   "rust"
   "vscode"
   "whatsapp"
-  "wine"
   "yt-dlp"
-  )
+)

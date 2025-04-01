@@ -2,6 +2,7 @@ git
 git-lfs
 make
 base-devel
+gnupg
 curl
 unzip
 tar

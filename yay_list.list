@@ -1,3 +1,6 @@
+electron23-bin
+electron28-bin
+altus-bin
 appimagelauncher
 audacious
 brave-bin
@@ -7,6 +10,7 @@ ffmpeg
 firefox
 gcc
 git-lfs
+gmail-desktop-bin
 gnupg
 less
 make

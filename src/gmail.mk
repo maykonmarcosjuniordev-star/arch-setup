@@ -1,11 +1,6 @@
 # https://aur.archlinux.org/packages/gmail-desktop-bin
 all:
-  echo "download AppImage from https://github.com/timche/meru/releases"
-  #git clone https://aur.archlinux.org/gmail-desktop-bin.git
-  #cd gmail-desktop-bin/
-  #makepkg -sirc
-  #git clean -dfx
+  yay -S electron23-bin gmail-desktop-bin
 
 clean:
-  sudo rm ~/.AppImage/
-  #sudo pacman -R gmail-desktop-bin
+  yay -R electron23-bin gmail-desktop-bin

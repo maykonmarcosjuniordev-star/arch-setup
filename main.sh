@@ -3,20 +3,24 @@ mkdir ~/Downloads
 mkdir ~/Github
 mkdir ~/Music
 mkdir ~/Pictures
-sudo pacman -S --needed git base-devel nodejs
+# essentials that need pacman
+sudo pacman -Suy --needed < pacman.list
 # install yay
-git clone https://aur.archlinux.org/yay-bin.git
-cd yay-bin
+cd /opt/
+sudo git clone https://aur.archlinux.org/yay-git.git
+sudo chown -R $(whoami):$(whoami) yay-git/
+cd yay-git
 makepkg -sirc
-cd ..
-rm -rf yay-bin
+yay -Suy
+cd ~
 # install apps
-yay -S --needed - < apps.list
+yay -Sy --needed - < yay.list
 make -f src/rust.mk
 make -f src/nvidia.mk
 make -f src/orange.mk
+cd ~
 
-# Config files
+# TODO: Config files
 #ln -sf "$(pwd)"/config/* ~/.config/
 
 # Setup man-pages

@@ -23,4 +23,5 @@ visual-studio-code-bin
 wget
 wine
 wmctrl
+wofi
 ytdlp

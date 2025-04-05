@@ -21,3 +21,9 @@ make -f src/*.mk
 
 # Setup man-pages
 #mandb
+
+# allowing for ssh push
+git remote set-url origin git@github.com:maykonmjunior/arch-setup.git
+eval "$(ssh-agent -s)"
+echo "Download the ssh keys from the google drive bkp and run
+ssh-add ~/.ssh/main/id_ed25519"

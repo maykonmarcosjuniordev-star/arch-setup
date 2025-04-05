@@ -13,7 +13,12 @@ makepkg -sirc
 cd ~
 yay -Suy
 # install apps
-yay -Sy --needed - < yay.list
+yay -Sy --needed - < essentials.list
+yay -Sy --needed - < gnome.list
+yay -Sy --needed - < hypr.list
+yay -Sy --needed - < desktop.list
+
+# applying configs
 make -f src/*.mk
 
 # TODO: Config files

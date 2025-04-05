@@ -1,6 +1,5 @@
 # https://wiki.archlinux.org/title/Wine
+#wine-stable
+#TODO: setting of config files
 all:
-  sudo pacman -Suy wine
-
-clean:
-  sudo pacman -R wine
+	@echo "not implemented yet"

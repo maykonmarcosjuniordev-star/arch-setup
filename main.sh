@@ -1,24 +1,20 @@
 #!/bin/bash
-mkdir ~/Downloads
-mkdir ~/Github
-mkdir ~/Music
-mkdir ~/Pictures
+mkdir -p ~/Downloads
+mkdir -p ~/Github
+mkdir -p ~/Music
+mkdir -p ~/Pictures
 # essentials that need pacman
 sudo pacman -Suy --needed < pacman.list
 # install yay
-cd /opt/
-sudo git clone https://aur.archlinux.org/yay-git.git
-sudo chown -R $(whoami):$(whoami) yay-git/
-cd yay-git
+sudo git clone https://aur.archlinux.org/yay-git.git /opt/yay-git
+sudo chown -R $(whoami):$(whoami) /opt/yay-git/
+cd /opt/yay-git
 makepkg -sirc
-yay -Suy
 cd ~
+yay -Suy
 # install apps
 yay -Sy --needed - < yay.list
-make -f src/rust.mk
-make -f src/nvidia.mk
-make -f src/orange.mk
-cd ~
+make -f src/*.mk
 
 # TODO: Config files
 #ln -sf "$(pwd)"/config/* ~/.config/

@@ -1,6 +1,5 @@
 # https://aur.archlinux.org/packages/gmail-desktop-bin
+# depends on nodejs and electron23
+#TODO: setting of config files
 all:
-  yay -S electron23-bin gmail-desktop-bin
-
-clean:
-  yay -R electron23-bin gmail-desktop-bin
+	@echo "not implemented yet"

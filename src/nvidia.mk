@@ -1,9 +1,5 @@
 # https://wiki.archlinux.org/title/NVIDIA
+#nvidia-open
+#TODO: setting of config files
 all:
-  echo "not working yet"
-  #git clone https://github.com/NVIDIA/open-gpu-kernel-modules
-  #cd open-gpu-kernel-modules/
-  #make modules -j$(nproc)
-  #make modules_install -j$(nproc)
-
-clean:
+	@echo "not implemented yet"

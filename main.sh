@@ -21,8 +21,8 @@ yay -Sy --needed - < desktop.list
 # applying configs
 make -f src/*.mk
 
-# TODO: Config files
-#ln -sf "$(pwd)"/config/* ~/.config/
+# Config files on home
+ln -sf "$(pwd)"/config/* ~/.config/
 
 # Setup man-pages
 #mandb

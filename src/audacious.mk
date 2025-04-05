@@ -1,5 +1,3 @@
+#TODO: setting of config files
 all:
-  sudo pacman -Suy audacious
-
-clean:
-  sudo pacman -R audacious
+	@echo "not implemented yet"

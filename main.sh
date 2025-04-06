@@ -23,6 +23,8 @@ make -f src/*.mk
 
 # Config files on home
 ln -sf "$(pwd)"/config/* ~/.config/
+ln -sf "$(pwd)"/config/.bash_aliases ~/.bash_aliases
+ln -sf "$(pwd)"/config/.bashrc ~/.bashrc
 
 # Setup man-pages
 #mandb

@@ -1,8 +1,4 @@
 #!/bin/bash
-mkdir -p ~/Downloads
-mkdir -p ~/Github
-mkdir -p ~/Music
-mkdir -p ~/Pictures
 # essentials that need pacman
 sudo pacman -Suy --needed < pacman.list
 # install yay

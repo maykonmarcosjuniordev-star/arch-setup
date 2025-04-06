@@ -36,5 +36,8 @@ done
 # allowing for ssh push
 git remote set-url origin git@github.com:maykonmjunior/arch-setup.git
 eval "$(ssh-agent -s)"
-echo "Download the ssh keys from the google drive bkp and run the following command:"
-ssh-add ~/.ssh/main/id_ed25519
+read -p "Baixou as chaves ssh do bkp no drive (y/n) " confirm
+if [[ $confirm == "y" || $confirm == "Y" ]]; then
+    ssh-add ~/.ssh/main/id_ed25519
+    ssh-add ~/.ssh/ufsc/id_ed25519
+fi

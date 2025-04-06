@@ -1,0 +1,386 @@
+[com/github/alexkdeveloper/notepad]
+height=400
+width=700
+
+[org/freedesktop/folks]
+primary-store='eds:system-address-book'
+
+[org/freedesktop/tracker/miner/files]
+index-recursive-directories=['&DESKTOP', '&DOCUMENTS', '&MUSIC', '&PICTURES', '&VIDEOS', '/']
+index-single-directories=['&DOWNLOAD', '$HOME']
+
+[org/gnome/Connections]
+first-run=false
+
+[org/gnome/Console]
+last-window-maximised=false
+last-window-size=(732, 472)
+
+[org/gnome/Contacts]
+did-initial-setup=true
+window-fullscreen=false
+window-height=600
+window-maximized=false
+window-width=800
+
+[org/gnome/TextEditor]
+last-save-directory='file:///home/maykon'
+
+[org/gnome/baobab/ui]
+is-maximized=false
+window-size=(960, 600)
+
+[org/gnome/calculator]
+base=10
+button-mode='basic'
+source-currency=''
+source-units='degree'
+target-currency=''
+target-units='radian'
+window-maximized=false
+window-size=(360, 616)
+
+[org/gnome/clocks/state/window]
+maximized=false
+panel-id='timer'
+size=(870, 690)
+
+[org/gnome/control-center]
+last-panel='keyboard'
+window-state=(980, 640, false)
+
+[org/gnome/desktop/a11y/interface]
+high-contrast=true
+
+[org/gnome/desktop/app-folders]
+folder-children=['System', 'YaST', 'Pardus', '0cc27fcd-0a34-4244-9c35-d049d5ee1164', '42b26eed-b962-4c97-b2cf-be8e9dd5ede4', 'f2b612c0-02ce-49e5-9484-59ec0227cacc', '031ca5a5-7943-4b32-b219-057117159fba', '25af2bf7-aa91-4056-aa0b-025a039f74be', 'b526a93a-1d26-4010-b18e-3022788b5e3e', 'cf448455-6bf3-42e7-a10e-ad342406ac0c', 'ae871969-804a-45a1-a158-dcd44db424e0']
+
+[org/gnome/desktop/app-folders/folders/031ca5a5-7943-4b32-b219-057117159fba]
+apps=['org.gnome.Settings.desktop', 'org.gnome.Extensions.desktop', 'org.gnome.Software.desktop', 'org.gnome.tweaks.desktop', 'uuctl.desktop']
+name='Settings'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/0cc27fcd-0a34-4244-9c35-d049d5ee1164]
+apps=['org.gnome.Decibels.desktop', 'org.gnome.Totem.desktop', 'org.gnome.Snapshot.desktop', 'org.gnome.Music.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Loupe.desktop', 'yelp.desktop', 'org.gnome.SimpleScan.desktop']
+name='Unnamed Folder'
+
+[org/gnome/desktop/app-folders/folders/25af2bf7-aa91-4056-aa0b-025a039f74be]
+apps=['brave-browser.desktop', 'discord.desktop', 'org.gnome.Nautilus.desktop', 'gmail-desktop.desktop', 'notion.desktop', 'com.github.xeco23.WasIstLos.desktop', 'kitty.desktop', 'code.desktop', 'vlc.desktop']
+name='Shortcuts'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/42b26eed-b962-4c97-b2cf-be8e9dd5ede4]
+apps=['bssh.desktop', 'avahi-discover.desktop', 'bvnc.desktop', 'qv4l2.desktop', 'qvidcap.desktop']
+name='Avahi'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/Pardus]
+categories=['X-Pardus-Apps']
+name='X-Pardus-Apps.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/System]
+apps=['org.gnome.SystemMonitor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Logs.desktop']
+name='X-GNOME-Shell-System.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/ae871969-804a-45a1-a158-dcd44db424e0]
+apps=['wine-Programs-Rockwell Software-Arena-Output Analyzer.desktop', 'wine-Programs-Rockwell Software-Arena-Process Analyzer.desktop', 'wine-Programs-Rockwell Software-Arena-Visio Process Simulator.desktop', 'wine-Programs-Rockwell Software-Arena-Online Books-Arena Variables Guide.desktop', "wine-Programs-Rockwell Software-Arena-Online Books-Arena User's Guide.desktop", "wine-Programs-Rockwell Software-Arena-Online Books-Arena Template Developer's Guide.desktop", "wine-Programs-Rockwell Software-Arena-Online Books-Arena Packaging Template User's Guide.desktop", 'wine-Programs-Rockwell Software-Utilities-Support Services Help.desktop', 'wine-Programs-Rockwell Software-Utilities-Arena Support Services Help .desktop', 'wine-Programs-Rockwell Software-Arena-Arena.desktop', 'wine-Programs-Rockwell Software-Arena-Input Analyzer.desktop']
+name='Arena'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/b526a93a-1d26-4010-b18e-3022788b5e3e]
+apps=['org.gnome.clocks.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Maps.desktop']
+name='Unnamed Folder'
+
+[org/gnome/desktop/app-folders/folders/cf448455-6bf3-42e7-a10e-ad342406ac0c]
+apps=['org.gnome.Tour.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Weather.desktop', 'org.gnome.Console.desktop']
+name='Inutil'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/f2b612c0-02ce-49e5-9484-59ec0227cacc]
+apps=['nvim.desktop', 'org.gnome.gedit.desktop', 'cmake-gui.desktop', 'electron33.desktop', 'electron35.desktop', 'ipython.desktop', 'jupyter-qtconsole.desktop', 'jconsole-java-openjdk.desktop', 'jshell-java-openjdk.desktop']
+name='Accessories'
+
+[org/gnome/desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/gnome/symbolic-l.png'
+picture-uri-dark='file:///usr/share/backgrounds/gnome/symbolic-d.png'
+primary-color='#26a269'
+secondary-color='#000000'
+
+[org/gnome/desktop/break-reminders/eyesight]
+play-sound=true
+
+[org/gnome/desktop/break-reminders/movement]
+duration-seconds=uint32 300
+interval-seconds=uint32 1800
+play-sound=true
+
+[org/gnome/desktop/input-sources]
+mru-sources=[('xkb', 'us')]
+per-window=true
+sources=[('xkb', 'br+nodeadkeys'), ('xkb', 'us')]
+
+[org/gnome/desktop/interface]
+accent-color='red'
+color-scheme='prefer-dark'
+cursor-size=24
+cursor-theme='default'
+enable-hot-corners=false
+overlay-scrolling=false
+text-scaling-factor=1.25
+
+[org/gnome/desktop/notifications]
+application-children=['discord', 'firefox', 'gnome-power-panel', 'brave-browser', 'org-gnome-console', 'audacity', 'org-gnome-nautilus', 'audacious', 'notion', 'org-gnome-extensions', 'altus', 'org-gnome-software', 'com-github-xeco23-wasistlos', 'brave-jckaldkomadaenmmgladeopgmfbahfjm-default']
+
+[org/gnome/desktop/notifications/application/altus]
+application-id='altus.desktop'
+
+[org/gnome/desktop/notifications/application/audacious]
+application-id='audacious.desktop'
+
+[org/gnome/desktop/notifications/application/audacity]
+application-id='audacity.desktop'
+
+[org/gnome/desktop/notifications/application/brave-browser]
+application-id='brave-browser.desktop'
+
+[org/gnome/desktop/notifications/application/brave-jckaldkomadaenmmgladeopgmfbahfjm-default]
+application-id='brave-jckaldkomadaenmmgladeopgmfbahfjm-Default.desktop'
+
+[org/gnome/desktop/notifications/application/com-github-xeco23-wasistlos]
+application-id='com.github.xeco23.WasIstLos.desktop'
+
+[org/gnome/desktop/notifications/application/discord]
+application-id='discord.desktop'
+
+[org/gnome/desktop/notifications/application/firefox]
+application-id='firefox.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
+
+[org/gnome/desktop/notifications/application/notion]
+application-id='notion.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-console]
+application-id='org.gnome.Console.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-extensions]
+application-id='org.gnome.Extensions.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-software]
+application-id='org.gnome.Software.desktop'
+
+[org/gnome/desktop/peripherals/keyboard]
+numlock-state=true
+
+[org/gnome/desktop/peripherals/touchpad]
+two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/screensaver]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/gnome/symbolic-l.png'
+primary-color='#26a269'
+secondary-color='#000000'
+
+[org/gnome/desktop/search-providers]
+sort-order=['org.gnome.Settings.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Nautilus.desktop']
+
+[org/gnome/desktop/wm/keybindings]
+cycle-group=@as []
+cycle-group-backward=@as []
+cycle-panels=@as []
+cycle-panels-backward=@as []
+cycle-windows=@as []
+cycle-windows-backward=@as []
+move-to-monitor-down=@as []
+move-to-monitor-left=@as []
+move-to-monitor-right=@as []
+move-to-monitor-up=@as []
+move-to-workspace-1=@as []
+move-to-workspace-last=@as []
+panel-run-dialog=@as []
+switch-applications=['<Super>Tab']
+switch-applications-backward=['<Shift><Super>Tab']
+switch-panels=@as []
+switch-panels-backward=@as []
+switch-to-workspace-1=@as []
+switch-to-workspace-last=@as []
+switch-to-workspace-left=['<Super>w']
+switch-to-workspace-right=['<Super>s']
+switch-windows=['<Alt>Tab']
+switch-windows-backward=['<Shift><Alt>Tab']
+
+[org/gnome/epiphany]
+ask-for-default=false
+
+[org/gnome/epiphany/state]
+is-maximized=true
+window-size=(1920, 995)
+
+[org/gnome/evolution-data-server]
+migrated=true
+
+[org/gnome/evolution]
+default-address-book='system-address-book'
+
+[org/gnome/gedit/state/window]
+bottom-panel-size=140
+height=478
+maximized=true
+side-panel-active-page='GeditWindowDocumentsPanel'
+side-panel-size=200
+width=960
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='icon-view'
+fts-enabled=false
+migrated-gtk-settings=true
+search-filter-time-type='last_modified'
+
+[org/gnome/nautilus/window-state]
+initial-size=(890, 550)
+initial-size-file-chooser=(890, 550)
+maximized=true
+
+[org/gnome/nm-applet/eap/e84eb34d-881a-4470-b332-86d712e9ee49]
+ignore-ca-cert=true
+ignore-phase2-ca-cert=false
+
+[org/gnome/portal/filechooser/brave-browser]
+last-folder-path='/home/maykon/Downloads/Wine'
+
+[org/gnome/portal/filechooser/code]
+last-folder-path='/opt/arch-setup'
+
+[org/gnome/portal/filechooser/org.chromium.Chromium]
+last-folder-path='/home/maykon/Downloads/Wine'
+
+[org/gnome/portal/filechooser/org.gnome.TextEditor]
+last-folder-path='/home/maykon'
+
+[org/gnome/settings-daemon/plugins/color]
+night-light-enabled=true
+night-light-schedule-automatic=false
+night-light-schedule-from=18.0
+night-light-temperature=uint32 2345
+
+[org/gnome/settings-daemon/plugins/media-keys]
+control-center=['<Alt>s']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/']
+help=@as []
+magnifier=@as []
+magnifier-zoom-in=['<Control>equal']
+magnifier-zoom-out=['<Control>minus']
+mic-mute=['<Control>m']
+play=['AudioPlay']
+screenreader=@as []
+screensaver=['<Shift><Control>l']
+search=@as []
+shutdown=['<Shift><Alt>F4']
+volume-down=['AudioLowerVolume']
+volume-mute=['AudioMute']
+volume-up=['AudioRaiseVolume']
+www=['<Alt>b']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Control><Alt>t'
+command='kitty'
+name='terminal'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Alt>d'
+command='discord'
+name='discord'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
+binding='<Alt>w'
+command='wasistlos'
+name='whatsapp'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3]
+binding='<Alt>g'
+command='gmail-desktop'
+name='gmail'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4]
+binding='<Alt>n'
+command='notion-app'
+name='notion'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5]
+binding='<Alt>v'
+command='code'
+name='Vs Code'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6]
+binding='<Shift><Alt>s'
+command='code /home/maykon/arch-setup/'
+name='open hard settings'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7]
+binding='<Alt>f'
+command='nautilus'
+name='Files'
+
+[org/gnome/settings-daemon/plugins/power]
+power-button-action='interactive'
+
+[org/gnome/shell]
+app-picker-layout=[{'031ca5a5-7943-4b32-b219-057117159fba': <{'position': <0>}>, 'System': <{'position': <1>}>, '25af2bf7-aa91-4056-aa0b-025a039f74be': <{'position': <2>}>, '42b26eed-b962-4c97-b2cf-be8e9dd5ede4': <{'position': <3>}>, 'orange-canvas.desktop': <{'position': <4>}>, 'ae871969-804a-45a1-a158-dcd44db424e0': <{'position': <5>}>}]
+disabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'light-style@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'status-icons@gnome-shell-extensions.gcampax.github.com']
+favorite-apps=['audacious.desktop', 'brave-jckaldkomadaenmmgladeopgmfbahfjm-Default.desktop', 'brave-fmpnliohjhemenmnlpbfagaolkdacoja-Default.desktop', 'firefox.desktop', 'standard-notes.desktop']
+welcome-dialog-last-shown-version='48.0'
+
+[org/gnome/shell/app-switcher]
+current-workspace-only=true
+
+[org/gnome/shell/keybindings]
+focus-active-notification=@as []
+screenshot=@as []
+screenshot-window=@as []
+show-screen-recording-ui=['<Shift>Print']
+switch-to-application-2=@as []
+toggle-quick-settings=@as []
+
+[org/gnome/shell/world-clocks]
+locations=@av []
+
+[org/gnome/software]
+check-timestamp=int64 1743847923
+first-run=false
+flatpak-purge-timestamp=int64 1743856171
+
+[org/gnome/tweaks]
+show-extensions-notice=false
+
+[org/gtk/gtk4/settings/file-chooser]
+show-hidden=true
+sort-directories-first=false
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=207
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+window-position=(0, 0)
+window-size=(1876, 959)

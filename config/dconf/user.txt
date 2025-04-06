@@ -127,7 +127,7 @@ play-sound=true
 mru-sources=[('xkb', 'us')]
 per-window=true
 sources=[('xkb', 'br+nodeadkeys'), ('xkb', 'us')]
-xkb-options=['lv3:lalt_switch', 'compose:ralt']
+xkb-options=['lv3:ralt_switch', 'compose:rctrl']
 
 [org/gnome/desktop/interface]
 accent-color='red'

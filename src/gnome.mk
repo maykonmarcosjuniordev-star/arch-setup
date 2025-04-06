@@ -1,5 +1,9 @@
 all:
 	dconf load / < ~/arch-setup/config/dconf/user.txt
+	ln -sf ~/.config/dconf/user ~/arch-setup/config/dconf/user.txt
+
+dump:
+	dconf dump / > ~/arch-setup/config/dconf/user.txt
 
 reset:
-	dconf dump / > ~/arch-setup/config/dconf/user.txt
+	dconf reset -f /org/gnome/

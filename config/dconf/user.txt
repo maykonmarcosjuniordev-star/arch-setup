@@ -1,5 +1,5 @@
 [org/gnome/control-center]
-last-panel='background'
+last-panel='keyboard'
 window-state=(980, 640, true)
 
 [org/gnome/desktop/a11y/interface]
@@ -53,8 +53,8 @@ translate=false
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri-dark='file:///home/maykon/arch-setup/wallpapers/hong-kong-night.jpg'
 picture-uri='file:///home/maykon/arch-setup/wallpapers/VDawg.png'
+picture-uri-dark='file:///home/maykon/arch-setup/wallpapers/hong-kong-night.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -116,12 +116,16 @@ move-to-monitor-up=@as []
 move-to-workspace-1=@as []
 move-to-workspace-last=@as []
 panel-run-dialog=@as []
+switch-applications=['<Super>Tab']
+switch-applications-backward=['<Shift><Super>Tab']
 switch-panels=@as []
 switch-panels-backward=@as []
 switch-to-workspace-1=@as []
 switch-to-workspace-last=@as []
 switch-to-workspace-left=['<Super>w']
 switch-to-workspace-right=['<Super>s']
+switch-windows=['<Alt>Tab']
+switch-windows-backward=['<Shift><Alt>Tab']
 toggle-maximized=@as []
 unmaximize=@as []
 

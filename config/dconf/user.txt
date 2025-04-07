@@ -1,3 +1,8 @@
+[desktop/ibus/general]
+preload-engines=['xkb:br::por', 'xkb:br:nodeadkeys:por', 'xkb:us::eng']
+use-global-engine=true
+use-system-keyboard-layout=true
+
 [org/gnome/control-center]
 last-panel='keyboard'
 window-state=(980, 640, true)
@@ -7,7 +12,7 @@ high-contrast=true
 show-status-shapes=true
 
 [org/gnome/desktop/a11y/magnifier]
-mag-factor=2.0
+mag-factor=3.0
 
 [org/gnome/desktop/app-folders]
 folder-children=['System', 'Utilities', 'YaST', 'Pardus', 'd64e01cc-e492-4f77-8ac1-d3950c5d9bb3', '3d0cf848-f6e2-4de9-adb6-9d391bdddd85', 'b5985140-3412-4633-b6a7-4bcb183e2630', 'c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b']
@@ -22,7 +27,7 @@ name='X-Pardus-Apps.directory'
 translate=true
 
 [org/gnome/desktop/app-folders/folders/System]
-apps=['org.gnome.SystemMonitor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Logs.desktop', 'qv4l2.desktop', 'qvidcap.desktop']
+apps=['org.gnome.SystemMonitor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Logs.desktop', 'qv4l2.desktop', 'qvidcap.desktop', 'com.system76.CosmicFiles.desktop', 'com.system76.CosmicScreenshot.desktop']
 name='X-GNOME-Shell-System.directory'
 translate=true
 
@@ -53,8 +58,8 @@ translate=false
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/maykon/arch-setup/wallpapers/VDawg.png'
-picture-uri-dark='file:///home/maykon/arch-setup/wallpapers/hong-kong-night.jpg'
+picture-uri='file:///home/maykon/arch-setup/wallpapers/hong-kong-night.jpg'
+picture-uri-dark='file:///home/maykon/arch-setup/wallpapers/blue-maia.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -67,8 +72,9 @@ interval-seconds=uint32 1800
 play-sound=true
 
 [org/gnome/desktop/input-sources]
-mru-sources=[('xkb', 'us')]
+mru-sources=[('xkb', 'br+nodeadkeys'), ('xkb', 'us')]
 per-window=true
+show-all-sources=true
 sources=[('xkb', 'br+nodeadkeys'), ('xkb', 'us')]
 xkb-options=['compose:rctrl']
 
@@ -79,14 +85,29 @@ enable-animations=false
 enable-hot-corners=false
 show-battery-percentage=true
 text-scaling-factor=1.25
-toolkit-accessibility=false
+toolkit-accessibility=true
 
 [org/gnome/desktop/notifications]
-application-children=['com-github-xeco23-wasistlos']
+application-children=['com-github-xeco23-wasistlos', 'gnome-power-panel', 'audacious', 'brave-browser', 'notion', 'org-gnome-tweaks']
 show-in-lock-screen=false
+
+[org/gnome/desktop/notifications/application/audacious]
+application-id='audacious.desktop'
+
+[org/gnome/desktop/notifications/application/brave-browser]
+application-id='brave-browser.desktop'
 
 [org/gnome/desktop/notifications/application/com-github-xeco23-wasistlos]
 application-id='com.github.xeco23.WasIstLos.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
+
+[org/gnome/desktop/notifications/application/notion]
+application-id='notion.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-tweaks]
+application-id='org.gnome.tweaks.desktop'
 
 [org/gnome/desktop/peripherals/touchpad]
 two-finger-scrolling-enabled=true
@@ -94,7 +115,7 @@ two-finger-scrolling-enabled=true
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/maykon/.local/share/backgrounds/2025-04-06-12-27-18-hong-kong-night.jpg'
+picture-uri='file:///home/maykon/arch-setup/wallpapers/hong-kong-night.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -129,11 +150,24 @@ switch-windows-backward=['<Shift><Alt>Tab']
 toggle-maximized=@as []
 unmaximize=@as []
 
+[org/gnome/desktop/wm/preferences]
+action-double-click-titlebar='none'
+button-layout=':minimize,maximize,close'
+
 [org/gnome/evolution-data-server]
 migrated=true
 
+[org/gnome/gedit/state/window]
+bottom-panel-size=140
+height=700
+maximized=false
+side-panel-active-page='GeditWindowDocumentsPanel'
+side-panel-size=200
+width=900
+
 [org/gnome/mutter]
 edge-tiling=false
+overlay-key='Super_L'
 workspaces-only-on-primary=true
 
 [org/gnome/mutter/keybindings]
@@ -150,6 +184,20 @@ search-filter-time-type='last_modified'
 
 [org/gnome/nautilus/window-state]
 initial-size=(890, 550)
+initial-size-file-chooser=(890, 550)
+maximized=true
+
+[org/gnome/portal/filechooser/brave-browser]
+last-folder-path='/home/maykon/Music/Anime'
+
+[org/gnome/portal/filechooser/org.chromium.Chromium]
+last-folder-path='/home/maykon/arch-setup/config/terminal'
+
+[org/gnome/portal/filechooser/org.gnome.Settings]
+last-folder-path='/home/maykon/arch-setup/wallpapers'
+
+[org/gnome/portal/filechooser/org.gnome.tweaks]
+last-folder-path='/home/maykon/arch-setup/wallpapers'
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=true
@@ -215,6 +263,8 @@ power-button-action='interactive'
 
 [org/gnome/shell]
 app-picker-layout=[{'b5985140-3412-4633-b6a7-4bcb183e2630': <{'position': <0>}>, 'System': <{'position': <1>}>, '3d0cf848-f6e2-4de9-adb6-9d391bdddd85': <{'position': <2>}>, 'c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b': <{'position': <3>}>, 'orange-canvas.desktop': <{'position': <4>}>, 'd64e01cc-e492-4f77-8ac1-d3950c5d9bb3': <{'position': <5>}>}]
+disabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'status-icons@gnome-shell-extensions.gcampax.github.com']
 favorite-apps=['audacious.desktop', 'vlc.desktop', 'brave-jckaldkomadaenmmgladeopgmfbahfjm-Default.desktop', 'brave-fmpnliohjhemenmnlpbfagaolkdacoja-Default.desktop', 'firefox.desktop', 'standard-notes.desktop']
 welcome-dialog-last-shown-version='48.0'
 
@@ -228,9 +278,35 @@ toggle-message-tray=@as []
 toggle-quick-settings=@as []
 
 [org/gnome/software]
-check-timestamp=int64 1743957892
+check-timestamp=int64 1744039403
 first-run=false
+flatpak-purge-timestamp=int64 1744046589
+
+[org/gnome/tweaks]
+show-extensions-notice=false
 
 [org/gtk/gtk4/settings/file-chooser]
-show-hidden=false
+date-format='regular'
+location-mode='path-bar'
+show-hidden=true
+sidebar-width=140
+sort-column='name'
 sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+view-type='list'
+window-size=(1017, 374)
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=192
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+window-position=(15, 40)
+window-size=(1891, 993)

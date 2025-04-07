@@ -15,19 +15,9 @@ yay -Sy --needed - < hypr.list
 yay -Sy --needed - < desktop.list
 
 # Config files on home
-ln -sf "$(pwd)"/config/.bash_aliases ~/.bash_aliases
-ln -sf "$(pwd)"/config/.bashrc ~/.bashrc
-ln -sf "$(pwd)"/config/* ~/.config/
-
-# applying special configs
 for app in echo src/*.mk; do
-    #read -p "Deseja instalar o aplicativo $app? (y/n) " confirm
-    #if [[ $confirm == "y" || $confirm == "Y" ]]; then
     # Aqui você pode adicionar o comando para instalar o aplicativo específico
     make -f $app
-    #else
-    #    echo "Ignorando a instalação de $app."
-    #fi
 done
 
 # Setup man-pages

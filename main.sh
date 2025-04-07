@@ -9,10 +9,10 @@ makepkg -sirc
 cd ~
 yay -Suy
 # install apps
-yay -Sy --needed - < essentials.list
-yay -Sy --needed - < gnome.list
-yay -Sy --needed - < hypr.list
-yay -Sy --needed - < desktop.list
+yay -Sy --needed - < apps/essentials.list
+yay -Sy --needed - < apps/gnome.list
+yay -Sy --needed - < apps/hypr.list
+yay -Sy --needed - < apps/desktop.list
 
 # Config files on home
 for app in echo src/*.mk; do

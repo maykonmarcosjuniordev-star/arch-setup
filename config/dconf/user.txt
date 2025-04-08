@@ -5,21 +5,22 @@ use-system-keyboard-layout=true
 
 [org/gnome/control-center]
 last-panel='keyboard'
-window-state=(980, 640, true)
+window-state=(980, 640, false)
 
 [org/gnome/desktop/a11y/interface]
 high-contrast=true
 show-status-shapes=true
 
 [org/gnome/desktop/a11y/magnifier]
-mag-factor=3.0
+mag-factor=7.0
 
 [org/gnome/desktop/app-folders]
 folder-children=['System', 'Utilities', 'YaST', 'Pardus', 'd64e01cc-e492-4f77-8ac1-d3950c5d9bb3', '3d0cf848-f6e2-4de9-adb6-9d391bdddd85', 'b5985140-3412-4633-b6a7-4bcb183e2630', 'c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b']
 
 [org/gnome/desktop/app-folders/folders/3d0cf848-f6e2-4de9-adb6-9d391bdddd85]
-apps=['bvnc.desktop', 'bssh.desktop', 'avahi-discover.desktop']
-name='Internet'
+apps=['bvnc.desktop', 'bssh.desktop', 'avahi-discover.desktop', 'org.gnome.gedit.desktop']
+name='Avahi'
+translate=false
 
 [org/gnome/desktop/app-folders/folders/Pardus]
 categories=['X-Pardus-Apps']
@@ -41,7 +42,7 @@ name='suse-yast.directory'
 translate=true
 
 [org/gnome/desktop/app-folders/folders/b5985140-3412-4633-b6a7-4bcb183e2630]
-apps=['org.gnome.Settings.desktop', 'org.gnome.Software.desktop', 'org.gnome.Extensions.desktop', 'org.gnome.tweaks.desktop', 'uuctl.desktop']
+apps=['org.gnome.Settings.desktop', 'org.gnome.Software.desktop', 'org.gnome.Extensions.desktop', 'org.gnome.tweaks.desktop', 'uuctl.desktop', 'nvim.desktop']
 name='Settings'
 translate=false
 
@@ -81,6 +82,8 @@ xkb-options=['compose:rctrl']
 [org/gnome/desktop/interface]
 accent-color='red'
 color-scheme='prefer-dark'
+cursor-size=24
+cursor-theme='default'
 enable-animations=false
 enable-hot-corners=false
 show-battery-percentage=true
@@ -88,7 +91,7 @@ text-scaling-factor=1.25
 toolkit-accessibility=true
 
 [org/gnome/desktop/notifications]
-application-children=['com-github-xeco23-wasistlos', 'gnome-power-panel', 'audacious', 'brave-browser', 'notion', 'org-gnome-tweaks']
+application-children=['com-github-xeco23-wasistlos', 'gnome-power-panel', 'audacious', 'brave-browser', 'notion', 'org-gnome-tweaks', 'org-gnome-software', 'discord', 'org-gnome-nautilus', 'orange-canvas']
 show-in-lock-screen=false
 
 [org/gnome/desktop/notifications/application/audacious]
@@ -100,11 +103,23 @@ application-id='brave-browser.desktop'
 [org/gnome/desktop/notifications/application/com-github-xeco23-wasistlos]
 application-id='com.github.xeco23.WasIstLos.desktop'
 
+[org/gnome/desktop/notifications/application/discord]
+application-id='discord.desktop'
+
 [org/gnome/desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
 
 [org/gnome/desktop/notifications/application/notion]
 application-id='notion.desktop'
+
+[org/gnome/desktop/notifications/application/orange-canvas]
+application-id='orange-canvas.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-software]
+application-id='org.gnome.Software.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-tweaks]
 application-id='org.gnome.tweaks.desktop'
@@ -159,11 +174,11 @@ migrated=true
 
 [org/gnome/gedit/state/window]
 bottom-panel-size=140
-height=700
-maximized=false
+height=493
+maximized=true
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
-width=900
+width=960
 
 [org/gnome/mutter]
 edge-tiling=false
@@ -177,10 +192,15 @@ toggle-tiled-right=@as []
 [org/gnome/mutter/wayland/keybindings]
 restore-shortcuts=@as []
 
+[org/gnome/nautilus/list-view]
+use-tree-view=false
+
 [org/gnome/nautilus/preferences]
+date-time-format='detailed'
 default-folder-viewer='icon-view'
 migrated-gtk-settings=true
 search-filter-time-type='last_modified'
+show-create-link=true
 
 [org/gnome/nautilus/window-state]
 initial-size=(890, 550)
@@ -188,10 +208,10 @@ initial-size-file-chooser=(890, 550)
 maximized=true
 
 [org/gnome/portal/filechooser/brave-browser]
-last-folder-path='/home/maykon/Music/Anime'
+last-folder-path='/home/maykon/Downloads/Windows'
 
 [org/gnome/portal/filechooser/org.chromium.Chromium]
-last-folder-path='/home/maykon/arch-setup/config/terminal'
+last-folder-path='/home/maykon/UFSC'
 
 [org/gnome/portal/filechooser/org.gnome.Settings]
 last-folder-path='/home/maykon/arch-setup/wallpapers'
@@ -239,7 +259,7 @@ command='discord'
 name='Discord'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3]
-binding='<Alt>c'
+binding='<Alt>v'
 command='code'
 name='Vs Code'
 
@@ -262,7 +282,7 @@ name='Arch Setup'
 power-button-action='interactive'
 
 [org/gnome/shell]
-app-picker-layout=[{'b5985140-3412-4633-b6a7-4bcb183e2630': <{'position': <0>}>, 'System': <{'position': <1>}>, '3d0cf848-f6e2-4de9-adb6-9d391bdddd85': <{'position': <2>}>, 'c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b': <{'position': <3>}>, 'orange-canvas.desktop': <{'position': <4>}>, 'd64e01cc-e492-4f77-8ac1-d3950c5d9bb3': <{'position': <5>}>}]
+app-picker-layout=[{'b5985140-3412-4633-b6a7-4bcb183e2630': <{'position': <0>}>, 'System': <{'position': <1>}>, '3d0cf848-f6e2-4de9-adb6-9d391bdddd85': <{'position': <2>}>, 'c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b': <{'position': <3>}>, 'virtualbox.desktop': <{'position': <4>}>, 'orange-canvas.desktop': <{'position': <5>}>}]
 disabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com']
 enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'status-icons@gnome-shell-extensions.gcampax.github.com']
 favorite-apps=['audacious.desktop', 'vlc.desktop', 'brave-jckaldkomadaenmmgladeopgmfbahfjm-Default.desktop', 'brave-fmpnliohjhemenmnlpbfagaolkdacoja-Default.desktop', 'firefox.desktop', 'standard-notes.desktop']
@@ -278,9 +298,9 @@ toggle-message-tray=@as []
 toggle-quick-settings=@as []
 
 [org/gnome/software]
-check-timestamp=int64 1744039403
+check-timestamp=int64 1744103422
 first-run=false
-flatpak-purge-timestamp=int64 1744046589
+flatpak-purge-timestamp=int64 1744075112
 
 [org/gnome/tweaks]
 show-extensions-notice=false
@@ -291,7 +311,7 @@ location-mode='path-bar'
 show-hidden=true
 sidebar-width=140
 sort-column='name'
-sort-directories-first=false
+sort-directories-first=true
 sort-order='ascending'
 type-format='category'
 view-type='list'

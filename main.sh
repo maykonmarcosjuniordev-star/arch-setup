@@ -11,7 +11,7 @@ yay -Suy
 # install apps
 yay -Sy --needed - < apps/essentials.list
 yay -Sy --needed - < apps/gnome.list
-yay -Sy --needed - < apps/hypr.list
+# yay -Sy --needed - < apps/hypr.list
 yay -Sy --needed - < apps/desktop.list
 
 # Config files on home
@@ -31,3 +31,4 @@ if [[ $confirm == "y" || $confirm == "Y" ]]; then
     ssh-add ~/.ssh/main/id_ed25519
     ssh-add ~/.ssh/ufsc/id_ed25519
 fi
+# eval "$(ssh-agent -s)" && ssh-add ~/.ssh/main/id_ed25519 && git push

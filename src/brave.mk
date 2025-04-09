@@ -1,4 +1,6 @@
 # https://brave.com/linux/
-#TODO: setting of config files
 all:
-	@echo "not implemented yet"
+	bash ~/arch-setup/config/brave/restore.sh
+
+backup:
+	bash ~/arch-setup/config/brave/backup.sh

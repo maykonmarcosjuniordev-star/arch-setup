@@ -1,0 +1,10 @@
+/* Oculta o atalho Ctrl+Q (fechar navegador) */
+#key_quitApplication {
+  display: none !important;
+}
+
+/* Opcional: remapeia Ctrl+Q para a barra lateral */
+#key_viewBookmarksSidebar {
+  key="q";
+  modifiers="accel";
+}

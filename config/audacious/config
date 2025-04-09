@@ -6,6 +6,7 @@ generic_title_format=${title}${?artist: - ${artist}}${?album: - ${album}}
 leading_zero=TRUE
 open_to_temporary=FALSE
 repeat=TRUE
+show_interface=FALSE
 show_numbers_in_pl=TRUE
 shuffle=TRUE
 

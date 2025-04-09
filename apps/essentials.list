@@ -4,6 +4,7 @@ ffmpeg
 gcc
 git-lfs
 gnupg
+ibus
 less
 make
 neovim

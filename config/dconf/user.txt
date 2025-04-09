@@ -1,7 +1,13 @@
 [desktop/ibus/general]
-preload-engines=['xkb:br::por', 'xkb:br:nodeadkeys:por', 'xkb:us::eng']
+preload-engines=['xkb:us::eng', 'xkb:br::por']
 use-global-engine=true
 use-system-keyboard-layout=true
+
+[desktop/ibus/panel]
+custom-icon='Cosmic'
+custom-theme='adw-gtk3-dark'
+use-custom-icon=true
+use-custom-theme=true
 
 [org/gnome/control-center]
 last-panel='keyboard'
@@ -12,7 +18,7 @@ high-contrast=true
 show-status-shapes=true
 
 [org/gnome/desktop/a11y/magnifier]
-mag-factor=7.0
+mag-factor=19.0
 
 [org/gnome/desktop/app-folders]
 folder-children=['System', 'Utilities', 'YaST', 'Pardus', 'd64e01cc-e492-4f77-8ac1-d3950c5d9bb3', '3d0cf848-f6e2-4de9-adb6-9d391bdddd85', 'b5985140-3412-4633-b6a7-4bcb183e2630', 'c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b']
@@ -73,10 +79,10 @@ interval-seconds=uint32 1800
 play-sound=true
 
 [org/gnome/desktop/input-sources]
-mru-sources=[('xkb', 'br+nodeadkeys'), ('xkb', 'us')]
+mru-sources=[('xkb', 'br'), ('xkb', 'us')]
 per-window=true
 show-all-sources=true
-sources=[('xkb', 'br+nodeadkeys'), ('xkb', 'us')]
+sources=[('xkb', 'br'), ('xkb', 'us')]
 xkb-options=['compose:rctrl']
 
 [org/gnome/desktop/interface]
@@ -91,7 +97,7 @@ text-scaling-factor=1.25
 toolkit-accessibility=true
 
 [org/gnome/desktop/notifications]
-application-children=['com-github-xeco23-wasistlos', 'gnome-power-panel', 'audacious', 'brave-browser', 'notion', 'org-gnome-tweaks', 'org-gnome-software', 'discord', 'org-gnome-nautilus', 'orange-canvas']
+application-children=['com-github-xeco23-wasistlos', 'gnome-power-panel', 'audacious', 'brave-browser', 'notion', 'org-gnome-tweaks', 'org-gnome-software', 'discord', 'org-gnome-nautilus', 'orange-canvas', 'virtualbox']
 show-in-lock-screen=false
 
 [org/gnome/desktop/notifications/application/audacious]
@@ -123,6 +129,9 @@ application-id='org.gnome.Software.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-tweaks]
 application-id='org.gnome.tweaks.desktop'
+
+[org/gnome/desktop/notifications/application/virtualbox]
+application-id='virtualbox.desktop'
 
 [org/gnome/desktop/peripherals/touchpad]
 two-finger-scrolling-enabled=true
@@ -208,7 +217,7 @@ initial-size-file-chooser=(890, 550)
 maximized=true
 
 [org/gnome/portal/filechooser/brave-browser]
-last-folder-path='/home/maykon/Downloads/Windows'
+last-folder-path='/home/maykon/UFSC/ModSim'
 
 [org/gnome/portal/filechooser/org.chromium.Chromium]
 last-folder-path='/home/maykon/UFSC'

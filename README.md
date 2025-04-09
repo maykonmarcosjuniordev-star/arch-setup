@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5f99a49f45b3ba4420aeef21c3cee3dce5e4eabab802baeaeaea2c13042bfde6
-size 74
+# arch-setup
+Scripts and setting files for an Arch linux setup
+
+just run:
+chmod +x main.sh 
+./main.sh
+
+---
+There will be plenty of terminal interations afterwards (mainly requiring passwords or enter) 

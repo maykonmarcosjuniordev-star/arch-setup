@@ -1,34 +1,3 @@
-#!/bin/bash
-# essentials that need pacman
-sudo pacman -Suy --needed < pacman.list
-# install yay
-sudo git clone https://aur.archlinux.org/yay-git.git /opt/yay-git
-sudo chown -R $(whoami):$(whoami) /opt/yay-git/
-cd /opt/yay-git
-makepkg -sirc
-cd ~
-yay -Suy
-# install apps
-yay -Sy --needed - < apps/essentials.list
-yay -Sy --needed - < apps/gnome.list
-# yay -Sy --needed - < apps/hypr.list
-yay -Sy --needed - < apps/desktop.list
-
-# Config files on home
-for app in echo src/*.mk; do
-    # Aqui você pode adicionar o comando para instalar o aplicativo específico
-    make -f $app
-done
-
-# Setup man-pages
-#mandb
-
-# allowing for ssh push
-git remote set-url origin git@github.com:maykonmjunior/arch-setup.git
-eval "$(ssh-agent -s)"
-read -p "Baixou as chaves ssh do bkp no drive (y/n) " confirm
-if [[ $confirm == "y" || $confirm == "Y" ]]; then
-    ssh-add ~/.ssh/main/id_ed25519
-    ssh-add ~/.ssh/ufsc/id_ed25519
-fi
-# eval "$(ssh-agent -s)" && ssh-add ~/.ssh/main/id_ed25519 && git push
+version https://git-lfs.github.com/spec/v1
+oid sha256:8715e7ee816e684c01123e3121d9c5af893a3f3c25a97c50c38ac5cc24b73e0f
+size 910

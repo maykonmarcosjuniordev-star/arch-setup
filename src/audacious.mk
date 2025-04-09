@@ -1,3 +1,2 @@
-#TODO: setting of config files
 all:
-	@echo "not implemented yet"
+	ln -sf ~/arch-setup/config/audacious/* ~/.config/audacious/*

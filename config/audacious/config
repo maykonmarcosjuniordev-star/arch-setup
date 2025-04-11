@@ -8,10 +8,10 @@ open_to_temporary=FALSE
 repeat=TRUE
 show_interface=FALSE
 show_numbers_in_pl=TRUE
-shuffle=TRUE
+shuffle=FALSE
 
 [audgui]
-filesel_path=/home/maykon/Music/Anime
+filesel_path=/home/maykon/Music/
 
 [audqt]
 icon_theme=audacious-flat-dark

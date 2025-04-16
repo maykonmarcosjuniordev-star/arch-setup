@@ -9,24 +9,30 @@ custom-theme='adw-gtk3-dark'
 use-custom-icon=true
 use-custom-theme=true
 
+[org/gnome/Extensions]
+window-height=1020
+window-width=948
+
+[org/gnome/baobab/ui]
+is-maximized=false
+window-size=(960, 600)
+
 [org/gnome/control-center]
 last-panel='keyboard'
-window-state=(980, 640, false)
+window-state=(960, 1040, false)
+
+[org/gnome/desktop/a11y]
+always-show-universal-access-status=false
 
 [org/gnome/desktop/a11y/interface]
 high-contrast=true
 show-status-shapes=true
 
 [org/gnome/desktop/a11y/magnifier]
-mag-factor=19.0
+mag-factor=24.0
 
 [org/gnome/desktop/app-folders]
-folder-children=['System', 'Utilities', 'YaST', 'Pardus', 'd64e01cc-e492-4f77-8ac1-d3950c5d9bb3', '3d0cf848-f6e2-4de9-adb6-9d391bdddd85', 'b5985140-3412-4633-b6a7-4bcb183e2630', 'c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b']
-
-[org/gnome/desktop/app-folders/folders/3d0cf848-f6e2-4de9-adb6-9d391bdddd85]
-apps=['bvnc.desktop', 'bssh.desktop', 'avahi-discover.desktop', 'org.gnome.gedit.desktop']
-name='Avahi'
-translate=false
+folder-children=['System', 'Utilities', 'YaST', 'Pardus', 'd64e01cc-e492-4f77-8ac1-d3950c5d9bb3', '3d0cf848-f6e2-4de9-adb6-9d391bdddd85', 'b5985140-3412-4633-b6a7-4bcb183e2630', 'c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b', '2390d963-8b02-4797-bdc2-9ae0ad818072']
 
 [org/gnome/desktop/app-folders/folders/Pardus]
 categories=['X-Pardus-Apps']
@@ -34,7 +40,7 @@ name='X-Pardus-Apps.directory'
 translate=true
 
 [org/gnome/desktop/app-folders/folders/System]
-apps=['org.gnome.SystemMonitor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Logs.desktop', 'qv4l2.desktop', 'qvidcap.desktop', 'com.system76.CosmicFiles.desktop', 'com.system76.CosmicScreenshot.desktop']
+apps=['org.gnome.SystemMonitor.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.baobab.desktop', 'org.gnome.gedit.desktop']
 name='X-GNOME-Shell-System.directory'
 translate=true
 
@@ -48,20 +54,13 @@ name='suse-yast.directory'
 translate=true
 
 [org/gnome/desktop/app-folders/folders/b5985140-3412-4633-b6a7-4bcb183e2630]
-apps=['org.gnome.Settings.desktop', 'org.gnome.Software.desktop', 'org.gnome.Extensions.desktop', 'org.gnome.tweaks.desktop', 'uuctl.desktop', 'nvim.desktop']
+apps=['org.gnome.Settings.desktop', 'org.gnome.Extensions.desktop', 'org.gnome.tweaks.desktop', 'nvim.desktop', 'uuctl.desktop']
 name='Settings'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b]
 apps=['brave-browser.desktop', 'discord.desktop', 'org.gnome.Nautilus.desktop', 'gmail-desktop.desktop', 'kitty.desktop', 'notion.desktop', 'code.desktop', 'com.github.xeco23.WasIstLos.desktop']
 name='Shortcut'
-translate=false
-
-[org/gnome/desktop/app-folders/folders/d64e01cc-e492-4f77-8ac1-d3950c5d9bb3]
-apps=['wine-Programs-Rockwell Software-Arena-Arena.desktop', 'wine-Programs-Rockwell Software-Arena-Input Analyzer.desktop', 'wine-Programs-Rockwell Software-Arena-Output Analyzer.desktop', 'wine-Programs-Rockwell Software-Arena-Process Analyzer.desktop', 'wine-Programs-Rockwell Software-Arena-Visio Process Simulator.desktop', "wine-Programs-Rockwell Software-Arena-Online Books-Arena Packaging Template User's Guide.desktop", "wine-Programs-Rockwell Software-Arena-Online Books-Arena Template Developer's Guide.desktop", "wine-Programs-Rockwell Software-Arena-Online Books-Arena User's Guide.desktop", 'wine-Programs-Rockwell Software-Arena-Online Books-Arena Variables Guide.desktop', 'wine-Programs-Rockwell Software-Utilities-Arena Support Services Help .desktop', 'wine-Programs-Rockwell Software-Utilities-Support Services Help.desktop']
-name='Arena'
-translate=false
-
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
@@ -83,7 +82,7 @@ mru-sources=[('xkb', 'br'), ('xkb', 'us')]
 per-window=true
 show-all-sources=true
 sources=[('xkb', 'br'), ('xkb', 'us')]
-xkb-options=['compose:rctrl']
+xkb-options=['lv3:ralt_switch']
 
 [org/gnome/desktop/interface]
 accent-color='red'
@@ -97,7 +96,7 @@ text-scaling-factor=1.25
 toolkit-accessibility=true
 
 [org/gnome/desktop/notifications]
-application-children=['com-github-xeco23-wasistlos', 'gnome-power-panel', 'audacious', 'brave-browser', 'notion', 'org-gnome-tweaks', 'org-gnome-software', 'discord', 'org-gnome-nautilus', 'orange-canvas', 'virtualbox']
+application-children=['com-github-xeco23-wasistlos', 'gnome-power-panel', 'audacious', 'brave-browser', 'notion', 'org-gnome-tweaks', 'org-gnome-software', 'discord', 'org-gnome-nautilus', 'orange-canvas', 'virtualbox', 'org-gnome-gedit', 'org-gnome-baobab', 'kitty']
 show-in-lock-screen=false
 
 [org/gnome/desktop/notifications/application/audacious]
@@ -115,11 +114,20 @@ application-id='discord.desktop'
 [org/gnome/desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
 
+[org/gnome/desktop/notifications/application/kitty]
+application-id='kitty.desktop'
+
 [org/gnome/desktop/notifications/application/notion]
 application-id='notion.desktop'
 
 [org/gnome/desktop/notifications/application/orange-canvas]
 application-id='orange-canvas.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-baobab]
+application-id='org.gnome.baobab.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-gedit]
+application-id='org.gnome.gedit.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
@@ -228,10 +236,17 @@ last-folder-path='/home/maykon/arch-setup/wallpapers'
 [org/gnome/portal/filechooser/org.gnome.tweaks]
 last-folder-path='/home/maykon/arch-setup/wallpapers'
 
+[org/gnome/settings-daemon/global-shortcuts]
+applications=['org.chromium.Chromium']
+
+[org/gnome/settings-daemon/global-shortcuts/org.chromium.Chromium]
+shortcuts=[('AddSite', {'description': <'Toggle current site'>}), ('darkModeToggle', {'description': <'Dark Mode On/Off'>}), ('nightModeToggle', {'description': <'Night Shift On/Off'>}), ('toggle', {'description': <'Extension On/Off'>})]
+
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=true
 night-light-schedule-automatic=false
 night-light-schedule-from=18.0
+night-light-temperature=uint32 2202
 
 [org/gnome/settings-daemon/plugins/media-keys]
 control-center=['<Alt>s']
@@ -291,14 +306,47 @@ name='Arch Setup'
 power-button-action='interactive'
 
 [org/gnome/shell]
-app-picker-layout=[{'b5985140-3412-4633-b6a7-4bcb183e2630': <{'position': <0>}>, 'System': <{'position': <1>}>, '3d0cf848-f6e2-4de9-adb6-9d391bdddd85': <{'position': <2>}>, 'c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b': <{'position': <3>}>, 'virtualbox.desktop': <{'position': <4>}>, 'orange-canvas.desktop': <{'position': <5>}>}]
-disabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com']
-enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'status-icons@gnome-shell-extensions.gcampax.github.com']
-favorite-apps=['audacious.desktop', 'vlc.desktop', 'brave-jckaldkomadaenmmgladeopgmfbahfjm-Default.desktop', 'brave-fmpnliohjhemenmnlpbfagaolkdacoja-Default.desktop', 'firefox.desktop', 'standard-notes.desktop']
+app-picker-layout=[{'b5985140-3412-4633-b6a7-4bcb183e2630': <{'position': <0>}>, 'System': <{'position': <1>}>, 'c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b': <{'position': <2>}>, 'virtualbox.desktop': <{'position': <3>}>, '2390d963-8b02-4797-bdc2-9ae0ad818072': <{'position': <4>}>, 'ventoy.desktop': <{'position': <5>}>, 'orange-canvas.desktop': <{'position': <6>}>}]
+disabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'aztaskbar@aztaskbar.gitlab.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'status-icons@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'tilingshell@ferrarodomenico.com']
+enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'appindicatorsupport@rgcjonas.gmail.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'awesome-tiles@velitasali.com']
+favorite-apps=['audacious.desktop', 'vlc.desktop', 'brave-cadlkienfkclaiaibeoongdcgmdikeeg-Default.desktop', 'brave-fmpnliohjhemenmnlpbfagaolkdacoja-Default.desktop', 'firefox.desktop', 'standard-notes.desktop']
 welcome-dialog-last-shown-version='48.0'
 
 [org/gnome/shell/app-switcher]
 current-workspace-only=true
+
+[org/gnome/shell/extensions/awesome-tiles]
+enable-inner-gaps=false
+enable-window-animation=false
+gap-size=0
+next-step-timeout=1000
+
+[org/gnome/shell/extensions/aztaskbar]
+update-notifier-project-version=28
+
+[org/gnome/shell/extensions/tilingshell]
+enable-autotiling=true
+enable-snap-assist=false
+focus-window-down=['<Super>Down']
+focus-window-left=['<Super>Left']
+focus-window-next=['']
+focus-window-right=['<Super>Right']
+focus-window-up=['<Super>Up']
+highlight-current-window=['<Control>Up']
+inner-gaps=uint32 5
+last-version-name-installed='16.3'
+layouts-json='[{"id":"Layout 1","tiles":[{"x":0,"y":0,"width":0.22,"height":0.5,"groups":[1,2]},{"x":0,"y":0.5,"width":0.22,"height":0.5,"groups":[1,2]},{"x":0.22,"y":0,"width":0.56,"height":1,"groups":[2,3]},{"x":0.78,"y":0,"width":0.22,"height":0.5,"groups":[3,4]},{"x":0.78,"y":0.5,"width":0.22,"height":0.5,"groups":[3,4]}]},{"id":"Layout 2","tiles":[{"x":0,"y":0,"width":0.22,"height":1,"groups":[1]},{"x":0.22,"y":0,"width":0.56,"height":1,"groups":[1,2]},{"x":0.78,"y":0,"width":0.22,"height":1,"groups":[2]}]},{"id":"Layout 3","tiles":[{"x":0,"y":0,"width":0.33,"height":1,"groups":[1]},{"x":0.33,"y":0,"width":0.67,"height":1,"groups":[1]}]},{"id":"Layout 4","tiles":[{"x":0,"y":0,"width":0.67,"height":1,"groups":[1]},{"x":0.67,"y":0,"width":0.33,"height":0.4980769230769231,"groups":[2,1]},{"x":0.67,"y":0.4980769230769231,"width":0.33,"height":0.5019230769230769,"groups":[2,1]}]},{"id":"1358701","tiles":[{"x":0,"y":0,"width":0.49947916666666664,"height":1,"groups":[1]},{"x":0.49947916666666664,"y":0,"width":0.5005208333333349,"height":1,"groups":[1]}]}]'
+move-window-center=['<Super>KP_Insert']
+move-window-down=['<Super>KP_Down']
+move-window-left=['<Super>KP_Left']
+move-window-right=['<Super>KP_Right']
+move-window-up=['<Super>KP_Up']
+outer-gaps=uint32 10
+overridden-settings='{}'
+override-window-menu=true
+selected-layouts=[['1358701'], ['Layout 1'], ['Layout 1']]
+snap-assistant-animation-time=uint32 179
+untile-window=['<Super>KP_Begin']
 
 [org/gnome/shell/keybindings]
 focus-active-notification=@as []
@@ -307,9 +355,9 @@ toggle-message-tray=@as []
 toggle-quick-settings=@as []
 
 [org/gnome/software]
-check-timestamp=int64 1744103422
+check-timestamp=int64 1744715622
 first-run=false
-flatpak-purge-timestamp=int64 1744075112
+flatpak-purge-timestamp=int64 1744676623
 
 [org/gnome/tweaks]
 show-extensions-notice=false

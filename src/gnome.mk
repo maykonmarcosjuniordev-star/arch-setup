@@ -6,4 +6,3 @@ dump:
 
 reset:
 	dconf reset -f /org/gnome/
-/

@@ -1,5 +1,5 @@
 alias list='cat ~/.bash_aliases'
-alias upd='sudo pacman -Suy && yay -Suy'
+alias upd='sudo pacman -Suy && yay -Suy && sudo pacman -Qdtq | sudo pacman -Rns - && sudo pacman -Qqd | sudo pacman -Rsu --print -'
 alias get_music='yt-dlp --format bestaudio --extract-audio --audio-format mp3 --audio-quality 160K --output "%(title)s.%(ext)s"'
 alias get_playlist='yt-dlp --format bestaudio --extract-audio --audio-format mp3 --audio-quality 160K --output "%(title)s.%(ext)s" --yes-playlist'
 alias set_ssh='eval $(ssh-agent) && ssh-add ~/.ssh/main/id_ed25519 && ssh-add ~/.ssh/ufsc/id_ed25519'

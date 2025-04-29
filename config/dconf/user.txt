@@ -17,9 +17,13 @@ window-width=948
 is-maximized=false
 window-size=(960, 600)
 
-[org/gnome/control-center]
-last-panel='keyboard'
-window-state=(960, 1040, false)
+[org/gnome/boxes]
+first-run=false
+shared-folders="[<{'uuid': <'c5d67584-0dac-49c6-ae92-003de3b20b8e'>, 'path': <'/home/maykon/Public'>, 'name': <'Public'>}>, <{'uuid': <'281afcdd-68a9-4906-8da5-fe474f6fc7bb'>, 'path': <'/home/maykon/Public'>, 'name': <'Public'>}>]"
+view='list-view'
+window-maximized=true
+window-position=[26, 23]
+window-size=[960, 1040]
 
 [org/gnome/desktop/a11y]
 always-show-universal-access-status=false
@@ -96,7 +100,7 @@ text-scaling-factor=1.25
 toolkit-accessibility=true
 
 [org/gnome/desktop/notifications]
-application-children=['com-github-xeco23-wasistlos', 'gnome-power-panel', 'audacious', 'brave-browser', 'notion', 'org-gnome-tweaks', 'org-gnome-software', 'discord', 'org-gnome-nautilus', 'orange-canvas', 'virtualbox', 'org-gnome-gedit', 'org-gnome-baobab', 'kitty']
+application-children=['com-github-xeco23-wasistlos', 'gnome-power-panel', 'audacious', 'brave-browser', 'notion', 'org-gnome-tweaks', 'org-gnome-software', 'discord', 'org-gnome-nautilus', 'orange-canvas', org-gnome-gedit', 'org-gnome-baobab', 'kitty', 'org-gnome-diskutility','org-gnome-boxes']
 show-in-lock-screen=false
 
 [org/gnome/desktop/notifications/application/audacious]
@@ -125,6 +129,12 @@ application-id='orange-canvas.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-baobab]
 application-id='org.gnome.baobab.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-boxes]
+application-id='org.gnome.Boxes.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-diskutility]
+application-id='org.gnome.DiskUtility.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-gedit]
 application-id='org.gnome.gedit.desktop'
@@ -309,7 +319,7 @@ power-button-action='interactive'
 app-picker-layout=[{'b5985140-3412-4633-b6a7-4bcb183e2630': <{'position': <0>}>, 'System': <{'position': <1>}>, 'c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b': <{'position': <2>}>, 'virtualbox.desktop': <{'position': <3>}>, '2390d963-8b02-4797-bdc2-9ae0ad818072': <{'position': <4>}>, 'ventoy.desktop': <{'position': <5>}>, 'orange-canvas.desktop': <{'position': <6>}>}]
 disabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'aztaskbar@aztaskbar.gitlab.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'status-icons@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'tilingshell@ferrarodomenico.com']
 enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'appindicatorsupport@rgcjonas.gmail.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'awesome-tiles@velitasali.com']
-favorite-apps=['audacious.desktop', 'vlc.desktop', 'brave-cadlkienfkclaiaibeoongdcgmdikeeg-Default.desktop', 'brave-fmpnliohjhemenmnlpbfagaolkdacoja-Default.desktop', 'firefox.desktop', 'standard-notes.desktop']
+favorite-apps=['audacious.desktop', 'vlc.desktop', 'brave-cadlkienfkclaiaibeoongdcgmdikeeg-Default.desktop', 'brave-fmpnliohjhemenmnlpbfagaolkdacoja-Default.desktop', 'firefox.desktop', 'org.gnome.Boxes.desktop', 'standard-notes.desktop']
 welcome-dialog-last-shown-version='48.0'
 
 [org/gnome/shell/app-switcher]

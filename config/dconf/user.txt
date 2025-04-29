@@ -14,7 +14,8 @@ window-height=1020
 window-width=948
 
 [org/gnome/baobab/ui]
-is-maximized=false
+active-chart='rings'
+is-maximized=true
 window-size=(960, 600)
 
 [org/gnome/boxes]
@@ -33,7 +34,7 @@ high-contrast=true
 show-status-shapes=true
 
 [org/gnome/desktop/a11y/magnifier]
-mag-factor=24.0
+mag-factor=32.0
 
 [org/gnome/desktop/app-folders]
 folder-children=['System', 'Utilities', 'YaST', 'Pardus', 'd64e01cc-e492-4f77-8ac1-d3950c5d9bb3', '3d0cf848-f6e2-4de9-adb6-9d391bdddd85', 'b5985140-3412-4633-b6a7-4bcb183e2630', 'c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b', '2390d963-8b02-4797-bdc2-9ae0ad818072']
@@ -64,10 +65,12 @@ translate=false
 
 [org/gnome/desktop/app-folders/folders/c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b]
 apps=['brave-browser.desktop', 'discord.desktop', 'org.gnome.Nautilus.desktop', 'gmail-desktop.desktop', 'kitty.desktop', 'notion.desktop', 'code.desktop', 'com.github.xeco23.WasIstLos.desktop']
-name='Shortcut'
+name='Shortcuts'
+translate=false
+
 [org/gnome/desktop/background]
 color-shading-type='solid'
-picture-options='zoom'
+picture-options='stretched'
 picture-uri='file:///home/maykon/arch-setup/wallpapers/hong-kong-night.jpg'
 picture-uri-dark='file:///home/maykon/arch-setup/wallpapers/blue-maia.png'
 primary-color='#000000000000'
@@ -93,8 +96,14 @@ accent-color='red'
 color-scheme='prefer-dark'
 cursor-size=24
 cursor-theme='default'
+document-font-name='Fast_Mono 11'
 enable-animations=false
 enable-hot-corners=false
+font-name='Fast_Mono Bold 11'
+gtk-theme='HighContrast'
+icon-theme='Adwaita'
+monospace-font-name='Fast_Sans Bold 11'
+overlay-scrolling=false
 show-battery-percentage=true
 text-scaling-factor=1.25
 toolkit-accessibility=true
@@ -171,6 +180,7 @@ cycle-panels=@as []
 cycle-panels-backward=@as []
 cycle-windows=@as []
 cycle-windows-backward=@as []
+maximize=['<Super>Up']
 minimize=['<Control>Down']
 move-to-monitor-down=@as []
 move-to-monitor-left=@as []
@@ -198,6 +208,10 @@ button-layout=':minimize,maximize,close'
 
 [org/gnome/evolution-data-server]
 migrated=true
+
+[org/gnome/gedit/preferences/editor]
+tabs-size=uint32 3
+wrap-last-split-mode='word'
 
 [org/gnome/gedit/state/window]
 bottom-panel-size=140
@@ -233,12 +247,6 @@ show-create-link=true
 initial-size=(890, 550)
 initial-size-file-chooser=(890, 550)
 maximized=true
-
-[org/gnome/portal/filechooser/brave-browser]
-last-folder-path='/home/maykon/UFSC/ModSim'
-
-[org/gnome/portal/filechooser/org.chromium.Chromium]
-last-folder-path='/home/maykon/UFSC'
 
 [org/gnome/portal/filechooser/org.gnome.Settings]
 last-folder-path='/home/maykon/arch-setup/wallpapers'
@@ -315,8 +323,6 @@ name='Arch Setup'
 [org/gnome/settings-daemon/plugins/power]
 power-button-action='interactive'
 
-[org/gnome/shell]
-app-picker-layout=[{'b5985140-3412-4633-b6a7-4bcb183e2630': <{'position': <0>}>, 'System': <{'position': <1>}>, 'c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b': <{'position': <2>}>, 'virtualbox.desktop': <{'position': <3>}>, '2390d963-8b02-4797-bdc2-9ae0ad818072': <{'position': <4>}>, 'ventoy.desktop': <{'position': <5>}>, 'orange-canvas.desktop': <{'position': <6>}>}]
 disabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'aztaskbar@aztaskbar.gitlab.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'status-icons@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'tilingshell@ferrarodomenico.com']
 enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'appindicatorsupport@rgcjonas.gmail.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'awesome-tiles@velitasali.com']
 favorite-apps=['audacious.desktop', 'vlc.desktop', 'brave-cadlkienfkclaiaibeoongdcgmdikeeg-Default.desktop', 'brave-fmpnliohjhemenmnlpbfagaolkdacoja-Default.desktop', 'firefox.desktop', 'org.gnome.Boxes.desktop', 'standard-notes.desktop']
@@ -333,6 +339,19 @@ next-step-timeout=1000
 
 [org/gnome/shell/extensions/aztaskbar]
 update-notifier-project-version=28
+
+[org/gnome/shell/extensions/dash-to-dock]
+background-opacity=0.80000000000000004
+custom-theme-shrink=false
+dash-max-icon-size=48
+dock-position='BOTTOM'
+extend-height=false
+height-fraction=0.90000000000000002
+hide-tooltip=false
+preferred-monitor=-2
+preferred-monitor-by-connector='eDP-1'
+show-trash=false
+workspace-agnostic-urgent-windows=true
 
 [org/gnome/shell/extensions/tilingshell]
 enable-autotiling=true
@@ -375,7 +394,7 @@ show-extensions-notice=false
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=true
+show-hidden=false
 sidebar-width=140
 sort-column='name'
 sort-directories-first=true
@@ -392,7 +411,7 @@ show-size-column=true
 show-type-column=true
 sidebar-width=192
 sort-column='name'
-sort-directories-first=false
+sort-directories-first=true
 sort-order='ascending'
 type-format='category'
 window-position=(15, 40)

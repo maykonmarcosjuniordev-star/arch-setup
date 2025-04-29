@@ -13,6 +13,8 @@ nvidia-open
 openssh
 python-pip
 rust
+spice
+spice-gtk
 tar
 unzip
 wget

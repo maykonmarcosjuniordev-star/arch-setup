@@ -17,7 +17,6 @@ backup() {
     echo "🗂️  Backup do perfil: $profile"
     mkdir -p "$BACKUP_DIR/$profile"
     cp "$BRAVE_CONFIG_DIR/$profile/Preferences" "$BACKUP_DIR/$profile/" 2>/dev/null
-    cp "$BRAVE_CONFIG_DIR/Local State" "$BACKUP_DIR/" 2>/dev/null
 
     echo "✅ Backup completo em: $BACKUP_DIR/$profile/"
 }
@@ -33,7 +32,6 @@ restore() {
     echo "🗂️  Restaurando perfil: $profile"
 
     cp "$BACKUP_DIR/$profile/Preferences" "$BRAVE_CONFIG_DIR/$profile/" 2>/dev/null
-    cp "$BACKUP_DIR/Local State" "$BRAVE_CONFIG_DIR/" 2>/dev/null
 
     echo "✅ Restauração concluída."
 }
@@ -53,9 +51,6 @@ case "$1" in
         ;;
     restore)
         restore
-        ;;
-    link)
-        link_profiles
         ;;
     *)
         usage

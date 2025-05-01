@@ -11,6 +11,7 @@ neovim
 noto-fonts-cjk
 nvidia-open
 openssh
+os-prober
 python-pip
 rust
 spice

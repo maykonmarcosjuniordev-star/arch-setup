@@ -22,3 +22,4 @@ all:
 		ssh-add ~/.ssh/main/id_ed25519
 		ssh-add ~/.ssh/ufsc/id_ed25519
 	fi
+	systemctl status bluetooth.service

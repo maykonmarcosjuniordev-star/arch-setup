@@ -16,7 +16,6 @@ yay -Sy --needed - < apps/desktop.list
 
 # Config files on home
 for app in echo src/*.mk; do
-    # Aqui você pode adicionar o comando para instalar o aplicativo específico
     make -f $app
 done
 

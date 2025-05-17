@@ -265,7 +265,28 @@ height=989
 maximized=true
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
-width=960
+width=1920
+
+[org/gnome/gnome-system-monitor]
+current-tab='processes'
+maximized=true
+show-dependencies=false
+show-whose-processes='user'
+window-height=720
+window-width=800
+
+[org/gnome/gnome-system-monitor/disksview]
+sort-col='directory'
+sort-order=0
+
+[org/gnome/gnome-system-monitor/proctree]
+col-12-visible=true
+col-12-width=94
+col-26-visible=false
+col-26-width=0
+columns-order=[0, 12, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
+sort-col=0
+sort-order=0
 
 [org/gnome/mutter]
 edge-tiling=false
@@ -293,6 +314,27 @@ show-create-link=true
 initial-size=(890, 550)
 initial-size-file-chooser=(890, 550)
 maximized=true
+
+[org/gnome/portal/filechooser/bluemail]
+last-folder-path='/home/maykon/UFSC'
+
+[org/gnome/portal/filechooser/brave-browser]
+last-folder-path='/home/maykon/UFSC'
+
+[org/gnome/portal/filechooser/code]
+last-folder-path='/home/maykon/Github/classification_model_from_csv_in_law_judgments'
+
+[org/gnome/portal/filechooser/gmail-desktop]
+last-folder-path='/home/maykon/Documents'
+
+[org/gnome/portal/filechooser/org.chromium.Chromium]
+last-folder-path='/home/maykon/UFSC/Multimidia/Pratica4'
+
+[org/gnome/portal/filechooser/org.gnome.Settings]
+last-folder-path='/home/maykon/arch-setup/wallpapers'
+
+[org/gnome/portal/filechooser/org.gnome.tweaks]
+last-folder-path='/home/maykon/arch-setup/wallpapers'
 
 [org/gnome/settings-daemon/global-shortcuts]
 applications=['org.chromium.Chromium']

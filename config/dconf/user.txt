@@ -51,10 +51,15 @@ mag-factor=32.0
 secondary-click-enabled=false
 
 [org/gnome/desktop/app-folders]
-folder-children=['System', 'Utilities', 'YaST', 'Pardus', 'd64e01cc-e492-4f77-8ac1-d3950c5d9bb3', '3d0cf848-f6e2-4de9-adb6-9d391bdddd85', 'b5985140-3412-4633-b6a7-4bcb183e2630', 'c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b', '2390d963-8b02-4797-bdc2-9ae0ad818072']
+folder-children=['System', 'Utilities', 'YaST', 'Pardus', 'd64e01cc-e492-4f77-8ac1-d3950c5d9bb3', '3d0cf848-f6e2-4de9-adb6-9d391bdddd85', 'b5985140-3412-4633-b6a7-4bcb183e2630', 'c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b', '2390d963-8b02-4797-bdc2-9ae0ad818072', '29ed6074-bd0c-4b02-8d24-3ee9f9d72b4a', '56b2623e-01ad-4522-81be-dbcdbfb69816']
+
+[org/gnome/desktop/app-folders/folders/29ed6074-bd0c-4b02-8d24-3ee9f9d72b4a]
+apps=['vlc.desktop', 'standard-notes.desktop']
+name='Other Apps'
+translate=false
 
 [org/gnome/desktop/app-folders/folders/System]
-apps=['org.gnome.SystemMonitor.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.baobab.desktop', 'org.gnome.gedit.desktop', 'firefox-esr-safe.desktop', 'lstopo.desktop', 'electron34.desktop', 'electron35.desktop', 'cmake-gui.desktop']
+apps=['org.gnome.SystemMonitor.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.baobab.desktop', 'org.gnome.gedit.desktop']
 name='X-GNOME-Shell-System.directory'
 translate=true
 
@@ -73,7 +78,7 @@ name='Settings'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b]
-apps=['brave-browser.desktop', 'discord.desktop', 'org.gnome.Nautilus.desktop', 'kitty.desktop', 'notion.desktop', 'code.desktop', 'com.github.xeco23.WasIstLos.desktop', 'meru.desktop']
+apps=['brave-browser.desktop', 'discord.desktop', 'org.gnome.Nautilus.desktop', 'kitty.desktop', 'code.desktop', 'com.github.xeco23.WasIstLos.desktop', 'bluemail.desktop', 'notion-app-enhanced.desktop']
 name='Shortcuts'
 translate=false
 
@@ -121,11 +126,14 @@ text-scaling-factor=1.25
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['com-github-xeco23-wasistlos', 'gnome-power-panel', 'audacious', 'brave-browser', 'notion', 'org-gnome-tweaks', 'org-gnome-software', 'discord', 'org-gnome-nautilus', 'orange-canvas', 'org-gnome-gedit', 'org-gnome-baobab', 'kitty', 'org-gnome-diskutility', 'org-gnome-boxes', 'org-gnome-settings', 'firefox-esr']
+application-children=['com-github-xeco23-wasistlos', 'gnome-power-panel', 'audacious', 'brave-browser', 'notion', 'org-gnome-tweaks', 'org-gnome-software', 'discord', 'org-gnome-nautilus', 'org-gnome-gedit', 'org-gnome-baobab', 'kitty', 'org-gnome-diskutility', 'org-gnome-boxes', 'org-gnome-settings', 'bluemail', 'org-gnome-systemmonitor', 'firefox']
 show-in-lock-screen=false
 
 [org/gnome/desktop/notifications/application/audacious]
 application-id='audacious.desktop'
+
+[org/gnome/desktop/notifications/application/bluemail]
+application-id='bluemail.desktop'
 
 [org/gnome/desktop/notifications/application/brave-browser]
 application-id='brave-browser.desktop'
@@ -174,6 +182,9 @@ application-id='org.gnome.Settings.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-software]
 application-id='org.gnome.Software.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-systemmonitor]
+application-id='org.gnome.SystemMonitor.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-tweaks]
 application-id='org.gnome.tweaks.desktop'
@@ -312,13 +323,13 @@ volume-up=['AudioRaiseVolume']
 www=['<Alt>b']
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
-binding='<Alt>g'
-command='meru'
+binding=''
+command='bluemail'
 name='Gmail'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
 binding='<Alt>n'
-command='notion-app'
+command='notion-app-enhanced'
 name='Notion'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
@@ -356,7 +367,7 @@ sleep-inactive-battery-type='nothing'
 app-picker-layout=[{'b5985140-3412-4633-b6a7-4bcb183e2630': <{'position': <0>}>, 'System': <{'position': <1>}>, 'c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b': <{'position': <2>}>, 'orange-canvas.desktop': <{'position': <3>}>, 'standard-notes.desktop': <{'position': <4>}>, 'bubblemail.desktop': <{'position': <5>}>}]
 disabled-extensions=['window-list@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'aztaskbar@aztaskbar.gitlab.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'tilingshell@ferrarodomenico.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'status-icons@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com']
 enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'appindicatorsupport@rgcjonas.gmail.com', 'awesome-tiles@velitasali.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com']
-favorite-apps=['audacious.desktop', 'firefox-esr.desktop', 'ChatGTK.desktop', 'org.gnome.Boxes.desktop', 'vlc.desktop']
+favorite-apps=['audacious.desktop', 'firefox.desktop', 'ChatGTK.desktop', 'org.gnome.Boxes.desktop']
 welcome-dialog-last-shown-version='48.0'
 
 [org/gnome/shell/app-switcher]

@@ -10,6 +10,7 @@ cd ~
 yay -Suy
 # install apps
 yay -Sy --needed - < apps/essentials.list
+make -f preconfig.mk
 yay -Sy --needed - < apps/gnome.list
 # yay -Sy --needed - < apps/hypr.list
 yay -Sy --needed - < apps/desktop.list

@@ -1,5 +1,2 @@
 all:
-	systemctl --user daemon-reload
-	systemctl --user enable firefox-sync
-	systemctl --user start firefox-sync
-	systemctl --user enable firefox-sync-cron --now
+	sudo ~/arch-setup/config/patch-notion-enhanced.linux.sh

@@ -23,3 +23,4 @@ all:
 		ssh-add ~/.ssh/ufsc/id_ed25519
 	fi
 	systemctl status bluetooth.service
+	sudo usermod -aG video $USER

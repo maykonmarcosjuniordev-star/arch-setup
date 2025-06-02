@@ -6,7 +6,6 @@ generic_title_format=${title}${?artist: - ${artist}}${?album: - ${album}}
 leading_zero=TRUE
 open_to_temporary=FALSE
 repeat=TRUE
-show_interface=FALSE
 show_numbers_in_pl=TRUE
 
 [audgui]
@@ -42,7 +41,8 @@ volume_left=100
 volume_right=100
 
 [qtui]
-player_height=802
+column_widths=25,25,275,175,50,175,175,25,100,40,75,275,275,275,75,275,175,75
+player_height=799
 player_width=1536
 playlist_headers_bold=TRUE
 

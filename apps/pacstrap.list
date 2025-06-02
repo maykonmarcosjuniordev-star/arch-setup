@@ -1,0 +1,14 @@
+base
+bash-completion
+dhcpcd
+intel-ucode
+iwd
+linux
+linux-firmware
+man-db
+man-pages
+net-tools
+networkmanager
+sudo
+systemd-boot
+vim

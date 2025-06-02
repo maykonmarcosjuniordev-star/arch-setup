@@ -1,6 +1,6 @@
 #!/bin/bash
 # essentials that need pacman
-sudo pacman -Suy --needed - < apps/pacman.list
+sudo pacman -Suy --needed --noconfirm - < apps/pacman.list
 # install yay
 sudo git clone https://aur.archlinux.org/yay-git.git /opt/yay-git
 sudo chown -R $(whoami):$(whoami) /opt/yay-git/
@@ -9,16 +9,18 @@ makepkg -sirc
 cd ~/arch-setup
 yay -Suy
 # install apps
-yay -Sy --needed - < apps/essentials.list
-make -f preconfig.mk
-yay -Sy --needed - < apps/gnome.list
-# yay -Sy --needed - < apps/hypr.list
-yay -Sy --needed - < apps/desktop.list
+yay -Sy --needed --noconfirm - < apps/essentials.list
+make -f src/preconfig.mk
+yay -Sy --needed --noconfirm - < apps/gnome.list
+# yay -Sy --needed --noconfirm - < apps/hypr.list
+yay -Sy --needed --noconfirm - < apps/desktop.list
 
 # Config files on home
-for app in echo src/*.mk; do
-    make -f $app
-done
+make -f src/essentials.mk
+make -f src/gnome.mk
+# make -f src/hyprland.mk
+make -f src/desktop.mk
+make -f src/audacious.mk
 
 # Setup man-pages
 #mandb

@@ -1,12 +1,12 @@
 #!/bin/bash
 # essentials that need pacman
-sudo pacman -Suy --needed < apps/pacman.list
+sudo pacman -Suy --needed - < apps/pacman.list
 # install yay
 sudo git clone https://aur.archlinux.org/yay-git.git /opt/yay-git
 sudo chown -R $(whoami):$(whoami) /opt/yay-git/
 cd /opt/yay-git
 makepkg -sirc
-cd ~
+cd ~/arch-setup
 yay -Suy
 # install apps
 yay -Sy --needed - < apps/essentials.list

@@ -1,4 +1,5 @@
 all:
+	mkdir -p ~/.config/kitty
 	ln -sf ~/arch-setup/config/terminal/.bash_aliases ~/.bash_aliases
 	ln -sf ~/arch-setup/config/terminal/.bashrc ~/.bashrc
 	ln -sf ~/arch-setup/config/terminal/.bash_profile ~/.bash_profile

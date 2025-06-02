@@ -11,9 +11,7 @@ PS1='[\u@\h \W]\$ '
 if [ -f ~/.bash_aliases ]; then
         source ~/.bash_aliases
 fi
-export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
-eval "$(ssh-agent -s)" > /dev/null
+if [ -f ~/.bash_profile ]; then
+        source ~/.bash_profile
+fi
 
-# Adiciona as duas chaves automaticamente
-ssh-add -q ~/.ssh/main/id_ed25519
-ssh-add -q ~/.ssh/ufsc/id_ed25519

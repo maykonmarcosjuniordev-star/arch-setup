@@ -1,6 +1,7 @@
 audacious
 brave-bin
-chatgtk
+calibre-bin
+calibre-server-systemd
 discord
 firefox-bin
 gedit

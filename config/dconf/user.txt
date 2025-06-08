@@ -59,7 +59,8 @@ folder-children=['System', 'Utilities', 'YaST', 'Pardus', 'd64e01cc-e492-4f77-8a
 
 [org/gnome/desktop/app-folders/folders/07b5402a-dbdb-4d8a-b769-bcc6e7003a01]
 apps=['org.qt-project.qtcreator.desktop', 'assistant.desktop', 'qdbusviewer.desktop', 'linguist.desktop', 'designer.desktop']
-name='Programming'
+name='QtCreator'
+translate=false
 
 [org/gnome/desktop/app-folders/folders/29ed6074-bd0c-4b02-8d24-3ee9f9d72b4a]
 apps=['brave-browser.desktop', 'vlc.desktop', 'standard-notes.desktop', 'macos-monterey.desktop']
@@ -302,7 +303,7 @@ side-panel-size=200
 width=1920
 
 [org/gnome/gnome-system-monitor]
-current-tab='resources'
+current-tab='processes'
 maximized=true
 resources-cpu-expanded=true
 show-dependencies=false
@@ -344,6 +345,9 @@ toggle-tiled-right=@as []
 
 [org/gnome/mutter/wayland/keybindings]
 restore-shortcuts=@as []
+
+[org/gnome/nautilus/compression]
+default-compression-format='tar.xz'
 
 [org/gnome/nautilus/list-view]
 use-tree-view=false

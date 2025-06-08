@@ -1,6 +1,7 @@
 alsa-utils
 alsa-firmware
 asar
+cdrkit
 curl
 dbus-python
 ffmpeg
@@ -13,15 +14,19 @@ less
 kitty
 make
 libcamera
+libdecor
+linux-headers
 noto-fonts-cjk
 nvidia-open
 openssh
 os-prober
 python-pip
+qemu-full
 rust
 sof-firmware
 spice
 spice-gtk
+swtpm
 tar
 ttf-font-awesome
 unzip

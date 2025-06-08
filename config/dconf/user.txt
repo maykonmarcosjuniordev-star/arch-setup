@@ -20,11 +20,15 @@ window-size=(960, 600)
 
 [org/gnome/boxes]
 first-run=false
-shared-folders="[<{'uuid': <'c5d67584-0dac-49c6-ae92-003de3b20b8e'>, 'path': <'/home/maykon/Public'>, 'name': <'Public'>}>, <{'uuid': <'281afcdd-68a9-4906-8da5-fe474f6fc7bb'>, 'path': <'/home/maykon/Public'>, 'name': <'Public'>}>]"
+shared-folders="[<{'uuid': <'c5d67584-0dac-49c6-ae92-003de3b20b8e'>, 'path': <'/home/maykon/Public'>, 'name': <'Public'>}>, <{'uuid': <'281afcdd-68a9-4906-8da5-fe474f6fc7bb'>, 'path': <'/home/maykon/Public'>, 'name': <'Public'>}>, <{'uuid': <'c5d67584-0dac-49c6-ae92-003de3b20b8e'>, 'path': <'/home/maykon/Public'>, 'name': <'Public'>}>, <{'uuid': <'281afcdd-68a9-4906-8da5-fe474f6fc7bb'>, 'path': <'/home/maykon/Public'>, 'name': <'Public'>}>]"
 view='list-view'
 window-maximized=true
 window-position=[26, 23]
 window-size=[960, 1040]
+
+[org/gnome/control-center]
+last-panel='display'
+window-state=(980, 640, true)
 
 [org/gnome/desktop/a11y]
 always-show-universal-access-status=false
@@ -51,15 +55,24 @@ mag-factor=32.0
 secondary-click-enabled=false
 
 [org/gnome/desktop/app-folders]
-folder-children=['System', 'Utilities', 'YaST', 'Pardus', 'd64e01cc-e492-4f77-8ac1-d3950c5d9bb3', '3d0cf848-f6e2-4de9-adb6-9d391bdddd85', 'b5985140-3412-4633-b6a7-4bcb183e2630', 'c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b', '2390d963-8b02-4797-bdc2-9ae0ad818072', '29ed6074-bd0c-4b02-8d24-3ee9f9d72b4a', '56b2623e-01ad-4522-81be-dbcdbfb69816']
+folder-children=['System', 'Utilities', 'YaST', 'Pardus', 'd64e01cc-e492-4f77-8ac1-d3950c5d9bb3', '3d0cf848-f6e2-4de9-adb6-9d391bdddd85', 'b5985140-3412-4633-b6a7-4bcb183e2630', 'c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b', '2390d963-8b02-4797-bdc2-9ae0ad818072', '29ed6074-bd0c-4b02-8d24-3ee9f9d72b4a', '56b2623e-01ad-4522-81be-dbcdbfb69816', '692f0840-d8df-4ce0-beee-24057e0cfb14', 'e35e8eab-b8ab-4be8-8eb9-a10508265823', '07b5402a-dbdb-4d8a-b769-bcc6e7003a01']
+
+[org/gnome/desktop/app-folders/folders/07b5402a-dbdb-4d8a-b769-bcc6e7003a01]
+apps=['org.qt-project.qtcreator.desktop', 'assistant.desktop', 'qdbusviewer.desktop', 'linguist.desktop', 'designer.desktop']
+name='Programming'
 
 [org/gnome/desktop/app-folders/folders/29ed6074-bd0c-4b02-8d24-3ee9f9d72b4a]
-apps=['vlc.desktop', 'standard-notes.desktop']
+apps=['brave-browser.desktop', 'vlc.desktop', 'standard-notes.desktop', 'macos-monterey.desktop']
 name='Other Apps'
 translate=false
 
+[org/gnome/desktop/app-folders/folders/692f0840-d8df-4ce0-beee-24057e0cfb14]
+apps=['calibre-gui.desktop', 'calibre-ebook-edit.desktop', 'calibre-ebook-viewer.desktop', 'calibre-lrfviewer.desktop']
+name='Books'
+translate=false
+
 [org/gnome/desktop/app-folders/folders/System]
-apps=['org.gnome.SystemMonitor.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.baobab.desktop', 'org.gnome.gedit.desktop']
+apps=['org.gnome.DiskUtility.desktop', 'org.gnome.baobab.desktop', 'org.gnome.gedit.desktop', 'vim.desktop', 'qv4l2.desktop', 'qvidcap.desktop', 'bvnc.desktop', 'bssh.desktop', 'avahi-discover.desktop']
 name='X-GNOME-Shell-System.directory'
 translate=true
 
@@ -78,15 +91,20 @@ name='Settings'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b]
-apps=['brave-browser.desktop', 'discord.desktop', 'org.gnome.Nautilus.desktop', 'kitty.desktop', 'code.desktop', 'com.github.xeco23.WasIstLos.desktop', 'bluemail.desktop', 'notion-app-enhanced.desktop']
+apps=['discord.desktop', 'org.gnome.Nautilus.desktop', 'firefox.desktop', 'gmail-tray.desktop', 'kitty.desktop', 'notion-app-enhanced.desktop', 'org.gnome.SystemMonitor.desktop', 'code.desktop', 'com.github.xeco23.WasIstLos.desktop']
 name='Shortcuts'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/e35e8eab-b8ab-4be8-8eb9-a10508265823]
+apps=['appflowy-tray.desktop', 'gmail.desktop', 'ChatGTK.desktop']
+name='Self-Coded'
 translate=false
 
 [org/gnome/desktop/background]
 color-shading-type='solid'
-picture-options='stretched'
-picture-uri='file:///home/maykon/arch-setup/wallpapers/hong-kong-night.jpg'
-picture-uri-dark='file:///home/maykon/arch-setup/wallpapers/blue-maia.png'
+picture-options='zoom'
+picture-uri='file:///home/maykon/.local/share/backgrounds/hong-kong-night.jpg'
+picture-uri-dark='file:///home/maykon/.local/share/backgrounds/hong-kong-night.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -110,24 +128,27 @@ accent-color='yellow'
 color-scheme='prefer-dark'
 cursor-size=24
 cursor-theme='default'
-document-font-name='Fast_Sans 11'
+document-font-name='Adwaita Sans 11'
 enable-animations=false
 enable-hot-corners=false
 font-antialiasing='grayscale'
-font-name='Fast_Serif 12'
+font-name='Adwaita Mono 12'
 gtk-key-theme='Default'
-gtk-theme='Adwaita'
+gtk-theme='Adwaita-dark'
 icon-theme='Adwaita'
 locate-pointer=true
-monospace-font-name='Fast_Mono 12'
+monospace-font-name='Adwaita Mono Bold 12'
 overlay-scrolling=false
 show-battery-percentage=true
 text-scaling-factor=1.25
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['com-github-xeco23-wasistlos', 'gnome-power-panel', 'audacious', 'brave-browser', 'notion', 'org-gnome-tweaks', 'org-gnome-software', 'discord', 'org-gnome-nautilus', 'org-gnome-gedit', 'org-gnome-baobab', 'kitty', 'org-gnome-diskutility', 'org-gnome-boxes', 'org-gnome-settings', 'bluemail', 'org-gnome-systemmonitor', 'firefox']
+application-children=['com-github-xeco23-wasistlos', 'gnome-power-panel', 'audacious', 'brave-browser', 'notion', 'org-gnome-tweaks', 'org-gnome-software', 'discord', 'org-gnome-nautilus', 'org-gnome-gedit', 'org-gnome-baobab', 'kitty', 'org-gnome-diskutility', 'org-gnome-boxes', 'org-gnome-settings', 'bluemail', 'org-gnome-systemmonitor', 'firefox', 'appflowy', 'notion-app-enhanced', 'calibre-gui', 'org-qt-project-qtcreator']
 show-in-lock-screen=false
+
+[org/gnome/desktop/notifications/application/appflowy]
+application-id='AppFlowy.desktop'
 
 [org/gnome/desktop/notifications/application/audacious]
 application-id='audacious.desktop'
@@ -137,6 +158,9 @@ application-id='bluemail.desktop'
 
 [org/gnome/desktop/notifications/application/brave-browser]
 application-id='brave-browser.desktop'
+
+[org/gnome/desktop/notifications/application/calibre-gui]
+application-id='calibre-gui.desktop'
 
 [org/gnome/desktop/notifications/application/com-github-xeco23-wasistlos]
 application-id='com.github.xeco23.WasIstLos.desktop'
@@ -155,6 +179,9 @@ application-id='gnome-power-panel.desktop'
 
 [org/gnome/desktop/notifications/application/kitty]
 application-id='kitty.desktop'
+
+[org/gnome/desktop/notifications/application/notion-app-enhanced]
+application-id='notion-app-enhanced.desktop'
 
 [org/gnome/desktop/notifications/application/notion]
 application-id='notion.desktop'
@@ -189,9 +216,12 @@ application-id='org.gnome.SystemMonitor.desktop'
 [org/gnome/desktop/notifications/application/org-gnome-tweaks]
 application-id='org.gnome.tweaks.desktop'
 
+[org/gnome/desktop/notifications/application/org-qt-project-qtcreator]
+application-id='org.qt-project.qtcreator.desktop'
+
 [org/gnome/desktop/peripherals/keyboard]
 delay=uint32 770
-numlock-state=true
+numlock-state=false
 
 [org/gnome/desktop/peripherals/mouse]
 double-click=400
@@ -206,12 +236,16 @@ disable-camera=false
 color-shading-type='solid'
 lock-enabled=false
 picture-options='zoom'
-picture-uri='file:///home/maykon/arch-setup/wallpapers/hong-kong-night.jpg'
+picture-uri='file:///home/maykon/.local/share/backgrounds/hong-kong-night.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
 [org/gnome/desktop/session]
 idle-delay=uint32 0
+
+[org/gnome/desktop/sound]
+event-sounds=true
+theme-name='__custom'
 
 [org/gnome/desktop/wm/keybindings]
 activate-window-menu=@as []
@@ -249,7 +283,7 @@ unmaximize=@as []
 action-double-click-titlebar='none'
 auto-raise=true
 button-layout=':minimize,maximize,close'
-focus-mode='sloppy'
+focus-mode='click'
 visual-bell=false
 
 [org/gnome/evolution-data-server]
@@ -268,8 +302,9 @@ side-panel-size=200
 width=1920
 
 [org/gnome/gnome-system-monitor]
-current-tab='processes'
+current-tab='resources'
 maximized=true
+resources-cpu-expanded=true
 show-dependencies=false
 show-whose-processes='user'
 window-height=720
@@ -280,15 +315,25 @@ sort-col='directory'
 sort-order=0
 
 [org/gnome/gnome-system-monitor/proctree]
+col-0-visible=true
+col-0-width=614
 col-12-visible=true
 col-12-width=94
+col-15-visible=true
+col-15-width=771
+col-24-visible=true
+col-24-width=175
 col-26-visible=false
 col-26-width=0
-columns-order=[0, 12, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
-sort-col=0
-sort-order=0
+col-8-visible=true
+col-8-width=84
+columns-order=[12, 0, 15, 1, 2, 3, 4, 6, 7, 9, 10, 11, 13, 14, 8, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
+sort-col=12
+sort-order=1
 
 [org/gnome/mutter]
+attach-modal-dialogs=false
+center-new-windows=false
 edge-tiling=false
 overlay-key='Super_L'
 workspaces-only-on-primary=true
@@ -311,9 +356,13 @@ search-filter-time-type='last_modified'
 show-create-link=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(890, 550)
+initial-size=(1920, 1036)
 initial-size-file-chooser=(890, 550)
 maximized=true
+
+[org/gnome/nm-applet/eap/c7453a9d-4dfb-4aeb-94a7-8a1f5569baaa]
+ignore-ca-cert=true
+ignore-phase2-ca-cert=false
 
 [org/gnome/portal/filechooser/bluemail]
 last-folder-path='/home/maykon/UFSC'
@@ -322,7 +371,10 @@ last-folder-path='/home/maykon/UFSC'
 last-folder-path='/home/maykon/UFSC'
 
 [org/gnome/portal/filechooser/code]
-last-folder-path='/home/maykon/Github/classification_model_from_csv_in_law_judgments'
+last-folder-path='/home/maykon/arch-setup'
+
+[org/gnome/portal/filechooser/discord]
+last-folder-path='/home/maykon'
 
 [org/gnome/portal/filechooser/gmail-desktop]
 last-folder-path='/home/maykon/Documents'
@@ -385,7 +437,7 @@ name='Discord'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3]
 binding='<Alt>v'
-command='code'
+command='code -n'
 name='Vs Code'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4]
@@ -415,9 +467,11 @@ sleep-inactive-ac-type='nothing'
 sleep-inactive-battery-type='nothing'
 
 [org/gnome/shell]
-disabled-extensions=['window-list@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'aztaskbar@aztaskbar.gitlab.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'tilingshell@ferrarodomenico.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'status-icons@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com']
+app-picker-layout=[{'c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b': <{'position': <0>}>, 'System': <{'position': <1>}>, 'b5985140-3412-4633-b6a7-4bcb183e2630': <{'position': <2>}>, '692f0840-d8df-4ce0-beee-24057e0cfb14': <{'position': <3>}>, '29ed6074-bd0c-4b02-8d24-3ee9f9d72b4a': <{'position': <4>}>, '07b5402a-dbdb-4d8a-b769-bcc6e7003a01': <{'position': <5>}>}]
+disabled-extensions=['window-list@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'aztaskbar@aztaskbar.gitlab.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'tilingshell@ferrarodomenico.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'status-icons@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com']
 enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'appindicatorsupport@rgcjonas.gmail.com', 'awesome-tiles@velitasali.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com']
-favorite-apps=['audacious.desktop', 'firefox.desktop', 'ChatGTK.desktop', 'org.gnome.Boxes.desktop']
+favorite-apps=['audacious.desktop', 'windows-11.desktop', 'gpt.desktop']
+remember-mount-password=true
 welcome-dialog-last-shown-version='48.0'
 
 [org/gnome/shell/app-switcher]
@@ -502,13 +556,13 @@ selected-color=(true, 0.86274509803921573, 0.54117647058823526, 0.86666666666666
 [org/gtk/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 show-size-column=true
 show-type-column=true
-sidebar-width=234
+sidebar-width=249
 sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(26, 23)
-window-size=(1891, 988)
+window-position=(15, 44)
+window-size=(1891, 983)

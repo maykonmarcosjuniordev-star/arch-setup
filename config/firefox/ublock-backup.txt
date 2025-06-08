@@ -1,10 +1,11 @@
 {
-  "timeStamp": 1747477932900,
+  "timeStamp": 1748972259831,
   "version": "1.64.0",
   "userSettings": {
     "cloudStorageEnabled": true,
     "cnameUncloakEnabled": false,
-    "importedLists": []
+    "importedLists": [],
+    "prefetchingDisabled": false
   },
   "selectedFilterLists": [
     "user-filters",

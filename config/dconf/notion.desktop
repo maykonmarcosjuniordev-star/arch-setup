@@ -1,0 +1,10 @@
+[Desktop Entry]
+Exec=/opt/firefox-bin/firefox -P Main --new-window --safe-mode https://www.notion.so
+Encoding=UTF-8
+Version=1.0
+Icon=/home/maykon/.local/share/icons/notion.png
+Type=Application
+Terminal=false
+NoDisplay=false
+Name=Notion
+Comment=Interface para o Notion

@@ -2,7 +2,6 @@
 import gi
 import subprocess
 import signal
-import os
 import time
 
 gi.require_version('Gtk', '3.0')
@@ -10,11 +9,11 @@ gi.require_version('AppIndicator3', '0.1')
 from gi.repository import Gtk, AppIndicator3
 
 ### 🧩 CONFIGURAÇÃO PERSONALIZÁVEL ###
-APP_EXECUTABLE = "AppFlowy"
-APP_PROCESS_NAME = "AppFlowy"       # nome para `pgrep -f`
-APP_WINDOW_CLASS = "appflowy"       # usado para identificar a janela (wmctrl -lx)
-APP_ICON = "appflowy"               # ícone do sistema OU caminho absoluto ex: "/home/user/.icons/appflowy.png"
-APP_TITLE = "AppFlowy-Tray"
+APP_EXECUTABLE = ""
+APP_PROCESS_NAME = ""       # nome para `pgrep -f`
+APP_WINDOW_CLASS = ""       # usado para identificar a janela (wmctrl -lx)
+APP_ICON = ""               # ícone do sistema OU caminho absoluto ex: "/home/user/.icons/nome-do-app.png"
+APP_TITLE = "-Tray"
 #####################################
 
 class GenericTrayApp:

@@ -2,7 +2,6 @@
 import gi
 import subprocess
 import signal
-import os
 import time
 
 gi.require_version('Gtk', '3.0')

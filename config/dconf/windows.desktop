@@ -2,7 +2,7 @@
 Version=1.0
 Type=Application
 Terminal=false
-Exec=quickemu --vm windows-11.conf 
+Exec=quickemu --vm windows-11.conf --fullscreen
 Path=/run/media/maykon/quickemu
 Name=Windows
 Icon=/run/media/maykon/Logos/Windows.png

@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=/opt/firefox-bin/firefox -P Main --new-window --safe-mode https://www.notion.so
+Exec=/opt/firefox-bin/firefox -P Main --new-window https://www.notion.so
 Encoding=UTF-8
 Version=1.0
 Icon=/home/maykon/.local/share/icons/notion.png

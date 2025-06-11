@@ -4,7 +4,7 @@ saved-view='/org/gnome/shell/extensions/dash-to-dock/'
 show-warning=false
 window-height=985
 window-is-maximized=true
-window-width=960
+window-width=1920
 
 [desktop/ibus/general]
 preload-engines=['xkb:us::eng', 'xkb:br::por']
@@ -114,7 +114,7 @@ name='suse-yast.directory'
 translate=true
 
 [org/gnome/desktop/app-folders/folders/b5985140-3412-4633-b6a7-4bcb183e2630]
-apps=['org.gnome.Settings.desktop', 'org.gnome.Extensions.desktop', 'org.gnome.tweaks.desktop', 'ca.desrt.dconf-editor.desktop']
+apps=['org.gnome.Settings.desktop', 'org.gnome.Extensions.desktop', 'ca.desrt.dconf-editor.desktop']
 name='Settings'
 translate=false
 
@@ -293,7 +293,7 @@ cycle-panels=@as []
 cycle-panels-backward=@as []
 cycle-windows=@as []
 cycle-windows-backward=@as []
-maximize=@as []
+maximize=['<Super>Up']
 minimize=['<Super>Down']
 move-to-monitor-down=@as []
 move-to-monitor-left=@as []
@@ -307,7 +307,7 @@ move-to-workspace-left=['<Super><Shift>Page_Up']
 move-to-workspace-right=['<Super><Shift>Page_Down']
 move-to-workspace-up=@as []
 panel-run-dialog=@as []
-raise-or-lower=['<Super>Up']
+raise-or-lower=@as []
 switch-applications=['<Super>Tab']
 switch-applications-backward=@as []
 switch-group=['<Super>Above_Tab']
@@ -419,9 +419,9 @@ search-filter-time-type='last_modified'
 show-create-link=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(960, 1036)
+initial-size=(1920, 1036)
 initial-size-file-chooser=(890, 550)
-maximized=false
+maximized=true
 
 [org/gnome/nm-applet/eap/0a5ec859-9f4c-4e5f-a7cb-d546725df1ff]
 ignore-ca-cert=false
@@ -447,29 +447,8 @@ ignore-phase2-ca-cert=false
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
-[org/gnome/portal/filechooser/bluemail]
-last-folder-path='/home/maykon/UFSC'
-
-[org/gnome/portal/filechooser/brave-browser]
-last-folder-path='/home/maykon/UFSC'
-
 [org/gnome/portal/filechooser/code]
-last-folder-path='/home/maykon/Github/classification_model_from_csv_in_law_judgments'
-
-[org/gnome/portal/filechooser/discord]
-last-folder-path='/home/maykon'
-
-[org/gnome/portal/filechooser/gmail-desktop]
-last-folder-path='/home/maykon/Documents'
-
-[org/gnome/portal/filechooser/org.chromium.Chromium]
-last-folder-path='/home/maykon/UFSC/Multimidia/Pratica4'
-
-[org/gnome/portal/filechooser/org.gnome.Settings]
-last-folder-path='/home/maykon/arch-setup/wallpapers'
-
-[org/gnome/portal/filechooser/org.gnome.tweaks]
-last-folder-path='/home/maykon/arch-setup/wallpapers'
+last-folder-path='/home/maykon/Github'
 
 [org/gnome/settings-daemon/global-shortcuts]
 applications=['org.chromium.Chromium']

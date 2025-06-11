@@ -1,6 +1,6 @@
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/desktop/a11y/mouse/'
-saved-view='/org/gnome/desktop/a11y/mouse/'
+saved-pathbar-path='/org/gnome/shell/extensions/dash-to-dock/transparency-mode'
+saved-view='/org/gnome/shell/extensions/dash-to-dock/'
 show-warning=false
 window-height=985
 window-is-maximized=true
@@ -21,9 +21,9 @@ use-custom-theme=true
 display-whitepoint=1000
 
 [org/gnome/Extensions]
-window-height=1020
+window-height=1036
 window-maximized=true
-window-width=948
+window-width=1920
 
 [org/gnome/baobab/ui]
 active-chart='rings'
@@ -34,12 +34,12 @@ window-size=(960, 600)
 first-run=false
 shared-folders="[<{'uuid': <'c5d67584-0dac-49c6-ae92-003de3b20b8e'>, 'path': <'/home/maykon/Public'>, 'name': <'Public'>}>, <{'uuid': <'281afcdd-68a9-4906-8da5-fe474f6fc7bb'>, 'path': <'/home/maykon/Public'>, 'name': <'Public'>}>, <{'uuid': <'c5d67584-0dac-49c6-ae92-003de3b20b8e'>, 'path': <'/home/maykon/Public'>, 'name': <'Public'>}>, <{'uuid': <'281afcdd-68a9-4906-8da5-fe474f6fc7bb'>, 'path': <'/home/maykon/Public'>, 'name': <'Public'>}>]"
 view='list-view'
-window-maximized=true
+window-maximized=false
 window-position=[26, 23]
 window-size=[960, 1040]
 
 [org/gnome/control-center]
-last-panel='display'
+last-panel='multitasking'
 window-state=(980, 640, true)
 
 [org/gnome/desktop/a11y]
@@ -64,7 +64,7 @@ stickykeys-enable=false
 contrast-blue=0.0
 contrast-green=0.0
 contrast-red=0.0
-mag-factor=32.0
+mag-factor=3.0
 
 [org/gnome/desktop/a11y/mouse]
 click-type-window-visible=false
@@ -72,21 +72,31 @@ dwell-click-enabled=false
 secondary-click-enabled=false
 
 [org/gnome/desktop/app-folders]
-folder-children=['System', 'Utilities', 'YaST', 'Pardus', 'd64e01cc-e492-4f77-8ac1-d3950c5d9bb3', '3d0cf848-f6e2-4de9-adb6-9d391bdddd85', 'b5985140-3412-4633-b6a7-4bcb183e2630', 'c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b', '2390d963-8b02-4797-bdc2-9ae0ad818072', '29ed6074-bd0c-4b02-8d24-3ee9f9d72b4a', '56b2623e-01ad-4522-81be-dbcdbfb69816', '692f0840-d8df-4ce0-beee-24057e0cfb14', 'e35e8eab-b8ab-4be8-8eb9-a10508265823', '07b5402a-dbdb-4d8a-b769-bcc6e7003a01']
+folder-children=['System', 'Utilities', 'YaST', 'Pardus', 'd64e01cc-e492-4f77-8ac1-d3950c5d9bb3', '3d0cf848-f6e2-4de9-adb6-9d391bdddd85', 'b5985140-3412-4633-b6a7-4bcb183e2630', 'c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b', '2390d963-8b02-4797-bdc2-9ae0ad818072', '29ed6074-bd0c-4b02-8d24-3ee9f9d72b4a', '56b2623e-01ad-4522-81be-dbcdbfb69816', '692f0840-d8df-4ce0-beee-24057e0cfb14', 'e35e8eab-b8ab-4be8-8eb9-a10508265823', '07b5402a-dbdb-4d8a-b769-bcc6e7003a01', '54bb62e3-6a90-4985-a6d2-6c39f8bf4ef7', '0b1df176-152d-4224-b6d8-c5f57683eddc']
 
 [org/gnome/desktop/app-folders/folders/07b5402a-dbdb-4d8a-b769-bcc6e7003a01]
-apps=['org.qt-project.qtcreator.desktop', 'assistant.desktop', 'qdbusviewer.desktop', 'linguist.desktop', 'designer.desktop']
-name='QtCreator'
+apps=['virtualbox.desktop', 'open-windows-app-in-vm.desktop', 'winetricks.desktop']
+name='Vms'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/0b1df176-152d-4224-b6d8-c5f57683eddc]
+apps=['wine-Programs-Rockwell Software-Arena-Arena.desktop', 'wine-Programs-Rockwell Software-Arena-Input Analyzer.desktop', 'wine-Programs-Rockwell Software-Arena-Output Analyzer.desktop', 'wine-Programs-Rockwell Software-Arena-Process Analyzer.desktop', 'wine-Programs-Rockwell Software-Arena-Visio Process Simulator.desktop', "wine-Programs-Rockwell Software-Arena-Online Books-Arena Packaging Template User's Guide.desktop", "wine-Programs-Rockwell Software-Arena-Online Books-Arena Template Developer's Guide.desktop", "wine-Programs-Rockwell Software-Arena-Online Books-Arena User's Guide.desktop", 'wine-Programs-Rockwell Software-Arena-Online Books-Arena Variables Guide.desktop', 'wine-Programs-Rockwell Software-Utilities-Support Services Help.desktop', 'wine-Programs-Rockwell Software-Utilities-Arena Support Services Help .desktop']
+name='Arena'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/29ed6074-bd0c-4b02-8d24-3ee9f9d72b4a]
-apps=['brave-browser.desktop', 'vlc.desktop', 'standard-notes.desktop']
+apps=['brave-browser.desktop', 'vlc.desktop', 'calibre-lrfviewer.desktop', 'calibre-ebook-viewer.desktop', 'calibre-ebook-edit.desktop']
 name='Other Apps'
 translate=false
 
+[org/gnome/desktop/app-folders/folders/54bb62e3-6a90-4985-a6d2-6c39f8bf4ef7]
+apps=['waydroid.com.android.settings.desktop', 'waydroid.com.android.vending.desktop', 'waydroid.com.android.camera2.desktop', 'waydroid.com.android.documentsui.desktop', 'waydroid.org.lineageos.jelly.desktop', 'waydroid.org.lineageos.recorder.desktop', 'waydroid.com.android.contacts.desktop', 'waydroid.com.android.gallery3d.desktop', 'waydroid.org.lineageos.eleven.desktop', 'waydroid.com.android.inputmethod.latin.desktop', 'waydroid.com.android.calculator2.desktop', 'waydroid.org.lineageos.etar.desktop', 'waydroid.com.android.deskclock.desktop']
+name='Waydroid'
+translate=false
+
 [org/gnome/desktop/app-folders/folders/692f0840-d8df-4ce0-beee-24057e0cfb14]
-apps=['calibre-gui.desktop', 'calibre-ebook-edit.desktop', 'calibre-ebook-viewer.desktop', 'calibre-lrfviewer.desktop']
-name='Books'
+apps=['calibre-gui.desktop']
+name='"'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/System]
@@ -157,6 +167,7 @@ enable-animations=false
 enable-hot-corners=false
 font-antialiasing='grayscale'
 font-name='Adwaita Mono 12'
+gtk-enable-primary-paste=false
 gtk-key-theme='Default'
 gtk-theme='Adwaita-dark'
 icon-theme='Adwaita'
@@ -246,6 +257,7 @@ application-id='org.qt-project.qtcreator.desktop'
 [org/gnome/desktop/peripherals/keyboard]
 delay=uint32 770
 numlock-state=false
+remember-numlock-state=true
 
 [org/gnome/desktop/peripherals/mouse]
 double-click=400
@@ -281,23 +293,34 @@ cycle-panels=@as []
 cycle-panels-backward=@as []
 cycle-windows=@as []
 cycle-windows-backward=@as []
-maximize=['<Super>Up']
+maximize=@as []
 minimize=['<Super>Down']
 move-to-monitor-down=@as []
 move-to-monitor-left=@as []
 move-to-monitor-right=@as []
 move-to-monitor-up=@as []
+move-to-side-e=@as []
 move-to-workspace-1=@as []
+move-to-workspace-down=@as []
 move-to-workspace-last=@as []
+move-to-workspace-left=['<Super><Shift>Page_Up']
+move-to-workspace-right=['<Super><Shift>Page_Down']
+move-to-workspace-up=@as []
 panel-run-dialog=@as []
+raise-or-lower=['<Super>Up']
 switch-applications=['<Super>Tab']
-switch-applications-backward=['<Shift><Super>Tab']
+switch-applications-backward=@as []
+switch-group=['<Super>Above_Tab']
+switch-group-backward=@as []
+switch-input-source-backward=@as []
 switch-panels=@as []
 switch-panels-backward=@as []
 switch-to-workspace-1=@as []
+switch-to-workspace-down=@as []
 switch-to-workspace-last=@as []
 switch-to-workspace-left=['<Super>w']
 switch-to-workspace-right=['<Super>s']
+switch-to-workspace-up=@as []
 switch-windows=['<Alt>Tab']
 switch-windows-backward=@as []
 toggle-maximized=@as []
@@ -305,9 +328,13 @@ unmaximize=@as []
 
 [org/gnome/desktop/wm/preferences]
 action-double-click-titlebar='none'
-auto-raise=true
-button-layout=':minimize,maximize,close'
+action-right-click-titlebar='none'
+audible-bell=false
+auto-raise=false
+button-layout=''
 focus-mode='click'
+mouse-button-modifier=''
+raise-on-click=false
 visual-bell=false
 
 [org/gnome/evolution-data-server]
@@ -317,13 +344,16 @@ migrated=true
 tabs-size=uint32 3
 wrap-last-split-mode='word'
 
+[org/gnome/gedit/state/history-entry]
+search-for-entry=['windows-11/', 'path=windows-11/', 'file=windows-11/']
+
 [org/gnome/gedit/state/window]
 bottom-panel-size=140
-height=989
-maximized=true
+height=983
+maximized=false
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
-width=1920
+width=960
 
 [org/gnome/gnome-system-monitor]
 current-tab='processes'
@@ -352,15 +382,16 @@ col-26-width=0
 col-8-visible=true
 col-8-width=84
 columns-order=[12, 0, 15, 1, 2, 3, 4, 6, 7, 9, 10, 11, 13, 14, 8, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
-sort-col=8
-sort-order=0
+sort-col=12
+sort-order=1
 
 [org/gnome/mutter]
 attach-modal-dialogs=false
 center-new-windows=false
+dynamic-workspaces=true
 edge-tiling=false
-overlay-key='Super_L'
-workspaces-only-on-primary=true
+overlay-key='Super'
+workspaces-only-on-primary=false
 
 [org/gnome/mutter/keybindings]
 toggle-tiled-left=@as []
@@ -388,12 +419,32 @@ search-filter-time-type='last_modified'
 show-create-link=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(1920, 1036)
+initial-size=(960, 1036)
 initial-size-file-chooser=(890, 550)
-maximized=true
+maximized=false
+
+[org/gnome/nm-applet/eap/0a5ec859-9f4c-4e5f-a7cb-d546725df1ff]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/48092740-a263-4d37-9a98-7641a85c9a9b]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/5508bdce-12cc-46f6-9d86-872078f4f59e]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/b6d899fa-7960-4dd8-ba66-b14f03b9405b]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
 
 [org/gnome/nm-applet/eap/c7453a9d-4dfb-4aeb-94a7-8a1f5569baaa]
 ignore-ca-cert=true
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/d82b8ed5-5f9d-4ad9-bd95-469c75f97961]
+ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
 [org/gnome/portal/filechooser/bluemail]
@@ -403,7 +454,7 @@ last-folder-path='/home/maykon/UFSC'
 last-folder-path='/home/maykon/UFSC'
 
 [org/gnome/portal/filechooser/code]
-last-folder-path='/home/maykon/arch-setup'
+last-folder-path='/home/maykon/Github/classification_model_from_csv_in_law_judgments'
 
 [org/gnome/portal/filechooser/discord]
 last-folder-path='/home/maykon'
@@ -463,12 +514,12 @@ name='Notion'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
 binding='<Alt>d'
-command='discord'
+command='gtk-launch discord'
 name='Discord'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3]
 binding='<Alt>v'
-command='code -n'
+command='code'
 name='Vs Code'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4]
@@ -491,6 +542,11 @@ binding='<Shift>Escape'
 command='gnome-system-monitor'
 name='Monitor'
 
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8]
+binding='<Alt>b'
+command='firefox --ProfileManager'
+name='Browser'
+
 [org/gnome/settings-daemon/plugins/power]
 idle-dim=false
 power-button-action='interactive'
@@ -498,28 +554,32 @@ sleep-inactive-ac-type='nothing'
 sleep-inactive-battery-type='nothing'
 
 [org/gnome/shell]
-app-picker-layout=[{'c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b': <{'position': <0>}>, 'System': <{'position': <1>}>, 'b5985140-3412-4633-b6a7-4bcb183e2630': <{'position': <2>}>, '692f0840-d8df-4ce0-beee-24057e0cfb14': <{'position': <3>}>, '29ed6074-bd0c-4b02-8d24-3ee9f9d72b4a': <{'position': <4>}>, '07b5402a-dbdb-4d8a-b769-bcc6e7003a01': <{'position': <5>}>}]
-disabled-extensions=['window-list@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'aztaskbar@aztaskbar.gitlab.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'tilingshell@ferrarodomenico.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'status-icons@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com']
-enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'appindicatorsupport@rgcjonas.gmail.com', 'awesome-tiles@velitasali.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com']
-favorite-apps=['audacious.desktop', 'windows-11.desktop', 'gpt.desktop']
+app-picker-layout=[{'c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b': <{'position': <0>}>, 'System': <{'position': <1>}>, 'b5985140-3412-4633-b6a7-4bcb183e2630': <{'position': <2>}>, '29ed6074-bd0c-4b02-8d24-3ee9f9d72b4a': <{'position': <3>}>, '07b5402a-dbdb-4d8a-b769-bcc6e7003a01': <{'position': <4>}>, '0b1df176-152d-4224-b6d8-c5f57683eddc': <{'position': <5>}>}]
+disabled-extensions=['window-list@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'aztaskbar@aztaskbar.gitlab.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'tilingshell@ferrarodomenico.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'status-icons@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'awesome-tiles@velitasali.com', 'dash-to-dock@micxgx.gmail.com']
+favorite-apps=['audacious.desktop', 'windows.desktop', 'gpt.desktop', 'calibre-gui.desktop', 'standard-notes.desktop']
 remember-mount-password=true
 welcome-dialog-last-shown-version='48.0'
 
 [org/gnome/shell/app-switcher]
 current-workspace-only=true
 
+[org/gnome/shell/extensions/apps-menu]
+apps-menu-toggle-menu=@as []
+
 [org/gnome/shell/extensions/awesome-tiles]
-enable-inner-gaps=false
+enable-inner-gaps=true
 enable-window-animation=false
 gap-size=0
-next-step-timeout=1000
+gap-size-increments=0
+next-step-timeout=800
 shortcut-align-window-to-center=@as []
 shortcut-decrease-gap-size=@as []
 shortcut-increase-gap-size=@as []
 shortcut-tile-window-to-bottom=['<Super>KP_2']
 shortcut-tile-window-to-bottom-left=['<Super>KP_1']
 shortcut-tile-window-to-bottom-right=['<Super>KP_3']
-shortcut-tile-window-to-center=['<Super>KP_Enter']
+shortcut-tile-window-to-center=['<Super>KP_5']
 shortcut-tile-window-to-left=['<Super>KP_4']
 shortcut-tile-window-to-right=['<Super>KP_6']
 shortcut-tile-window-to-top=['<Super>KP_8']
@@ -565,7 +625,7 @@ show-trash=false
 workspace-agnostic-urgent-windows=true
 
 [org/gnome/shell/extensions/tilingshell]
-enable-autotiling=true
+enable-autotiling=false
 enable-snap-assist=false
 focus-window-down=['<Super>Down']
 focus-window-left=['<Super>Left']
@@ -615,6 +675,9 @@ check-timestamp=int64 1744715622
 first-run=false
 flatpak-purge-timestamp=int64 1744676623
 
+[org/gnome/tweaks]
+show-extensions-notice=true
+
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
@@ -634,7 +697,7 @@ selected-color=(true, 0.86274509803921573, 0.54117647058823526, 0.86666666666666
 [org/gtk/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=true
+show-hidden=false
 show-size-column=true
 show-type-column=true
 sidebar-width=249
@@ -642,5 +705,8 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(15, 44)
-window-size=(1891, 983)
+window-position=(26, 23)
+window-size=(1540, 626)
+
+[system/proxy]
+mode='auto'

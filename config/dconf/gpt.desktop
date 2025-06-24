@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=/opt/firefox-bin/firefox --new-window https://chatgpt.com/
+Exec=prime-run /opt/firefox-bin/firefox --ProfileManager --new-window https://chatgpt.com/
 Encoding=UTF-8
 Version=1.0
 Icon=/home/maykon/.local/share/icons/gpt.png

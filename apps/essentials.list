@@ -17,12 +17,15 @@ libcamera
 libdecor
 linux-headers
 noto-fonts-cjk
-nvidia-open
+nvidia
+nvidia-prime
+nvidia-utils
 openssh
 os-prober
 python-pip
 qemu-full
 rust
+rust-src
 sof-firmware
 spice
 spice-gtk

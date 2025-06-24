@@ -21,6 +21,3 @@ make -f src/gnome.mk
 # make -f src/hyprland.mk
 make -f src/desktop.mk
 make -f src/audacious.mk
-
-# Setup man-pages
-#mandb

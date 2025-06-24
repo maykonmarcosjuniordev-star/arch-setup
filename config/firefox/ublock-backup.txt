@@ -1,9 +1,13 @@
 {
-  "timeStamp": 1748972259831,
+  "timeStamp": 1749836167556,
   "version": "1.64.0",
   "userSettings": {
     "cloudStorageEnabled": true,
     "cnameUncloakEnabled": false,
+    "colorBlindFriendly": true,
+    "uiAccentCustom": true,
+    "uiAccentCustom0": "#a51d2d",
+    "uiTheme": "dark",
     "importedLists": [],
     "prefetchingDisabled": false
   },

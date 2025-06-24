@@ -642,7 +642,7 @@ domain audacious-plugins
 priority 10
 about 1
 config 1
-enabled 0
+enabled 1
 output /usr/lib/audacious/Output/pulse_audio.so
 stamp 1745393913
 version 48

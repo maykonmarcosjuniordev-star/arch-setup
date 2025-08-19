@@ -5,3 +5,4 @@ all:
 	ln -sf ~/arch-setup/config/terminal/.bash_profile ~/.bash_profile
 	ln -sf ~/arch-setup/config/terminal/kitty.conf ~/.config/kitty/kitty.conf
 	ln -sf ~/arch-setup/config/terminal/current-theme.conf ~/.config/kitty/current-theme.conf
+	curl -sS https://starship.rs/install.sh | sh

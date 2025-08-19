@@ -4,8 +4,9 @@ calibre-bin
 calibre-server-systemd
 firefox-bin
 gmail-tray
+megasync-bin
+megasync-instances
 ox
-pcloud-drive
 plainotepad
 standardnotes-bin
 visual-studio-code-bin

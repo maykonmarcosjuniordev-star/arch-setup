@@ -1,9 +1,9 @@
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/shell/extensions/dash-to-dock/transparency-mode'
-saved-view='/org/gnome/shell/extensions/dash-to-dock/'
+saved-pathbar-path='/org/gnome/mutter/overlay-key'
+saved-view='/org/gnome/mutter/overlay-key'
 show-warning=false
 window-height=985
-window-is-maximized=true
+window-is-maximized=false
 window-width=1920
 
 [desktop/ibus/general]
@@ -21,25 +21,24 @@ use-custom-theme=true
 display-whitepoint=1000
 
 [org/gnome/Extensions]
-window-height=1036
-window-maximized=true
-window-width=1920
+window-height=518
+window-maximized=false
+window-width=960
 
 [org/gnome/baobab/ui]
 active-chart='rings'
 is-maximized=true
 window-size=(960, 600)
 
-[org/gnome/boxes]
-first-run=false
-shared-folders="[<{'uuid': <'c5d67584-0dac-49c6-ae92-003de3b20b8e'>, 'path': <'/home/maykon/Public'>, 'name': <'Public'>}>, <{'uuid': <'281afcdd-68a9-4906-8da5-fe474f6fc7bb'>, 'path': <'/home/maykon/Public'>, 'name': <'Public'>}>, <{'uuid': <'c5d67584-0dac-49c6-ae92-003de3b20b8e'>, 'path': <'/home/maykon/Public'>, 'name': <'Public'>}>, <{'uuid': <'281afcdd-68a9-4906-8da5-fe474f6fc7bb'>, 'path': <'/home/maykon/Public'>, 'name': <'Public'>}>]"
-view='list-view'
-window-maximized=false
-window-position=[26, 23]
-window-size=[960, 1040]
+[org/gnome/calendar]
+active-view='week'
+weather-settings=(false, false, '', @mv nothing)
+week-view-zoom-level=1.0
+window-maximized=true
+window-size=(1920, 1036)
 
 [org/gnome/control-center]
-last-panel='multitasking'
+last-panel='sound'
 window-state=(980, 640, true)
 
 [org/gnome/desktop/a11y]
@@ -64,7 +63,7 @@ stickykeys-enable=false
 contrast-blue=0.0
 contrast-green=0.0
 contrast-red=0.0
-mag-factor=3.0
+mag-factor=15.0
 
 [org/gnome/desktop/a11y/mouse]
 click-type-window-visible=false
@@ -72,35 +71,15 @@ dwell-click-enabled=false
 secondary-click-enabled=false
 
 [org/gnome/desktop/app-folders]
-folder-children=['System', 'Utilities', 'YaST', 'Pardus', 'd64e01cc-e492-4f77-8ac1-d3950c5d9bb3', '3d0cf848-f6e2-4de9-adb6-9d391bdddd85', 'b5985140-3412-4633-b6a7-4bcb183e2630', 'c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b', '2390d963-8b02-4797-bdc2-9ae0ad818072', '29ed6074-bd0c-4b02-8d24-3ee9f9d72b4a', '56b2623e-01ad-4522-81be-dbcdbfb69816', '692f0840-d8df-4ce0-beee-24057e0cfb14', 'e35e8eab-b8ab-4be8-8eb9-a10508265823', '07b5402a-dbdb-4d8a-b769-bcc6e7003a01', '54bb62e3-6a90-4985-a6d2-6c39f8bf4ef7', '0b1df176-152d-4224-b6d8-c5f57683eddc']
+folder-children=['System', 'Utilities', 'YaST', 'Pardus']
 
-[org/gnome/desktop/app-folders/folders/07b5402a-dbdb-4d8a-b769-bcc6e7003a01]
-apps=['virtualbox.desktop', 'open-windows-app-in-vm.desktop', 'winetricks.desktop']
-name='Vms'
-translate=false
-
-[org/gnome/desktop/app-folders/folders/0b1df176-152d-4224-b6d8-c5f57683eddc]
-apps=['wine-Programs-Rockwell Software-Arena-Arena.desktop', 'wine-Programs-Rockwell Software-Arena-Input Analyzer.desktop', 'wine-Programs-Rockwell Software-Arena-Output Analyzer.desktop', 'wine-Programs-Rockwell Software-Arena-Process Analyzer.desktop', 'wine-Programs-Rockwell Software-Arena-Visio Process Simulator.desktop', "wine-Programs-Rockwell Software-Arena-Online Books-Arena Packaging Template User's Guide.desktop", "wine-Programs-Rockwell Software-Arena-Online Books-Arena Template Developer's Guide.desktop", "wine-Programs-Rockwell Software-Arena-Online Books-Arena User's Guide.desktop", 'wine-Programs-Rockwell Software-Arena-Online Books-Arena Variables Guide.desktop', 'wine-Programs-Rockwell Software-Utilities-Support Services Help.desktop', 'wine-Programs-Rockwell Software-Utilities-Arena Support Services Help .desktop']
-name='Arena'
-translate=false
-
-[org/gnome/desktop/app-folders/folders/29ed6074-bd0c-4b02-8d24-3ee9f9d72b4a]
-apps=['brave-browser.desktop', 'vlc.desktop', 'calibre-lrfviewer.desktop', 'calibre-ebook-viewer.desktop', 'calibre-ebook-edit.desktop']
-name='Other Apps'
-translate=false
-
-[org/gnome/desktop/app-folders/folders/54bb62e3-6a90-4985-a6d2-6c39f8bf4ef7]
-apps=['waydroid.com.android.settings.desktop', 'waydroid.com.android.vending.desktop', 'waydroid.com.android.camera2.desktop', 'waydroid.com.android.documentsui.desktop', 'waydroid.org.lineageos.jelly.desktop', 'waydroid.org.lineageos.recorder.desktop', 'waydroid.com.android.contacts.desktop', 'waydroid.com.android.gallery3d.desktop', 'waydroid.org.lineageos.eleven.desktop', 'waydroid.com.android.inputmethod.latin.desktop', 'waydroid.com.android.calculator2.desktop', 'waydroid.org.lineageos.etar.desktop', 'waydroid.com.android.deskclock.desktop']
-name='Waydroid'
-translate=false
-
-[org/gnome/desktop/app-folders/folders/692f0840-d8df-4ce0-beee-24057e0cfb14]
-apps=['calibre-gui.desktop']
-name='"'
-translate=false
+[org/gnome/desktop/app-folders/folders/Pardus]
+categories=['X-Pardus-Apps']
+name='X-Pardus-Apps.directory'
+translate=true
 
 [org/gnome/desktop/app-folders/folders/System]
-apps=['org.gnome.DiskUtility.desktop', 'org.gnome.baobab.desktop', 'org.gnome.gedit.desktop', 'vim.desktop', 'qv4l2.desktop', 'qvidcap.desktop', 'bvnc.desktop', 'bssh.desktop', 'avahi-discover.desktop']
+apps=['org.gnome.baobab.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.SystemMonitor.desktop']
 name='X-GNOME-Shell-System.directory'
 translate=true
 
@@ -113,24 +92,9 @@ categories=['X-SuSE-YaST']
 name='suse-yast.directory'
 translate=true
 
-[org/gnome/desktop/app-folders/folders/b5985140-3412-4633-b6a7-4bcb183e2630]
-apps=['org.gnome.Settings.desktop', 'org.gnome.Extensions.desktop', 'ca.desrt.dconf-editor.desktop']
-name='Settings'
-translate=false
-
-[org/gnome/desktop/app-folders/folders/c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b]
-apps=['discord.desktop', 'org.gnome.Nautilus.desktop', 'firefox.desktop', 'gmail-tray.desktop', 'kitty.desktop', 'notion.desktop', 'org.gnome.SystemMonitor.desktop', 'code.desktop', 'com.github.xeco23.WasIstLos.desktop']
-name='Shortcuts'
-translate=false
-
-[org/gnome/desktop/app-folders/folders/e35e8eab-b8ab-4be8-8eb9-a10508265823]
-apps=['appflowy-tray.desktop', 'gmail.desktop', 'ChatGTK.desktop']
-name='Self-Coded'
-translate=false
-
 [org/gnome/desktop/background]
 color-shading-type='solid'
-picture-options='zoom'
+picture-options='scaled'
 picture-uri='file:///home/maykon/.local/share/backgrounds/hong-kong-night.jpg'
 picture-uri-dark='file:///home/maykon/.local/share/backgrounds/hong-kong-night.jpg'
 primary-color='#000000000000'
@@ -166,6 +130,7 @@ document-font-name='Adwaita Sans 12'
 enable-animations=false
 enable-hot-corners=false
 font-antialiasing='grayscale'
+font-hinting='full'
 font-name='Adwaita Mono 12'
 gtk-enable-primary-paste=false
 gtk-key-theme='Default'
@@ -179,17 +144,11 @@ text-scaling-factor=1.25
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['com-github-xeco23-wasistlos', 'gnome-power-panel', 'audacious', 'brave-browser', 'notion', 'org-gnome-tweaks', 'org-gnome-software', 'discord', 'org-gnome-nautilus', 'org-gnome-gedit', 'org-gnome-baobab', 'kitty', 'org-gnome-diskutility', 'org-gnome-boxes', 'org-gnome-settings', 'bluemail', 'org-gnome-systemmonitor', 'firefox', 'appflowy', 'notion-app-enhanced', 'calibre-gui', 'org-qt-project-qtcreator']
+application-children=['com-github-xeco23-wasistlos', 'gnome-power-panel', 'audacious', 'brave-browser', 'notion', 'org-gnome-tweaks', 'org-gnome-software', 'discord', 'org-gnome-nautilus', 'org-gnome-gedit', 'org-gnome-baobab', 'kitty', 'org-gnome-diskutility', 'org-gnome-boxes', 'org-gnome-settings', 'bluemail', 'org-gnome-systemmonitor', 'firefox', 'appflowy', 'notion-app-enhanced', 'calibre-gui', 'org-qt-project-qtcreator', 'org-gnome-extensions', 'appimagekit-pcloud', 'plainotepad', 'wine-programs-rockwell-software-arena-arena', 'org-gnome-evolution-alarm-notify', 'morgen', 'megasync']
 show-in-lock-screen=false
-
-[org/gnome/desktop/notifications/application/appflowy]
-application-id='AppFlowy.desktop'
 
 [org/gnome/desktop/notifications/application/audacious]
 application-id='audacious.desktop'
-
-[org/gnome/desktop/notifications/application/bluemail]
-application-id='bluemail.desktop'
 
 [org/gnome/desktop/notifications/application/brave-browser]
 application-id='brave-browser.desktop'
@@ -203,9 +162,6 @@ application-id='com.github.xeco23.WasIstLos.desktop'
 [org/gnome/desktop/notifications/application/discord]
 application-id='discord.desktop'
 
-[org/gnome/desktop/notifications/application/firefox-esr]
-application-id='firefox-esr.desktop'
-
 [org/gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
 
@@ -215,26 +171,26 @@ application-id='gnome-power-panel.desktop'
 [org/gnome/desktop/notifications/application/kitty]
 application-id='kitty.desktop'
 
-[org/gnome/desktop/notifications/application/notion-app-enhanced]
-application-id='notion-app-enhanced.desktop'
+[org/gnome/desktop/notifications/application/megasync]
+application-id='megasync.desktop'
+
+[org/gnome/desktop/notifications/application/morgen]
+application-id='morgen.desktop'
 
 [org/gnome/desktop/notifications/application/notion]
 application-id='notion.desktop'
 
-[org/gnome/desktop/notifications/application/orange-canvas]
-application-id='orange-canvas.desktop'
-
 [org/gnome/desktop/notifications/application/org-gnome-baobab]
 application-id='org.gnome.baobab.desktop'
-
-[org/gnome/desktop/notifications/application/org-gnome-boxes]
-application-id='org.gnome.Boxes.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-diskutility]
 application-id='org.gnome.DiskUtility.desktop'
 
-[org/gnome/desktop/notifications/application/org-gnome-gedit]
-application-id='org.gnome.gedit.desktop'
+[org/gnome/desktop/notifications/application/org-gnome-evolution-alarm-notify]
+application-id='org.gnome.Evolution-alarm-notify.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-extensions]
+application-id='org.gnome.Extensions.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
@@ -251,13 +207,12 @@ application-id='org.gnome.SystemMonitor.desktop'
 [org/gnome/desktop/notifications/application/org-gnome-tweaks]
 application-id='org.gnome.tweaks.desktop'
 
-[org/gnome/desktop/notifications/application/org-qt-project-qtcreator]
-application-id='org.qt-project.qtcreator.desktop'
+[org/gnome/desktop/notifications/application/plainotepad]
+application-id='plainotepad.desktop'
 
 [org/gnome/desktop/peripherals/keyboard]
 delay=uint32 770
-numlock-state=false
-remember-numlock-state=true
+numlock-state=true
 
 [org/gnome/desktop/peripherals/mouse]
 double-click=400
@@ -340,20 +295,24 @@ visual-bell=false
 [org/gnome/evolution-data-server]
 migrated=true
 
+[org/gnome/evolution-data-server/calendar]
+notify-window-height=521
+notify-window-paned-position=219
+notify-window-width=558
+notify-window-x=26
+notify-window-y=23
+reminders-past=['4e2855b8807b62a17584749f8983bb7ccd76e6ef\n07525e1929391ba98cbb955a4b07853b99b357dd\t20250819T180000Z\n1755625800\n1755626400\n1755633600\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250819T150000\r\nDTEND;TZID=America/Sao_Paulo:20250819T170000\r\nRRULE:FREQ=WEEKLY;UNTIL=20251203T025959Z;BYDAY=TU\r\nDTSTAMP:20250812T181914Z\r\nUID:46tsc8idbin73adddsbnohja3n@google.com\r\nCREATED:20250812T132108Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T181914Z\r\nLOCATION:CTC 305\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Distribuída\r\nTRANSP:OPAQUE\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nX-EVOLUTION-CALDAV-ETAG:63890705954\r\nRECURRENCE-ID:20250819T180000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT10M\r\nX-EVOLUTION-ALARM-UID:07525e1929391ba98cbb955a4b07853b99b357dd\r\nEND:VALARM\r\nEND:VEVENT\r\n', '5ea79929e2f7f65e1b57e835ac547d9deca763ce\na7aacc701371adc8a0319c8a6976a547fbb89129\t20250819T180000Z\n1755625500\n1755626400\n1755633600\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250819T150000\r\nDTEND;TZID=America/Sao_Paulo:20250819T170000\r\nRRULE:FREQ=WEEKLY;UNTIL=20251203T025959Z;BYDAY=TU\r\nDTSTAMP:20250812T181914Z\r\nUID:46tsc8idbin73adddsbnohja3n@google.com\r\nCREATED:20250812T132108Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T181914Z\r\nLOCATION:CTC 305\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Distribuída\r\nTRANSP:OPAQUE\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nX-EVOLUTION-CALDAV-ETAG:63890705954\r\nRECURRENCE-ID:20250819T180000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT15M\r\nX-EVOLUTION-ALARM-UID:a7aacc701371adc8a0319c8a6976a547fbb89129\r\nEND:VALARM\r\nEND:VEVENT\r\n', '5ea79929e2f7f65e1b57e835ac547d9deca763ce\n120afca63ff15f5fef7d5ccbc742f1fe5c721acf\t20250819T131500\n1755619500\n1755620100\n1755626400\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250819T131500\r\nDTEND;TZID=America/Sao_Paulo:20250819T150000\r\nDTSTAMP:20250819T161653Z\r\nUID:7guoquvkf484kid2bo7rsrpa8c@google.com\r\nCREATED:20250819T123909Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250819T161653Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:9\r\nSTATUS:CONFIRMED\r\nSUMMARY:Lista de Exercícios\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63891303413\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT10M\r\nX-EVOLUTION-ALARM-UID:120afca63ff15f5fef7d5ccbc742f1fe5c721acf\r\nEND:VALARM\r\nEND:VEVENT\r\n', '4e2855b8807b62a17584749f8983bb7ccd76e6ef\n4b6a765764ab16bde0f2913c5928e1899f056170\t20250819T131500\n1755619500\n1755620100\n1755626400\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250819T131500\r\nDTEND;TZID=America/Sao_Paulo:20250819T150000\r\nDTSTAMP:20250819T161653Z\r\nUID:7guoquvkf484kid2bo7rsrpa8c@google.com\r\nCREATED:20250819T123909Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250819T161653Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:9\r\nSTATUS:CONFIRMED\r\nSUMMARY:Lista de Exercícios\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63891303413\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT10M\r\nX-EVOLUTION-ALARM-UID:4b6a765764ab16bde0f2913c5928e1899f056170\r\nEND:VALARM\r\nEND:VEVENT\r\n', '4e2855b8807b62a17584749f8983bb7ccd76e6ef\n78a4f9d24518b44b7637b1b1f71ca540b96a0001\t20250819T130000\n1755618600\n1755619200\n1755626400\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250819T130000\r\nDTEND;TZID=America/Sao_Paulo:20250819T150000\r\nDTSTAMP:20250819T124006Z\r\nUID:7guoquvkf484kid2bo7rsrpa8c@google.com\r\nCREATED:20250819T123909Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250819T124006Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:6\r\nSTATUS:CONFIRMED\r\nSUMMARY:Lista de Exercícios\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63891290406\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT10M\r\nX-EVOLUTION-ALARM-UID:78a4f9d24518b44b7637b1b1f71ca540b96a0001\r\nEND:VALARM\r\nEND:VEVENT\r\n', '4e2855b8807b62a17584749f8983bb7ccd76e6ef\ne227a8b88b05c9446350584f7df1298fc550b063\t20250819T120000\n1755611400\n1755612000\n1755617400\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250819T110000\r\nDTEND;TZID=America/Sao_Paulo:20250819T123000\r\nDTSTAMP:20250819T140154Z\r\nUID:7nadd2qovq5760rj9nenbj4fqt@google.com\r\nRECURRENCE-ID;TZID=America/Sao_Paulo:20250819T120000\r\nCREATED:20250812T133842Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250819T140154Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:2\r\nSTATUS:CONFIRMED\r\nSUMMARY:Almoço\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63891295314\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT10M\r\nX-EVOLUTION-ALARM-UID:e227a8b88b05c9446350584f7df1298fc550b063\r\nEND:VALARM\r\nEND:VEVENT\r\n', '5ea79929e2f7f65e1b57e835ac547d9deca763ce\n961b94f6507ead47c790c19f68c39cfda98840d4\t20250819T130000\n1755618600\n1755619200\n1755626400\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250819T130000\r\nDTEND;TZID=America/Sao_Paulo:20250819T150000\r\nDTSTAMP:20250819T124006Z\r\nUID:7guoquvkf484kid2bo7rsrpa8c@google.com\r\nCREATED:20250819T123909Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250819T124006Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:6\r\nSTATUS:CONFIRMED\r\nSUMMARY:Lista de Exercícios\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63891290406\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT10M\r\nX-EVOLUTION-ALARM-UID:961b94f6507ead47c790c19f68c39cfda98840d4\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'e70ab7c14d5312921ef3eac0dd9e716def8848f7\n0500b9880050d113e02a828a1ce3c084ac43f887\t20250819T111500Z\n1755601800\n1755602100\n1755607500\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250819T081500\r\nDTEND;TZID=America/Sao_Paulo:20250819T094500\r\nRRULE:FREQ=DAILY\r\nEXDATE;TZID=America/Sao_Paulo:20250813T081500\r\nEXDATE;TZID=America/Sao_Paulo:20250814T081500\r\nEXDATE;TZID=America/Sao_Paulo:20250815T081500\r\nEXDATE;TZID=America/Sao_Paulo:20250816T081500\r\nEXDATE;TZID=America/Sao_Paulo:20250817T081500\r\nEXDATE;TZID=America/Sao_Paulo:20250818T081500\r\nEXDATE;TZID=America/Sao_Paulo:20250821T081500\r\nDTSTAMP:20250818T202538Z\r\nUID:0fvq12kvv7dct358b6b4ch0hs3@google.com\r\nCREATED:20250812T134552Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250818T202538Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:1\r\nSTATUS:CONFIRMED\r\nSUMMARY:Treino\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63891231938\r\nRECURRENCE-ID:20250819T111500Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT5M\r\nX-EVOLUTION-ALARM-UID:0500b9880050d113e02a828a1ce3c084ac43f887\r\nEND:VALARM\r\nEND:VEVENT\r\n', '8d8bfba94b61e9366154ba1aa85ecf8514d20687\nd9098cf7873ae24f9e2052455b798b4f65d13f94\t20250819T003000Z\n1755563400\n1755563400\n1755565200\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250818T213000\r\nDTEND;TZID=America/Sao_Paulo:20250818T220000\r\nRRULE:FREQ=DAILY\r\nDTSTAMP:20250819T000102Z\r\nUID:2sinms5n4c6dmisg06hen63ngn@google.com\r\nCREATED:20250818T202808Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250819T000102Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:3\r\nSTATUS:CONFIRMED\r\nSUMMARY:Relaxar\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63891244862\r\nRECURRENCE-ID:20250819T003000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:PT0S\r\nX-EVOLUTION-ALARM-UID:d9098cf7873ae24f9e2052455b798b4f65d13f94\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'f958966c9d1f2062861718470508b6357c063aba\n61e86f51f033f3b216b3d6c5252efab5d10e307d\t20250819T003000Z\n1755561600\n1755563400\n1755565200\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250818T213000\r\nDTEND;TZID=America/Sao_Paulo:20250818T220000\r\nRRULE:FREQ=DAILY\r\nDTSTAMP:20250818T202906Z\r\nUID:2sinms5n4c6dmisg06hen63ngn@google.com\r\nCREATED:20250818T202808Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250818T202906Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:1\r\nSTATUS:CONFIRMED\r\nSUMMARY:Relaxar\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63891232146\r\nRECURRENCE-ID:20250819T003000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT30M\r\nX-EVOLUTION-ALARM-UID:61e86f51f033f3b216b3d6c5252efab5d10e307d\r\nEND:VALARM\r\nEND:VEVENT\r\n', '4e2855b8807b62a17584749f8983bb7ccd76e6ef\n1fa436cddba93c301f2c61e4b528335ffdf9c806\t20250818T214500Z\n1755552900\n1755553500\n1755556200\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250818T184500\r\nDTEND;TZID=America/Sao_Paulo:20250818T193000\r\nRRULE:FREQ=WEEKLY;UNTIL=20251209T025959Z;BYDAY=MO\r\nDTSTAMP:20250818T213916Z\r\nUID:4q7dsfj4h2nqovenm96ogg3uqp@google.com\r\nCREATED:20250818T213916Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250818T213916Z\r\nLOCATION:RU\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Jantar\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63891236356\r\nRECURRENCE-ID:20250818T214500Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT10M\r\nX-EVOLUTION-ALARM-UID:1fa436cddba93c301f2c61e4b528335ffdf9c806\r\nEND:VALARM\r\nEND:VEVENT\r\n', '4e2855b8807b62a17584749f8983bb7ccd76e6ef\n30cb4120f7e3313017bad2c4ad091257a044dce7\t20250818T203000Z\n1755548400\n1755549000\n1755552600\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250818T173000\r\nDTEND;TZID=America/Sao_Paulo:20250818T183000\r\nRRULE:FREQ=WEEKLY\r\nDTSTAMP:20250812T132920Z\r\nUID:bq2vffn94icqapdto3n01j1ik4@google.com\r\nCREATED:20250808T152638Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T132920Z\r\nLOCATION:CSE 327\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:ConcilIA\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890688560\r\nRECURRENCE-ID:20250818T203000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT10M\r\nX-EVOLUTION-ALARM-UID:30cb4120f7e3313017bad2c4ad091257a044dce7\r\nEND:VALARM\r\nEND:VEVENT\r\n', '5ea79929e2f7f65e1b57e835ac547d9deca763ce\n043dbca9b91819f11f10f04caa8556dc0be1cea0\t20250818T203000Z\n1755548400\n1755549000\n1755552600\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250818T173000\r\nDTEND;TZID=America/Sao_Paulo:20250818T183000\r\nRRULE:FREQ=WEEKLY\r\nDTSTAMP:20250812T132920Z\r\nUID:bq2vffn94icqapdto3n01j1ik4@google.com\r\nCREATED:20250808T152638Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T132920Z\r\nLOCATION:CSE 327\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:ConcilIA\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890688560\r\nRECURRENCE-ID:20250818T203000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT10M\r\nX-EVOLUTION-ALARM-UID:043dbca9b91819f11f10f04caa8556dc0be1cea0\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'e70ab7c14d5312921ef3eac0dd9e716def8848f7\n2c1f85c6ae7ad319b636898e45572e9380d97213\t20250818T150000Z\n1755528900\n1755529200\n1755529800\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250818T120000\r\nDTEND;TZID=America/Sao_Paulo:20250818T121000\r\nRRULE:FREQ=WEEKLY;UNTIL=20251208T025959Z;BYDAY=MO,WE,FR,SA,SU\r\nEXDATE;TZID=America/Sao_Paulo:20250901T120000\r\nEXDATE;TZID=America/Sao_Paulo:20250922T120000\r\nEXDATE;TZID=America/Sao_Paulo:20251013T120000\r\nEXDATE;TZID=America/Sao_Paulo:20251103T120000\r\nEXDATE;TZID=America/Sao_Paulo:20251124T120000\r\nEXDATE;TZID=America/Sao_Paulo:20251207T120000\r\nDTSTAMP:20250812T141108Z\r\nUID:6brjt7nvb4j5rrh6m3j8bisj46@google.com\r\nCREATED:20250812T135843Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T141108Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Deslocamento UFSC->Casa\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890691068\r\nRECURRENCE-ID:20250818T150000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT5M\r\nX-EVOLUTION-ALARM-UID:2c1f85c6ae7ad319b636898e45572e9380d97213\r\nEND:VALARM\r\nEND:VEVENT\r\n', '4e2855b8807b62a17584749f8983bb7ccd76e6ef\n97023a4e76ffe8cfe0e615c593720c7c8bedc878\t20250818T140000Z\n1755525000\n1755525600\n1755529200\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250818T110000\r\nDTEND;TZID=America/Sao_Paulo:20250818T120000\r\nRRULE:FREQ=WEEKLY;UNTIL=20251208T025959Z;BYDAY=MO,WE,FR,SA,SU\r\nEXDATE;TZID=America/Sao_Paulo:20251207T110000\r\nDTSTAMP:20250812T141102Z\r\nUID:1cqtkp4scuusu98d7bp8gq4fkt@google.com\r\nCREATED:20250812T134020Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T141102Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Almoço\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890691062\r\nRECURRENCE-ID:20250818T140000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT10M\r\nX-EVOLUTION-ALARM-UID:97023a4e76ffe8cfe0e615c593720c7c8bedc878\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'e70ab7c14d5312921ef3eac0dd9e716def8848f7\n54471424e5b8735981db53d3fda6321be7c2a38c\t20250818T134500Z\n1755524400\n1755524700\n1755525300\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250818T104500\r\nDTEND;TZID=America/Sao_Paulo:20250818T105500\r\nRRULE:FREQ=WEEKLY;BYDAY=MO,WE,FR,SA,SU\r\nEXDATE;TZID=America/Sao_Paulo:20250901T104500\r\nEXDATE;TZID=America/Sao_Paulo:20250922T104500\r\nEXDATE;TZID=America/Sao_Paulo:20251013T104500\r\nEXDATE;TZID=America/Sao_Paulo:20251103T104500\r\nEXDATE;TZID=America/Sao_Paulo:20251124T104500\r\nDTSTAMP:20250812T141000Z\r\nUID:1vba0ld6a8c4qeit1dpklkns5t@google.com\r\nCREATED:20250812T134052Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T141000Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:1\r\nSTATUS:CONFIRMED\r\nSUMMARY:Deslocamento Casa->UFSC\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890691000\r\nRECURRENCE-ID:20250818T134500Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT5M\r\nX-EVOLUTION-ALARM-UID:54471424e5b8735981db53d3fda6321be7c2a38c\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'e70ab7c14d5312921ef3eac0dd9e716def8848f7\nf5c334bd3e067f5ae2711400e8c62f4304a7d67a\t20250818T111500Z\n1755515400\n1755515700\n1755521100\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250818T081500\r\nDTEND;TZID=America/Sao_Paulo:20250818T094500\r\nRRULE:FREQ=DAILY\r\nEXDATE;TZID=America/Sao_Paulo:20250814T081500\r\nEXDATE;TZID=America/Sao_Paulo:20250821T081500\r\nDTSTAMP:20250813T104355Z\r\nUID:0fvq12kvv7dct358b6b4ch0hs3@google.com\r\nCREATED:20250812T134552Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250813T104355Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:1\r\nSTATUS:CONFIRMED\r\nSUMMARY:Treino\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890765035\r\nRECURRENCE-ID:20250818T111500Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT5M\r\nX-EVOLUTION-ALARM-UID:f5c334bd3e067f5ae2711400e8c62f4304a7d67a\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'f958966c9d1f2062861718470508b6357c063aba\n4296a56172091ed54bebc6cca55101244427f966\t20250818T110000Z\n1755513000\n1755514800\n1755515700\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250818T080000\r\nDTEND;TZID=America/Sao_Paulo:20250818T081500\r\nRRULE:FREQ=DAILY;UNTIL=20260721T070000Z\r\nDTSTAMP:20250813T104402Z\r\nUID:1neb5ep4fqb3seuo3p592ar0en@google.com\r\nCREATED:20250721T212127Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250813T104402Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:6\r\nSTATUS:CONFIRMED\r\nSUMMARY:Japonês\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890765042\r\nRECURRENCE-ID:20250818T110000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT30M\r\nX-EVOLUTION-ALARM-UID:4296a56172091ed54bebc6cca55101244427f966\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'e70ab7c14d5312921ef3eac0dd9e716def8848f7\n2c1f85c6ae7ad319b636898e45572e9380d97213\t20250817T150000Z\n1755442500\n1755442800\n1755443400\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250817T120000\r\nDTEND;TZID=America/Sao_Paulo:20250817T121000\r\nRRULE:FREQ=WEEKLY;UNTIL=20251208T025959Z;BYDAY=MO,WE,FR,SA,SU\r\nEXDATE;TZID=America/Sao_Paulo:20250901T120000\r\nEXDATE;TZID=America/Sao_Paulo:20250922T120000\r\nEXDATE;TZID=America/Sao_Paulo:20251013T120000\r\nEXDATE;TZID=America/Sao_Paulo:20251103T120000\r\nEXDATE;TZID=America/Sao_Paulo:20251124T120000\r\nEXDATE;TZID=America/Sao_Paulo:20251207T120000\r\nDTSTAMP:20250812T141108Z\r\nUID:6brjt7nvb4j5rrh6m3j8bisj46@google.com\r\nCREATED:20250812T135843Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T141108Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Deslocamento UFSC->Casa\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890691068\r\nRECURRENCE-ID:20250817T150000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT5M\r\nX-EVOLUTION-ALARM-UID:2c1f85c6ae7ad319b636898e45572e9380d97213\r\nEND:VALARM\r\nEND:VEVENT\r\n', '4e2855b8807b62a17584749f8983bb7ccd76e6ef\n97023a4e76ffe8cfe0e615c593720c7c8bedc878\t20250817T140000Z\n1755438600\n1755439200\n1755442800\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250817T110000\r\nDTEND;TZID=America/Sao_Paulo:20250817T120000\r\nRRULE:FREQ=WEEKLY;UNTIL=20251208T025959Z;BYDAY=MO,WE,FR,SA,SU\r\nEXDATE;TZID=America/Sao_Paulo:20251207T110000\r\nDTSTAMP:20250812T141102Z\r\nUID:1cqtkp4scuusu98d7bp8gq4fkt@google.com\r\nCREATED:20250812T134020Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T141102Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Almoço\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890691062\r\nRECURRENCE-ID:20250817T140000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT10M\r\nX-EVOLUTION-ALARM-UID:97023a4e76ffe8cfe0e615c593720c7c8bedc878\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'e70ab7c14d5312921ef3eac0dd9e716def8848f7\n54471424e5b8735981db53d3fda6321be7c2a38c\t20250817T134500Z\n1755438000\n1755438300\n1755438900\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250817T104500\r\nDTEND;TZID=America/Sao_Paulo:20250817T105500\r\nRRULE:FREQ=WEEKLY;BYDAY=MO,WE,FR,SA,SU\r\nEXDATE;TZID=America/Sao_Paulo:20250901T104500\r\nEXDATE;TZID=America/Sao_Paulo:20250922T104500\r\nEXDATE;TZID=America/Sao_Paulo:20251013T104500\r\nEXDATE;TZID=America/Sao_Paulo:20251103T104500\r\nEXDATE;TZID=America/Sao_Paulo:20251124T104500\r\nDTSTAMP:20250812T141000Z\r\nUID:1vba0ld6a8c4qeit1dpklkns5t@google.com\r\nCREATED:20250812T134052Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T141000Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:1\r\nSTATUS:CONFIRMED\r\nSUMMARY:Deslocamento Casa->UFSC\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890691000\r\nRECURRENCE-ID:20250817T134500Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT5M\r\nX-EVOLUTION-ALARM-UID:54471424e5b8735981db53d3fda6321be7c2a38c\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'e70ab7c14d5312921ef3eac0dd9e716def8848f7\n4f91271f3c8779889745d74d0e600cdaab2c8ca9\t20250817T124500Z\n1755434400\n1755434700\n1755438300\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250817T094500\r\nDTEND;TZID=America/Sao_Paulo:20250817T104500\r\nRRULE:FREQ=WEEKLY;UNTIL=20250831T025959Z\r\nDTSTAMP:20250812T135538Z\r\nUID:qmvlpjr2sq8kq61b89941epilm@google.com\r\nCLASS:PRIVATE\r\nCREATED:20250630T112941Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T135538Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:10\r\nSTATUS:CONFIRMED\r\nSUMMARY:Limpar a Casa\\, roupas e louça\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890690138\r\nRECURRENCE-ID:20250817T124500Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT5M\r\nX-EVOLUTION-ALARM-UID:4f91271f3c8779889745d74d0e600cdaab2c8ca9\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'e70ab7c14d5312921ef3eac0dd9e716def8848f7\nf5c334bd3e067f5ae2711400e8c62f4304a7d67a\t20250817T111500Z\n1755429000\n1755429300\n1755434700\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250817T081500\r\nDTEND;TZID=America/Sao_Paulo:20250817T094500\r\nRRULE:FREQ=DAILY\r\nEXDATE;TZID=America/Sao_Paulo:20250814T081500\r\nEXDATE;TZID=America/Sao_Paulo:20250821T081500\r\nDTSTAMP:20250813T104355Z\r\nUID:0fvq12kvv7dct358b6b4ch0hs3@google.com\r\nCREATED:20250812T134552Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250813T104355Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:1\r\nSTATUS:CONFIRMED\r\nSUMMARY:Treino\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890765035\r\nRECURRENCE-ID:20250817T111500Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT5M\r\nX-EVOLUTION-ALARM-UID:f5c334bd3e067f5ae2711400e8c62f4304a7d67a\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'f958966c9d1f2062861718470508b6357c063aba\n4296a56172091ed54bebc6cca55101244427f966\t20250817T110000Z\n1755426600\n1755428400\n1755429300\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250817T080000\r\nDTEND;TZID=America/Sao_Paulo:20250817T081500\r\nRRULE:FREQ=DAILY;UNTIL=20260721T070000Z\r\nDTSTAMP:20250813T104402Z\r\nUID:1neb5ep4fqb3seuo3p592ar0en@google.com\r\nCREATED:20250721T212127Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250813T104402Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:6\r\nSTATUS:CONFIRMED\r\nSUMMARY:Japonês\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890765042\r\nRECURRENCE-ID:20250817T110000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT30M\r\nX-EVOLUTION-ALARM-UID:4296a56172091ed54bebc6cca55101244427f966\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'e70ab7c14d5312921ef3eac0dd9e716def8848f7\n2c1f85c6ae7ad319b636898e45572e9380d97213\t20250816T150000Z\n1755356100\n1755356400\n1755357000\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250816T120000\r\nDTEND;TZID=America/Sao_Paulo:20250816T121000\r\nRRULE:FREQ=WEEKLY;UNTIL=20251208T025959Z;BYDAY=MO,WE,FR,SA,SU\r\nEXDATE;TZID=America/Sao_Paulo:20250901T120000\r\nEXDATE;TZID=America/Sao_Paulo:20250922T120000\r\nEXDATE;TZID=America/Sao_Paulo:20251013T120000\r\nEXDATE;TZID=America/Sao_Paulo:20251103T120000\r\nEXDATE;TZID=America/Sao_Paulo:20251124T120000\r\nEXDATE;TZID=America/Sao_Paulo:20251207T120000\r\nDTSTAMP:20250812T141108Z\r\nUID:6brjt7nvb4j5rrh6m3j8bisj46@google.com\r\nCREATED:20250812T135843Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T141108Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Deslocamento UFSC->Casa\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890691068\r\nRECURRENCE-ID:20250816T150000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT5M\r\nX-EVOLUTION-ALARM-UID:2c1f85c6ae7ad319b636898e45572e9380d97213\r\nEND:VALARM\r\nEND:VEVENT\r\n', '4e2855b8807b62a17584749f8983bb7ccd76e6ef\n97023a4e76ffe8cfe0e615c593720c7c8bedc878\t20250816T140000Z\n1755352200\n1755352800\n1755356400\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250816T110000\r\nDTEND;TZID=America/Sao_Paulo:20250816T120000\r\nRRULE:FREQ=WEEKLY;UNTIL=20251208T025959Z;BYDAY=MO,WE,FR,SA,SU\r\nEXDATE;TZID=America/Sao_Paulo:20251207T110000\r\nDTSTAMP:20250812T141102Z\r\nUID:1cqtkp4scuusu98d7bp8gq4fkt@google.com\r\nCREATED:20250812T134020Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T141102Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Almoço\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890691062\r\nRECURRENCE-ID:20250816T140000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT10M\r\nX-EVOLUTION-ALARM-UID:97023a4e76ffe8cfe0e615c593720c7c8bedc878\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'e70ab7c14d5312921ef3eac0dd9e716def8848f7\n54471424e5b8735981db53d3fda6321be7c2a38c\t20250816T134500Z\n1755351600\n1755351900\n1755352500\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250816T104500\r\nDTEND;TZID=America/Sao_Paulo:20250816T105500\r\nRRULE:FREQ=WEEKLY;BYDAY=MO,WE,FR,SA,SU\r\nEXDATE;TZID=America/Sao_Paulo:20250901T104500\r\nEXDATE;TZID=America/Sao_Paulo:20250922T104500\r\nEXDATE;TZID=America/Sao_Paulo:20251013T104500\r\nEXDATE;TZID=America/Sao_Paulo:20251103T104500\r\nEXDATE;TZID=America/Sao_Paulo:20251124T104500\r\nDTSTAMP:20250812T141000Z\r\nUID:1vba0ld6a8c4qeit1dpklkns5t@google.com\r\nCREATED:20250812T134052Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T141000Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:1\r\nSTATUS:CONFIRMED\r\nSUMMARY:Deslocamento Casa->UFSC\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890691000\r\nRECURRENCE-ID:20250816T134500Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT5M\r\nX-EVOLUTION-ALARM-UID:54471424e5b8735981db53d3fda6321be7c2a38c\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'e70ab7c14d5312921ef3eac0dd9e716def8848f7\nf5c334bd3e067f5ae2711400e8c62f4304a7d67a\t20250816T111500Z\n1755342600\n1755342900\n1755348300\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250816T081500\r\nDTEND;TZID=America/Sao_Paulo:20250816T094500\r\nRRULE:FREQ=DAILY\r\nEXDATE;TZID=America/Sao_Paulo:20250814T081500\r\nEXDATE;TZID=America/Sao_Paulo:20250821T081500\r\nDTSTAMP:20250813T104355Z\r\nUID:0fvq12kvv7dct358b6b4ch0hs3@google.com\r\nCREATED:20250812T134552Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250813T104355Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:1\r\nSTATUS:CONFIRMED\r\nSUMMARY:Treino\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890765035\r\nRECURRENCE-ID:20250816T111500Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT5M\r\nX-EVOLUTION-ALARM-UID:f5c334bd3e067f5ae2711400e8c62f4304a7d67a\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'f958966c9d1f2062861718470508b6357c063aba\n4296a56172091ed54bebc6cca55101244427f966\t20250816T110000Z\n1755340200\n1755342000\n1755342900\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250816T080000\r\nDTEND;TZID=America/Sao_Paulo:20250816T081500\r\nRRULE:FREQ=DAILY;UNTIL=20260721T070000Z\r\nDTSTAMP:20250813T104402Z\r\nUID:1neb5ep4fqb3seuo3p592ar0en@google.com\r\nCREATED:20250721T212127Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250813T104402Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:6\r\nSTATUS:CONFIRMED\r\nSUMMARY:Japonês\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890765042\r\nRECURRENCE-ID:20250816T110000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT30M\r\nX-EVOLUTION-ALARM-UID:4296a56172091ed54bebc6cca55101244427f966\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'e70ab7c14d5312921ef3eac0dd9e716def8848f7\nabeadc1657484a7b77f2986c7792480dff2f307a\t20250816T223000Z\n1755297000\n1755383400\n1755390600\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250816T193000\r\nDTEND;TZID=America/Sao_Paulo:20250816T213000\r\nRRULE:FREQ=WEEKLY\r\nDTSTAMP:20250707T151344Z\r\nUID:h1lg86aoson6bbc33ctenpopg8@google.com\r\nCLASS:PUBLIC\r\nCREATED:20250707T151344Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250707T151344Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:4\r\nSTATUS:CONFIRMED\r\nSUMMARY:Ligação Social\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63887584424\r\nRECURRENCE-ID:20250816T223000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-P1D\r\nX-EVOLUTION-ALARM-UID:abeadc1657484a7b77f2986c7792480dff2f307a\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'e70ab7c14d5312921ef3eac0dd9e716def8848f7\n2c1f85c6ae7ad319b636898e45572e9380d97213\t20250815T150000Z\n1755269700\n1755270000\n1755270600\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250815T120000\r\nDTEND;TZID=America/Sao_Paulo:20250815T121000\r\nRRULE:FREQ=WEEKLY;UNTIL=20251208T025959Z;BYDAY=MO,WE,FR,SA,SU\r\nEXDATE;TZID=America/Sao_Paulo:20250901T120000\r\nEXDATE;TZID=America/Sao_Paulo:20250922T120000\r\nEXDATE;TZID=America/Sao_Paulo:20251013T120000\r\nEXDATE;TZID=America/Sao_Paulo:20251103T120000\r\nEXDATE;TZID=America/Sao_Paulo:20251124T120000\r\nEXDATE;TZID=America/Sao_Paulo:20251207T120000\r\nDTSTAMP:20250812T141108Z\r\nUID:6brjt7nvb4j5rrh6m3j8bisj46@google.com\r\nCREATED:20250812T135843Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T141108Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Deslocamento UFSC->Casa\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890691068\r\nRECURRENCE-ID:20250815T150000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT5M\r\nX-EVOLUTION-ALARM-UID:2c1f85c6ae7ad319b636898e45572e9380d97213\r\nEND:VALARM\r\nEND:VEVENT\r\n', '4e2855b8807b62a17584749f8983bb7ccd76e6ef\n97023a4e76ffe8cfe0e615c593720c7c8bedc878\t20250815T140000Z\n1755265800\n1755266400\n1755270000\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250815T110000\r\nDTEND;TZID=America/Sao_Paulo:20250815T120000\r\nRRULE:FREQ=WEEKLY;UNTIL=20251208T025959Z;BYDAY=MO,WE,FR,SA,SU\r\nEXDATE;TZID=America/Sao_Paulo:20251207T110000\r\nDTSTAMP:20250812T141102Z\r\nUID:1cqtkp4scuusu98d7bp8gq4fkt@google.com\r\nCREATED:20250812T134020Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T141102Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Almoço\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890691062\r\nRECURRENCE-ID:20250815T140000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT10M\r\nX-EVOLUTION-ALARM-UID:97023a4e76ffe8cfe0e615c593720c7c8bedc878\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'e70ab7c14d5312921ef3eac0dd9e716def8848f7\n54471424e5b8735981db53d3fda6321be7c2a38c\t20250815T134500Z\n1755265200\n1755265500\n1755266100\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250815T104500\r\nDTEND;TZID=America/Sao_Paulo:20250815T105500\r\nRRULE:FREQ=WEEKLY;BYDAY=MO,WE,FR,SA,SU\r\nEXDATE;TZID=America/Sao_Paulo:20250901T104500\r\nEXDATE;TZID=America/Sao_Paulo:20250922T104500\r\nEXDATE;TZID=America/Sao_Paulo:20251013T104500\r\nEXDATE;TZID=America/Sao_Paulo:20251103T104500\r\nEXDATE;TZID=America/Sao_Paulo:20251124T104500\r\nDTSTAMP:20250812T141000Z\r\nUID:1vba0ld6a8c4qeit1dpklkns5t@google.com\r\nCREATED:20250812T134052Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T141000Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:1\r\nSTATUS:CONFIRMED\r\nSUMMARY:Deslocamento Casa->UFSC\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890691000\r\nRECURRENCE-ID:20250815T134500Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT5M\r\nX-EVOLUTION-ALARM-UID:54471424e5b8735981db53d3fda6321be7c2a38c\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'e70ab7c14d5312921ef3eac0dd9e716def8848f7\nf5c334bd3e067f5ae2711400e8c62f4304a7d67a\t20250815T111500Z\n1755256200\n1755256500\n1755261900\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250815T081500\r\nDTEND;TZID=America/Sao_Paulo:20250815T094500\r\nRRULE:FREQ=DAILY\r\nEXDATE;TZID=America/Sao_Paulo:20250814T081500\r\nEXDATE;TZID=America/Sao_Paulo:20250821T081500\r\nDTSTAMP:20250813T104355Z\r\nUID:0fvq12kvv7dct358b6b4ch0hs3@google.com\r\nCREATED:20250812T134552Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250813T104355Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:1\r\nSTATUS:CONFIRMED\r\nSUMMARY:Treino\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890765035\r\nRECURRENCE-ID:20250815T111500Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT5M\r\nX-EVOLUTION-ALARM-UID:f5c334bd3e067f5ae2711400e8c62f4304a7d67a\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'f958966c9d1f2062861718470508b6357c063aba\n4296a56172091ed54bebc6cca55101244427f966\t20250815T110000Z\n1755253800\n1755255600\n1755256500\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250815T080000\r\nDTEND;TZID=America/Sao_Paulo:20250815T081500\r\nRRULE:FREQ=DAILY;UNTIL=20260721T070000Z\r\nDTSTAMP:20250813T104402Z\r\nUID:1neb5ep4fqb3seuo3p592ar0en@google.com\r\nCREATED:20250721T212127Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250813T104402Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:6\r\nSTATUS:CONFIRMED\r\nSUMMARY:Japonês\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890765042\r\nRECURRENCE-ID:20250815T110000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT30M\r\nX-EVOLUTION-ALARM-UID:4296a56172091ed54bebc6cca55101244427f966\r\nEND:VALARM\r\nEND:VEVENT\r\n', '5ea79929e2f7f65e1b57e835ac547d9deca763ce\nf579525b80afd2e1878a52b6aad43c988244424e\t20250814T163000Z\n1755188100\n1755189000\n1755201600\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250814T133000\r\nDTEND;TZID=America/Sao_Paulo:20250814T170000\r\nRRULE:FREQ=WEEKLY;UNTIL=20251205T025959Z;BYDAY=TH\r\nDTSTAMP:20250812T132753Z\r\nUID:6c681821p8vuc98j0o5io9p59r@google.com\r\nCREATED:20250812T132248Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T132753Z\r\nLOCATION:INE 313 (314)\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Algorítmos\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890688473\r\nRECURRENCE-ID:20250814T163000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT15M\r\nX-EVOLUTION-ALARM-UID:f579525b80afd2e1878a52b6aad43c988244424e\r\nEND:VALARM\r\nEND:VEVENT\r\n', '5ea79929e2f7f65e1b57e835ac547d9deca763ce\n769411bb57eaed5be06fb85cdf5dd9c339619423\t20250814T130000Z\n1755175500\n1755176400\n1755183600\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250814T100000\r\nDTEND;TZID=America/Sao_Paulo:20250814T120000\r\nRRULE:FREQ=WEEKLY;UNTIL=20251205T025959Z;BYDAY=TH\r\nDTSTAMP:20250812T132648Z\r\nUID:6jfhblr7in8rq93kng5bjg0hu6@google.com\r\nCREATED:20250812T132010Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T132648Z\r\nLOCATION:CTC 107\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:ES II\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890688408\r\nRECURRENCE-ID:20250814T130000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT15M\r\nX-EVOLUTION-ALARM-UID:769411bb57eaed5be06fb85cdf5dd9c339619423\r\nEND:VALARM\r\nEND:VEVENT\r\n', '4e2855b8807b62a17584749f8983bb7ccd76e6ef\nb630ac76307f1193f55f6a8d9bc7d16805aa4a18\t20250814T163000Z\n1755188400\n1755189000\n1755201600\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250814T133000\r\nDTEND;TZID=America/Sao_Paulo:20250814T170000\r\nRRULE:FREQ=WEEKLY;UNTIL=20251205T025959Z;BYDAY=TH\r\nDTSTAMP:20250812T132753Z\r\nUID:6c681821p8vuc98j0o5io9p59r@google.com\r\nCREATED:20250812T132248Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T132753Z\r\nLOCATION:INE 313 (314)\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Algorítmos\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890688473\r\nRECURRENCE-ID:20250814T163000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT10M\r\nX-EVOLUTION-ALARM-UID:b630ac76307f1193f55f6a8d9bc7d16805aa4a18\r\nEND:VALARM\r\nEND:VEVENT\r\n', '4e2855b8807b62a17584749f8983bb7ccd76e6ef\n784ec995fa19b9ebaff58efcfd9b2cd8d053b410\t20250814T150000Z\n1755183000\n1755183600\n1755189000\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250814T120000\r\nDTEND;TZID=America/Sao_Paulo:20250814T133000\r\nRRULE:FREQ=WEEKLY;UNTIL=20251206T025959Z;BYDAY=TU,TH\r\nDTSTAMP:20250812T152712Z\r\nUID:7nadd2qovq5760rj9nenbj4fqt@google.com\r\nCREATED:20250812T133842Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T152712Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:1\r\nSTATUS:CONFIRMED\r\nSUMMARY:Almoço\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890695637\r\nRECURRENCE-ID:20250814T150000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT10M\r\nX-EVOLUTION-ALARM-UID:784ec995fa19b9ebaff58efcfd9b2cd8d053b410\r\nEND:VALARM\r\nEND:VEVENT\r\n', '4e2855b8807b62a17584749f8983bb7ccd76e6ef\n1fa9dcef64c0ab546408ae3c5ad0e6845d3c35da\t20250814T130000Z\n1755175800\n1755176400\n1755183600\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250814T100000\r\nDTEND;TZID=America/Sao_Paulo:20250814T120000\r\nRRULE:FREQ=WEEKLY;UNTIL=20251205T025959Z;BYDAY=TH\r\nDTSTAMP:20250812T132648Z\r\nUID:6jfhblr7in8rq93kng5bjg0hu6@google.com\r\nCREATED:20250812T132010Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T132648Z\r\nLOCATION:CTC 107\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:ES II\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890688408\r\nRECURRENCE-ID:20250814T130000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT10M\r\nX-EVOLUTION-ALARM-UID:1fa9dcef64c0ab546408ae3c5ad0e6845d3c35da\r\nEND:VALARM\r\nEND:VEVENT\r\n', '4e2855b8807b62a17584749f8983bb7ccd76e6ef\n078103460e3cb9f038beea4e205bc28425a79c14\t20250814T073000\n1755166800\n1755167400\n1755170400\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250814T073000\r\nDTEND;TZID=America/Sao_Paulo:20250814T082000\r\nDTSTAMP:20250812T153906Z\r\nUID:5co92lfdki9bb76m7tq336bl0q@google.com\r\nRECURRENCE-ID;TZID=America/Sao_Paulo:20250814T073000\r\nCREATED:20250812T153404Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T153906Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:1\r\nSTATUS:CONFIRMED\r\nSUMMARY:TCC I -> CTC 201\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890696346\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT10M\r\nX-EVOLUTION-ALARM-UID:078103460e3cb9f038beea4e205bc28425a79c14\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'f958966c9d1f2062861718470508b6357c063aba\nca79a00380424586740ca74ade3929abebd9bc30\t20250814T080000\n1755169200\n1755171000\n1755171900\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250814T083000\r\nDTEND;TZID=America/Sao_Paulo:20250814T084500\r\nDTSTAMP:20250813T104402Z\r\nUID:1neb5ep4fqb3seuo3p592ar0en@google.com\r\nRECURRENCE-ID;TZID=America/Sao_Paulo:20250814T080000\r\nCREATED:20250721T212127Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250813T104402Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:9\r\nSTATUS:CONFIRMED\r\nSUMMARY:Japonês\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890765042\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT30M\r\nX-EVOLUTION-ALARM-UID:ca79a00380424586740ca74ade3929abebd9bc30\r\nEND:VALARM\r\nEND:VEVENT\r\n', '5ea79929e2f7f65e1b57e835ac547d9deca763ce\nfbbd94f9a6554b1a4b8dfb095aa632aa46e726bb\t20250813T213000Z\n1755119700\n1755120600\n1755133200\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250813T183000\r\nDTEND;TZID=America/Sao_Paulo:20250813T220000\r\nRRULE:FREQ=WEEKLY;UNTIL=20251204T025959Z;BYDAY=WE\r\nDTSTAMP:20250812T132814Z\r\nUID:7i14rnr37kn4uigec7juvr1l1s@google.com\r\nCREATED:20250812T132509Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T132814Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Blockchain\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890688494\r\nRECURRENCE-ID:20250813T213000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT15M\r\nX-EVOLUTION-ALARM-UID:fbbd94f9a6554b1a4b8dfb095aa632aa46e726bb\r\nEND:VALARM\r\nEND:VEVENT\r\n', '4e2855b8807b62a17584749f8983bb7ccd76e6ef\n02219a97e43faaff96a755ff9d4f76dceca5c63d\t20250813T213000Z\n1755120000\n1755120600\n1755133200\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250813T183000\r\nDTEND;TZID=America/Sao_Paulo:20250813T220000\r\nRRULE:FREQ=WEEKLY;UNTIL=20251204T025959Z;BYDAY=WE\r\nDTSTAMP:20250812T132814Z\r\nUID:7i14rnr37kn4uigec7juvr1l1s@google.com\r\nCREATED:20250812T132509Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T132814Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Blockchain\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890688494\r\nRECURRENCE-ID:20250813T213000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT10M\r\nX-EVOLUTION-ALARM-UID:02219a97e43faaff96a755ff9d4f76dceca5c63d\r\nEND:VALARM\r\nEND:VEVENT\r\n', '4e2855b8807b62a17584749f8983bb7ccd76e6ef\n48e5b49397d6bdb6f8631fde791e279b9c8ce76d\t20250813T180000Z\n1755107400\n1755108000\n1755115200\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250813T150000\r\nDTEND;TZID=America/Sao_Paulo:20250813T170000\r\nRRULE:FREQ=WEEKLY;UNTIL=20251204T025959Z;BYDAY=WE\r\nDTSTAMP:20250812T132723Z\r\nUID:7np8uk6rfqo5t9tjouuu7c9939@google.com\r\nCREATED:20250812T132130Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T132723Z\r\nLOCATION:CTC 201\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Distribuída\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890688443\r\nRECURRENCE-ID:20250813T180000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT10M\r\nX-EVOLUTION-ALARM-UID:48e5b49397d6bdb6f8631fde791e279b9c8ce76d\r\nEND:VALARM\r\nEND:VEVENT\r\n', '5ea79929e2f7f65e1b57e835ac547d9deca763ce\nfd3ea1a1c05e66900d7324d806b4d048bf5fa1f7\t20250813T180000Z\n1755107100\n1755108000\n1755115200\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250813T150000\r\nDTEND;TZID=America/Sao_Paulo:20250813T170000\r\nRRULE:FREQ=WEEKLY;UNTIL=20251204T025959Z;BYDAY=WE\r\nDTSTAMP:20250812T132723Z\r\nUID:7np8uk6rfqo5t9tjouuu7c9939@google.com\r\nCREATED:20250812T132130Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T132723Z\r\nLOCATION:CTC 201\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Distribuída\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890688443\r\nRECURRENCE-ID:20250813T180000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT15M\r\nX-EVOLUTION-ALARM-UID:fd3ea1a1c05e66900d7324d806b4d048bf5fa1f7\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'e70ab7c14d5312921ef3eac0dd9e716def8848f7\n2c1f85c6ae7ad319b636898e45572e9380d97213\t20250813T150000Z\n1755096900\n1755097200\n1755097800\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250813T120000\r\nDTEND;TZID=America/Sao_Paulo:20250813T121000\r\nRRULE:FREQ=WEEKLY;UNTIL=20251208T025959Z;BYDAY=MO,WE,FR,SA,SU\r\nEXDATE;TZID=America/Sao_Paulo:20250901T120000\r\nEXDATE;TZID=America/Sao_Paulo:20250922T120000\r\nEXDATE;TZID=America/Sao_Paulo:20251013T120000\r\nEXDATE;TZID=America/Sao_Paulo:20251103T120000\r\nEXDATE;TZID=America/Sao_Paulo:20251124T120000\r\nEXDATE;TZID=America/Sao_Paulo:20251207T120000\r\nDTSTAMP:20250812T141108Z\r\nUID:6brjt7nvb4j5rrh6m3j8bisj46@google.com\r\nCREATED:20250812T135843Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T141108Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Deslocamento UFSC->Casa\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890691068\r\nRECURRENCE-ID:20250813T150000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT5M\r\nX-EVOLUTION-ALARM-UID:2c1f85c6ae7ad319b636898e45572e9380d97213\r\nEND:VALARM\r\nEND:VEVENT\r\n', '4e2855b8807b62a17584749f8983bb7ccd76e6ef\n97023a4e76ffe8cfe0e615c593720c7c8bedc878\t20250813T140000Z\n1755093000\n1755093600\n1755097200\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250813T110000\r\nDTEND;TZID=America/Sao_Paulo:20250813T120000\r\nRRULE:FREQ=WEEKLY;UNTIL=20251208T025959Z;BYDAY=MO,WE,FR,SA,SU\r\nEXDATE;TZID=America/Sao_Paulo:20251207T110000\r\nDTSTAMP:20250812T141102Z\r\nUID:1cqtkp4scuusu98d7bp8gq4fkt@google.com\r\nCREATED:20250812T134020Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T141102Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Almoço\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890691062\r\nRECURRENCE-ID:20250813T140000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT10M\r\nX-EVOLUTION-ALARM-UID:97023a4e76ffe8cfe0e615c593720c7c8bedc878\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'e70ab7c14d5312921ef3eac0dd9e716def8848f7\n54471424e5b8735981db53d3fda6321be7c2a38c\t20250813T134500Z\n1755092400\n1755092700\n1755093300\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250813T104500\r\nDTEND;TZID=America/Sao_Paulo:20250813T105500\r\nRRULE:FREQ=WEEKLY;BYDAY=MO,WE,FR,SA,SU\r\nEXDATE;TZID=America/Sao_Paulo:20250901T104500\r\nEXDATE;TZID=America/Sao_Paulo:20250922T104500\r\nEXDATE;TZID=America/Sao_Paulo:20251013T104500\r\nEXDATE;TZID=America/Sao_Paulo:20251103T104500\r\nEXDATE;TZID=America/Sao_Paulo:20251124T104500\r\nDTSTAMP:20250812T141000Z\r\nUID:1vba0ld6a8c4qeit1dpklkns5t@google.com\r\nCREATED:20250812T134052Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T141000Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:1\r\nSTATUS:CONFIRMED\r\nSUMMARY:Deslocamento Casa->UFSC\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890691000\r\nRECURRENCE-ID:20250813T134500Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT5M\r\nX-EVOLUTION-ALARM-UID:54471424e5b8735981db53d3fda6321be7c2a38c\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'e70ab7c14d5312921ef3eac0dd9e716def8848f7\nc6fcc7e2f356cd023eb9243b69ab19afd695ce58\t20250813T081500\n1755087000\n1755087300\n1755092700\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250813T091500\r\nDTEND;TZID=America/Sao_Paulo:20250813T104500\r\nDTSTAMP:20250813T104355Z\r\nUID:0fvq12kvv7dct358b6b4ch0hs3@google.com\r\nRECURRENCE-ID;TZID=America/Sao_Paulo:20250813T081500\r\nCREATED:20250812T134552Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250813T104355Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:2\r\nSTATUS:CONFIRMED\r\nSUMMARY:Treino\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890765035\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT5M\r\nX-EVOLUTION-ALARM-UID:c6fcc7e2f356cd023eb9243b69ab19afd695ce58\r\nEND:VALARM\r\nEND:VEVENT\r\n']
+
+[org/gnome/evolution]
+default-calendar='4e2855b8807b62a17584749f8983bb7ccd76e6ef'
+
 [org/gnome/gedit/preferences/editor]
 tabs-size=uint32 3
 wrap-last-split-mode='word'
 
 [org/gnome/gedit/state/history-entry]
-search-for-entry=['windows-11/', 'path=windows-11/', 'file=windows-11/']
-
-[org/gnome/gedit/state/window]
-bottom-panel-size=140
-height=983
-maximized=false
-side-panel-active-page='GeditWindowDocumentsPanel'
-side-panel-size=200
-width=960
+replace-with-entry=['Exec=prime-run firefox']
+search-for-entry=['Exec=firefox', 'windows-11/', 'path=windows-11/', 'file=windows-11/']
 
 [org/gnome/gnome-system-monitor]
 current-tab='processes'
@@ -390,7 +349,7 @@ attach-modal-dialogs=false
 center-new-windows=false
 dynamic-workspaces=true
 edge-tiling=false
-overlay-key='Super'
+overlay-key=''
 workspaces-only-on-primary=false
 
 [org/gnome/mutter/keybindings]
@@ -435,6 +394,10 @@ ignore-phase2-ca-cert=false
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
+[org/gnome/nm-applet/eap/9aa71040-e8fc-3791-8423-84fe719710c6]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
 [org/gnome/nm-applet/eap/b6d899fa-7960-4dd8-ba66-b14f03b9405b]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
@@ -451,21 +414,17 @@ ignore-phase2-ca-cert=false
 last-folder-path='/home/maykon/Github'
 
 [org/gnome/settings-daemon/global-shortcuts]
-applications=['org.chromium.Chromium']
-
-[org/gnome/settings-daemon/global-shortcuts/org.chromium.Chromium]
-shortcuts=[('AddSite', {'description': <'Toggle current site'>}), ('darkModeToggle', {'description': <'Dark Mode On/Off'>}), ('nightModeToggle', {'description': <'Night Shift On/Off'>}), ('toggle', {'description': <'Extension On/Off'>})]
+applications=@as []
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=true
 night-light-schedule-automatic=false
 night-light-schedule-from=18.0
-night-light-temperature=uint32 2202
+night-light-temperature=uint32 1700
 
 [org/gnome/settings-daemon/plugins/media-keys]
 control-center=['<Alt>s']
 custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/']
-email=['<Alt>g']
 help=@as []
 home=['<Alt>f']
 logout=@as []
@@ -482,8 +441,8 @@ volume-mute=['AudioMute']
 volume-up=['AudioRaiseVolume']
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
-binding=''
-command='bluemail'
+binding='<Alt>g'
+command='firefox -P Main mail.google.com/mail/u/0/#inbox'
 name='Gmail'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
@@ -498,7 +457,7 @@ name='Discord'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3]
 binding='<Alt>v'
-command='code'
+command='prime-run code'
 name='Vs Code'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4]
@@ -523,7 +482,7 @@ name='Monitor'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8]
 binding='<Alt>b'
-command='firefox --ProfileManager'
+command='prime-run firefox --ProfileManager'
 name='Browser'
 
 [org/gnome/settings-daemon/plugins/power]
@@ -533,10 +492,9 @@ sleep-inactive-ac-type='nothing'
 sleep-inactive-battery-type='nothing'
 
 [org/gnome/shell]
-app-picker-layout=[{'c799eaa9-c4ba-4dc7-ba5b-cf7730b8ad3b': <{'position': <0>}>, 'System': <{'position': <1>}>, 'b5985140-3412-4633-b6a7-4bcb183e2630': <{'position': <2>}>, '29ed6074-bd0c-4b02-8d24-3ee9f9d72b4a': <{'position': <3>}>, '07b5402a-dbdb-4d8a-b769-bcc6e7003a01': <{'position': <4>}>, '0b1df176-152d-4224-b6d8-c5f57683eddc': <{'position': <5>}>}]
-disabled-extensions=['window-list@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'aztaskbar@aztaskbar.gitlab.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'tilingshell@ferrarodomenico.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'status-icons@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com']
-enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'awesome-tiles@velitasali.com', 'dash-to-dock@micxgx.gmail.com']
-favorite-apps=['audacious.desktop', 'windows.desktop', 'gpt.desktop', 'calibre-gui.desktop', 'standard-notes.desktop']
+disabled-extensions=['aztaskbar@aztaskbar.gitlab.com', 'tilingshell@ferrarodomenico.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'status-icons@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'switcher@landau.fi', 'forge@jmmaranan.com', 'gTile@vibou', 'tilingnome@rliang.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com', 'awesome-tiles@velitasali.com']
+favorite-apps=['audacious.desktop', 'windows.desktop', 'gpt.desktop', 'calibre-gui.desktop', 'standard-notes.desktop', 'mendeley-reference-manager.desktop', 'org.pipewire.Helvum.desktop']
 remember-mount-password=true
 welcome-dialog-last-shown-version='48.0'
 
@@ -603,30 +561,6 @@ preferred-monitor-by-connector='eDP-1'
 show-trash=false
 workspace-agnostic-urgent-windows=true
 
-[org/gnome/shell/extensions/tilingshell]
-enable-autotiling=false
-enable-snap-assist=false
-focus-window-down=['<Super>Down']
-focus-window-left=['<Super>Left']
-focus-window-next=['']
-focus-window-right=['<Super>Right']
-focus-window-up=['<Super>Up']
-highlight-current-window=['<Control>Up']
-inner-gaps=uint32 5
-last-version-name-installed='16.3'
-layouts-json='[{"id":"Layout 1","tiles":[{"x":0,"y":0,"width":0.22,"height":0.5,"groups":[1,2]},{"x":0,"y":0.5,"width":0.22,"height":0.5,"groups":[1,2]},{"x":0.22,"y":0,"width":0.56,"height":1,"groups":[2,3]},{"x":0.78,"y":0,"width":0.22,"height":0.5,"groups":[3,4]},{"x":0.78,"y":0.5,"width":0.22,"height":0.5,"groups":[3,4]}]},{"id":"Layout 2","tiles":[{"x":0,"y":0,"width":0.22,"height":1,"groups":[1]},{"x":0.22,"y":0,"width":0.56,"height":1,"groups":[1,2]},{"x":0.78,"y":0,"width":0.22,"height":1,"groups":[2]}]},{"id":"Layout 3","tiles":[{"x":0,"y":0,"width":0.33,"height":1,"groups":[1]},{"x":0.33,"y":0,"width":0.67,"height":1,"groups":[1]}]},{"id":"Layout 4","tiles":[{"x":0,"y":0,"width":0.67,"height":1,"groups":[1]},{"x":0.67,"y":0,"width":0.33,"height":0.4980769230769231,"groups":[2,1]},{"x":0.67,"y":0.4980769230769231,"width":0.33,"height":0.5019230769230769,"groups":[2,1]}]},{"id":"1358701","tiles":[{"x":0,"y":0,"width":0.49947916666666664,"height":1,"groups":[1]},{"x":0.49947916666666664,"y":0,"width":0.5005208333333349,"height":1,"groups":[1]}]}]'
-move-window-center=['<Super>KP_Insert']
-move-window-down=['<Super>KP_Down']
-move-window-left=['<Super>KP_Left']
-move-window-right=['<Super>KP_Right']
-move-window-up=['<Super>KP_Up']
-outer-gaps=uint32 10
-overridden-settings='{}'
-override-window-menu=true
-selected-layouts=[['1358701'], ['Layout 1'], ['Layout 1']]
-snap-assistant-animation-time=uint32 179
-untile-window=['<Super>KP_Begin']
-
 [org/gnome/shell/extensions/workspace-indicator]
 embed-previews=false
 
@@ -655,7 +589,11 @@ first-run=false
 flatpak-purge-timestamp=int64 1744676623
 
 [org/gnome/tweaks]
-show-extensions-notice=true
+show-extensions-notice=false
+
+[org/gtk/gtk4/settings/color-chooser]
+custom-colors=[(0.9843137264251709, 0.91372549533843994, 0.51372551918029785, 1.0), (0.62352943420410156, 0.88235294818878174, 0.90588235855102539, 1.0), (0.59000003337860107, 0.98333334922790527, 0.0, 1.0), (0.086274512112140656, 0.65490198135375977, 0.3960784375667572, 1.0), (0.96470588445663452, 0.56862747669219971, 0.69803923368453979, 1.0)]
+selected-color=(true, 1.0, 1.0, 1.0, 1.0)
 
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
@@ -670,8 +608,8 @@ view-type='list'
 window-size=(1683, 374)
 
 [org/gtk/settings/color-chooser]
-custom-colors=[(0.33333333333333331, 0.10196078431372549, 0.54509803921568623, 1.0), (0.0, 0.0, 0.93333333333333335, 1.0), (0.67450980392156867, 0.62745098039215685, 0.96862745098039216, 1.0), (0.56862745098039214, 0.56862745098039214, 0.56862745098039214, 1.0), (0.96078431372549022, 0.25882352941176473, 0.83921568627450982, 1.0), (0.67843137254901964, 0.45882352941176469, 0.95686274509803926, 1.0), (0.20392156862745098, 0.59607843137254901, 0.83921568627450982, 1.0), (0.18823529411764706, 0.62352941176470589, 0.65098039215686276, 1.0)]
-selected-color=(true, 0.86274509803921573, 0.54117647058823526, 0.8666666666666667, 1.0)
+custom-colors=[(0.56862745098039214, 0.56862745098039214, 0.56862745098039214, 1.0), (0.96078431372549022, 0.25882352941176473, 0.83921568627450982, 1.0), (0.67843137254901964, 0.45882352941176469, 0.95686274509803926, 1.0), (0.20392156862745098, 0.59607843137254901, 0.83921568627450982, 1.0), (0.18823529411764706, 0.62352941176470589, 0.65098039215686276, 1.0), (0.1803921568627451, 0.63529411764705879, 0.51372549019607838, 1.0), (0.33725490196078434, 0.63529411764705879, 0.16862745098039217, 1.0), (0.61176470588235299, 0.57647058823529407, 0.16862745098039217, 1.0)]
+selected-color=(true, 0.0, 0.0, 0.0, 1.0)
 
 [org/gtk/settings/file-chooser]
 date-format='regular'

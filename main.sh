@@ -12,12 +12,10 @@ yay -Suy
 yay -Sy --needed --noconfirm - < apps/essentials.list
 make -f src/preconfig.mk
 yay -Sy --needed --noconfirm - < apps/gnome.list
-# yay -Sy --needed --noconfirm - < apps/hypr.list
 yay -Sy --needed --noconfirm - < apps/desktop.list
 
 # Config files on home
 make -f src/essentials.mk
 make -f src/gnome.mk
-# make -f src/hyprland.mk
 make -f src/desktop.mk
 make -f src/audacious.mk

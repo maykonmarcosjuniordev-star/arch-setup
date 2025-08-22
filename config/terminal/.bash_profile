@@ -11,4 +11,5 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
         eval "$(ssh-agent -s)"
         sleep 1  # dá tempo pro agente iniciar
     fi
+    
 fi

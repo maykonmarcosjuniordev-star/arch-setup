@@ -24,11 +24,4 @@ all:
 	systemctl --user enable --now ssh-agent.service
 	systemctl --user enable --now ssh-add.service
 	git remote set-url origin git@github.com:maykonmjunior/arch-setup.git
-	read -p "insira o email para a ssh" email
-	ssh-keygen -t ed25519 -C "$email"
-	cat ~/.ssh/id_ed25519.pub
-	echo "Copie o resultado anterior e cole em: https://github.com/settings/ssh/new"
-	eval "$(ssh-agent -s)"
-	chmod 600 ~/.ssh/id_ed25519
-	ssh-add ~/.ssh/id_ed25519
 	

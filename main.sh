@@ -16,6 +16,7 @@ yay -Sy --needed --noconfirm - < apps/desktop.list
 
 # Config files on home
 make -f src/essentials.mk
+make -f src/terminal.mk
 make -f src/gnome.mk
 make -f src/desktop.mk
 make -f src/audacious.mk

@@ -1,7 +1,0 @@
-# https://github.com/amadejkastelic/Hyprlux
-# https://aur.archlinux.org/packages/hyprlux
-night_light = { enabled = true, start_time = "18:00", end_time = "06:00", temperature = 3500 }
-
-vibrance_configs = [
-  { window_class = "SDL Application", window_title = "", strength = 100 },
-]

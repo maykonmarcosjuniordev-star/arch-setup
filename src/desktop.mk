@@ -8,6 +8,7 @@ all:
 	ln -sf ~/arch-setup/config/dconf/*.desktop ~/.local/share/applications/
 	ln -sf ~/arch-setup/config/dconf/discord.desktop ~/.config/autostart/
 	ln -sf ~/arch-setup/config/dconf/notion.desktop ~/.config/autostart/
+	ln -sf ~/arch-setup/config/dconf/wasistlos.conf ~/.config/wasistlos/settings.conf
 	mkdir -p ~/MEGA/Main
 	mkdir -p ~/MEGA/Hobby
 	mkdir -p ~/MEGA/UFSC

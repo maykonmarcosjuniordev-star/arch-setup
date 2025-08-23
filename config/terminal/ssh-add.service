@@ -6,8 +6,8 @@ Requires=ssh-agent.service
 [Service]
 Type=oneshot
 Environment=SSH_AUTH_SOCK=%t/ssh-agent.socket
-ExecStart=/usr/bin/ssh-add /home/maykon/.ssh/main/id_ed25519
-ExecStart=/usr/bin/ssh-add /home/maykon/.ssh/ufsc/id_ed25519
+ExecStart=/usr/bin/ssh-add /home/maykon/.ssh/id_ed25519
+ExecStart=/usr/bin/ssh-add /home/maykon/.ssh/id_rsa
 
 [Install]
 WantedBy=default.target

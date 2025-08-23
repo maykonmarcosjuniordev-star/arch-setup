@@ -20,3 +20,4 @@ make -f src/terminal.mk
 make -f src/gnome.mk
 make -f src/desktop.mk
 make -f src/audacious.mk
+make -f src/nvidia.mk

@@ -8,7 +8,6 @@ all:
 	export QT_IM_MODULE=ibus
 	export XMODIFIERS=@im=ibus
 	export INPUT_METHOD=ibus
-	systemctl enable gdm
 	systemctl --user enable --now pipewire pipewire-pulse wireplumber
 	systemctl enable bluetooth.service
 	sudo usermod -aG video $USER

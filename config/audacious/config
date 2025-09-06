@@ -44,7 +44,7 @@ volume_right=100
 [qtui]
 column_widths=25,25,623,360,50,351,175,25,100,40,75,275,275,275,75,275,175,75
 player_height=799
-player_width=1536
+player_width=1534
 playlist_headers_bold=TRUE
 
 [silence-removal]

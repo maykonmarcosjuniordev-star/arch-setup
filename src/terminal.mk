@@ -5,6 +5,7 @@ all:
 	ln -sf ~/arch-setup/config/terminal/.bash_profile ~/.bash_profile
 	ln -sf ~/arch-setup/config/terminal/kitty.conf ~/.config/kitty/kitty.conf
 	ln -sf ~/arch-setup/config/terminal/current-theme.conf ~/.config/kitty/current-theme.conf
+	ln -sf ~/arch-setup/config/terminal/.profile ~/.profile
 	read -p "insira o email para a ssh" email
 	ssh-keygen -t ed25519 -C "$email"
 	read -p "insira o email para a ssh rsa" email

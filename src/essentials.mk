@@ -14,13 +14,5 @@ all:
 	sudo rmmod uvcvideo
 	sudo modprobe -r uvcvideo
 	sudo modprobe uvcvideo
-	mkdir -p ~/.config/systemd/user
-	ln -sf ~/arch-setup/config/terminal/ssh-agent.service ~/.config/systemd/user/ssh-agent.service
-	ln -sf ~/arch-setup/config/terminal/ssh-add.service ~/.config/systemd/user/ssh-add.service
-	ln -sf ~/arch-setup/config/terminal/.profile ~/.profile
-	systemctl --user daemon-reexec
-	systemctl --user daemon-reload
-	systemctl --user enable --now ssh-agent.service
-	systemctl --user enable --now ssh-add.service
 	git remote set-url origin git@github.com:maykonmjunior/arch-setup.git
 	

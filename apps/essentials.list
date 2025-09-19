@@ -17,9 +17,6 @@ libcamera
 libdecor
 linux-headers
 noto-fonts-cjk
-nvidia
-nvidia-prime
-nvidia-utils
 openssh
 os-prober
 python-pip

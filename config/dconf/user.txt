@@ -491,7 +491,7 @@ name='Discord'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3]
 binding='<Alt>v'
-command='prime-run code'
+command='code'
 name='Vs Code'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4]
@@ -516,7 +516,7 @@ name='Monitor'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8]
 binding='<Alt>b'
-command='prime-run firefox --ProfileManager'
+command='firefox --ProfileManager'
 name='Browser'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9]

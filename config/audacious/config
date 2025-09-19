@@ -10,7 +10,7 @@ show_interface=FALSE
 show_numbers_in_pl=TRUE
 
 [audgui]
-filesel_path=/home/maykon/Music
+filesel_path=/home/maykon/Music/Musicals
 
 [audqt]
 icon_theme=audacious-flat-dark
@@ -44,7 +44,7 @@ volume_right=100
 [qtui]
 column_widths=25,25,623,360,50,351,175,25,100,40,75,275,275,275,75,275,175,75
 player_height=799
-player_width=1534
+player_width=1536
 playlist_headers_bold=TRUE
 
 [silence-removal]

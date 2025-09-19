@@ -1,4 +1,6 @@
 all:
+	@echo "installing nvidias drives"
+	@yay -Sy --needed --noconfirm nvidia nvidia-prime nvidia-utils
 	@echo "replacing binaries in usr/bin/ to run with prime-run"
 
 	@echo "for brave"

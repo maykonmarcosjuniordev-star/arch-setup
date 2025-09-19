@@ -20,12 +20,9 @@ noto-fonts-cjk
 openssh
 os-prober
 python-pip
-qemu-full
 rust
 rust-src
 sof-firmware
-spice
-spice-gtk
 swtpm
 tar
 ttf-font-awesome

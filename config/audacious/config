@@ -10,7 +10,7 @@ show_interface=FALSE
 show_numbers_in_pl=TRUE
 
 [audgui]
-filesel_path=/home/maykon/Music/Musicals
+filesel_path=/home/maykon/Music
 
 [audqt]
 icon_theme=audacious-flat-dark

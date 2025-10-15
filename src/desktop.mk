@@ -24,5 +24,10 @@ setup_firefox:
 	ln -sf  ~/arch-setup/config/firefox/user.js ~/.mozilla/firefox/Hobby/user.js
 	ln -sf  ~/arch-setup/config/firefox/user.js ~/.mozilla/firefox/UFSC/user.js
 	ln -sf  ~/arch-setup/config/firefox/user.js ~/.mozilla/firefox/Dev/user.js
-	ln -sf  ~/arch-setup/config/firefox/user.js ~/.mozilla/firefox/Lax/user.js
+# 	ln -sf  ~/arch-setup/config/firefox/user.js ~/.mozilla/firefox/Lax/user.js
+# 	cp  ~/arch-setup/config/firefox/user.js ~/.mozilla/firefox/Hobby/
+# 	cp  ~/arch-setup/config/firefox/user.js ~/.mozilla/firefox/Main/
+# 	cp  ~/arch-setup/config/firefox/user.js ~/.mozilla/firefox/UFSC/
+# 	cp  ~/arch-setup/config/firefox/user.js ~/.mozilla/firefox/Dev/
+	cp  ~/arch-setup/config/firefox/user.js ~/.mozilla/firefox/Lax/
 

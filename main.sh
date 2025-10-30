@@ -30,9 +30,9 @@ read -p "Do you want to use GNOME? (y/n): " apply_gnome
 if [[ "$apply_gnome" == "y" || "$apply_gnome" == "Y" ]]; then
     ./src/gnome.sh apply
 fi
-read -ṕ "Do you want to use Cosmic Desktop? (y/n): " apply_cosmic
+read -p "Do you want to use Cosmic Desktop? (y/n): " apply_cosmic
 if [[ "$apply_cosmic" == "y" || "$apply_cosmic" == "Y" ]]; then
-    ./src/desktop.sh cosmic
+    ./src/cosmic.sh
 fi
 read -p "Do you want to set up virtual machine support? (y/n): " setup_vm
 if [[ "$setup_vm" == "y" || "$setup_vm" == "Y" ]]; then

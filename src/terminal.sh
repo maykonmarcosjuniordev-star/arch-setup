@@ -1,9 +1,9 @@
 function create_symlinks() {
-	ln -sf ~/arch-setup/config/terminal/.bash_aliases ~/.bash_aliases
-	ln -sf ~/arch-setup/config/terminal/.bash_profile ~/.bash_profile
-	ln -sf ~/arch-setup/config/terminal/.profile ~/.profile
-	ln -sf ~/arch-setup/config/terminal/.bashrc ~/.bashrc
-	ln -sf ~/arch-setup/config/terminal/starship.toml ~/.config/starship.toml
+	ln -sfn ~/arch-setup/config/terminal/.bash_aliases ~/.bash_aliases
+	ln -sfn ~/arch-setup/config/terminal/.bash_profile ~/.bash_profile
+	ln -sfn ~/arch-setup/config/terminal/.profile ~/.profile
+	ln -sfn ~/arch-setup/config/terminal/.bashrc ~/.bashrc
+	ln -sfn ~/arch-setup/config/terminal/starship.toml ~/.config/starship.toml
 }
 
 function gen_key() {

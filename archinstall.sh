@@ -44,7 +44,7 @@ arch-chroot /mnt
 loadkeys br-abnt2
 # Configuração de Timezone
 echo "Configuração do Timezone..."
-ln -sf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
+ln -sfn /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
 hwclock --systohc
 # selecção do hostname
 echo "Definindo o hostname como $hostname"

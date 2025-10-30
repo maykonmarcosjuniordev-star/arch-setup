@@ -6,6 +6,7 @@ curl
 dbus-python
 ffmpeg
 gcc
+git-filter-repo
 git-lfs
 gst-plugin-pipewire
 ibus

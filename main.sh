@@ -1,7 +1,9 @@
 #!/bin/bash
 # essentials that need pacman
+echo "installing essential apps with pacman"
 sudo pacman -Suy --needed --noconfirm - < apps/pacman.list
 # install yay
+echo "installing yay"
 sudo git clone https://aur.archlinux.org/yay-git.git /opt/yay-git
 sudo chown -R $(whoami):$(whoami) /opt/yay-git/
 cd /opt/yay-git
@@ -9,15 +11,33 @@ makepkg -sirc
 cd ~/arch-setup
 yay -Suy
 # install apps
-yay -Sy --needed --noconfirm - < apps/essentials.list
-make -f src/preconfig.mk
-yay -Sy --needed --noconfirm - < apps/gnome.list
-yay -Sy --needed --noconfirm - < apps/desktop.list
+chmod +x src/*.sh
+echo "installing essential apps with yay"
+./src/essentials.sh
+# create symlinks
+echo "creating symlinks for terminal settings"
+./src/terminal.sh create_symlinks
+read -p "Do you want to generate SSH keys? (y/n): " generate_keys
+if [[ "$generate_keys" == "y" || "$generate_keys" == "Y" ]]; then
+    ./src/terminal.sh gen_key
+fi
+./src/desktop.sh
+read -p "Do you want to install NVIDIA drivers? (y/n): " install_nvidia
+if [[ "$install_nvidia" == "y" || "$install_nvidia" == "Y" ]]; then
+    ./src/nvidia.sh
+fi
+read -p "Do you want to use GNOME? (y/n): " apply_gnome
+if [[ "$apply_gnome" == "y" || "$apply_gnome" == "Y" ]]; then
+    ./src/gnome.sh apply
+fi
+read -ṕ "Do you want to use Cosmic Desktop? (y/n): " apply_cosmic
+if [[ "$apply_cosmic" == "y" || "$apply_cosmic" == "Y" ]]; then
+    ./src/desktop.sh cosmic
+fi
+read -p "Do you want to set up virtual machine support? (y/n): " setup_vm
+if [[ "$setup_vm" == "y" || "$setup_vm" == "Y" ]]; then
+    ./src/vm.sh
+fi
 
-# Config files on home
-make -f src/essentials.mk
-make -f src/terminal.mk
-make -f src/gnome.mk
-make -f src/desktop.mk
-make -f src/audacious.mk
-make -f src/nvidia.mk
+# set correct git remote
+git remote set-url origin git@github.com:maykonmarcosjuniordev-star/arch-setup.git

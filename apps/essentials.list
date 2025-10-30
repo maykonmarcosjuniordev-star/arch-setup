@@ -7,7 +7,6 @@ dbus-python
 ffmpeg
 gcc
 git-lfs
-gnupg
 gst-plugin-pipewire
 ibus
 less
@@ -30,7 +29,7 @@ swtpm
 tar
 ttf-font-awesome
 ttf-ubuntu-mono-nerd
-starship-git
+starship
 unzip
 usbutils
 vlc-plugin-ffmpeg

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Exec=firefox -P Main --new-tab https://calendar.notion.so/
+Encoding=UTF-8
+Version=1.0
+Icon=/home/maykon/.local/share/icons/calendar.png
+Type=Application
+Terminal=false
+NoDisplay=false
+Name=Calendar-Notion
+Comment=Interface para o Notion Calendar

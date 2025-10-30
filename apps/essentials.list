@@ -11,7 +11,9 @@ gnupg
 gst-plugin-pipewire
 ibus
 less
-kitty
+cosmic-text-editor
+cosmic-files
+cosmic-terminal
 make
 libcamera
 libdecor
@@ -19,6 +21,7 @@ linux-headers
 noto-fonts-cjk
 openssh
 os-prober
+power-profiles-daemon
 python-pip
 rust
 rust-src
@@ -26,6 +29,8 @@ sof-firmware
 swtpm
 tar
 ttf-font-awesome
+ttf-ubuntu-mono-nerd
+starship-git
 unzip
 usbutils
 vlc-plugin-ffmpeg

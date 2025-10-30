@@ -1,13 +1,19 @@
 all:
+# 	enable gmail-tray service
 	systemctl --user enable --now gmail-tray.service
+# 	copy dummy fetchmail 
+	cp ~/arch-setup/config/tray/.fetchmailrc ~/.fetchmailrc
+# 	copy fonts and update font cache
 	sudo mkdir -p /usr/local/share/fonts
 	sudo cp ~/arch-setup/fonts/* /usr/local/share/fonts
-	cp ~/arch-setup/config/tray/.fetchmailrc ~/.fetchmailrc
 	sudo fc-cache -vf
+# 	create symlinks for configuration files and directories
+#   app icons, wallpapers, applications, autostart entries, and wasistlos config
 	ln -sf ~/arch-setup/icons ~/.local/share/
-	ln -sf ~/arch-setup/config/dconf/*.desktop ~/.local/share/applications/
-	ln -sf ~/arch-setup/config/dconf/discord.desktop ~/.config/autostart/
-	ln -sf ~/arch-setup/config/dconf/notion.desktop ~/.config/autostart/
+	ln -sf ~/arch-setup/wallpapers ~/.local/share/backgrounds
+	ln -sf ~/arch-setup/applications ~/.local/share/applications
+	ln -sf ~/arch-setup/applications/discord.desktop ~/.config/autostart/
+	ln -sf ~/arch-setup/applications/notion.desktop ~/.config/autostart/
 	ln -sf ~/arch-setup/config/dconf/wasistlos.conf ~/.config/wasistlos/settings.conf
 
 	if [read -p "Do you want to setup Firefox profiles? (y/n) " choice && [[ $choice == [Yy]* ]]; then

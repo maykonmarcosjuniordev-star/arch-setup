@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=firefox -P Main --new-tab https://www.notion.so/c9cb81e2705149a0a5cc428d2020fc6e?v=b62db6789d32418a8566550d4e0c5b76
+Exec=firefox --ProfileManager --new-tab https://www.notion.so/
 Encoding=UTF-8
 Version=1.0
 Icon=/home/maykon/.local/share/icons/notion.png

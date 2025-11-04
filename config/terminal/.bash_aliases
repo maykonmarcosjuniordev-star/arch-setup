@@ -1,5 +1,5 @@
 alias list='cat ~/.bash_aliases'
-alias upd='yay -Suy --noconfirm && sudo pacman -Qdtq | sudo xargs -r pacman -Rns --noconfirm'
+alias upd='yay -Suy --noconfirm && rustup update && sudo pacman -Qdtq | sudo xargs -r pacman -Rns --noconfirm'
 alias get_music='yt-dlp --format bestaudio --extract-audio --audio-format mp3 --audio-quality 192K --output "%(title)s.%(ext)s"'
 alias editor='cosmic-edit'
 alias set-ssh='ssh-add -q ~/.ssh/id_rsa'

@@ -5,12 +5,12 @@
     "theme": {
         "mode": 1,
         "brightness": 100,
-        "contrast": 100,
+        "contrast": 150,
         "grayscale": 0,
-        "sepia": 0,
+        "sepia": 50,
         "useFont": true,
-        "fontFamily": "monospace",
-        "textStroke": 0,
+        "fontFamily": "system-ui",
+        "textStroke": 0.3,
         "engine": "dynamicTheme",
         "stylesheet": "",
         "darkSchemeBackgroundColor": "#181a1b",
@@ -89,9 +89,9 @@
             "theme": {
                 "mode": 1,
                 "brightness": 100,
-                "contrast": 100,
+                "contrast": 150,
                 "grayscale": 0,
-                "sepia": 0,
+                "sepia": 50,
                 "useFont": false,
                 "fontFamily": "Open Sans",
                 "textStroke": 0,
@@ -146,9 +146,9 @@
     "syncSettings": true,
     "syncSitesFixes": true,
     "automation": {
-        "enabled": false,
-        "mode": "",
-        "behavior": "OnOff"
+        "enabled": true,
+        "mode": "system",
+        "behavior": "Scheme"
     },
     "time": {
         "activation": "18:00",
@@ -162,10 +162,13 @@
     "previewNewestDesign": false,
     "enableForPDF": true,
     "enableForProtectedPages": true,
-    "enableContextMenus": false,
+    "enableContextMenus": true,
     "detectDarkTheme": true,
+    "displayedNews": [
+        "google-docs-bugs"
+    ],
     "installation": {
-        "date": 1762249769377,
+        "date": 1762248943053,
         "reason": "install",
         "version": "4.9.112"
     }

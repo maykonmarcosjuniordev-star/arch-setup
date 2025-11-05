@@ -1,10 +1,10 @@
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/desktop/ibus/general/'
-saved-view='/desktop/ibus/general/'
+saved-pathbar-path='/org/gnome/desktop/lockdown/disable-lock-screen'
+saved-view='/org/gnome/desktop/lockdown/disable-lock-screen'
 show-warning=false
-window-height=985
-window-is-maximized=true
-window-width=1920
+window-height=973
+window-is-maximized=false
+window-width=948
 
 [desktop/ibus/general]
 preload-engines=['xkb:us::eng', 'xkb:br::por']
@@ -21,25 +21,25 @@ use-custom-theme=true
 display-whitepoint=1000
 
 [org/gnome/Extensions]
-window-height=518
+window-height=1040
 window-maximized=false
-window-width=960
+window-width=1920
 
 [org/gnome/baobab/ui]
 active-chart='rings'
-is-maximized=true
-window-size=(960, 600)
+is-maximized=false
+window-size=(1920, 1040)
 
 [org/gnome/calendar]
 active-view='week'
 weather-settings=(false, false, '', @mv nothing)
-week-view-zoom-level=1.0
+week-view-zoom-level=1.78515625
 window-maximized=true
-window-size=(1920, 1036)
+window-size=(948, 1024)
 
 [org/gnome/control-center]
 last-panel='keyboard'
-window-state=(980, 640, true)
+window-state=(948, 1024, false)
 
 [org/gnome/desktop/a11y]
 always-show-universal-access-status=false
@@ -63,7 +63,7 @@ stickykeys-enable=false
 contrast-blue=0.0
 contrast-green=0.0
 contrast-red=0.0
-mag-factor=17.0
+mag-factor=24.0
 
 [org/gnome/desktop/a11y/mouse]
 click-type-window-visible=false
@@ -71,15 +71,25 @@ dwell-click-enabled=false
 secondary-click-enabled=false
 
 [org/gnome/desktop/app-folders]
-folder-children=['System', 'Utilities', 'YaST', 'Pardus', '5b979d2d-5d79-49cd-856f-258e23b0b73b', 'dedee40c-8ebf-4bf5-a9f6-b0b00954d8e6', 'e572eb82-f138-42db-aac5-76ea9100f2f4', 'fc01a8d4-bf13-4eb8-8d5d-dd884e7aab33', '0f93fdd7-cb78-4c79-93db-2779a9262e02', '2f57ed3d-3657-4e96-b1b5-8d3bdc86945b']
+folder-children=['System', 'Utilities', 'YaST', 'Pardus', '5b979d2d-5d79-49cd-856f-258e23b0b73b', 'dedee40c-8ebf-4bf5-a9f6-b0b00954d8e6', 'e572eb82-f138-42db-aac5-76ea9100f2f4', 'fc01a8d4-bf13-4eb8-8d5d-dd884e7aab33', '0f93fdd7-cb78-4c79-93db-2779a9262e02', '2f57ed3d-3657-4e96-b1b5-8d3bdc86945b', '173ee898-8f23-4f6d-9899-4312e581e888']
 
 [org/gnome/desktop/app-folders/folders/0f93fdd7-cb78-4c79-93db-2779a9262e02]
-apps=['org.gnome.Nautilus.desktop', 'org.gnome.Calendar.desktop', 'com.github.xeco23.WasIstLos.desktop', 'code.desktop']
+apps=['calendar-notion.desktop', 'com.system76.CosmicTerm.desktop', 'discord.desktop', 'firefox.desktop', 'gmail-tray.desktop', 'gpt.desktop', 'notion.desktop', 'code.desktop', 'com.github.xeco23.WasIstLos.desktop']
 name='Shortcuts'
 translate=false
 
+[org/gnome/desktop/app-folders/folders/173ee898-8f23-4f6d-9899-4312e581e888]
+apps=['nm-connection-editor.desktop', 'com.system76.CosmicScreenshot.desktop', 'com.system76.CosmicFiles.desktop']
+name='Cosmic'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/2f57ed3d-3657-4e96-b1b5-8d3bdc86945b]
+apps=['Waydroid.desktop', 'waydroid.com.android.inputmethod.latin.desktop', 'waydroid.org.lineageos.jelly.desktop', 'waydroid.com.android.calculator2.desktop', 'waydroid.org.lineageos.etar.desktop', 'waydroid.org.lineageos.aperture.desktop', 'waydroid.com.android.deskclock.desktop', 'waydroid.com.android.contacts.desktop', 'waydroid.com.android.documentsui.desktop', 'waydroid.com.android.gallery3d.desktop', 'waydroid.org.lineageos.eleven.desktop', 'waydroid.org.lineageos.recorder.desktop', 'waydroid.com.android.settings.desktop']
+name='Waydroid'
+translate=false
+
 [org/gnome/desktop/app-folders/folders/5b979d2d-5d79-49cd-856f-258e23b0b73b]
-apps=['bssh.desktop', 'bvnc.desktop', 'avahi-discover.desktop', 'nvim.desktop', 'plainotepad.desktop', 'kitty.desktop', 'qv4l2.desktop', 'qvidcap.desktop']
+apps=['bssh.desktop', 'bvnc.desktop', 'avahi-discover.desktop', 'nvim.desktop', 'org.gnome.gedit.desktop', 'plainotepad.desktop', 'kitty.desktop', 'qv4l2.desktop', 'qvidcap.desktop']
 name='Built-in'
 translate=false
 
@@ -89,7 +99,7 @@ name='X-Pardus-Apps.directory'
 translate=true
 
 [org/gnome/desktop/app-folders/folders/System]
-apps=['org.gnome.baobab.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.SystemMonitor.desktop']
+apps=['org.gnome.DiskUtility.desktop', 'org.gnome.baobab.desktop', 'org.gnome.SystemMonitor.desktop', 'Proton Authenticator.desktop', 'lstopo.desktop']
 name='X-GNOME-Shell-System.directory'
 translate=true
 
@@ -103,27 +113,31 @@ name='suse-yast.directory'
 translate=true
 
 [org/gnome/desktop/app-folders/folders/dedee40c-8ebf-4bf5-a9f6-b0b00954d8e6]
-apps=['brave-browser.desktop', 'megasync.desktop', 'firefox.desktop', 'gmail-tray.desktop', 'notion.desktop', 'discord.desktop']
-name='Internet'
+apps=['brave-browser.desktop', 'megasync.desktop', 'org.servo.Servo.desktop', 'terabox.desktop', 'standard-notes.desktop']
+name='BKP'
+translate=false
 
 [org/gnome/desktop/app-folders/folders/e572eb82-f138-42db-aac5-76ea9100f2f4]
-apps=['org.gnome.Settings.desktop', 'org.gnome.Extensions.desktop', 'timeshift-gtk.desktop', 'ca.desrt.dconf-editor.desktop']
-name='Settings'
+apps=['org.gnome.Calendar.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.Extensions.desktop', 'org.gnome.Settings.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Nautilus.desktop']
+name='Gnome'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/fc01a8d4-bf13-4eb8-8d5d-dd884e7aab33]
-apps=['calibre-ebook-edit.desktop', 'calibre-lrfviewer.desktop', 'calibre-ebook-viewer.desktop', 'vlc.desktop']
+apps=['audacious.desktop', 'calibre-gui.desktop', 'com.system76.CosmicEdit.desktop', 'calibre-ebook-edit.desktop', 'calibre-ebook-viewer.desktop', 'calibre-lrfviewer.desktop', 'obsidian.desktop', 'vlc.desktop']
 name='Viewers'
 translate=false
 
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/maykon/.local/share/backgrounds/2025-08-22-21-25-59-jungle.png'
-picture-uri-dark='file:///home/maykon/.local/share/backgrounds/2025-08-22-21-25-59-jungle.png'
+picture-uri='file:///home/maykon/.local/share/backgrounds/jungle.png'
+picture-uri-dark='file:///home/maykon/.local/share/backgrounds/jungle.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 show-desktop-icons=true
+
+[org/gnome/desktop/break-reminders]
+selected-breaks=@as []
 
 [org/gnome/desktop/break-reminders/eyesight]
 play-sound=true
@@ -140,7 +154,7 @@ show-weekdate=true
 mru-sources=[('xkb', 'br'), ('xkb', 'us')]
 per-window=true
 show-all-sources=true
-sources=[('xkb', 'br'), ('xkb', 'us')]
+sources=[('xkb', 'br'), ('xkb', 'us'), ('xkb', 'jp+kana')]
 xkb-options=['lv3:ralt_switch', 'mod_led:compose', 'grp:win_space_toggle', 'keypad:pointerkeys']
 
 [org/gnome/desktop/interface]
@@ -162,13 +176,18 @@ gtk-theme='Adwaita-dark'
 icon-theme='Adwaita'
 locate-pointer=true
 monospace-font-name='Adwaita Mono Bold 12'
-overlay-scrolling=false
+overlay-scrolling=true
 show-battery-percentage=true
 text-scaling-factor=1.25
 toolkit-accessibility=false
 
+[org/gnome/desktop/lockdown]
+disable-lock-screen=true
+disable-show-password=false
+user-administration-disabled=false
+
 [org/gnome/desktop/notifications]
-application-children=['com-github-xeco23-wasistlos', 'gnome-power-panel', 'audacious', 'brave-browser', 'notion', 'org-gnome-tweaks', 'org-gnome-software', 'discord', 'org-gnome-nautilus', 'org-gnome-gedit', 'org-gnome-baobab', 'kitty', 'org-gnome-diskutility', 'org-gnome-boxes', 'org-gnome-settings', 'bluemail', 'org-gnome-systemmonitor', 'firefox', 'appflowy', 'notion-app-enhanced', 'calibre-gui', 'org-qt-project-qtcreator', 'org-gnome-extensions', 'appimagekit-pcloud', 'plainotepad', 'wine-programs-rockwell-software-arena-arena', 'org-gnome-evolution-alarm-notify', 'morgen', 'megasync']
+application-children=['com-github-xeco23-wasistlos', 'gnome-power-panel', 'audacious', 'brave-browser', 'notion', 'org-gnome-tweaks', 'org-gnome-software', 'discord', 'org-gnome-nautilus', 'org-gnome-gedit', 'org-gnome-baobab', 'kitty', 'org-gnome-diskutility', 'org-gnome-boxes', 'org-gnome-settings', 'bluemail', 'org-gnome-systemmonitor', 'firefox', 'appflowy', 'notion-app-enhanced', 'calibre-gui', 'org-qt-project-qtcreator', 'org-gnome-extensions', 'appimagekit-pcloud', 'plainotepad', 'wine-programs-rockwell-software-arena-arena', 'org-gnome-evolution-alarm-notify', 'morgen', 'megasync', 'tenacity', 'gnome-about-panel', 'gnome-wellbeing-panel']
 show-in-lock-screen=false
 
 [org/gnome/desktop/notifications/application/audacious]
@@ -189,8 +208,14 @@ application-id='discord.desktop'
 [org/gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
 
+[org/gnome/desktop/notifications/application/gnome-about-panel]
+application-id='gnome-about-panel.desktop'
+
 [org/gnome/desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-wellbeing-panel]
+application-id='gnome-wellbeing-panel.desktop'
 
 [org/gnome/desktop/notifications/application/kitty]
 application-id='kitty.desktop'
@@ -234,6 +259,9 @@ application-id='org.gnome.tweaks.desktop'
 [org/gnome/desktop/notifications/application/plainotepad]
 application-id='plainotepad.desktop'
 
+[org/gnome/desktop/notifications/application/tenacity]
+application-id='tenacity.desktop'
+
 [org/gnome/desktop/peripherals/keyboard]
 delay=uint32 770
 numlock-state=true
@@ -249,14 +277,18 @@ disable-camera=false
 
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
-lock-enabled=false
+lock-enabled=true
 picture-options='zoom'
-picture-uri='file:///home/maykon/.local/share/backgrounds/2025-08-22-21-25-59-jungle.png'
+picture-uri='file:///home/maykon/.local/share/backgrounds/jungle.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
+[org/gnome/desktop/search-providers]
+disabled=['org.gnome.Nautilus.desktop']
+sort-order=['org.gnome.Settings.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Nautilus.desktop']
+
 [org/gnome/desktop/session]
-idle-delay=uint32 0
+idle-delay=uint32 900
 
 [org/gnome/desktop/sound]
 event-sounds=true
@@ -266,14 +298,14 @@ theme-name='__custom'
 activate-window-menu=@as []
 begin-move=@as []
 begin-resize=@as []
+close=['<Alt>F4']
 cycle-group=@as []
 cycle-group-backward=@as []
 cycle-panels=@as []
 cycle-panels-backward=@as []
 cycle-windows=@as []
 cycle-windows-backward=@as []
-maximize=['<Super>Up']
-minimize=['<Super>Down']
+maximize=@as []
 move-to-monitor-down=@as []
 move-to-monitor-left=@as []
 move-to-monitor-right=@as []
@@ -282,11 +314,10 @@ move-to-side-e=@as []
 move-to-workspace-1=@as []
 move-to-workspace-down=@as []
 move-to-workspace-last=@as []
-move-to-workspace-left=['<Super><Shift>Page_Up']
-move-to-workspace-right=['<Super><Shift>Page_Down']
+move-to-workspace-left=@as []
+move-to-workspace-right=@as []
 move-to-workspace-up=@as []
 panel-run-dialog=@as []
-raise-or-lower=@as []
 switch-applications=['<Super>Tab']
 switch-applications-backward=@as []
 switch-group=['<Super>Above_Tab']
@@ -302,7 +333,8 @@ switch-to-workspace-right=['<Super>s']
 switch-to-workspace-up=@as []
 switch-windows=['<Alt>Tab']
 switch-windows-backward=@as []
-toggle-maximized=@as []
+toggle-fullscreen=['<Super>f']
+toggle-maximized=['<Super>m']
 unmaximize=@as []
 
 [org/gnome/desktop/wm/preferences]
@@ -322,30 +354,45 @@ migrated=true
 [org/gnome/evolution-data-server/calendar]
 notify-window-height=521
 notify-window-paned-position=219
-notify-window-width=558
+notify-window-width=569
 notify-window-x=26
 notify-window-y=23
-reminders-past=['677b9932f32ecac8b0ccf5bf2e198cb6a0e61767\n6597d3f57c0ddc0d0910a3f81f20b47d2590d816\t20250920T193000\n1758234600\n1758321000\n1758328200\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250919T193000\r\nDTEND;TZID=America/Sao_Paulo:20250919T213000\r\nDTSTAMP:20250919T124911Z\r\nUID:1fvnva6jigm8h0poekss5u1udu@google.com\r\nRECURRENCE-ID;TZID=America/Sao_Paulo:20250920T193000\r\nCLASS:PUBLIC\r\nCREATED:20250707T151344Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250919T124911Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:7\r\nSTATUS:CONFIRMED\r\nSUMMARY:Ligação Social\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63893969351\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-P1D\r\nX-EVOLUTION-ALARM-UID:6597d3f57c0ddc0d0910a3f81f20b47d2590d816\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'e8415c795ecee0ac85e368efcc6583dec09ea915\n1f9472e094da2818c25674327d0bdd23cadb6d12\t20250919T003000Z\n1758241800\n1758241800\n1758243600\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250918T213000\r\nDTEND;TZID=America/Sao_Paulo:20250918T220000\r\nRRULE:FREQ=WEEKLY;BYDAY=MO,TU,TH,FR,SA,SU\r\nDTSTAMP:20250909T133117Z\r\nUID:2sinms5n4c6dmisg06hen63ngn@google.com\r\nCREATED:20250818T202808Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250909T133117Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:3\r\nSTATUS:CONFIRMED\r\nSUMMARY:Relaxar\r\nTRANSP:OPAQUE\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nX-EVOLUTION-CALDAV-ETAG:63893107877\r\nRECURRENCE-ID:20250919T003000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:PT0S\r\nX-EVOLUTION-ALARM-UID:1f9472e094da2818c25674327d0bdd23cadb6d12\r\nEND:VALARM\r\nEND:VEVENT\r\n', '98db5d0bec990a73bd2a9133c4781254bd121ecb\n9966dfe29d36839c6757677ae1df64526b4ccf72\t20250917T180000Z\n1758131100\n1758132000\n1758139200\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20250917T150000\r\nDTEND;TZID=America/Sao_Paulo:20250917T170000\r\nRRULE:FREQ=WEEKLY;UNTIL=20251204T025959Z;BYDAY=WE\r\nDTSTAMP:20250812T132723Z\r\nUID:7np8uk6rfqo5t9tjouuu7c9939@google.com\r\nCREATED:20250812T132130Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20250812T132723Z\r\nLOCATION:CTC 201\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Distribuída\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63890688443\r\nRECURRENCE-ID:20250917T180000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT15M\r\nX-EVOLUTION-ALARM-UID:9966dfe29d36839c6757677ae1df64526b4ccf72\r\nEND:VALARM\r\nEND:VEVENT\r\n']
+reminders-past=['1f550c7689c0aaef7e494bb8677d695fe8f267e3\n942653bb803fbcc7fc3b71fc7070ad89cccafe61\t20251105T213000Z\n1762377900\n1762378200\n1762383600\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20251105T183000\r\nDTEND;TZID=America/Sao_Paulo:20251105T200000\r\nRRULE:FREQ=WEEKLY;UNTIL=20251204T025959Z;BYDAY=WE\r\nEXDATE;TZID=America/Sao_Paulo:20251126T183000\r\nDTSTAMP:20251103T172402Z\r\nUID:c0d52bc6273f424da4433ee55dfede56@google.com\r\nCREATED:20251103T170428Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20251103T172402Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:1\r\nSTATUS:CONFIRMED\r\nSUMMARY:Blockchain - 208\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63897873854\r\nRECURRENCE-ID:20251105T213000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT5M\r\nX-EVOLUTION-ALARM-UID:942653bb803fbcc7fc3b71fc7070ad89cccafe61\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'eb2cab4a5967af2d05d1f5136b391c413791ecff\nebd3a72cf2159d345df00c64a06eff3495503f09\t20251103T093000Z\n1762160400\n1762162200\n1762164000\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Sao_Paulo:20251103T063000\r\nDTEND;TZID=America/Sao_Paulo:20251103T070000\r\nRRULE:FREQ=DAILY\r\nEXDATE;TZID=America/Sao_Paulo:20251027T063000\r\nDTSTAMP:20251103T162648Z\r\nUID:fdc6c79df0d743db955ea4ebeb2504e4@google.com\r\nCREATED:20251026T225541Z\r\nDESCRIPTION:PyTorch for Deep Learning Bootcamp\\nhttps:\r\n //www.udemy.com/course/pytorch-for-deep-learning/\r\nLAST-MODIFIED:20251030T172410Z\r\nSEQUENCE:1\r\nSTATUS:CONFIRMED\r\nSUMMARY:Pytorch\r\nTRANSP:OPAQUE\r\nRECURRENCE-ID:20251103T093000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nTRIGGER:-PT30M\r\nDESCRIPTION:This is an event reminder\r\nX-EVOLUTION-ALARM-UID:ebd3a72cf2159d345df00c64a06eff3495503f09\r\nEND:VALARM\r\nEND:VEVENT\r\n']
 
 [org/gnome/evolution]
 default-calendar='98db5d0bec990a73bd2a9133c4781254bd121ecb'
 
+[org/gnome/gedit/plugins]
+active-plugins=['textsize', 'spell', 'sort', 'quickhighlight', 'filebrowser']
+
 [org/gnome/gedit/preferences/editor]
-tabs-size=uint32 3
+style-scheme-for-dark-theme-variant='oblivion'
+tabs-size=uint32 4
 wrap-last-split-mode='word'
+
+[org/gnome/gedit/preferences/ui]
+theme-variant='dark'
 
 [org/gnome/gedit/state/history-entry]
 replace-with-entry=['Exec=prime-run firefox']
 search-for-entry=['Exec=firefox', 'windows-11/', 'path=windows-11/', 'file=windows-11/']
 
+[org/gnome/gedit/state/window]
+bottom-panel-size=140
+height=700
+maximized=true
+side-panel-active-page='GeditWindowDocumentsPanel'
+side-panel-size=200
+width=900
+
 [org/gnome/gnome-system-monitor]
 current-tab='processes'
-maximized=true
+maximized=false
 resources-cpu-expanded=true
 show-dependencies=false
 show-whose-processes='user'
-window-height=720
-window-width=800
+window-height=1024
+window-width=948
 
 [org/gnome/gnome-system-monitor/disksview]
 sort-col='directory'
@@ -402,9 +449,9 @@ search-filter-time-type='last_modified'
 show-create-link=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(1920, 1036)
+initial-size=(1920, 1040)
 initial-size-file-chooser=(1468, 686)
-maximized=true
+maximized=false
 
 [org/gnome/nm-applet/eap/0a5ec859-9f4c-4e5f-a7cb-d546725df1ff]
 ignore-ca-cert=false
@@ -439,13 +486,19 @@ ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
 [org/gnome/portal/filechooser/code]
-last-folder-path='/home/maykon/Github'
+last-folder-path='/home/maykon/Github/Distribuida-INE5418'
+
+[org/gnome/portal/filechooser/logseq-desktop]
+last-folder-path='/home/maykon/Documents'
+
+[org/gnome/portal/filechooser/obsidian]
+last-folder-path='/home/maykon/Wikis/Japanese/.wiki'
 
 [org/gnome/portal/filechooser/org.gnome.Settings]
 last-folder-path='/home/maykon/arch-setup/wallpapers'
 
 [org/gnome/portal/filechooser/org.gnome.Zenity]
-last-folder-path='/home/maykon/Downloads'
+last-folder-path='/home/maykon/Books'
 
 [org/gnome/settings-daemon/global-shortcuts]
 applications=@as []
@@ -456,9 +509,13 @@ night-light-schedule-automatic=false
 night-light-schedule-from=18.0
 night-light-temperature=uint32 1700
 
+[org/gnome/settings-daemon/plugins/housekeeping]
+donation-reminder-last-shown=int64 1758582365924922
+
 [org/gnome/settings-daemon/plugins/media-keys]
 control-center=['<Alt>s']
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12/']
+email=@as []
 help=@as []
 home=['<Alt>f']
 logout=@as []
@@ -468,7 +525,7 @@ magnifier-zoom-out=['<Control>minus']
 mic-mute=@as []
 play=['AudioPlay']
 screenreader=@as []
-screensaver=['<Shift><Control>l']
+screensaver=@as []
 shutdown=['<Shift><Alt>F4']
 volume-down=['AudioLowerVolume']
 volume-mute=['AudioMute']
@@ -476,13 +533,28 @@ volume-up=['AudioRaiseVolume']
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
 binding='<Alt>g'
-command='firefox -P Main mail.google.com/mail/u/0/#inbox'
+command='gtk-launch gmail-tray'
 name='Gmail'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
 binding='<Alt>n'
 command='gtk-launch notion'
 name='Notion'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10]
+binding='<Alt>a'
+command='audacious'
+name='Audacious'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11]
+binding='<Alt>l'
+command='calibre'
+name='Calibre'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom12]
+binding='<Super>Escape'
+command='gnome-screensaver-command -a'
+name='Suspend'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
 binding='<Alt>d'
@@ -501,7 +573,7 @@ name='WhatsApp'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5]
 binding='<Control><Alt>t'
-command='kitty'
+command='cosmic-term'
 name='Terminal'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6]
@@ -521,20 +593,22 @@ name='Browser'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9]
 binding='<Alt>c'
-command='firefox -P Main https://calendar.google.com/calendar/u/0/r'
+command='gtk-launch calendar-notion'
 name='Calendar'
 
 [org/gnome/settings-daemon/plugins/power]
 idle-dim=false
 power-button-action='interactive'
 sleep-inactive-ac-type='nothing'
-sleep-inactive-battery-type='nothing'
+sleep-inactive-battery-type='suspend'
 
 [org/gnome/shell]
 app-picker-layout=[{'5b979d2d-5d79-49cd-856f-258e23b0b73b': <{'position': <0>}>, 'System': <{'position': <1>}>, 'e572eb82-f138-42db-aac5-76ea9100f2f4': <{'position': <2>}>, '0f93fdd7-cb78-4c79-93db-2779a9262e02': <{'position': <3>}>, 'dedee40c-8ebf-4bf5-a9f6-b0b00954d8e6': <{'position': <4>}>, 'fc01a8d4-bf13-4eb8-8d5d-dd884e7aab33': <{'position': <5>}>}]
-disabled-extensions=['aztaskbar@aztaskbar.gitlab.com', 'tilingshell@ferrarodomenico.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'status-icons@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'switcher@landau.fi', 'forge@jmmaranan.com', 'gTile@vibou', 'tilingnome@rliang.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com']
-enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com', 'awesome-tiles@velitasali.com']
-favorite-apps=['audacious.desktop', 'standard-notes.desktop', 'gpt.desktop', 'calibre-gui.desktop']
+disable-user-extensions=false
+disabled-extensions=['tilingshell@ferrarodomenico.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'switcher@landau.fi', 'forge@jmmaranan.com', 'gTile@vibou', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'tilingnome@rliang.github.com', 'cast-to-tv@rafostar.github.com', 'clipboard-indicator@tudmotu.com']
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'desaturate_all@nicolas.brack.mail.be', 'awesome-tiles@velitasali.com', 'aztaskbar@aztaskbar.gitlab.com', 'status-icons@gnome-shell-extensions.gcampax.github.com', 'pop-shell@system76.com']
+favorite-apps=@as []
+last-selected-power-profile='power-saver'
 remember-mount-password=true
 welcome-dialog-last-shown-version='48.0'
 
@@ -545,11 +619,12 @@ current-workspace-only=true
 apps-menu-toggle-menu=@as []
 
 [org/gnome/shell/extensions/awesome-tiles]
+bottom-gap-size=0
 enable-inner-gaps=true
 enable-window-animation=false
 gap-size=0
 gap-size-increments=0
-next-step-timeout=800
+next-step-timeout=500
 shortcut-align-window-to-center=@as []
 shortcut-decrease-gap-size=@as []
 shortcut-increase-gap-size=@as []
@@ -564,7 +639,27 @@ shortcut-tile-window-to-top-left=['<Super>KP_7']
 shortcut-tile-window-to-top-right=['<Super>KP_9']
 
 [org/gnome/shell/extensions/aztaskbar]
-update-notifier-project-version=28
+always-show-notifications=true
+desaturation-factor=0.0
+hide-dash=false
+icon-style='REGULAR'
+indicator-color-use-system-accent-color=true
+indicator-location='BOTTOM'
+intellihide=false
+main-panel-height=(true, 40)
+override-panel-clock-format=(false, '%A, %B %d - %H∶%M')
+panel-location='TOP'
+panel-transparent-in-overview=true
+position-in-panel='LEFT'
+position-offset=15
+prefs-visible-page=''
+scroll-action='NO_ACTION'
+shift-middle-click-action='RAISE_HERE'
+show-apps-button=(false, 0)
+show-panel-activities-button=true
+show-running-apps=true
+update-notifier-project-version=36
+window-preview-button-icon-size=11
 
 [org/gnome/shell/extensions/dash-to-dock]
 app-ctrl-hotkey-1=@as []
@@ -600,6 +695,43 @@ preferred-monitor=-2
 preferred-monitor-by-connector='eDP-1'
 show-trash=false
 workspace-agnostic-urgent-windows=true
+
+[org/gnome/shell/extensions/pop-shell]
+activate-launcher=@as []
+active-hint=true
+focus-right=@as []
+fullscreen-launcher=true
+log-level=uint32 1
+mouse-cursor-focus-location=uint32 4
+pop-monitor-down=@as []
+pop-monitor-left=@as []
+pop-monitor-right=@as []
+pop-monitor-up=@as []
+pop-workspace-down=['<Shift><Super>Page_Down']
+pop-workspace-up=['<Shift><Super>Page_Up']
+show-skip-taskbar=false
+show-title=true
+smart-gaps=true
+tile-by-default=true
+tile-move-down-global=['<Shift><Super>Down']
+tile-move-left=@as []
+tile-move-left-global=['<Shift><Super>Left']
+tile-move-right-global=['<Shift><Super>Right']
+tile-move-up-global=['<Shift><Super>Up']
+toggle-stacking-global=@as []
+toggle-tiling=['<Super>q']
+
+[org/gnome/shell/extensions/tilingshell]
+enable-autotiling=true
+
+[org/gnome/shell/extensions/user-theme]
+name=''
+
+[org/gnome/shell/extensions/window-list]
+display-all-workspaces=false
+embed-previews=true
+grouping-mode='auto'
+show-on-all-monitors=false
 
 [org/gnome/shell/extensions/workspace-indicator]
 embed-previews=false
@@ -638,7 +770,7 @@ selected-color=(true, 1.0, 1.0, 1.0, 1.0)
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 sidebar-width=140
 sort-column='name'
 sort-directories-first=true
@@ -648,8 +780,8 @@ view-type='list'
 window-size=(1683, 374)
 
 [org/gtk/settings/color-chooser]
-custom-colors=[(0.56862745098039214, 0.56862745098039214, 0.56862745098039214, 1.0), (0.96078431372549022, 0.25882352941176473, 0.83921568627450982, 1.0), (0.67843137254901964, 0.45882352941176469, 0.95686274509803926, 1.0), (0.20392156862745098, 0.59607843137254901, 0.83921568627450982, 1.0), (0.18823529411764706, 0.62352941176470589, 0.65098039215686276, 1.0), (0.1803921568627451, 0.63529411764705879, 0.51372549019607838, 1.0), (0.33725490196078434, 0.63529411764705879, 0.16862745098039217, 1.0), (0.61176470588235299, 0.57647058823529407, 0.16862745098039217, 1.0)]
-selected-color=(true, 0.8784313725490196, 0.10588235294117647, 0.14117647058823529, 1.0)
+custom-colors=[(0.33333333333333331, 0.10196078431372549, 0.54509803921568623, 1.0), (0.0, 0.0, 0.93333333333333335, 1.0), (0.56862745098039214, 0.56862745098039214, 0.56862745098039214, 1.0), (0.96078431372549022, 0.25882352941176473, 0.83921568627450982, 1.0), (0.67843137254901964, 0.45882352941176469, 0.95686274509803926, 1.0), (0.20392156862745098, 0.59607843137254901, 0.83921568627450982, 1.0), (0.18823529411764706, 0.62352941176470589, 0.65098039215686276, 1.0), (0.1803921568627451, 0.63529411764705879, 0.51372549019607838, 1.0)]
+selected-color=(true, 0.59999999999999998, 0.75686274509803919, 0.94509803921568625, 1.0)
 
 [org/gtk/settings/file-chooser]
 date-format='regular'
@@ -658,9 +790,9 @@ show-hidden=false
 show-size-column=true
 show-type-column=true
 sidebar-width=249
-sort-column='name'
+sort-column='modified'
 sort-directories-first=true
-sort-order='ascending'
+sort-order='descending'
 type-format='category'
 window-position=(26, 23)
 window-size=(1540, 626)

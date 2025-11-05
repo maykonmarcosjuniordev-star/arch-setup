@@ -26,4 +26,6 @@ tecla
 xdg-desktop-portal-gnome
 xdg-user-dirs-gtk
 xdg-utils
+gnome-shell-extension-app-icons-taskbar
 gnome-shell-extension-appindicator
+gnome-shell-extension-pop-shell-git

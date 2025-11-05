@@ -4,6 +4,7 @@ asar
 cdrkit
 curl
 dbus-python
+debtap
 ffmpeg
 gcc
 git-filter-repo

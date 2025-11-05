@@ -8,6 +8,7 @@ gnome-control-center
 gnome-disk-utility
 gnome-keyring
 gnome-menus
+gnome-screensaver-no-watchdog
 gnome-session
 gnome-settings-daemon
 gnome-shell

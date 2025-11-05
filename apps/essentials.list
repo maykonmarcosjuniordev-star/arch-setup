@@ -13,7 +13,6 @@ gst-plugin-pipewire
 ibus
 less
 cosmic-text-editor
-cosmic-files
 cosmic-terminal
 make
 libcamera

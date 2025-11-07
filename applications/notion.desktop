@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=firefox --new-tab https://www.notion.so/
+Exec=firefox -P Dev --new-tab https://www.notion.so/
 Encoding=UTF-8
 Version=1.0
 Icon=/home/maykon/.local/share/icons/notion.png

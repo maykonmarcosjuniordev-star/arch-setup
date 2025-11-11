@@ -9,7 +9,6 @@ hyprlang
 hyprlock
 hyprpaper
 hyprshot
-hyprlux
 hyprpolkitagent
 hyprsunset
 hyprsunset-util
@@ -21,6 +20,7 @@ nwg-look
 playerctl
 qt5-wayland
 qt6-wayland
+sunsetr
 swaync
 waybar
 wofi

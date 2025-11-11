@@ -16,6 +16,9 @@ ln -sfn ~/arch-setup/config/hyprland/hyprland.conf ~/.config/hypr/hyprland.conf
 ln -sfn ~/arch-setup/config/hyprland/waybar ~/.config/waybar
 chmod +x ~/arch-setup/config/hyprland/waybar/powermenu.sh
 ln -sfn ~/arch-setup/config/hyprland/hyprpaper.conf ~/.config/hypr/hyprpaper.conf
+ln -sfn ~/arch-setup/config/hyprland/hyprlock.conf ~/.config/hypr/hyprlock.conf
+ln -sfn ~/arch-setup/config/hyprland/sunsetr.toml ~/.config/sunsetr/sunsetr.toml
+systemctl --user enable sunsetr.service
 # setting wallpaper
 echo "setting wallpaper"
 ln -sfn ~/arch-setup/wallpapers/ ~/Pictures/Wallpapers

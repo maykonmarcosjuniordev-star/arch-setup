@@ -46,3 +46,8 @@ sudo usermod -aG video $USER
 sudo rmmod uvcvideo
 sudo modprobe -r uvcvideo
 sudo modprobe uvcvideo
+
+# Enable power-profiles-daemon service
+echo "enabling power-profiles-daemon service"
+sudo systemctl enable power-profiles-daemon.service
+sudo systemctl start power-profiles-daemon.service

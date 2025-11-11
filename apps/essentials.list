@@ -1,6 +1,8 @@
 alsa-utils
 alsa-firmware
 asar
+blueman
+bluez
 cdrkit
 curl
 dbus-python
@@ -18,6 +20,8 @@ make
 libcamera
 libdecor
 linux-headers
+networkmanager
+network-manager-applet
 noto-fonts-cjk
 openssh
 os-prober

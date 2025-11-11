@@ -22,11 +22,21 @@ git lfs install
 # IBus configuration
 echo "configuring IBus"
 mkdir -p ~/.config/environment.d/
-ln -sfn ~/arch-setup/config/environment.d/ibus.conf ~/.config/environment.d/ibus.conf
+ln -sfn ~/arch-setup/config/essentials/ibus.conf ~/.config/environment.d/ibus.conf
 export GTK_IM_MODULE=ibus
 export QT_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export INPUT_METHOD=ibus
+
+# grub configuration
+echo "configuring GRUB"
+ln -sfn ~/arch-setup/config/essentials/grub /etc/default/grub
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+
+# mkinitcpio configuration
+echo "configuring mkinitcpio"
+ln -sfn ~/arch-setup/config/essentials/mkinitcpio.conf /etc/mkinitcpio.conf
+sudo mkinitcpio -P
 
 # Enable pipewire and bluetooth services
 echo "enabling pipewire and bluetooth services"

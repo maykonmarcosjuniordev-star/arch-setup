@@ -37,6 +37,10 @@ read -p "Do you want to use Cosmic Desktop? (y/n): " apply_cosmic
 if [[ "$apply_cosmic" == "y" || "$apply_cosmic" == "Y" ]]; then
     ./src/cosmic.sh
 fi
+read -p "Do you want to install Hyprland and related apps? (y/n): " install_hyprland
+if [[ "$install_hyprland" == "y" || "$install_hyprland" == "Y" ]]; then
+    ./src/hyprland.sh
+fi
 read -p "Do you want to set up virtual machine support? (y/n): " setup_vm
 if [[ "$setup_vm" == "y" || "$setup_vm" == "Y" ]]; then
     ./src/vm.sh

@@ -1,7 +1,11 @@
 #!/bin/bash
 
 echo "installing nvidias drives"
-yay -Sy --needed --noconfirm nvidia nvidia-prime nvidia-utils
+yay -Sy --needed --noconfirm nvidia nvidia-prime nvidia-utils libva-nvidia-driver
+
+ln -sfn ~/arch-setup/config/essentials/nvidia.conf /etc/modprobe.d/nvidia.conf
+
+
 echo "replacing binaries in usr/bin/ to run with prime-run"
 
 echo "for brave"

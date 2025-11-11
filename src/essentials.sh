@@ -30,12 +30,12 @@ export INPUT_METHOD=ibus
 
 # grub configuration
 echo "configuring GRUB"
-ln -sfn ~/arch-setup/config/essentials/grub /etc/default/grub
+sudo ln -sfn ~/arch-setup/config/essentials/grub /etc/default/grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 # mkinitcpio configuration
 echo "configuring mkinitcpio"
-ln -sfn ~/arch-setup/config/essentials/mkinitcpio.conf /etc/mkinitcpio.conf
+sudo ln -sfn ~/arch-setup/config/essentials/mkinitcpio.conf /etc/mkinitcpio.conf
 sudo mkinitcpio -P
 
 # Enable pipewire and bluetooth services

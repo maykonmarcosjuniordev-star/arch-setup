@@ -1,3 +1,6 @@
+echo "Formate uma partição FAT32 com 1 GiB para EFI, uma de swap [linux-swap] e o restante para a partição ext4"
+fdisk -l "/dev/$disk"
+
 read -p "Insira o nome do disco que será formatado (nvme0n1) " disk
 read -p "Insira o nome da partição de boot que será formatada (nvme0n1p1) " part_fat
 read -p "Insira o nome da partição de dados que será formatada (nvme0n1p2) " part_data
@@ -8,15 +11,9 @@ read -p "Insira o nome do usuário que será criado (user) " user
 # Ativação do Pacman
 echo "Ativando o Pacman..."
 pacman-key --init
-pacman-key --populate
+pacman-key --populate archlinux
 # pacman-key --refresh-keys
 
-# Pacotes do Sistema Base
-echo "Instalando pacotes do sistema base..."
-pacstrap -K /mnt < apps/pacstrap.list
-
-echo "Formate uma partição FAT32 com 1 GiB para EFI, uma de swap [linux-swap] e o restante para a partição ext4"
-fdisk -l "/dev/$disk"
 
 # Formatar as Partições
 echo "Formatando as partições $part_fat, $part_data e $part_swap..."
@@ -31,6 +28,10 @@ mount "/dev/$part_data" /mnt
 mkdir -p /mnt/boot
 mount "/dev/$part_fat" /mnt/boot
 swapon "/dev/$part_swap"
+
+# Pacotes do Sistema Base
+echo "Instalando pacotes do sistema base..."
+pacstrap -K /mnt $(cat apps/pacstrap.list)
 
 # Geração do fstab
 echo "Gerando o fstab..."
@@ -68,7 +69,7 @@ bootctl --path=/boot install
 mkdir -p /boot/loader/entries
 
 # Obtenção do UUID do usuário
-uuid=$(blkid -s UUID -o value $part_data)
+uuid=$(blkid -s UUID -o value /dev/$part_data)
 # Criação do arquivo de configuração do sistema
 echo "Criando arquivo de configuração do systemd-boot..."
 echo "title Arch Linux
@@ -89,8 +90,9 @@ echo "Digite a senha do root:"
 passwd root
 
 # permitir sudo para grupo wheel
-sed -i 's/# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
-
+EDITOR=tee visudo <<EOF
+%wheel ALL=(ALL:ALL) ALL
+EOF
 
 # Reiniciar o sistema
 exit

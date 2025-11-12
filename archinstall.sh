@@ -52,7 +52,6 @@ echo $hostname > /etc/hostname
 # Adiciona uma linha no fim do texto do arquivo /etc/locale.gen
 echo "Configuração de Localização..."
 echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
-vim /etc/locale.gen
 locale-gen
 echo "LANG=en_US.UTF-8" > /etc/locale.conf
 

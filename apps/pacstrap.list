@@ -11,5 +11,3 @@ net-tools
 networkmanager
 sudo
 systemd
-systemd-ukey
-systemd-boot

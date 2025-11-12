@@ -9,7 +9,7 @@ read -p "Insira o nome do usuário que será criado (user) " user
 echo "Ativando o Pacman..."
 pacman-key --init
 pacman-key --populate
-pacman-key --refresh-keys
+# pacman-key --refresh-keys
 
 # Pacotes do Sistema Base
 echo "Instalando pacotes do sistema base..."

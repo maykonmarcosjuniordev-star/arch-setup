@@ -1,100 +1,115 @@
-echo "Formate uma partição FAT32 com 1 GiB para EFI, uma de swap [linux-swap] e o restante para a partição ext4"
-fdisk -l "/dev/$disk"
+#!/bin/bash
+set -e
 
-read -p "Insira o nome do disco que será formatado (nvme0n1) " disk
-read -p "Insira o nome da partição de boot que será formatada (nvme0n1p1) " part_fat
-read -p "Insira o nome da partição de dados que será formatada (nvme0n1p2) " part_data
-read -p "Insira o nome da partição de swap (nvme0n1p3) " part_swap
-read -p "Insira o nome do host (hostname) " hostname
-read -p "Insira o nome do usuário que será criado (user) " user
+echo "=== Arch Linux Installer ==="
+echo "Discos disponíveis:"
+lsblk -o NAME,SIZE,TYPE,MOUNTPOINT
 
-# Ativação do Pacman
-echo "Ativando o Pacman..."
-pacman-key --init
-pacman-key --populate archlinux
-# pacman-key --refresh-keys
+read -p "Nome do disco (default: nvme0n1): " disk
+disk=${disk:-nvme0n1}
 
+read -p "Partição EFI (default: ${disk}p1): " part_fat
+part_fat=${part_fat:-${disk}p1}
 
-# Formatar as Partições
-echo "Formatando as partições $part_fat, $part_data e $part_swap..."
+read -p "Partição raiz (default: ${disk}p2): " part_data
+part_data=${part_data:-${disk}p2}
+
+read -p "Partição swap (default: ${disk}p3): " part_swap
+part_swap=${part_swap:-${disk}p3}
+
+read -p "Hostname (default: archlinux): " hostname
+hostname=${hostname:-archlinux}
+
+read -p "Usuário (default: user): " user
+user=${user:-user}
+
+echo "=== Verificando partições montadas ==="
+for dev in "/dev/$part_fat" "/dev/$part_data" "/dev/$part_swap"; do
+  mntpoints=$(findmnt -n -o TARGET -S "$dev" || true)
+  if [ -n "$mntpoints" ]; then
+    echo "Desmontando $dev de: $mntpoints"
+    for mp in $mntpoints; do
+      umount "$mp" || { echo "Falha ao desmontar $mp"; exit 1; }
+    done
+  fi
+done
+if swapon --show=NAME | grep -q "/dev/$part_swap"; then
+  echo "Desativando swap em /dev/$part_swap"
+  swapoff "/dev/$part_swap"
+fi
+
+echo "=== Limpando assinaturas antigas ==="
+wipefs -a "/dev/$part_fat" || true
+wipefs -a "/dev/$part_data" || true
+wipefs -a "/dev/$part_swap" || true
+
+echo "=== Formatando partições ==="
 mkfs.fat -F32 "/dev/$part_fat"
-mkfs.ext4 "/dev/$part_data"
+mkfs.ext4 -F "/dev/$part_data"
 mkswap "/dev/$part_swap"
 
-
-# Mountagem das Partições
-echo "Montando as partições..."
+echo "=== Montando partições ==="
 mount "/dev/$part_data" /mnt
 mkdir -p /mnt/boot
 mount "/dev/$part_fat" /mnt/boot
 swapon "/dev/$part_swap"
 
-# Pacotes do Sistema Base
-echo "Instalando pacotes do sistema base..."
-pacstrap -K /mnt $(cat apps/pacstrap.list)
+echo "=== Instalando sistema base ==="
+# Pacstrap: base + Linux + firmware + NetworkManager
+pacstrap -K /mnt base linux linux-firmware networkmanager vim
 
-# Geração do fstab
-echo "Gerando o fstab..."
+echo "=== Gerando fstab ==="
 genfstab -U /mnt >> /mnt/etc/fstab
 
-# Entrada na nova instalação
-echo "Entrando na nova instalação..."
-arch-chroot /mnt
+echo "=== Copiando script de configuração ==="
+cat > /mnt/root/setup_inside_chroot.sh <<'EOF'
+#!/bin/bash
+set -e
 
-### Configurações básicas
+hostname=$1
+user=$2
+
+echo "Configurando idioma e fuso horário..."
 loadkeys br-abnt2
-# Configuração de Timezone
-echo "Configuração do Timezone..."
-ln -sfn /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
+ln -sf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
 hwclock --systohc
-# selecção do hostname
-echo "Definindo o hostname como $hostname"
-echo $hostname > /etc/hostname
-# Adiciona uma linha no fim do texto do arquivo /etc/locale.gen
-echo "Configuração de Localização..."
+echo "$hostname" > /etc/hostname
 echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
 locale-gen
 echo "LANG=en_US.UTF-8" > /etc/locale.conf
 
-# Habilitação de Servições
-echo "Habilitando NetworkManager e systemd-timesyncd..."
+echo "Ativando serviços..."
 systemctl enable NetworkManager
 systemctl enable systemd-timesyncd
 
-# instalação de sistemd-boot
-echo "Instalando o systemd-boot..."
-bootctl --path=/boot install
+echo "Instalando bootloader..."
+bootctl install
 
-# Entrada do sistema
-mkdir -p /boot/loader/entries
-
-# Obtenção do UUID do usuário
-uuid=$(blkid -s UUID -o value /dev/$part_data)
-# Criação do arquivo de configuração do sistema
-echo "Criando arquivo de configuração do systemd-boot..."
-echo "title Arch Linux
+root_uuid=$(blkid -s UUID -o value $(findmnt -no SOURCE /))
+cat > /boot/loader/entries/arch.conf <<EOC
+title Arch Linux
 linux /vmlinuz-linux
 initrd /initramfs-linux.img
-options root=UUID=$uuid rw" > /boot/loader/entries/arch.conf
+options root=UUID=$root_uuid rw
+EOC
 
-
-# Criação de Usuário e Senha
 echo "Criando usuário $user..."
-useradd -m -G wheel -s /bin/bash $user
-echo "Criação do usuário $user"
-echo "Digite a senha do usuário $user:"
-passwd $user
-# Criação de Senha do Root
-echo "Criando senha do root..."
-echo "Digite a senha do root:"
-passwd root
+useradd -m -G wheel -s /bin/bash "$user"
+echo "Defina a senha do usuário $user:"
+passwd "$user"
+echo "Defina a senha do root:"
+passwd
 
-# permitir sudo para grupo wheel
-EDITOR=tee visudo <<EOF
-%wheel ALL=(ALL:ALL) ALL
+sed -i 's/^# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
+
+echo "Configuração dentro do sistema concluída!"
 EOF
 
-# Reiniciar o sistema
-exit
+chmod +x /mnt/root/setup_inside_chroot.sh
+
+echo "=== Entrando no chroot ==="
+arch-chroot /mnt /root/setup_inside_chroot.sh "$hostname" "$user"
+
+echo "=== Finalizando instalação ==="
 umount -R /mnt
 reboot

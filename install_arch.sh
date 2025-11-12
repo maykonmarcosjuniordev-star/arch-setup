@@ -9,6 +9,11 @@ read -p "Hostname: " hostname
 read -p "User: " user
 
 echo "Formating partitions..."
+sudo umount /mnt/boot
+sudo umount /mnt/
+sudo swapoff -a
+# disables all swap (useful if your swap was activated)
+
 mkfs.fat -F32 "/dev/$part_fat"
 mkfs.ext4 "/dev/$part_data"
 mkswap "/dev/$part_swap"

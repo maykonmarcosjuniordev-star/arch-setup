@@ -11,6 +11,7 @@ ffmpeg
 gcc
 git-filter-repo
 git-lfs
+grub
 gst-plugin-pipewire
 ibus
 less

@@ -8,12 +8,12 @@ read -p "Insira o nome do usuário que será criado (user) " user
 # Ativação do Pacman
 echo "Ativando o Pacman..."
 pacman-key --init
-pacman-key --populare
+pacman-key --populate
 pacman-key --refresh-keys
 
 # Pacotes do Sistema Base
 echo "Instalando pacotes do sistema base..."
-# pacstrap -K /mnt < apps/pacstrap.list
+pacstrap -K /mnt < apps/pacstrap.list
 
 echo "Formate uma partição FAT32 com 1 GiB para EFI, uma de swap [linux-swap] e o restante para a partição ext4"
 fdisk -l "/dev/$disk"

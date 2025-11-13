@@ -35,6 +35,7 @@ swtpm
 tar
 ttf-font-awesome
 ttf-ubuntu-mono-nerd
+sddm
 starship
 unzip
 usbutils

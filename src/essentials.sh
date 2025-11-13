@@ -29,13 +29,13 @@ export XMODIFIERS=@im=ibus
 export INPUT_METHOD=ibus
 
 # grub configuration
-echo "configuring GRUB"
-sudo ln -sfn ~/arch-setup/config/essentials/grub /etc/default/grub
+# echo "configuring GRUB"
+# sudo ln -sfn ~/arch-setup/config/essentials/grub /etc/default/grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 # mkinitcpio configuration
-echo "configuring mkinitcpio"
-sudo ln -sfn ~/arch-setup/config/essentials/mkinitcpio.conf /etc/mkinitcpio.conf
+# echo "configuring mkinitcpio"
+# sudo ln -sfn ~/arch-setup/config/essentials/mkinitcpio.conf /etc/mkinitcpio.conf
 sudo mkinitcpio -P
 
 # Enable pipewire and bluetooth services

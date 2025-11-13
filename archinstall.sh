@@ -58,8 +58,8 @@ part_data=${part_data:-${disk}p2}
 read -p "Partição swap (default: ${disk}p3): " part_swap
 part_swap=${part_swap:-${disk}p3}
 
-read -p "Hostname (default: archlinux): " hostname
-hostname=${hostname:-archlinux}
+read -p "Hostname (default: arch): " hostname
+hostname=${hostname:-arch}
 
 read -p "Usuário (default: user): " user
 user=${user:-user}
@@ -128,10 +128,11 @@ echo "Instalando pacotes adicionais..."
 pacman -Syu --noconfirm git base-devel
 
 echo "Instalando bootloader..."
-bootctl --path=/boot install
+mount -o remount,umask=0077 /boot || true
+bootctl --path=/boot install || echo "⚠️ bootctl install failed (check EFI variables)"
 efibootmgr --create --disk /dev/$disk --part 1 --label "Arch Linux" --loader '\EFI\systemd\systemd-bootx64.efi'
 
-root_uuid=$(blkid -s UUID -o value $(findmnt -no SOURCE /))
+root_uuid=$(blkid -s UUID -o value /dev/$3)
 cat > /boot/loader/entries/arch.conf <<EOC
 title Arch Linux
 linux /vmlinuz-linux
@@ -140,7 +141,9 @@ options root=UUID=$root_uuid rw
 EOC
 
 echo "Criando usuário $user..."
-useradd -m -G wheel -s /bin/bash "$user"
+if ! id "$user" &>/dev/null; then
+  useradd -m -G wheel -s /bin/bash "$user"
+fi
 echo "Defina a senha do usuário $user:"
 passwd "$user"
 echo "Defina a senha do root:"
@@ -155,12 +158,17 @@ EOF
 
 chmod +x /mnt/root/setup_inside_chroot.sh
 
+echo "=== Preparando ambiente chroot ==="
+for dir in /dev /dev/pts /proc /sys /run; do
+  mount --bind $dir /mnt$dir
+done
+
 echo "=== Entrando no chroot ==="
 # Ensure EFI vars are available for bootctl
 if [ -d /sys/firmware/efi/efivars ]; then
   mountpoint -q /sys/firmware/efi/efivars || mount -t efivarfs efivarfs /sys/firmware/efi/efivars
 fi
-arch-chroot /mnt /root/setup_inside_chroot.sh "$hostname" "$user"
+arch-chroot /mnt /root/setup_inside_chroot.sh "$hostname" "$user" "$part_data"
 
 echo "=== Finalizando instalação ==="
 umount -R /mnt

@@ -3,6 +3,7 @@ function create_symlinks() {
 	ln -sfn ~/arch-setup/config/terminal/.bash_profile ~/.bash_profile
 	ln -sfn ~/arch-setup/config/terminal/.profile ~/.profile
 	ln -sfn ~/arch-setup/config/terminal/.bashrc ~/.bashrc
+	mkdir -p ~/.config
 	ln -sfn ~/arch-setup/config/terminal/starship.toml ~/.config/starship.toml
 }
 

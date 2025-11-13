@@ -14,7 +14,6 @@ ln -sfn ~/arch-setup/config/hyprland/hyprpaper.conf ~/.config/hypr/hyprpaper.con
 ln -sfn ~/arch-setup/config/hyprland/hyprlock.conf ~/.config/hypr/hyprlock.conf
 mkdir -p ~/.config/sunsetr
 ln -sfn ~/arch-setup/config/hyprland/sunsetr.toml ~/.config/sunsetr/sunsetr.toml
-systemctl --user enable sunsetr.service
 # setting wallpaper
 echo "setting wallpaper"
 mkdir -p ~/Pictures
@@ -25,4 +24,5 @@ yay -Rns --noconfirm kitty
 
 # enabling services
 echo "enabling hyprland-related services"
+systemctl --user enable --now sunsetr
 systemctl --user enable --now hyprpolkitagent

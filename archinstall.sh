@@ -137,12 +137,26 @@ reflector --country Brazil,Argentina,Chile --age 12 --sort rate \
   --save /etc/pacman.d/mirrorlist
 
 echo "Instalando pacotes adicionais..."
-pacman -Syu --noconfirm grub git base-devel
+pacman -Syu --noconfirm grub efibootmgr git base-devel
 
 echo "Instalando bootloader..."
-grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+echo "=== Instalando GRUB ==="
+if [ -d /sys/firmware/efi ]; then
+  grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+  mkdir -p /boot/EFI/BOOT
+  cp /boot/EFI/GRUB/grubx64.efi /boot/EFI/BOOT/BOOTX64.EFI 2>/dev/null || true
+  echo "Adicionando entrada EFI..."
+  efibootmgr --create --disk "$root_disk" --part 1 \
+    --label "Arch Linux" --loader '\EFI\GRUB\grubx64.efi' || \
+    echo "⚠️  efibootmgr falhou (firmware bloqueou gravação), fallback pronto."
+else
+  pacman -S --noconfirm grub
+  grub-install --target=i386-pc "$root_disk"
+fi
 grub-mkconfig -o /boot/grub/grub.cfg
-efibootmgr --create --disk /dev/$disk --part 1 --label "Arch Linux" --loader '\EFI\systemd\systemd-bootx64.efi'
+
+mkdir -p /boot/EFI/BOOT
+cp /boot/EFI/GRUB/grubx64.efi /boot/EFI/BOOT/BOOTX64.EFI 2>/dev/null || true
 
 root_uuid=$(blkid -s UUID -o value /dev/$root_part)
 cat > /boot/loader/entries/arch.conf <<EOC

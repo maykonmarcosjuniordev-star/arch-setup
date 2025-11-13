@@ -10,6 +10,8 @@ gpg --keyserver hkps://keys.openpgp.org --recv-keys 14F26682D0916CDD81E37B6D61B7
 # enable linger for user to allow services to run without active login
 echo "enabling linger for user $USER"
 loginctl enable-linger $USER
+systemctl enable sddm
+
 echo "installing and configuring git lfs"
 git lfs install
 # track the problematic asset paths with LFS and commit .gitattributes

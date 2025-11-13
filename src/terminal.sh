@@ -8,17 +8,15 @@ function create_symlinks() {
 }
 
 function gen_key() {
-	read -p "insira o email (e nomeie) para a ssh" email
-	ssh-keygen -t rsa -b 4096 -C "$email"
-	cat ~/.ssh/*.pub
-	read -p "Copie o resultado anterior e cole em: https://github.com/settings/ssh/new"
 	read -p "insira o email para a ssh rsa" email
 	ssh-keygen -t rsa -b 4096 -C "$email"
 	cat ~/.ssh/id_rsa.pub
 	read -p "Copie o resultado anterior e cole em: https://github.com/settings/ssh/new"
-	chmod 600 ~/.ssh/id_ed25519
-	chmod 600 ~/.ssh/id_rsa
-	ssh-add ~/.ssh/id_ed25519
+	chmod 700 ~/.ssh/
+	chmod 600 ~/.ssh/id_*
+	chmod 644 ~/.ssh/id_*.pub
+	chown -R $(whoami):$(whoami) ~/.ssh
+	sudo chown -R $(whoami):$(whoami) ~/.ssh/id*
 	ssh-add ~/.ssh/id_rsa
 	eval "$(ssh-agent -s)"
 }

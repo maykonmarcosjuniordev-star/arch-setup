@@ -20,14 +20,14 @@ echo "installing essential apps with yay"
 # create symlinks
 echo "creating symlinks for terminal settings"
 ./src/terminal.sh create_symlinks
-read -p "Do you want to generate SSH keys? (y/n): " generate_keys
-if [[ "$generate_keys" == "y" || "$generate_keys" == "Y" ]]; then
-    ./src/terminal.sh gen_key
-fi
 ./src/desktop.sh
 read -p "Do you want to install NVIDIA drivers? (y/n): " install_nvidia
 if [[ "$install_nvidia" == "y" || "$install_nvidia" == "Y" ]]; then
     ./src/nvidia.sh
+fi
+read -p "Do you want to use Hyprland? (y/n): " install_hyprland
+if [[ "$install_hyprland" == "y" || "$install_hyprland" == "Y" ]]; then
+    ./src/hyprland.sh
 fi
 read -p "Do you want to use GNOME? (y/n): " apply_gnome
 if [[ "$apply_gnome" == "y" || "$apply_gnome" == "Y" ]]; then
@@ -37,14 +37,9 @@ read -p "Do you want to use Cosmic Desktop? (y/n): " apply_cosmic
 if [[ "$apply_cosmic" == "y" || "$apply_cosmic" == "Y" ]]; then
     ./src/cosmic.sh
 fi
-read -p "Do you want to install Hyprland and related apps? (y/n): " install_hyprland
-if [[ "$install_hyprland" == "y" || "$install_hyprland" == "Y" ]]; then
-    ./src/hyprland.sh
-fi
-read -p "Do you want to set up virtual machine support? (y/n): " setup_vm
-if [[ "$setup_vm" == "y" || "$setup_vm" == "Y" ]]; then
-    ./src/vm.sh
-fi
 
-# set correct git remote
-git remote set-url origin git@github.com:maykonmarcosjuniordev-star/arch-setup.git
+# reboot if allowed
+read -p "Reboot now (recommended)? (y/n)" reboot_now
+if [[ "$reboot_now" == "y"]]; then
+    reboot
+fi

@@ -23,3 +23,6 @@ ln -sfn ~/arch-setup/wallpapers/ ~/Pictures/Wallpapers
 echo "removing needless kitty installation"
 yay -Rns --noconfirm kitty
 
+# enabling services
+echo "enabling hyprland-related services"
+systemctl --user enable --now hyprpolkitagent

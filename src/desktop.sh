@@ -27,7 +27,7 @@ mkdir -p ~/.config/autostart
 ln -sfn ~/arch-setup/applications/discord.desktop ~/.config/autostart/
 ln -sfn ~/arch-setup/applications/notion.desktop ~/.config/autostart/
 mkdir -p ~/.config/wasistlos
-ln -sfn ~/arch-setup/config/dconf/wasistlos.conf ~/.config/wasistlos/settings.conf
+ln -sfn ~/arch-setup/config/gnome/wasistlos.conf ~/.config/wasistlos/settings.conf
 
 # Audacious media player configuration
 echo "setting up Audacious configuration"

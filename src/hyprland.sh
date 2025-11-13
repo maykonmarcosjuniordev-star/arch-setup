@@ -17,10 +17,12 @@ ln -sfn ~/arch-setup/config/hyprland/waybar ~/.config/waybar
 chmod +x ~/arch-setup/config/hyprland/waybar/powermenu.sh
 ln -sfn ~/arch-setup/config/hyprland/hyprpaper.conf ~/.config/hypr/hyprpaper.conf
 ln -sfn ~/arch-setup/config/hyprland/hyprlock.conf ~/.config/hypr/hyprlock.conf
+mkdir -p ~/.config/sunsetr
 ln -sfn ~/arch-setup/config/hyprland/sunsetr.toml ~/.config/sunsetr/sunsetr.toml
 systemctl --user enable sunsetr.service
 # setting wallpaper
 echo "setting wallpaper"
+mkdir -p ~/Pictures
 ln -sfn ~/arch-setup/wallpapers/ ~/Pictures/Wallpapers
 
 echo "removing needless kitty installation"

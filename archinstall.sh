@@ -155,17 +155,6 @@ else
 fi
 grub-mkconfig -o /boot/grub/grub.cfg
 
-mkdir -p /boot/EFI/BOOT
-cp /boot/EFI/GRUB/grubx64.efi /boot/EFI/BOOT/BOOTX64.EFI 2>/dev/null || true
-
-root_uuid=$(blkid -s UUID -o value /dev/$root_part)
-cat > /boot/loader/entries/arch.conf <<EOC
-title Arch Linux
-linux /vmlinuz-linux
-initrd /initramfs-linux.img
-options root=UUID=$root_uuid rw
-EOC
-
 echo "Criando usuário $user..."
 if ! id "$user" &>/dev/null; then
   useradd -m -G wheel -s /bin/bash "$user"

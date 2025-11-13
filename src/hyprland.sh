@@ -3,11 +3,6 @@
 echo "installing hyprland and related apps"
 yay -Sy --needed --noconfirm - < apps/hyprland.list
 
-# enabling services
-echo "enabling hyprland-related services"
-systemctl --user enable --now hyprlux.service
-systemctl --user enable --now hyprpolkitagent
-
 
 # creating symlinks for hyprland config
 echo "creating symlinks for hyprland config"

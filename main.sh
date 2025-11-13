@@ -14,7 +14,7 @@ if [ ! -d /opt/yay-git ]; then
 fi
 yay -Suy
 # install apps
-chmod +x src/*.sh
+sudo chmod +x src/*.sh
 echo "installing essential apps with yay"
 ./src/essentials.sh
 # create symlinks

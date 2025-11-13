@@ -33,3 +33,4 @@ case $1 in
 	*)
 		echo "Usage: $0 {symlinks|genkey}"
 		exit
+esac

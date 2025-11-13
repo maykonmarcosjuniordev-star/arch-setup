@@ -29,6 +29,8 @@ mesa-utils
 networkmanager
 network-manager-applet
 noto-fonts-cjk
+pipewire
+pipewire-pulse
 openssh
 openssl
 os-prober

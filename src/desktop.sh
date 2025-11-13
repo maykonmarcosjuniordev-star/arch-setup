@@ -23,8 +23,10 @@ mkdir -p ~/.local/share/
 ln -sfn ~/arch-setup/icons ~/.local/share/
 ln -sfn ~/arch-setup/wallpapers ~/.local/share/backgrounds
 ln -sfn ~/arch-setup/applications ~/.local/share/applications
+mkdir -p ~/.config/autostart
 ln -sfn ~/arch-setup/applications/discord.desktop ~/.config/autostart/
 ln -sfn ~/arch-setup/applications/notion.desktop ~/.config/autostart/
+mkdir -p ~/.config/wasistlos
 ln -sfn ~/arch-setup/config/dconf/wasistlos.conf ~/.config/wasistlos/settings.conf
 
 # Audacious media player configuration

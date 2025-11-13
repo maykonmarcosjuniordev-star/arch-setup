@@ -130,6 +130,12 @@ echo "Ativando serviços..."
 systemctl enable NetworkManager
 systemctl enable systemd-timesyncd
 
+echo "=== Atualizando mirrorlist ==="
+pacman -Syy
+pacman -Sy --noconfirm reflector || pacman -S --noconfirm reflector
+reflector --country Brazil,Argentina,Chile --age 12 --sort rate \
+  --save /etc/pacman.d/mirrorlist
+
 echo "Instalando pacotes adicionais..."
 pacman -Syu --noconfirm grub git base-devel
 

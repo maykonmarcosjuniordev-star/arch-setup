@@ -15,12 +15,14 @@ hyprsunset-util
 hyprutils
 hyprland-toggle-tiling-git
 hyprqt6engine
-kitty
 nwg-look
 playerctl
+polkit-kde-agent
 qt5-wayland
 qt6-wayland
 sunsetr
 swaync
 waybar
 wofi
+xdg-utils
+xdg-desktop-portal-hyprland

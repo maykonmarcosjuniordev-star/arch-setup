@@ -148,6 +148,8 @@ passwd
 
 sed -i 's/^# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
 
+git clone https://github.com/maykonmarcosjuniordev-star/arch-setup "home/$user/arch-setup"
+
 echo "Configuração dentro do sistema concluída!"
 EOF
 

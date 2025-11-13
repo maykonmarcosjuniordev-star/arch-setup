@@ -2,5 +2,12 @@
   "filterLinkHints": true,
   "hideHud": true,
   "keyMappings": "# Insert your preferred key mappings here.\nunmapAll\nmap down scrollDown\nmap up scrollUp\nmap left scrollLeft\nmap right scrollRight\nmap / LinkHints.activateMode",
-  "settingsVersion": "2.3"
+  "linkHintCharacters": "1234567890",
+  "settingsVersion": "2.3",
+  "exclusionRules": [
+    {
+      "passKeys": "",
+      "pattern": "https?://docs.google.com/*"
+    }
+  ]
 }

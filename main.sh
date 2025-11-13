@@ -44,6 +44,6 @@ fi
 
 # reboot if allowed
 read -p "Reboot now (recommended)? (y/n)" reboot_now
-if [[ "$reboot_now" == "y"]]; then
+if [[ "$reboot_now" == "y" || "$reboot_now" == "Y" ]]; then
     reboot
 fi

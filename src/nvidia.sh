@@ -5,11 +5,6 @@ yay -Sy --needed --noconfirm nvidia nvidia-prime nvidia-utils libva-nvidia-drive
 
 sudo ln -sfn ~/arch-setup/config/essentials/nvidia.conf /etc/modprobe.d/nvidia.conf
 
-read -p "replace bins with gpu equivalents? (y/n)" replace
-if [["$replace" != "y"]]; then
-    exit(0)
-fi
-
 echo "replacing binaries in usr/bin/ to run with prime-run"
 
 echo "for brave"

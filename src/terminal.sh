@@ -1,4 +1,15 @@
 function create_symlinks() {
+	if [ ! -f ~/.ssh/id_rsa ]; then
+		echo "moving ssh keys"
+		mv ~/arch-setup/tmp/id_rsa ~/.ssh/
+		chmod 700 ~/.ssh/
+		chmod 600 ~/.ssh/id_*
+		chmod 644 ~/.ssh/id_*.pub
+		chown -R $(whoami):$(whoami) ~/.ssh
+		sudo chown -R $(whoami):$(whoami) ~/.ssh/id*
+		ssh-add ~/.ssh/id_rsa
+		eval "$(ssh-agent -s)"
+	fi
 	ln -sfn ~/arch-setup/config/terminal/.bash_aliases ~/.bash_aliases
 	ln -sfn ~/arch-setup/config/terminal/.bash_profile ~/.bash_profile
 	ln -sfn ~/arch-setup/config/terminal/.profile ~/.profile

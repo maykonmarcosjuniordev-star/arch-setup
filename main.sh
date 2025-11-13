@@ -17,6 +17,10 @@ yay -Suy
 sudo chmod +x src/*.sh
 echo "installing essential apps with yay"
 ./src/essentials.sh
+
+echo "decrypting credentials"
+./src/crypt.sh decrypt
+
 # create symlinks
 echo "creating symlinks for terminal settings"
 ./src/terminal.sh create_symlinks

@@ -30,6 +30,7 @@ networkmanager
 network-manager-applet
 noto-fonts-cjk
 openssh
+openssl
 os-prober
 power-profiles-daemon
 python-pip

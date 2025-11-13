@@ -4,8 +4,8 @@ echo "installing desktop applications"
 yay -Sy --needed --noconfirm - < apps/desktop.list
 
 # 	copy dummy fetchmail 
-echo "copying fetchmail configuration to ~/.fetchmailrc"
-cp ~/arch-setup/config/tray/.fetchmailrc ~/.fetchmailrc
+echo "moving fetchmail configuration to ~/.fetchmailrc"
+mv ~/arch-setup/tmp/.fetchmailrc ~/.fetchmailrc
 
 # 	enable gmail-tray service
 echo "enabling gmail-tray service"

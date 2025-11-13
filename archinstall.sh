@@ -70,7 +70,7 @@ for dev in "/dev/$part_fat" "/dev/$part_data" "/dev/$part_swap"; do
   if [ -n "$mntpoints" ]; then
     echo "Desmontando $dev de: $mntpoints"
     for mp in $mntpoints; do
-      umount "$mp" || { echo "Falha ao desmontar $mp"; exit 1; }
+      umount -l "$mp" || { echo "Falha ao desmontar $mp"; exit 1; }
     done
   fi
 done
@@ -110,6 +110,12 @@ set -e
 
 hostname=$1
 user=$2
+root_part=$3
+
+# Detect disk name (strip partition suffix)
+# Works for both /dev/sda2 -> /dev/sda and /dev/nvme0n1p2 -> /dev/nvme0n1
+root_disk=$(lsblk -no pkname /dev/$root_part)
+root_disk="/dev/$root_disk"
 
 echo "Configurando idioma e fuso horário..."
 loadkeys br-abnt2
@@ -128,11 +134,11 @@ echo "Instalando pacotes adicionais..."
 pacman -Syu --noconfirm grub git base-devel
 
 echo "Instalando bootloader..."
-grub-install --target=i386-pc /dev/$root_disk
+grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 efibootmgr --create --disk /dev/$disk --part 1 --label "Arch Linux" --loader '\EFI\systemd\systemd-bootx64.efi'
 
-root_uuid=$(blkid -s UUID -o value /dev/$3)
+root_uuid=$(blkid -s UUID -o value /dev/$root_part)
 cat > /boot/loader/entries/arch.conf <<EOC
 title Arch Linux
 linux /vmlinuz-linux

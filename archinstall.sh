@@ -125,11 +125,11 @@ systemctl enable NetworkManager
 systemctl enable systemd-timesyncd
 
 echo "Instalando pacotes adicionais..."
-pacman -Syu --noconfirm git base-devel
+pacman -Syu --noconfirm grub git base-devel
 
 echo "Instalando bootloader..."
-mount -o remount,umask=0077 /boot || true
-bootctl --path=/boot install || echo "⚠️ bootctl install failed (check EFI variables)"
+grub-install --target=i386-pc /dev/$root_disk
+grub-mkconfig -o /boot/grub/grub.cfg
 efibootmgr --create --disk /dev/$disk --part 1 --label "Arch Linux" --loader '\EFI\systemd\systemd-bootx64.efi'
 
 root_uuid=$(blkid -s UUID -o value /dev/$3)
@@ -163,6 +163,8 @@ for dir in /dev /dev/pts /proc /sys /run; do
   mount --bind $dir /mnt$dir
 done
 
+mount -t efivarfs efivarfs /mnt/sys/firmware/efi/efivars || true
+
 echo "=== Entrando no chroot ==="
 # Ensure EFI vars are available for bootctl
 if [ -d /sys/firmware/efi/efivars ]; then
@@ -171,5 +173,11 @@ fi
 arch-chroot /mnt /root/setup_inside_chroot.sh "$hostname" "$user" "$part_data"
 
 echo "=== Finalizando instalação ==="
-umount -R /mnt
+echo "=== Saindo do chroot e desmontando partições ==="
+umount -l /mnt/sys/firmware/efi/efivars 2>/dev/null || true
+for dir in /run /sys /proc /dev/pts /dev; do
+  umount -l /mnt$dir 2>/dev/null || true
+done
+swapoff -a || true
+umount -R /mnt || true
 reboot

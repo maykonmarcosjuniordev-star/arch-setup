@@ -34,13 +34,14 @@ os-prober
 power-profiles-daemon
 python-pip
 rust-src
+rustup
+sddm
 sof-firmware
+starship
 swtpm
 tar
 ttf-font-awesome
 ttf-ubuntu-mono-nerd
-sddm
-starship
 unzip
 usbutils
 uutils-coreutils

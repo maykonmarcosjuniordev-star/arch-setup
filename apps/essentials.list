@@ -3,6 +3,8 @@ alsa-firmware
 asar
 blueman
 bluez
+cosmic-text-editor
+cosmic-terminal
 cdrkit
 curl
 dbus-python
@@ -14,13 +16,16 @@ git-lfs
 grub
 gst-plugin-pipewire
 ibus
+intel-media-driver
+xf86-video-intel
 less
-cosmic-text-editor
-cosmic-terminal
-make
+lib32-mesa-minimal
 libcamera
 libdecor
 linux-headers
+make
+mesa
+mesa-utils
 networkmanager
 network-manager-applet
 noto-fonts-cjk
@@ -28,7 +33,6 @@ openssh
 os-prober
 power-profiles-daemon
 python-pip
-rust
 rust-src
 sof-firmware
 swtpm
@@ -43,4 +47,6 @@ uutils-coreutils
 uutils-diffutils
 uutils-findutils
 vlc-plugin-ffmpeg
+vulkan-intel
+vulkan-tools
 wget

@@ -10,8 +10,6 @@ hyprlock
 hyprpaper
 hyprshot
 hyprpolkitagent
-hyprsunset
-hyprsunset-util
 hyprutils
 hyprland-toggle-tiling-git
 hyprqt6engine
@@ -21,9 +19,8 @@ polkit-kde-agent
 qt5-wayland
 qt6-wayland
 sunsetr
-swaync
 waybar
 wofi
-xdg-utils
 xdg-desktop-portal
 xdg-desktop-portal-hyprland
+xdg-utils

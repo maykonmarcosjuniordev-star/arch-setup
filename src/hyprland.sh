@@ -14,6 +14,8 @@ ln -sfn ~/arch-setup/config/hyprland/hyprpaper.conf ~/.config/hypr/hyprpaper.con
 ln -sfn ~/arch-setup/config/hyprland/hyprlock.conf ~/.config/hypr/hyprlock.conf
 mkdir -p ~/.config/sunsetr
 ln -sfn ~/arch-setup/config/hyprland/sunsetr.toml ~/.config/sunsetr/sunsetr.toml
+ln -sfn ~/arch-setup/config/hyprland/sunsetr.service ~/.config/systemd/user/default.target.wants/
+ln -sfn ~/arch-setup/config/hyprland/sunsetr.service ~/.config/systemd/user/graphical-session.target.wants/
 # setting wallpaper
 echo "setting wallpaper"
 mkdir -p ~/Pictures

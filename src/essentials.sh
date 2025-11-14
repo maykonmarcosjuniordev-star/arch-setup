@@ -3,6 +3,9 @@
 echo "installing essential apps"
 yay -Sy --needed --noconfirm - < ~/arch-setup/apps/essentials.list
 
+echo "enabling cargo"
+rustup default stable
+
 # import gpg key for git lfs
 echo "importing gpg key for git lfs"
 gpg --keyserver hkps://keys.openpgp.org --recv-keys 14F26682D0916CDD81E37B6D61B7B526D98F0353

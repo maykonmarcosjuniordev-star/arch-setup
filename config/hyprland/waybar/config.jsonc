@@ -14,24 +14,24 @@
     ],
     "modules-center": [
         // "hyprland/window",
+        "mpd",
         "clock"
     ],
     "modules-right": [
-        "mpd",
-        "idle_inhibitor",
+        "tray",
+        // "idle_inhibitor",
         "pulseaudio",
         // "cpu",
         // "memory",
-        "tray",
         "power-profiles-daemon",
-        "temperature",
-        "backlight",
+        // "temperature",
+        // "backlight",
         "keyboard-state",
-        "hyprland/language",
-        "battery",
-        "battery#bat2",
+        // "hyprland/language",
         "network",
-        "custom/power"
+        // "battery#bat2",
+        // "custom/power"
+        "battery"
     ],
     // Modules configuration
     // "sway/workspaces": {
@@ -73,7 +73,7 @@
     "hyprland/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
-    "hyprlandwwwwwwwwwwwwwwww/scratchpad": {
+    "hyprland/scratchpad": {
         "format": "{icon} {count}",
         "show-empty": false,
         "format-icons": [
@@ -200,7 +200,7 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-wifi": "({signalStrength}%) ",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
@@ -228,7 +228,7 @@
                 ""
             ]
         },
-        "on-click": "pavucontrol"
+        "on-click": "alsamixer"
     },
     "custom/media": {
         "format": "{icon} {text}",
@@ -243,7 +243,7 @@
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
     "custom/power": {
-        "format": "⏻ ",
+        "format": "⏻",
         "tooltip": false,
         "on-click": "~/.config/waybar/powermenu.sh"
         // "menu": "on-click",

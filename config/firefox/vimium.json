@@ -1,8 +1,9 @@
 {
   "filterLinkHints": true,
   "hideHud": true,
-  "keyMappings": "# Insert your preferred key mappings here.\nunmapAll\nmap down scrollDown\nmap up scrollUp\nmap left scrollLeft\nmap right scrollRight\nmap / LinkHints.activateMode",
+  "keyMappings": "# Insert your preferred key mappings here.\nunmapAll\nmap down scrollDown\nmap up scrollUp\nmap left scrollLeft\nmap right scrollRight\nmap / LinkHints.activateMode\nmap * LinkHints.activateModeToOpenInNewTab",
   "linkHintCharacters": "1234567890",
+  "searchEngines": "",
   "settingsVersion": "2.3",
   "exclusionRules": [
     {

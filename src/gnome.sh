@@ -2,7 +2,7 @@
 
 # Functions to apply, dump, and reset GNOME settings using dconf
 function apply() {
-	yay -Sy --needed --noconfirm - < apps/gnome.list
+	yay -Sy --needed --noconfirm - < ~/arch-setup/apps/gnome.list
 	sudo systemctl enable gdm
 	dconf load / < ~/arch-setup/config/dconf/user.txt
 }

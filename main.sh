@@ -1,7 +1,7 @@
 #!/bin/bash
 # essentials that need pacman
 echo "installing essential apps with pacman"
-sudo pacman -Suy --needed --noconfirm - < apps/pacman.list
+sudo pacman -Suy --needed --noconfirm - < ~/arch-setup/apps/pacman.list
 # install yay
 echo "installing yay"
 # verify if yay-git directory exists

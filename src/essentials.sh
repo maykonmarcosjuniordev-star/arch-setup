@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "installing essential apps"
-yay -Sy --needed --noconfirm - < apps/essentials.list
+yay -Sy --needed --noconfirm - < ~/arch-setup/apps/essentials.list
 
 # import gpg key for git lfs
 echo "importing gpg key for git lfs"

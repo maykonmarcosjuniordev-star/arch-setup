@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "installing desktop applications"
-yay -Sy --needed --noconfirm - < apps/desktop.list
+yay -Sy --needed --noconfirm - < ~/arch-setup/apps/desktop.list
 
 # 	copy dummy fetchmail 
 echo "moving fetchmail configuration to ~/.fetchmailrc"

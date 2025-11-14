@@ -86,7 +86,8 @@ user_pref("doh-rollout.doneFirstRun", true);
 user_pref("doh-rollout.home-region", "US");
 user_pref("dom.forms.autocomplete.formautofill", true);
 user_pref("dom.ipc.forkserver.enable", false);
-user_pref("dom.ipc.processCount", 1);
+// 2 process allow for gpu
+user_pref("dom.ipc.processCount", 2);
 user_pref("dom.ipc.processCount.inference", 0);
 user_pref("dom.ipc.processCount.privilegedabout", 0);
 user_pref("dom.ipc.processCount.webIsolated", 1);
@@ -117,9 +118,14 @@ user_pref("gfx.content.skia-font-cache-size", 80);
 user_pref("gfx.wayland.hdr", false);
 user_pref("gfx.wayland.hdr.force-enabled", false);
 user_pref("gfx.webgpu.ignore-blocklist", false);
+
+
+// Enable WebRender even for “unsupported” GPUs (safe now for NVIDIA).
 user_pref("gfx.webrender.all", true);
+// Move final compositing to the GPU (huge performance gain).
 user_pref("gfx.webrender.compositor", true);
 user_pref("gfx.webrender.compositor.force-enabled", false);
+user_pref("gfx.webrender.enabled", true);
 user_pref("gfx.webrender.enable-gpu-markers", true);
 user_pref("gfx.webrender.precache-shaders", true);
 user_pref("gfx.webrender.program-binary-disk", true);
@@ -132,6 +138,11 @@ user_pref("image.mem.decode_bytes_at_a_time", 65536);
 user_pref("image.mem.shared.unmap.min_expiration_ms", 120000);
 user_pref("intl.accept_languages", "en,pt-br");
 user_pref("intl.locale.requested", "en-US,pt-BR");
+
+// Try GPU even if Firefox thinks it’s risky.
+user_pref("layers.acceleration.force-enabled", true);
+// Make sure GPU isn’t disabled by mistake.
+user_pref("layers.acceleration.disabled", false);
 user_pref("layers.gpu-process.allow-software", false);
 user_pref("layers.gpu-process.enabled", false);
 user_pref("layers.gpu-process.force-enabled", false);
@@ -229,4 +240,8 @@ user_pref("sidebar.verticalTabs", true);
 user_pref("sidebar.verticalTabs.dragToPinPromo.dismissed", true);
 user_pref("signon.generation.enabled", false);
 user_pref("signon.rememberSignons", true);
+
 user_pref("widget.wayland.vsync.enabled", true);
+// DMABUF = modern Linux method to share GPU buffers between apps.
+// Allows zero-copy GPU → compositor → display, which is critical under Wayland.
+user_pref("widget.dmabuf.force-enabled", true);

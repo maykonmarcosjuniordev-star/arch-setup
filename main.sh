@@ -27,7 +27,7 @@ echo "creating symlinks for terminal settings"
 ./src/desktop.sh
 read -p "Do you want to install NVIDIA drivers? (y/n): " install_nvidia
 if [[ "$install_nvidia" == "y" || "$install_nvidia" == "Y" ]]; then
-    ./src/nvidia.sh
+    ./src/gpu.sh
 fi
 read -p "Do you want to use Hyprland? (y/n): " install_hyprland
 if [[ "$install_hyprland" == "y" || "$install_hyprland" == "Y" ]]; then

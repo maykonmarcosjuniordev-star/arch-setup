@@ -3,6 +3,6 @@ Encoding=UTF-8
 Version=1.0
 Type=Application
 NoDisplay=true
-Exec=/opt/firefox-bin/firefox-bin %u
+Exec=~/.local/bin/firefox %u
 Name=Firefox
 Comment=Custom definition for Firefox

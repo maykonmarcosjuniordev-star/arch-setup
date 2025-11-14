@@ -1,20 +1,21 @@
+mkdir -p ~/.ssh
 function create_symlinks() {
 	if [ ! -f ~/.ssh/id_rsa ]; then
 		echo "moving ssh keys"
-		mv ~/arch-setup/tmp/id_rsa ~/.ssh/
+		mv ~/arch-setup/tmp/id_rsa* ~/.ssh/
 		chmod 700 ~/.ssh/
 		chmod 600 ~/.ssh/id_*
 		chmod 644 ~/.ssh/id_*.pub
 		chown -R $(whoami):$(whoami) ~/.ssh
-		sudo chown -R $(whoami):$(whoami) ~/.ssh/id*
-		ssh-add ~/.ssh/id_rsa
+		chown -R $(whoami):$(whoami) ~/.ssh/id*
 		eval "$(ssh-agent -s)"
+		ssh-add ~/.ssh/id_rsa
 	fi
+	mkdir -p ~/.config
 	ln -sfn ~/arch-setup/config/terminal/.bash_aliases ~/.bash_aliases
 	ln -sfn ~/arch-setup/config/terminal/.bash_profile ~/.bash_profile
 	ln -sfn ~/arch-setup/config/terminal/.profile ~/.profile
 	ln -sfn ~/arch-setup/config/terminal/.bashrc ~/.bashrc
-	mkdir -p ~/.config
 	ln -sfn ~/arch-setup/config/terminal/starship.toml ~/.config/starship.toml
 }
 
@@ -27,9 +28,9 @@ function gen_key() {
 	chmod 600 ~/.ssh/id_*
 	chmod 644 ~/.ssh/id_*.pub
 	chown -R $(whoami):$(whoami) ~/.ssh
-	sudo chown -R $(whoami):$(whoami) ~/.ssh/id*
-	ssh-add ~/.ssh/id_rsa
+	chown -R $(whoami):$(whoami) ~/.ssh/id*
 	eval "$(ssh-agent -s)"
+	ssh-add ~/.ssh/id_rsa
 }
 
 case $1 in

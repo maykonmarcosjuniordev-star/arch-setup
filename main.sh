@@ -1,4 +1,7 @@
 #!/bin/bash
+# first ensuring 
+echo "granting user rights for the setup"
+sudo chown -R $(whoami):$(whoami) ~/arch-setup
 # essentials that need pacman
 echo "installing essential apps with pacman"
 sudo pacman -Suy --needed --noconfirm - < ~/arch-setup/apps/pacman.list
@@ -24,6 +27,8 @@ echo "decrypting credentials"
 # create symlinks
 echo "creating symlinks for terminal settings"
 ./src/terminal.sh create_symlinks
+git remote set-url origin git@github.com:maykonmarcosjuniordev-star/arch-setup
+git lfs pull
 ./src/desktop.sh
 read -p "Do you want to install NVIDIA drivers? (y/n): " install_nvidia
 if [[ "$install_nvidia" == "y" || "$install_nvidia" == "Y" ]]; then
@@ -43,7 +48,7 @@ if [[ "$apply_cosmic" == "y" || "$apply_cosmic" == "Y" ]]; then
 fi
 
 # reboot if allowed
-read -p "Reboot now (recommended)? (y/n)" reboot_now
+read -p "Reboot now (recommended)? (y/n): " reboot_now
 if [[ "$reboot_now" == "y" || "$reboot_now" == "Y" ]]; then
     reboot
 fi

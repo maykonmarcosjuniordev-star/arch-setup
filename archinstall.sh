@@ -2,44 +2,12 @@
 set -e
 
 echo "=== Ativando conexão de rede ==="
-# Start NetworkManager in the live environment
-systemctl start NetworkManager || true
-
-# Check connectivity first (for wired setups)
-if ping -c1 archlinux.org &>/dev/null; then
-  echo "Conexão detectada (Ethernet)."
-else
-  echo "Nenhuma conexão detectada."
-  echo "Dispositivos Wi-Fi disponíveis:"
-  nmcli device | grep wifi || true
-
-  read -p "Deseja conectar via Wi-Fi? (s/N): " wifi_choice
-  if [[ $wifi_choice =~ ^[SsYy]$ ]]; then
-    read -p "SSID (nome da rede): " ssid
-    read -p "Senha Wi-Fi: " -s wifi_pass
-    echo
-    echo "Conectando a '$ssid'..."
-    nmcli device wifi connect "$ssid" password "$wifi_pass" || {
-      echo "Falha ao conectar ao Wi-Fi. Verifique SSID/senha."
-      exit 1
-    }
-  else
-    echo "Prosseguindo sem Wi-Fi."
-  fi
-fi
+./src/network.sh
 
 # Double-check we have connectivity before continuing
 if ! ping -c1 archlinux.org &>/dev/null; then
   echo "Sem conexão à Internet. Abortando instalação."
   exit 1
-fi
-
-# Save Wi-Fi connection profile to the new system if one was created
-if [ -n "$ssid" ] && nmcli connection show "$ssid" &>/dev/null; then
-  mkdir -p /mnt/etc/NetworkManager/system-connections
-  cp "/etc/NetworkManager/system-connections/$ssid.nmconnection" \
-     "/mnt/etc/NetworkManager/system-connections/" 2>/dev/null || true
-  chmod 600 "/mnt/etc/NetworkManager/system-connections/$ssid.nmconnection" 2>/dev/null || true
 fi
 
 echo "=== Arch Linux Installer ==="

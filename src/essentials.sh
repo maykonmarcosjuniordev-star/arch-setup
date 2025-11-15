@@ -15,6 +15,7 @@ gpg --keyserver hkps://keys.openpgp.org --recv-keys 14F26682D0916CDD81E37B6D61B7
 echo "enabling linger for user $USER"
 loginctl enable-linger $USER
 systemctl enable sddm
+systemctl enable --now systemd-homed
 
 echo "installing and configuring git lfs"
 git lfs install

@@ -1,0 +1,15 @@
+mode=drun
+hide_scroll=false
+insensitive=true
+height=45%
+width=45%
+yoffset=0
+xoffset=400
+sort_order=alphabetical
+prompt=Search...
+allow_images=true
+allow_markup=true
+show_all=false
+columns=3
+gtk_dark=true
+line_wrap=off

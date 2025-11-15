@@ -13,9 +13,13 @@ hyprpolkitagent
 hyprutils
 hyprland-toggle-tiling-git
 hyprqt6engine
+kservice5
+kvantum
+kvantum-qt5
 nwg-look
 playerctl
 polkit-kde-agent
+qt5ct
 qt5-wayland
 qt6-wayland
 sunsetr

@@ -8,8 +8,9 @@ yay -Sy --needed --noconfirm - < ~/arch-setup/apps/hyprland.list
 echo "creating symlinks for hyprland config"
 mkdir -p ~/.config/hypr
 ln -sfn ~/arch-setup/config/hyprland/hyprland.conf ~/.config/hypr/hyprland.conf
-ln -sfn ~/arch-setup/config/hyprland/waybar ~/.config/waybar
 chmod +x ~/arch-setup/config/hyprland/waybar/powermenu.sh
+ln -sfn ~/arch-setup/config/hyprland/waybar ~/.config/waybar
+ln -sfn ~/arch-setup/config/hyprland/wofi ~/.config/wofi
 ln -sfn ~/arch-setup/config/hyprland/hyprpaper.conf ~/.config/hypr/hyprpaper.conf
 ln -sfn ~/arch-setup/config/hyprland/hyprlock.conf ~/.config/hypr/hyprlock.conf
 mkdir -p ~/.config/sunsetr

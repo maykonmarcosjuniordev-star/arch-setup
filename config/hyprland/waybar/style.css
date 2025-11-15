@@ -45,12 +45,12 @@ button {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: inherit;
-    box-shadow: inset 0 -3px #ffffff;
+    box-shadow: inset 0 -3px #000000;
 }
 
 /* you can set a style on hover for any module like this */
-#pulseaudio:hover {
-    background-color: #a37800;
+#pulseaudio {
+    background-color: #000000;
 }
 
 #workspaces button {
@@ -118,8 +118,8 @@ button:hover {
 }
 
 #battery {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #000000;
+    color: #1ca000;
 }
 
 #battery.charging, #battery.plugged {
@@ -194,18 +194,18 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #f1c40f;
-    color: #000000;
+    background-color: #3F3F3F;
+    color: #ffa000;
 }
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
+    background-color: #3F3F3F;
+    color: #f53c3c;
 }
 
 #wireplumber {
-    background-color: #fff0f5;
-    color: #000000;
+    background-color: #f0932b;
+    color: #fff0f5;
 }
 
 #wireplumber.muted {
@@ -235,7 +235,7 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+    background-color: #000000;
 }
 
 #tray > .passive {

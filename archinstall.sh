@@ -66,7 +66,7 @@ swapon "/dev/$part_swap"
 
 echo "=== Instalando sistema base ==="
 # Pacstrap: base + Linux + firmware + NetworkManager
-pacstrap -K /mnt base linux linux-firmware networkmanager vim sudo efibootmgr
+pacstrap -K /mnt base linux linux-firmware networkmanager sudo efibootmgr
 
 echo "=== Gerando fstab ==="
 genfstab -U /mnt >> /mnt/etc/fstab

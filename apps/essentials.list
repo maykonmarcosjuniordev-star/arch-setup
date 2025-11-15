@@ -22,6 +22,7 @@ less
 lib32-mesa-minimal
 libcamera
 libdecor
+libva-nvidia-driver
 linux-headers
 make
 mesa
@@ -29,6 +30,9 @@ mesa-utils
 networkmanager
 network-manager-applet
 noto-fonts-cjk
+nvidia
+nvidia-prime
+nvidia-utils
 pipewire
 pipewire-pulse
 openssh

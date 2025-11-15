@@ -34,16 +34,6 @@ export QT_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export INPUT_METHOD=ibus
 
-# grub configuration
-# echo "configuring GRUB"
-# sudo ln -sfn ~/arch-setup/config/essentials/grub /etc/default/grub
-sudo grub-mkconfig -o /boot/grub/grub.cfg
-
-# mkinitcpio configuration
-# echo "configuring mkinitcpio"
-# sudo ln -sfn ~/arch-setup/config/essentials/mkinitcpio.conf /etc/mkinitcpio.conf
-sudo mkinitcpio -P
-
 # Enable pipewire and bluetooth services
 echo "enabling pipewire and bluetooth services"
 systemctl --user enable --now pipewire pipewire-pulse wireplumber

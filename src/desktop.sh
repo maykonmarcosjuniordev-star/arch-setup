@@ -20,10 +20,6 @@ ln -sfn ~/arch-setup/config/gnome/wasistlos.conf ~/.config/wasistlos/settings.co
 
 # Firefox configuration for multiple profiles
 echo "setting up Firefox configuration for multiple profiles"
-mkdir -p ~/.mozilla/firefox/Hobby/
-ln -sfn  ~/arch-setup/config/firefox/user.js ~/.mozilla/firefox/Hobby/user.js
-mkdir -p ~/.mozilla/firefox/Main/
-ln -sfn  ~/arch-setup/config/firefox/user.js ~/.mozilla/firefox/Main/user.js
 mkdir -p ~/.mozilla/firefox/UFSC/
 ln -sfn  ~/arch-setup/config/firefox/user.js ~/.mozilla/firefox/UFSC/user.js
 mkdir -p ~/.mozilla/firefox/Dev/

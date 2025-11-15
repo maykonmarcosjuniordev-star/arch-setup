@@ -12,11 +12,20 @@ function create_symlinks() {
 		ssh-add ~/.ssh/id_rsa
 	fi
 	mkdir -p ~/.config
-	ln -sfn ~/arch-setup/config/terminal/.bash_aliases ~/.bash_aliases
-	ln -sfn ~/arch-setup/config/terminal/.bash_profile ~/.bash_profile
+	# ssh suport
 	ln -sfn ~/arch-setup/config/terminal/.profile ~/.profile
-	ln -sfn ~/arch-setup/config/terminal/.bashrc ~/.bashrc
+	# custom colors
 	ln -sfn ~/arch-setup/config/terminal/starship.toml ~/.config/starship.toml
+	# bash
+	ln -sfn ~/arch-setup/config/terminal/.bashrc ~/
+	ln -sfn ~/arch-setup/config/terminal/.bash_aliases ~/
+	ln -sfn ~/arch-setup/config/terminal/.bash_profile ~/
+	# zsh
+	ln -sfn ~/arch-setup/config/terminal/.zshrc ~/
+	ln -sfn ~/arch-setup/config/terminal/.zshrc.zni ~/
+	ln -sfn ~/arch-setup/config/terminal/.zcompdump ~/
+	ln -sfn ~/arch-setup/config/terminal/.zsh_profile ~/
+	chsh -s $(which zsh)
 }
 
 function gen_key() {

@@ -1,0 +1,10 @@
+#
+# ~/.zsh_profile
+#
+
+# [[ -f ~/.zshrc ]] && . ~/.zshrc
+
+eval "$(ssh-agent -s)" >/dev/null 2>&1
+ssh-add -q ~/.ssh/id_rsa
+
+eval "$(starship init zsh)"

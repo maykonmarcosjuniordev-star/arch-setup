@@ -14,6 +14,7 @@ ln -sfn ~/arch-setup/icons ~/.local/share/
 ln -sfn ~/arch-setup/wallpapers ~/.local/share/backgrounds
 ln -sfn ~/arch-setup/.local/applications ~/.local/share/applications
 ln -sfn ~/arch-setup/.local/bin ~/.local/bin
+sudo ln -sfn ~/arch-setup/.local/applications/firefox.desktop /usr/share/applications/firefox.desktop
 ln -sfn ~/arch-setup/.local/applications/notion.desktop ~/.config/autostart/
 ln -sfn ~/arch-setup/config/gnome/wasistlos.conf ~/.config/wasistlos/settings.conf
 

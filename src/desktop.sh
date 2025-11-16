@@ -47,3 +47,10 @@ echo "copying fonts to /usr/local/share/fonts and updating font cache"
 sudo mkdir -p /usr/local/share/fonts
 sudo cp ~/arch-setup/fonts/* /usr/local/share/fonts
 sudo fc-cache -vf
+
+# setting up qt5ct configuration
+echo "setting up themes configuration"
+gsettings set org.gnome.desktop.interface gtk-theme "catppuccin-mocha-red-standard+default"
+gsettings set org.gnome.desktop.interface icon-theme "Catppuccin-Mocha-Standard-Default"
+gsettings set org.gnome.desktop.interface cursor-theme "Catppuccin-Mocha-Cursors"
+gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"

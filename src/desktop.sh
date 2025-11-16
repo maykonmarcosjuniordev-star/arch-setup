@@ -10,10 +10,13 @@ sudo chmod +x ~/arch-setup/.local/bin/*
 mkdir -p ~/.local/share/
 mkdir -p ~/.config/autostart
 mkdir -p ~/.config/wasistlos
-ln -sfn ~/arch-setup/icons ~/.local/share/
+ln -sfn ~/arch-setup/icons ~/.local/share
+# in case it's required to copy icons to system pixmaps
+# sudo cp ~/arch-setup/icons/* /usr/share/pixmaps/
 ln -sfn ~/arch-setup/wallpapers ~/.local/share/backgrounds
 ln -sfn ~/arch-setup/.local/applications ~/.local/share/applications
 ln -sfn ~/arch-setup/.local/bin ~/.local/bin
+
 sudo ln -sfn ~/arch-setup/.local/applications/firefox.desktop /usr/share/applications/firefox.desktop
 ln -sfn ~/arch-setup/.local/applications/notion.desktop ~/.config/autostart/
 ln -sfn ~/arch-setup/config/gnome/wasistlos.conf ~/.config/wasistlos/settings.conf

@@ -2,7 +2,7 @@
 Exec=firefox --ProfileManager --new-tab https://chatgpt.com/
 Encoding=UTF-8
 Version=1.0
-Icon=/home/maykon/.local/share/icons/gpt.png
+Icon=gpt
 Type=Application
 NoDisplay=false
 Name=GPT

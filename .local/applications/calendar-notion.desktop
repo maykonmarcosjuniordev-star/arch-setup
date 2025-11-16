@@ -2,7 +2,7 @@
 Exec=firefox -P Dev --new-tab https://calendar.notion.so/
 Encoding=UTF-8
 Version=1.0
-Icon=/home/maykon/.local/share/icons/calendar.png
+Icon=calendar
 Type=Application
 Terminal=false
 NoDisplay=false

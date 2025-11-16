@@ -5,6 +5,6 @@ Comment=All-in-one voice and text chat for gamers that's free, secure, and works
 GenericName=Internet Messenger
 Exec=firefox -P UFSC --new-tab https://discord.com/app
 NoDisplay=false
-Icon=/home/maykon/.local/share/icons/discord.png
+Icon=discord
 Type=Application
 Categories=Network;InstantMessaging;

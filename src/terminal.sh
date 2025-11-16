@@ -25,7 +25,8 @@ function create_symlinks() {
 	ln -sfn ~/arch-setup/config/terminal/.zshrc.zni ~/
 	ln -sfn ~/arch-setup/config/terminal/.zcompdump ~/
 	ln -sfn ~/arch-setup/config/terminal/.zsh_profile ~/
-	chsh -s $(which zsh)
+	# chsh -s $(which zsh)
+	chsh -s $(which bash)
 }
 
 function gen_key() {

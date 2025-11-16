@@ -2,6 +2,15 @@
 # first ensuring 
 echo "granting user rights for the setup"
 sudo chown -R $(whoami):$(whoami) ~/arch-setup
+
+
+# Double-check we have connectivity before continuing
+if ! ping -c1 archlinux.org &>/dev/null; then
+    echo "=== Ativando conexão de rede ==="
+    ./src/network.sh
+fi
+
+
 # essentials that need pacman
 echo "installing essential apps with pacman"
 sudo pacman -Suy --needed --noconfirm - < ~/arch-setup/apps/pacman.list

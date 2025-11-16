@@ -20,6 +20,8 @@ ln -sfn ~/arch-setup/.local/bin ~/.local/bin
 sudo ln -sfn ~/arch-setup/.local/applications/firefox.desktop /usr/share/applications/firefox.desktop
 ln -sfn ~/arch-setup/.local/applications/notion.desktop ~/.config/autostart/
 ln -sfn ~/arch-setup/config/gnome/wasistlos.conf ~/.config/wasistlos/settings.conf
+ln -sfn ~/arch-setup/config/vs-code/settings.json ~/.config/Code/User/settings.json
+ln -sfn ~/arch-setup/config/vs-code/keybindings.json ~/.config/Code/User/keybindings.json
 
 # Firefox configuration for multiple profiles
 echo "setting up Firefox configuration for multiple profiles"

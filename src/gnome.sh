@@ -4,11 +4,14 @@
 function apply() {
 	yay -Sy --needed --noconfirm - < ~/arch-setup/apps/gnome.list
 	sudo systemctl enable gdm
+}
+
+function load() {
 	dconf load / < ~/arch-setup/config/dconf/user.txt
 }
 
 function dump() {
-	dconf dump / > ~/arch-setup/gnome/dconf/user.txt
+	dconf dump / > ~/arch-setup/config/dconf/user.txt
 }
 
 function reset() {
@@ -19,6 +22,9 @@ case $1 in
 	apply)
 		apply
 		;;
+	load)
+		load
+		;;
 	dump)
 		dump
 		;;
@@ -26,7 +32,7 @@ case $1 in
 		reset
 		;;
 	*)
-		echo "Usage: $0 {apply|dump|reset}"
+		echo "Usage: $0 {apply|load|dump|reset}"
 		exit 1
 		;;
 esac

@@ -25,8 +25,13 @@ function create_symlinks() {
 	ln -sfn ~/arch-setup/config/terminal/.zshrc.zni ~/
 	ln -sfn ~/arch-setup/config/terminal/.zcompdump ~/
 	ln -sfn ~/arch-setup/config/terminal/.zsh_profile ~/
-	# chsh -s $(which zsh)
-	chsh -s $(which bash)
+	read -p "Do you want to set zsh as default shell? (y/N) " choice
+	if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
+		chsh -s $(which zsh)
+	else
+		# set default shell to bash
+		chsh -s $(which bash)
+	fi
 }
 
 function gen_key() {

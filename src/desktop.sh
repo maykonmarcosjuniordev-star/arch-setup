@@ -8,8 +8,14 @@ yay -Sy --needed --noconfirm - < ~/arch-setup/apps/desktop.list
 echo "creating symlinks for configuration files and directories"
 sudo chmod +x ~/arch-setup/.local/bin/*
 mkdir -p ~/.local/share/
+mkdir -p ~/.config
 mkdir -p ~/.config/autostart
 mkdir -p ~/.config/wasistlos
+
+echo "Settings Default Applications"
+ln -sfn ~/arch-setup/config/mimeapps.list ~/.config/mimeapps.list
+
+echo "linking icons, wallpapers, applications, and bin directories"
 ln -sfn ~/arch-setup/icons ~/.local/share
 # in case it's required to copy icons to system pixmaps
 # sudo cp ~/arch-setup/icons/* /usr/share/pixmaps/

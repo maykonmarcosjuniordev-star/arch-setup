@@ -29,7 +29,7 @@ git lfs install
 # IBus configuration
 echo "configuring IBus"
 mkdir -p ~/.config/environment.d/
-ln -sfn ~/arch-setup/config/essentials/ibus.conf ~/.config/environment.d/ibus.conf
+ln -sfn ~/arch-setup/config/ibus.conf ~/.config/environment.d/ibus.conf
 export GTK_IM_MODULE=ibus
 export QT_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus

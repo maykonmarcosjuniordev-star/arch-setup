@@ -3,3 +3,10 @@
 *.jpg filter=lfs diff=lfs merge=lfs -text
 icons/* filter=lfs diff=lfs merge=lfs -text
 wallpapers/* filter=lfs diff=lfs merge=lfs -text
+# To keep sensitive data out of the repository, use the gitignore_lines filter
+# defined in .git/config to remove lines ending with #gitignore
+# git config --global filter.gitignore_lines.clean "sed '/#gitignore$/d'"
+# git config --global filter.gitignore_lines.smudge cat
+# See https://git-scm.com/docs/gitattributes#_7 for more information.
+*.conf filter=gitignore_lines
+*.json filter=gitignore_lines 

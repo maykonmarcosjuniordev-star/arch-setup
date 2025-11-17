@@ -8,4 +8,7 @@
     "terminal.external.linuxExec": "cosmic-term",
     "terminal.integrated.defaultProfile.linux": "bash",
     "github.copilot.nextEditSuggestions.enabled": true
+    , //  #gitignore
+    "githubIssues.repoOwner": "maykonmarcosjuniordev-star", //  #gitignore
+    "githubIssues.repoName": "arch-setup" // #gitignore
 }

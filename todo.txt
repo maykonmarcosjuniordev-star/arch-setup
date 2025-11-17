@@ -1,4 +1,0 @@
-Change user.txt to a list of:
-- dconf write /org/gnome/desktop/lockdown/disable-lock-screen false
-
-learn webcrawling

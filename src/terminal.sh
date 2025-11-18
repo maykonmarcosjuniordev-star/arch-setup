@@ -18,7 +18,7 @@ function create_symlinks() {
 	ln -sfn ~/arch-setup/config/terminal/starship.toml ~/.config/starship.toml
 	# bash
 	ln -sfn ~/arch-setup/config/terminal/.bashrc ~/
-	ln -sfn ~/arch-setup/config/terminal/.bash_aliases ~/
+	ln -sfn ~/arch-setup/config/terminal/.aliases ~/
 	ln -sfn ~/arch-setup/config/terminal/.bash_profile ~/
 	# zsh
 	ln -sfn ~/arch-setup/config/terminal/.zshrc ~/

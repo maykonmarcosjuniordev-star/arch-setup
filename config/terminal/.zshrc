@@ -31,12 +31,11 @@ bindkey -e
 
 # The following line were manually added by the user
 export PATH="$HOME/.local/bin:$PATH"
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
+
 if [ -f ~/.zsh_profile ]; then
         source ~/.zsh_profile
 fi
-if [ -f ~/.bash_aliases ]; then
-        source ~/.bash_aliases
+if [ -f ~/.aliases ]; then
+        source ~/.aliases
 fi
 # End of lines manually added by the user

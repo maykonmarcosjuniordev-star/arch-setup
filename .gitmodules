@@ -1,4 +1,0 @@
-# --- IGNORE ---
-*.conf filter=gitignore_lines
-*.json filter=gitignore_lines
-config/vs-code/settings.json filter=gitignore_lines

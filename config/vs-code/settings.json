@@ -7,8 +7,15 @@
     "git.autofetch": true,
     "terminal.external.linuxExec": "cosmic-term",
     "terminal.integrated.defaultProfile.linux": "bash",
-    "github.copilot.nextEditSuggestions.enabled": true
-    , //  #gitignore
-    "githubIssues.repoOwner": "maykonmarcosjuniordev-star", //  #gitignore
-    "githubIssues.repoName": "arch-setup" // #gitignore
+    "github.copilot.nextEditSuggestions.enabled": true,
+    // To skip committing sensitive data, the following line must be altered separately
+    // For every commit,
+    //      remove the token below
+    //      run git update-index --no-skip-worktree config/vs-code/settings.json
+    //      stage the changes
+    //      add the token back
+    //      run git update-index --skip-worktree config/vs-code/settings.json
+    "githubIssues.authToken": "",
+    "githubIssues.repoOwner": "maykonmarcosjuniordev-star",
+    "githubIssues.repoName": "arch-setup"
 }

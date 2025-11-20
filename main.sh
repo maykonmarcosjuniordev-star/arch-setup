@@ -1,7 +1,5 @@
 #!/bin/bash
-
-echo "granting user rights for the setup"
-sudo chown -R $(whoami):$(whoami) ~/arch-setup
+set -e
 
 
 # Double-check we have connectivity before continuing
@@ -13,9 +11,7 @@ fi
 
 # essentials that need pacman
 echo "installing essential apps with pacman"
-sudo pacman -Suy --needed --noconfirm git pacman-contrib
-# install apps
-sudo chmod +x src/*.sh
+sudo pacman -Suy --needed --noconfirm git pacman-contrib base-devel
 
 # install yay
 echo "installing yay"

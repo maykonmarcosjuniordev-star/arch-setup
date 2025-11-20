@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # --answerclean   <a>   Set a predetermined answer for the clean build menu
 # --answerdiff    <a>   Set a predetermined answer for the diff menu
 # --answeredit    <a>   Set a predetermined answer for the edit pkgbuild menu
@@ -16,17 +18,20 @@
 
 # --cleanafter          Remove package sources after successful install
 
-#!/bin/bash
 echo "installing yay and related apps"
+git clone https://aur.archlinux.org/yay-bin.git
+cd yay-bin
+makepkg -sirc
+cd ..
+rm -rf yay-bin
+# if [ ! -d /opt/yay-git]; then
+#     sudo git clone https://aur.archlinux.org/yay-git.git /opt/yay-git
+#     sudo chown -R $(whoami):$(whoami) /opt/yay-git/
+#     cd /opt/yay-git
+#     makepkg -sirc
+#     cd ~/arch-setup
+# fi
 
-# verify if yay-git directory exists
-if [ ! -d /opt/yay-git ]; then
-    sudo git clone https://aur.archlinux.org/yay-git.git /opt/yay-git
-    sudo chown -R $(whoami):$(whoami) /opt/yay-git/
-    cd /opt/yay-git
-    makepkg -sirc
-    cd ~/arch-setup
-fi
 echo "configuring yay"
 yay -Y --gendb
 echo "setting yay cofiguration flags"

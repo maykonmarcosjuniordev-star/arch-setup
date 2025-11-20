@@ -13,20 +13,14 @@ fi
 
 # essentials that need pacman
 echo "installing essential apps with pacman"
-sudo pacman -Suy --needed --noconfirm - < ~/arch-setup/apps/pacman.list
-# install yay
-echo "installing yay"
-# verify if yay-git directory exists
-if [ ! -d /opt/yay-git ]; then
-    sudo git clone https://aur.archlinux.org/yay-git.git /opt/yay-git
-    sudo chown -R $(whoami):$(whoami) /opt/yay-git/
-    cd /opt/yay-git
-    makepkg -sirc
-    cd ~/arch-setup
-fi
-yay -Suy
+sudo pacman -Suy --needed --noconfirm git pacman-contrib
 # install apps
 sudo chmod +x src/*.sh
+
+# install yay
+echo "installing yay"
+./src/yay.sh
+
 echo "installing essential apps with yay"
 ./src/essentials.sh
 

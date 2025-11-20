@@ -105,7 +105,7 @@ reflector --country Brazil,Argentina,Chile --age 12 --sort rate \
   --save /etc/pacman.d/mirrorlist
 
 echo "Instalando pacotes adicionais..."
-pacman -Syu --noconfirm grub efibootmgr git base-devel
+pacman -Syu --noconfirm grub efibootmgr git base-devel pacman-contrib
 
 echo "Instalando bootloader..."
 echo "=== Instalando GRUB ==="
@@ -118,7 +118,6 @@ if [ -d /sys/firmware/efi ]; then
     --label "Arch Linux" --loader '\EFI\GRUB\grubx64.efi' || \
     echo "⚠️  efibootmgr falhou (firmware bloqueou gravação), fallback pronto."
 else
-  pacman -S --noconfirm grub
   grub-install --target=i386-pc "$root_disk"
 fi
 grub-mkconfig -o /boot/grub/grub.cfg

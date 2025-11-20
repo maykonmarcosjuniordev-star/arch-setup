@@ -12,8 +12,10 @@ dbus-python
 debtap
 ffmpeg
 gcc
+git
 git-filter-repo
 git-lfs
+gnupg
 grub
 gst-plugin-pipewire
 ibus
@@ -30,6 +32,7 @@ mesa
 mesa-utils
 networkmanager
 network-manager-applet
+nodejs
 noto-fonts-cjk
 nvidia
 nvidia-prime

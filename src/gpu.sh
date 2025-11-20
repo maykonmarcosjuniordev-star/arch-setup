@@ -11,7 +11,7 @@ else
 fi
 if echo "$GPU_INFO" | grep -qi "NVIDIA"; then
     # Verify the GPU family to decide on the driver installation
-    if echo "$GPU_INFO" | grep -qi "NVIDIA Corporation TU|"; then
+    if echo "$GPU_INFO" | grep -qi "NVIDIA Corporation TU"; then
         echo "installing nvidia drivers for Turing architecture (nvidia-open)"
         yay -Sy --needed --noconfirm nvidia-open
     elif echo "$GPU_INFO" | grep -qi "NVIDIA Corporation GM|NVIDIA Corporation AD"; then
@@ -22,7 +22,7 @@ if echo "$GPU_INFO" | grep -qi "NVIDIA"; then
         yay -Sy --needed --noconfirm nvidia-open
     fi 
     echo "installing auxiliar nvidia pkgs"
-    yay -Sy --needed --noconfirm nvidia-prime nvidia-utils libva-nvidia-driver
+    yay -Sy --needed --noconfirm nvidia-prime nvidia-utils libva-nvidia-driver.
     # sudo modprobe nvidia
 if echo "$GPU_INFO" | grep -qi "Intel"; then
     echo "installing intel drivers"

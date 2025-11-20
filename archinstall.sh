@@ -15,7 +15,7 @@ echo "Discos disponíveis:"
 lsblk -o NAME,SIZE,TYPE,MOUNTPOINT
 
 # read -p "Nome do disco (default: nvme0n1): " disk
-disk=$(lsblk -dn -o NAME,TYPE | awk '$2=="disk"{print $1; exit}')
+disk=$(lsblk -dn -o NAME,TYPE | awk '$2=="disk"{print $1; exit}' | tr -d ' \t\n\r')
 
 # If NVMe, use p; otherwise, no p
 if [[ "$disk" == *"nvme"* ]]; then
@@ -43,10 +43,10 @@ user=${user:-user}
 
 
 # Partition the disk
-sgdisk -Z "$disk"  # zap all on disk
-sgdisk -n 1:0:+1G   -t 1:ef00 "$disk"
-sgdisk -n 2:0:+8G  -t 3:8200 "$disk"    # swap 8 GB
-sgdisk -n 3:0:0     -t 2:8304 "$disk"   # root on rest of disk 
+sgdisk -Z "/dev/$disk"  # zap all on disk
+sgdisk -n 1:0:+1G   -t 1:ef00 "/dev/$disk"
+sgdisk -n 2:0:+8G   -t 2:8200 "/dev/$disk"    # swap 8 GB
+sgdisk -n 3:0:0     -t 3:8304 "/dev/$disk"   # root on rest of disk 
 
 echo "=== Verificando partições montadas ==="
 for dev in "/dev/$part_fat" "/dev/$part_data" "/dev/$part_swap"; do

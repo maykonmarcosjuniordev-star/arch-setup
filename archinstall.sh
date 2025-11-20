@@ -2,7 +2,7 @@
 set -e
 
 echo "=== Ativando conexão de rede ==="
-./src/network.sh
+~/arch-setup/src/network.sh
 
 # Double-check we have connectivity before continuing
 if ! ping -c1 archlinux.org &>/dev/null; then
@@ -14,23 +14,39 @@ echo "=== Arch Linux Installer ==="
 echo "Discos disponíveis:"
 lsblk -o NAME,SIZE,TYPE,MOUNTPOINT
 
-read -p "Nome do disco (default: nvme0n1): " disk
-disk=${disk:-nvme0n1}
+# read -p "Nome do disco (default: nvme0n1): " disk
+disk=$(lsblk -dn -o NAME,TYPE | awk '$2=="disk"{print $1; exit}')
 
-read -p "Partição EFI (default: ${disk}p1): " part_fat
-part_fat=${part_fat:-${disk}p1}
+# If NVMe, use p; otherwise, no p
+if [[ "$disk" == *"nvme"* ]]; then
+    P="p"
+else
+    P=""
+fi
 
-read -p "Partição raiz (default: ${disk}p2): " part_data
-part_data=${part_data:-${disk}p2}
+read -p "Partição EFI (default: ${disk}${P}1): " part_fat
+part_fat=${part_fat:-${disk}${P}1}
 
-read -p "Partição swap (default: ${disk}p3): " part_swap
-part_swap=${part_swap:-${disk}p3}
+read -p "Partição raiz (default: ${disk}${P}2): " part_data
+part_data=${part_data:-${disk}${P}2}
+
+read -p "Partição swap (default: ${disk}${P}3): " part_swap
+part_swap=${part_swap:-${disk}${P}3}
+
+echo "Usando partições: /dev/$part_fat (EFI), /dev/$part_data (raiz), /dev/$part_swap (swap)"
 
 read -p "Hostname (default: arch): " hostname
 hostname=${hostname:-arch}
 
 read -p "Usuário (default: user): " user
 user=${user:-user}
+
+
+# Partition the disk
+sgdisk -Z "$disk"  # zap all on disk
+sgdisk -n 1:0:+1G   -t 1:ef00 "$disk"
+sgdisk -n 2:0:+8G  -t 3:8200 "$disk"    # swap 8 GB
+sgdisk -n 3:0:0     -t 2:8304 "$disk"   # root on rest of disk 
 
 echo "=== Verificando partições montadas ==="
 for dev in "/dev/$part_fat" "/dev/$part_data" "/dev/$part_swap"; do

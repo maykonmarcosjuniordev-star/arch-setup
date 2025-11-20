@@ -1,5 +1,5 @@
 #!/bin/bash
-# first ensuring 
+
 echo "granting user rights for the setup"
 sudo chown -R $(whoami):$(whoami) ~/arch-setup
 
@@ -7,7 +7,7 @@ sudo chown -R $(whoami):$(whoami) ~/arch-setup
 # Double-check we have connectivity before continuing
 if ! ping -c1 archlinux.org &>/dev/null; then
     echo "=== Ativando conexão de rede ==="
-    ~/arch-setup/src/network.sh
+    bash ~/arch-setup/src/network.sh
 fi
 
 
@@ -19,39 +19,39 @@ sudo chmod +x src/*.sh
 
 # install yay
 echo "installing yay"
-~/arch-setup/src/yay.sh
+bash ~/arch-setup/src/yay.sh
 
 echo "installing essential apps with yay"
-~/arch-setup/src/essentials.sh
+bash ~/arch-setup/src/essentials.sh
 
 echo "installing GPU drivers (if any)"
-~/arch-setup/src/gpu.sh
+bash ~/arch-setup/src/gpu.sh
 
 echo "decrypting credentials"
-~/arch-setup/src/crypt.sh decrypt
+bash ~/arch-setup/src/crypt.sh decrypt
 
 # create symlinks
 echo "creating symlinks for terminal settings"
-~/arch-setup/src/terminal.sh symlinks
+bash ~/arch-setup/src/terminal.sh symlinks
 git remote set-url origin git@github.com:maykonmarcosjuniordev-star/arch-setup
 git lfs pull
-~/arch-setup/src/desktop.sh
+bash ~/arch-setup/src/desktop.sh
 
 read -p "Do you want to use Hyprland? (y/N): " install_hyprland
 if [[ "$install_hyprland" == "y" || "$install_hyprland" == "Y" ]]; then
-    ~/arch-setup/src/hyprland.sh
+    bash ~/arch-setup/src/hyprland.sh
 fi
 read -p "Do you want to use GNOME? (y/N): " apply_gnome
 if [[ "$apply_gnome" == "y" || "$apply_gnome" == "Y" ]]; then
-    ~/arch-setup/src/gnome.sh apply
+    bash ~/arch-setup/src/gnome.sh apply
     read -p "Do you want to load GNOME settings? (y/N): " copy_gnome_settings
     if [[ "$copy_gnome_settings" == "y" || "$copy_gnome_settings" == "Y" ]]; then
-        ~/arch-setup/src/gnome.sh load
+        bash ~/arch-setup/src/gnome.sh load
     fi
 fi
 read -p "Do you want to use Cosmic Desktop? (y/N): " apply_cosmic
 if [[ "$apply_cosmic" == "y" || "$apply_cosmic" == "Y" ]]; then
-    ~/arch-setup/src/cosmic.sh
+    bash ~/arch-setup/src/cosmic.sh
 fi
 
 # reboot if allowed

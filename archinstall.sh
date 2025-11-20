@@ -2,7 +2,7 @@
 set -e
 
 echo "=== Ativando conexão de rede ==="
-~/arch-setup/src/network.sh
+bash ~/arch-setup/src/network.sh
 
 # Double-check we have connectivity before continuing
 if ! ping -c1 archlinux.org &>/dev/null; then
@@ -27,11 +27,11 @@ fi
 read -p "Partição EFI (default: ${disk}${P}1): " part_fat
 part_fat=${part_fat:-${disk}${P}1}
 
-read -p "Partição raiz (default: ${disk}${P}2): " part_data
-part_data=${part_data:-${disk}${P}2}
-
 read -p "Partição swap (default: ${disk}${P}3): " part_swap
-part_swap=${part_swap:-${disk}${P}3}
+part_swap=${part_swap:-${disk}${P}2}
+
+read -p "Partição raiz (default: ${disk}${P}2): " part_data
+part_data=${part_data:-${disk}${P}3}
 
 echo "Usando partições: /dev/$part_fat (EFI), /dev/$part_data (raiz), /dev/$part_swap (swap)"
 

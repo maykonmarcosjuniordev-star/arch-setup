@@ -21,7 +21,7 @@
 echo "installing yay and related apps"
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
-makepkg -sirc
+makepkg -si --noconfirm
 cd ..
 rm -rf yay-bin
 # if [ ! -d /opt/yay-git]; then

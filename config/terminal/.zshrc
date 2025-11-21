@@ -38,4 +38,6 @@ fi
 if [ -f ~/.aliases ]; then
         source ~/.aliases
 fi
+
+eval "$(zoxide init --cmd cd zsh)"
 # End of lines manually added by the user

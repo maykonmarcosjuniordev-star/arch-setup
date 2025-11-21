@@ -1,5 +1,6 @@
+mask
 rust-src
-rustup
+sscache
 uutils-coreutils
 uutils-diffutils
 uutils-findutils

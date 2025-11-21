@@ -24,7 +24,7 @@ echo "installing GPU drivers (if any)"
 bash ~/arch-setup/src/gpu.sh
 
 echo "decrypting credentials"
-bash ~/arch-setup/src/crypt.sh decrypt
+bash ~/arch-setup/src/crypt.sh d
 
 # create symlinks
 echo "creating symlinks for terminal settings"

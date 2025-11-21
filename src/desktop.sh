@@ -46,8 +46,8 @@ ln -sfn ~/arch-setup/config/audacious/plugin-registry ~/.config/audacious/plugin
 
 # 	copy dummy fetchmail 
 echo "linking fetchmail configuration to ~/.fetchmailrc"
-ln -sfn ~/arch-setup/tmp/fetchmailrc ~/.fetchmailrc
-chmod 600 ~/.fetchmailrc
+chmod 600 ~/arch-setup/credentials/fetchmailrc
+ln -sfn ~/arch-setup/credentials/fetchmailrc ~/.fetchmailrc
 
 # 	enable gmail-tray service
 echo "enabling gmail-tray service"

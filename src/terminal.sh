@@ -2,7 +2,7 @@ mkdir -p ~/.ssh
 function create_symlinks() {
 	if [ ! -f ~/.ssh/id_rsa ]; then
 		echo "moving ssh keys"
-		mv ~/arch-setup/tmp/id_rsa* ~/.ssh/
+		mv ~/arch-setup/credentials/id_rsa* ~/.ssh/
 		chmod 700 ~/.ssh/
 		chmod 600 ~/.ssh/id_*
 		chmod 644 ~/.ssh/id_*.pub

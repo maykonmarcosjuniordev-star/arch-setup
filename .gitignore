@@ -2,5 +2,5 @@
 */**/*.tar.xz
 */**/*.tar.bz2
 */**/*.zip
-tmp/*
+credentials/*
 .local/applications/mimeinfo.cache

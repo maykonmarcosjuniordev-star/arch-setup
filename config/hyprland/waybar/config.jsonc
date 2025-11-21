@@ -8,19 +8,20 @@
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
-        "hyprland/mode",
-        "hyprland/scratchpad",
-        "custom/media"
+        "hyprland/window"
+        // "hyprland/mode",
+        // "hyprland/scratchpad",
+        // "custom/media"
     ],
     "modules-center": [
-        // "hyprland/window",
-        "mpd",
+        // "mpd",
         "clock"
     ],
     "modules-right": [
         "tray",
         // "idle_inhibitor",
         "pulseaudio",
+        "custom/bluetooth",
         // "cpu",
         // "memory",
         "power-profiles-daemon",
@@ -61,8 +62,8 @@
             "car": "",
             "default": ["","",""]
         },
-        "on-click": "blueberry",
-        "on-right-click": "wiremix"
+        "on-click": "ghostty -e wiremix",
+        "on-click-right": "blueberry"
     },
     "keyboard-state": {
         "numlock": true,

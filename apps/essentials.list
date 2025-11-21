@@ -35,8 +35,6 @@ openssl
 os-prober
 power-profiles-daemon
 python-pip
-rust-src
-rustup
 sddm
 sof-firmware
 starship
@@ -46,9 +44,6 @@ ttf-font-awesome
 ttf-ubuntu-mono-nerd
 unzip
 usbutils
-uutils-coreutils
-uutils-diffutils
-uutils-findutils
 vlc-plugin-ffmpeg
 wget
 zsh

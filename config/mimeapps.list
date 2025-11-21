@@ -1,5 +1,9 @@
 [Added Associations]
 application/json=cosmic-edit.desktop;
+application/list=cosmic-edit.desktop;
+application/conf=cosmic-edit.desktop;
+application/sh=cosmic-edit.desktop;
+application/md=cosmic-edit.desktop;
 application/pdf=firefox.desktop;
 application/x-extension-htm=firefox.desktop;firefox.desktop;firefox.desktop;firefox.desktop;firefox.desktop;firefox.desktop;
 application/x-extension-html=firefox.desktop;firefox.desktop;firefox.desktop;firefox.desktop;firefox.desktop;firefox.desktop;
@@ -9,6 +13,8 @@ application/x-extension-xhtml=firefox.desktop;firefox.desktop;firefox.desktop;fi
 application/xhtml+xml=firefox.desktop;firefox.desktop;firefox.desktop;firefox.desktop;firefox.desktop;firefox.desktop;
 application/zip=unzip.desktop;
 image/png=firefox.desktop;
+image/jpg=firefox.desktop;
+image/jpeg=firefox.desktop;
 image/svg+xml=firefox.desktop;
 text/html=firefox.desktop;firefox.desktop;firefox.desktop;firefox.desktop;firefox.desktop;firefox.desktop;
 x-scheme-handler/chrome=firefox.desktop;firefox.desktop;firefox.desktop;firefox.desktop;firefox.desktop;firefox.desktop;
@@ -17,6 +23,10 @@ x-scheme-handler/https=firefox.desktop;firefox.desktop;firefox.desktop;firefox.d
 
 [Default Applications]
 application/json=cosmic-edit.desktop;
+application/list=cosmic-edit.desktop;
+application/conf=cosmic-edit.desktop;
+application/sh=cosmic-edit.desktop;
+application/md=cosmic-edit.desktop;
 application/pdf=firefox.desktop;
 application/x-extension-htm=firefox.desktop
 application/x-extension-html=firefox.desktop
@@ -26,6 +36,8 @@ application/x-extension-xhtml=firefox.desktop
 application/xhtml+xml=firefox.desktop
 application/zip=unzip.desktop;
 image/png=firefox.desktop;
+image/jpg=firefox.desktop;
+image/jpeg=firefox.desktop;
 image/svg+xml=firefox.desktop;
 text/html=firefox.desktop
 x-scheme-handler/chrome=firefox.desktop

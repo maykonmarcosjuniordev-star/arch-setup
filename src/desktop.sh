@@ -44,6 +44,10 @@ mkdir -p ~/.config/audacious
 ln -sfn ~/arch-setup/config/audacious/config ~/.config/audacious/config
 ln -sfn ~/arch-setup/config/audacious/plugin-registry ~/.config/audacious/plugin-registry
 
+# yazi desktop pet configuration
+echo "setting up Yazi desktop pet configuration"
+ln -sfn ~/arch-setup/config/yazi/ ~/.config/yazi
+
 # 	copy dummy fetchmail 
 echo "linking fetchmail configuration to ~/.fetchmailrc"
 chmod 600 ~/arch-setup/credentials/fetchmailrc

@@ -14,6 +14,8 @@ ln -sfn ~/arch-setup/config/hyprland/waybar ~/.config/waybar
 ln -sfn ~/arch-setup/config/hyprland/wofi ~/.config/wofi
 ln -sfn ~/arch-setup/config/hyprland/hyprpaper.conf ~/.config/hypr/hyprpaper.conf
 ln -sfn ~/arch-setup/config/hyprland/hyprlock.conf ~/.config/hypr/hyprlock.conf
+mkdir -p ~/.config/hypr/wl-kbptr
+ln -sfn ~/arch-setup/config/hyprland/wl-kbptr.conf ~/.config/hypr/wl-kbptr/config
 mkdir -p ~/.config/sunsetr
 ln -sfn ~/arch-setup/config/hyprland/sunsetr.toml ~/.config/sunsetr/sunsetr.toml
 ln -sfn ~/arch-setup/config/hyprland/sunsetr.service ~/.config/systemd/user/default.target.wants/

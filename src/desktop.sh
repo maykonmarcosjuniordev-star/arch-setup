@@ -48,6 +48,11 @@ ln -sfn ~/arch-setup/config/audacious/plugin-registry ~/.config/audacious/plugin
 echo "setting up Yazi desktop pet configuration"
 ln -sfn ~/arch-setup/config/yazi/ ~/.config/yazi
 
+# GHOSTTY terminal emulator configuration
+echo "setting up GHOSTTY terminal emulator configuration"
+mkdir -p ~/.config/ghostty
+ln -sfn ~/arch-setup/config/ghostty/ghostty.conf ~/.config/ghostty/config
+
 # 	copy dummy fetchmail 
 echo "linking fetchmail configuration to ~/.fetchmailrc"
 chmod 600 ~/arch-setup/credentials/fetchmailrc

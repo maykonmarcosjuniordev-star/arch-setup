@@ -1,21 +1,26 @@
 {
-    "workbench.colorTheme": "Default High Contrast",
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "git.autofetch": true,
-    "terminal.external.linuxExec": "cosmic-term",
+    "terminal.external.linuxExec": "ghostty",
     "terminal.integrated.defaultProfile.linux": "bash",
-    "github.copilot.nextEditSuggestions.enabled": true,
     // To skip committing sensitive data, the following line must be altered separately
     // For every commit,
     //      remove the token below
-    //      run git update-index --no-skip-worktree config/vs-code/settings.json
+    //      git update-index --no-skip-worktree config/vs-code/settings.json
     //      stage the changes
     //      add the token back
-    //      run git update-index --skip-worktree config/vs-code/settings.json
-    "githubIssues.authToken": "",
+    //      git update-index --skip-worktree config/vs-code/settings.json
     "githubIssues.repoOwner": "maykonmarcosjuniordev-star",
-    "githubIssues.repoName": "arch-setup"
+    "githubIssues.repoName": "arch-setup",
+    "workbench.startupEditor": "none",
+    "accessibility.dimUnfocused.enabled": true,
+    "python.analysis.typeCheckingMode": "standard",
+    "terminal.integrated.tabs.focusMode": "singleClick",
+    "editor.tabCompletion": "on",
+    "terminal.integrated.inheritEnv": false,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "workbench.colorTheme": "Homebrew Dark"
 }

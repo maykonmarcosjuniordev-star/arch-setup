@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=firefox -P Dev --new-tab https://www.notion.so/
+Exec=firefox -P Main --new-tab https://www.notion.so/
 Encoding=UTF-8
 Version=1.0
 Icon=notion

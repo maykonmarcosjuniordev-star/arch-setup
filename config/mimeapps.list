@@ -1,9 +1,9 @@
 [Added Associations]
-application/json=cosmic-edit.desktop;
-application/list=cosmic-edit.desktop;
-application/conf=cosmic-edit.desktop;
-application/sh=cosmic-edit.desktop;
-application/md=cosmic-edit.desktop;
+application/json=nvim.desktop;
+application/list=nvim.desktop;
+application/conf=nvim.desktop;
+application/sh=nvim.desktop;
+application/md=nvim.desktop;
 application/pdf=firefox.desktop;
 application/x-extension-htm=firefox.desktop;firefox.desktop;firefox.desktop;firefox.desktop;firefox.desktop;firefox.desktop;
 application/x-extension-html=firefox.desktop;firefox.desktop;firefox.desktop;firefox.desktop;firefox.desktop;firefox.desktop;
@@ -22,11 +22,11 @@ x-scheme-handler/http=firefox.desktop;firefox.desktop;firefox.desktop;firefox.de
 x-scheme-handler/https=firefox.desktop;firefox.desktop;firefox.desktop;firefox.desktop;firefox.desktop;firefox.desktop;
 
 [Default Applications]
-application/json=cosmic-edit.desktop;
-application/list=cosmic-edit.desktop;
-application/conf=cosmic-edit.desktop;
-application/sh=cosmic-edit.desktop;
-application/md=cosmic-edit.desktop;
+application/json=nvim.desktop;
+application/list=nvim.desktop;
+application/conf=nvim.desktop;
+application/sh=nvim.desktop;
+application/md=nvim.desktop;
 application/pdf=firefox.desktop;
 application/x-extension-htm=firefox.desktop
 application/x-extension-html=firefox.desktop

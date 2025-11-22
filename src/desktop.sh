@@ -25,9 +25,21 @@ ln -sfn ~/arch-setup/.local/bin ~/.local/bin
 
 sudo ln -sfn ~/arch-setup/.local/applications/firefox.desktop /usr/share/applications/firefox.desktop
 ln -sfn ~/arch-setup/.local/applications/notion.desktop ~/.config/autostart/
-ln -sfn ~/arch-setup/config/gnome/wasistlos.conf ~/.config/wasistlos/settings.conf
+
+echo "linking application configurations"
+# neovim configuration
+mkdir -p ~/.config/nvim
+ln -sfn ~/arch-setup/config/nvim/init.lua ~/.config/nvim/init.lua
+git clone --depth=1 https://github.com/github/copilot.vim.git \
+  ~/.config/nvim/pack/github/start/copilot.vim
+
+# vs code configuration
+mkdir -p ~/.config/Code/User
 ln -sfn ~/arch-setup/config/vs-code/settings.json ~/.config/Code/User/settings.json
 ln -sfn ~/arch-setup/config/vs-code/keybindings.json ~/.config/Code/User/keybindings.json
+
+# whatsapp desktop configuration
+ln -sfn ~/arch-setup/config/gnome/wasistlos.conf ~/.config/wasistlos/settings.conf
 
 # Firefox configuration for multiple profiles
 echo "setting up Firefox configuration for multiple profiles"

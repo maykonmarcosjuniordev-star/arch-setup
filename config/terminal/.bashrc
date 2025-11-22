@@ -15,3 +15,4 @@ if [ -f ~/.aliases ]; then
 fi
 
 export PATH="$HOME/.local/bin:$PATH"
+eval "$(zoxide init bash)"

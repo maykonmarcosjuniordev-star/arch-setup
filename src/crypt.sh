@@ -24,10 +24,10 @@ function encrypt() {
 }
 
 case $1 in
-	"encrypt")
+	"e")
 		encrypt
 		;;
-	"decrypt")
+	"d")
 		decrypt
 		;;
 	*)

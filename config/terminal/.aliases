@@ -1,7 +1,7 @@
 alias list='cat ~/.aliases'
 alias upd='yay -Suy --noconfirm && rustup update && sudo pacman -Qdtq | sudo xargs -r pacman -Rns --noconfirm'
 alias get_music='yt-dlp --format bestaudio --extract-audio --audio-format mp3 --audio-quality 192K --extract-thumbnail --output "%(title)s.%(ext)s"'
-alias edit='cosmic-edit'
+alias edit='code -n --disable-extensions'
 alias set-ssh='ssh-add -q ~/.ssh/id_rsa'
 alias diff='diff --color=auto'
 alias grep='grep --color=auto'

@@ -6,25 +6,31 @@ yay -Sy --needed --noconfirm - < ~/arch-setup/apps/desktop.list
 # 	create symlinks for configuration files and directories
 #   app icons, wallpapers, applications, autostart entries, and wasistlos config
 echo "creating symlinks for configuration files and directories"
-sudo chmod +x ~/arch-setup/.local/bin/*
-mkdir -p ~/.local/share/
-mkdir -p ~/.config
-mkdir -p ~/.config/autostart
-mkdir -p ~/.config/wasistlos
 
 echo "Settings Default Applications"
+mkdir -p ~/.config
 ln -sfn ~/arch-setup/config/mimeapps.list ~/.config/mimeapps.list
 
 echo "linking icons, wallpapers, applications, and bin directories"
-ln -sfn ~/arch-setup/icons ~/.local/share
+mkdir -p ~/.local/share/icons
+ln -sfn ~/arch-setup/icons/* ~/.local/share/icons/
 # in case it's required to copy icons to system pixmaps
 # sudo cp ~/arch-setup/icons/* /usr/share/pixmaps/
+# custom desktop applications
+mkdir -p ~/.local/share/applications/
+ln -sfn ~/arch-setup/.local/applications/* ~/.local/share/applications/
+# wallpapers
+mkdir -p ~/.local/share/
 ln -sfn ~/arch-setup/wallpapers ~/.local/share/backgrounds
-ln -sfn ~/arch-setup/.local/applications ~/.local/share/applications
-ln -sfn ~/arch-setup/.local/bin ~/.local/bin
-
+# custom bin scripts
+mkdir -p ~/.local/bin/
+sudo chmod +x ~/arch-setup/.local/bin/*
+ln -sfn ~/arch-setup/.local/bin/* ~/.local/bin/
 sudo ln -sfn ~/arch-setup/.local/applications/firefox.desktop /usr/share/applications/firefox.desktop
+
+mkdir -p ~/.config/autostart
 ln -sfn ~/arch-setup/.local/applications/notion.desktop ~/.config/autostart/
+ln -sfn ~/arch-setup/.local/applications/discord.desktop ~/.config/autostart/
 
 echo "linking application configurations"
 # neovim configuration
@@ -39,7 +45,8 @@ ln -sfn ~/arch-setup/config/vs-code/settings.json ~/.config/Code/User/settings.j
 ln -sfn ~/arch-setup/config/vs-code/keybindings.json ~/.config/Code/User/keybindings.json
 
 # whatsapp desktop configuration
-ln -sfn ~/arch-setup/config/gnome/wasistlos.conf ~/.config/wasistlos/settings.conf
+mkdir -p ~/.config/Altus
+ln -sfn ~/arch-setup/config/whatsapp/* ~/.config/Altus/
 
 # Firefox configuration for multiple profiles
 echo "setting up Firefox configuration for multiple profiles"

@@ -63,7 +63,7 @@
             "default": ["","",""]
         },
         "on-click": "ghostty -e wiremix",
-        "on-click-right": "ghostty -e bluetui"
+        "on-click-right": "ghostty -e bluetui && pactl set-card-profile $(pactl list cards | rg 'Name: bluez' | awk '{print $2}') a2dp-sink"
     },
     "keyboard-state": {
         "numlock": true,

@@ -1,6 +1,6 @@
 {
 	"tabBar": {
-		"value": true
+		"value": false
 	},
 	"tabBarPosition": {
 		"value": "top"

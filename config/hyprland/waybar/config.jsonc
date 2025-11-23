@@ -19,21 +19,28 @@
     ],
     "modules-right": [
         "tray",
-        // "idle_inhibitor",
+        "custom/gmail",
         "pulseaudio",
         "custom/bluetooth",
+        "power-profiles-daemon",
+        "keyboard-state",
+        "network",
+        "battery"
+        // "idle_inhibitor",
         // "cpu",
         // "memory",
-        "power-profiles-daemon",
         // "temperature",
         // "backlight",
-        "keyboard-state",
         // "hyprland/language",
-        "network",
         // "battery#bat2",
         // "custom/power"
-        "battery"
     ],
+    "custom/gmail": {
+        "exec": "/home/maykon/Github/gmail-tray-git/gmail-tray.py --once | grep '{'",
+        "interval": 30,
+        "return-type": "json",
+        "format": " @ {} "
+    },
     "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
@@ -64,6 +71,13 @@
         },
         "on-click": "ghostty -e wiremix",
         "on-click-right": "ghostty -e bluetui && pactl set-card-profile $(pactl list cards | rg 'Name: bluez' | awk '{print $2}') a2dp-sink"
+    },
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10,
+        "icons": {
+            "gmail-tray": "gmail-tray"
+        }
     },
     "keyboard-state": {
         "numlock": true,
@@ -118,14 +132,6 @@
         "format-icons": {
             "activated": "",
             "deactivated": ""
-        }
-    },
-    "tray": {
-        // "icon-size": 21,
-        "spacing": 10,
-        "icons": {
-            "blueberry": "bluetooth"
-        //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
         }
     },
     "clock": {

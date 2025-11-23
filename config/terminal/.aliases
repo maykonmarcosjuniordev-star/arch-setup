@@ -4,11 +4,17 @@ alias get_music='yt-dlp --format bestaudio --extract-audio --audio-format mp3 --
 alias fix-blue="pactl set-card-profile $(pactl list cards | rg 'Name: bluez' | awk '{print $2}') a2dp-sink"
 alias edit='code -n --disable-extensions'
 alias set-ssh='ssh-add -q ~/.ssh/id_rsa'
+
+alias maskrun='mask --maskfile README.md'
+
+## Rust replacements
 alias diff='diff --color=auto'
 alias grep='grep --color=auto'
 alias find='fd --color=auto'
 alias ls='exa --color=auto'
 alias cat='bat'
+alias du='dust'
+# core uutils
 alias cp='uu-cp -rf'
 alias rm='uu-rm -rf'
 alias mv='uu-mv -f'
@@ -25,4 +31,3 @@ alias dd='uu-dd'
 alias hostname='uu-hostname'
 alias kill='uu-kill'
 alias df='uu-df -h'
-alias du='uu-du -h'

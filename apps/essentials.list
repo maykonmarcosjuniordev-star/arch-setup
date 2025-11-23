@@ -3,7 +3,7 @@ alsa-utils
 alsa-firmware
 asar
 bash-completion
-blueberry
+bluetui
 cdrkit
 curl
 dbus-python
@@ -40,6 +40,7 @@ sof-firmware
 starship
 swtpm
 tar
+otf-font-awesome
 ttf-font-awesome
 ttf-ubuntu-mono-nerd
 unzip

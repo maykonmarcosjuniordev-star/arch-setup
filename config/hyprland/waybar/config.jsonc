@@ -63,7 +63,7 @@
             "default": ["","",""]
         },
         "on-click": "ghostty -e wiremix",
-        "on-click-right": "blueberry"
+        "on-click-right": "ghostty -e bluetui"
     },
     "keyboard-state": {
         "numlock": true,

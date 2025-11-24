@@ -74,6 +74,7 @@ ln -sfn ~/arch-setup/config/ghostty/ghostty.conf ~/.config/ghostty/config
 echo "linking fetchmail configuration to ~/.fetchmailrc"
 chmod 600 ~/arch-setup/credentials/fetchmailrc
 ln -sfn ~/arch-setup/credentials/fetchmailrc ~/.fetchmailrc
+ln -sfn ~/arch-setup/config/gmail-tray/gmail-tray-configs.json ~/.config/gmail-tray/
 
 # 	enable gmail-tray service
 echo "enabling gmail-tray service"

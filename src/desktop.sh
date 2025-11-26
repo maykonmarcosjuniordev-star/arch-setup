@@ -92,3 +92,34 @@ gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
 gsettings set org.gnome.desktop.interface cursor-theme "Catppuccin-Mocha-Cursors"
 gsettings set org.gnome.desktop.interface icon-theme "Catppuccin-Mocha-Standard-Default"
 gsettings set org.gnome.desktop.interface gtk-theme "catppuccin-mocha-green-standard+default"
+
+# to hide desktop entriees from the launcher
+hide_list=(
+  'avahi-discover'
+  'bssh'
+  'bvnc'
+  'calibre-ebook-edit'
+  'calibre-ebook-viewer'
+  'calibre-lrfviewer'
+  'cmake'
+  'lstop'
+  'mpv'
+  'nvim'
+  'qv4l2'
+  'qvidcap'
+  'wl-kbptr'
+  'xgps'
+  'xgpsspeed'
+)
+path="/usr/share/applications"
+for app in "${hide_list[@]}"; do
+  if [ -f "$path/$app.desktop" ]; then
+    echo "Hiding $app from application launcher"
+    # if NoDisplay is not present, add it
+    if ! grep -q "NoDisplay=" "$path/$app.desktop"; then
+      sudo sed -i '/\[Desktop Entry\]/a NoDisplay=true' "$path/$app.desktop"
+      continue
+    fi
+    sudo sed -i 's/NoDisplay=false/NoDisplay=true/g' "$path/$app.desktop"
+  fi
+done

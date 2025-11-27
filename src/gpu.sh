@@ -7,7 +7,7 @@ if [ -z "$GPU_INFO" ]; then
     exit 1
 else
     echo "detected GPU: Installing drivers for all detected GPUs"
-    yay -Sy --needed --noconfirm cuda-toolkit mesa mesa-utils lib32-mesa-minimal vulkan-tools
+    yay -Sy --needed --noconfirm cuda-toolkit egl-wayland mesa mesa-utils lib32-mesa-minimal vulkan-tools
 fi
 if echo "$GPU_INFO" | grep -qi "NVIDIA"; then
     # Verify the GPU family to decide on the driver installation

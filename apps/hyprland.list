@@ -1,7 +1,5 @@
 aquamarine
 brightnessctl
-dolphin
-egl-wayland
 hyprcursor
 hyprgraphics
 hyprland
@@ -16,14 +14,9 @@ hyprqt6engine
 nwg-look
 playerctl
 polkit-kde-agent
-qt5ct
-qt5-wayland
-qt6-wayland
 sunsetr
 swaync
 waybar
 wl-kbptr
 wofi
-xdg-desktop-portal
 xdg-desktop-portal-hyprland
-xdg-utils

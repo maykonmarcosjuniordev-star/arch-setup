@@ -25,7 +25,6 @@ libdecor
 linux-headers
 make
 networkmanager
-network-manager-applet
 nodejs
 noto-fonts-cjk
 pipewire
@@ -33,14 +32,17 @@ pipewire-pulse
 openssh
 openssl
 os-prober
+otf-font-awesome
 power-profiles-daemon
 python-pip
+qt5ct
+qt5-wayland
+qt6-wayland
 sddm
 sof-firmware
 starship
 swtpm
 tar
-otf-font-awesome
 ttf-font-awesome
 ttf-ubuntu-mono-nerd
 unzip
@@ -48,3 +50,5 @@ usbutils
 vlc-plugin-ffmpeg
 wget
 wiremix
+xdg-desktop-portal
+xdg-utils

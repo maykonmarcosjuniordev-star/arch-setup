@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+# set own user permissions for arch-setup folder
+sudo chown -R $(whoami):$(whoami) ~/arch-setup/
+sudo chown -R $(whoami):$(whoami) ~/arch-setup/.*
 
 # Double-check we have connectivity before continuing
 if ! ping -c1 archlinux.org &>/dev/null; then

@@ -18,6 +18,12 @@
 
 # --cleanafter          Remove package sources after successful install
 
+# verify if yay is installed
+if command -v yay &> /dev/null
+then
+    echo "yay is already installed"
+    exit 0
+fi
 echo "installing yay and related apps"
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin

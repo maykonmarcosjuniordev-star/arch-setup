@@ -20,6 +20,16 @@ function create_symlinks() {
 	ln -sfn ~/arch-setup/config/terminal/.bashrc ~/
 	ln -sfn ~/arch-setup/config/terminal/.aliases ~/
 	ln -sfn ~/arch-setup/config/terminal/.bash_profile ~/
+	ln -sfn ~/arch-setup/config/terminal/.gitconfig ~/
+	# Set identification from install inputs
+	read -p "Enter your git user.name (leave blank to skip): " USER_NAME
+	if [[ -n "${USER_NAME//[[:space:]]/}" ]]; then
+		git config --global user.name "$USER_NAME"
+	fi
+	read -p "Enter your git user.email (leave blank to skip): " USER_EMAIL
+	if [[ -n "${USER_EMAIL//[[:space:]]/}" ]]; then
+		git config --global user.email "$USER_EMAIL"
+	fi
 	# read -p "Do you want to set zsh as default shell? (y/N) " choice
 	# if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
 	# 	chsh -s $(which zsh)

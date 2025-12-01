@@ -3,4 +3,6 @@ cargo-expand
 cargo-info
 cargo-show-asm
 irust
+mask
 mprocs
+speedtest-rs

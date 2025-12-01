@@ -5,7 +5,6 @@ fd
 fish
 gitui
 hyperfine
-mask
 nushell
 ripgrep
 rust-src
@@ -13,6 +12,5 @@ sscache
 uutils-coreutils
 uutils-diffutils
 uutils-findutils
-speedtest-rs
 yazi
 zoxide

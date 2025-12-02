@@ -42,7 +42,8 @@ echo "configuring yay"
 yay -Y --gendb
 echo "setting yay cofiguration flags"
 yay --save --diffmenu=false --diffmenu=false --removemake=true --cleanafter=true
-yay --save --answerclean A --answerdiff N --answeredit N --answerupgrade Y
+yay --save --answerclean A --answerdiff N --answeredit N --answerupgrade A
+
 
 # set yay configuration to use all cores for building packages
 

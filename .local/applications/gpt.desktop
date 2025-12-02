@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=firefox -P Legacy --new-tab https://chatgpt.com/
+Exec=firefox -P Main --new-tab https://chatgpt.com/
 Encoding=UTF-8
 Version=1.0
 Icon=gpt

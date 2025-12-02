@@ -4,5 +4,5 @@
     "title": "Gmail-Tray",
     "interval": 30,
     "browser": "firefox",
-    "flags": ["-P", "Main", "--new-tab"]
+    "flags": ["-P", "Legacy", "--new-tab"]
 }

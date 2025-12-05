@@ -1,8 +1,13 @@
 bacon
+bat
 cargo-expand
 cargo-info
 cargo-show-asm
+exa
+hyperfine
 irust
 mask
 mprocs
 speedtest-rs
+ripgrep
+zoxide

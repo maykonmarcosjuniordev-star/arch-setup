@@ -1,16 +1,10 @@
-bat
 dust
-exa
 fd
 fish
-gitui
-hyperfine
 nushell
-ripgrep
 rust-src
 sccache
 uutils-coreutils
 uutils-diffutils
 uutils-findutils
 yazi
-zoxide

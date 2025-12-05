@@ -30,4 +30,9 @@
 	autoupdate = true       # Apply stored conflict resolutions automatically
 [credential]
 	helper = store		 	# Store credentials unencrypted on disk
+[core]
+	editor = nvim		    # Set default editor
+[user]
+	name = maykonmarcosjuniordev-star
+	email = maykon.marcos.junior.dev@gmail.com
 

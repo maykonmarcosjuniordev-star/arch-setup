@@ -4,6 +4,7 @@ alsa-firmware
 asar
 bash-completion
 bluetui
+ccache
 cdrkit
 curl
 dbus-python

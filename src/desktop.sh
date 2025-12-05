@@ -33,53 +33,50 @@ mkdir -p ~/.config/autostart
 ln -sfn ~/arch-setup/.local/applications/notion.desktop ~/.config/autostart/
 ln -sfn ~/arch-setup/.local/applications/discord.desktop ~/.config/autostart/
 
-echo "linking application configurations"
-# neovim configuration
+echo "setting up neovim configuration and installing copilot.vim"
 mkdir -p ~/.config/nvim
 ln -sfn ~/arch-setup/config/nvim/init.lua ~/.config/nvim/init.lua
 git clone --depth=1 https://github.com/github/copilot.vim.git \
   ~/.config/nvim/pack/github/start/copilot.vim
 
-# vs code configuration
+echo "setting up VS Code configuration"
 mkdir -p ~/.config/Code/User
 ln -sfn ~/arch-setup/config/vs-code/settings.json ~/.config/Code/User/settings.json
 ln -sfn ~/arch-setup/config/vs-code/keybindings.json ~/.config/Code/User/keybindings.json
 
-# whatsapp desktop configuration
 mkdir -p ~/.config/Altus
 ln -sfn ~/arch-setup/config/whatsapp/* ~/.config/Altus/
 
-# Firefox configuration for multiple profiles
 echo "setting up Firefox configuration for multiple profiles"
 mkdir -p ~/.mozilla/firefox/Main/
 ln -sfn  ~/arch-setup/config/firefox/user.js ~/.mozilla/firefox/Main/user.js
 mkdir -p ~/.mozilla/firefox/UFSC/
 ln -sfn  ~/arch-setup/config/firefox/user.js ~/.mozilla/firefox/UFSC/user.js
+mkdir -p ~/.mozilla/firefox/Legacy/
+ln -sfn  ~/arch-setup/config/firefox/user.js ~/.mozilla/firefox/Legacy/user.js
 
-# Audacious media player configuration
 echo "setting up Audacious configuration"
 mkdir -p ~/.config/audacious
 ln -sfn ~/arch-setup/config/audacious/config ~/.config/audacious/config
 ln -sfn ~/arch-setup/config/audacious/plugin-registry ~/.config/audacious/plugin-registry
 
-# yazi desktop pet configuration
 echo "setting up Yazi desktop pet configuration"
 ln -sfn ~/arch-setup/config/yazi/ ~/.config/yazi
 
-# GHOSTTY terminal emulator configuration
 echo "setting up GHOSTTY terminal emulator configuration"
 mkdir -p ~/.config/ghostty
 ln -sfn ~/arch-setup/config/ghostty/ghostty.conf ~/.config/ghostty/config
 
-# 	copy dummy fetchmail 
 echo "linking fetchmail configuration to ~/.fetchmailrc"
 chmod 600 ~/arch-setup/credentials/fetchmailrc
 ln -sfn ~/arch-setup/credentials/fetchmailrc ~/.fetchmailrc
 ln -sfn ~/arch-setup/config/gmail-tray/gmail-tray-configs.json ~/.config/gmail-tray/
 
-# 	enable gmail-tray service
 echo "enabling gmail-tray service"
 systemctl --user enable --now gmail-tray.service
+
+echo "enabling arch-update timer"
+systemctl --user enable --now arch-update.timer
 
 # 	copy fonts and update font cache
 echo "copying fonts to /usr/local/share/fonts and updating font cache"

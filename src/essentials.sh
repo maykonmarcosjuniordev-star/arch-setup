@@ -2,10 +2,6 @@
 
 echo "installing essential apps"
 yay -Sy --needed --noconfirm - < ~/arch-setup/apps/essentials.list
-
-yay -Sy --noconfirm rustup
-echo "enabling cargo"
-rustup default stable
 yay -Sy --needed --noconfirm - < ~/arch-setup/apps/rust.list
 
 for app in $(cat ~/arch-setup/apps/cargo.list); do

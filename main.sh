@@ -18,7 +18,9 @@ ln -sfn ~/arch-setup/config/aur/makepkg.conf ~/.config/makepkg.conf
 
 # essentials that need pacman
 echo "installing essential apps with pacman"
-sudo pacman -Suy --needed --noconfirm git pacman-contrib base-devel
+sudo pacman -Suy --needed --noconfirm base-devel git pacman-contrib rustup
+echo "enabling cargo"
+rustup default stable
 
 # install yay
 echo "installing yay"
@@ -31,6 +33,9 @@ echo "installing GPU drivers (if any)"
 bash ~/arch-setup/src/gpu.sh
 
 echo "decrypting credentials"
+# if credentials are encrypted, decrypt them
+read -p "Do you want to decrypt credentials? (y/N): " cred_encrypted
+if [[ "$cred_encrypted" == "y" || "$cred_encrypted" == "Y" ]]; then
 bash ~/arch-setup/src/crypt.sh d
 
 # create symlinks

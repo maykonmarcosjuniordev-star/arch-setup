@@ -22,11 +22,10 @@ sudo pacman -Suy --needed --noconfirm base-devel git pacman-contrib rustup
 echo "enabling cargo"
 rustup default stable
 
-# install yay
-echo "installing yay"
-bash ~/arch-setup/src/yay.sh
+echo "installing paru"
+bash ~/arch-setup/src/paru.sh
 
-echo "installing essential apps with yay"
+echo "installing essential apps"
 bash ~/arch-setup/src/essentials.sh
 
 echo "installing GPU drivers (if any)"
@@ -36,7 +35,8 @@ echo "decrypting credentials"
 # if credentials are encrypted, decrypt them
 read -p "Do you want to decrypt credentials? (y/N): " cred_encrypted
 if [[ "$cred_encrypted" == "y" || "$cred_encrypted" == "Y" ]]; then
-bash ~/arch-setup/src/crypt.sh d
+    bash ~/arch-setup/src/crypt.sh d
+fi
 
 # create symlinks
 echo "creating symlinks for terminal settings"

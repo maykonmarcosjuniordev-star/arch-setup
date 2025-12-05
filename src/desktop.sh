@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "installing desktop applications"
-yay -Sy --needed --noconfirm - < ~/arch-setup/apps/desktop.list
+paru -Sy --needed --noconfirm - < ~/arch-setup/apps/desktop.list
 
 # 	create symlinks for configuration files and directories
 #   app icons, wallpapers, applications, autostart entries, and wasistlos config

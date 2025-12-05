@@ -2,7 +2,7 @@
 
 # Functions to apply, dump, and reset GNOME settings using dconf
 function apply() {
-	yay -Sy --needed --noconfirm - < ~/arch-setup/apps/gnome.list
+	paru -Sy --needed --noconfirm - < ~/arch-setup/apps/gnome.list
 }
 
 function load() {

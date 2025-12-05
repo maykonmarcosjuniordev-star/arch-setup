@@ -1,5 +1,5 @@
 alias list='cat ~/.aliases'
-alias upd='yay -Suy --noconfirm && rustup update && sudo pacman -Qdtq | sudo xargs -r pacman -Rns --noconfirm'
+alias upd='paru -Suy --noconfirm && rustup update && sudo pacman -Qdtq | sudo xargs -r pacman -Rns --noconfirm'
 alias get_music='yt-dlp --format bestaudio --extract-audio --audio-format mp3 --audio-quality 192K --extract-thumbnail --output "%(title)s.%(ext)s"'
 alias fix-blue="pactl set-card-profile $(pactl list cards | rg 'Name: bluez' | awk '{print $2}') a2dp-sink"
 alias edit='code -n --disable-extensions'

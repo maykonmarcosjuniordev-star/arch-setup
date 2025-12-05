@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "installing hyprland and related apps"
-yay -Sy --needed --noconfirm - < ~/arch-setup/apps/hyprland.list
+paru -Sy --needed --noconfirm - < ~/arch-setup/apps/hyprland.list
 
 
 # creating symlinks for hyprland config

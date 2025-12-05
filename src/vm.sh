@@ -1,9 +1,9 @@
 #!/bin/bash
 
 git clone https://github.com/quickemu-project/quickemu.git
-yay -Suy  --needed --noconfirm ventoy-bin qemu-full spice spice-gtk
-yay -Suy  --needed --noconfirm wine winetricks wine-gecko wine-mono
-yay -Suy  --needed --noconfirm waydroid
-yay -Suy  --needed --noconfirm darling-bin
-yay -Suy  --needed --noconfirm gnome-boxes-git
-yay -Suy  --needed --noconfirm virtualbox-bin
+paru -Suy  --needed --noconfirm ventoy-bin qemu-full spice spice-gtk
+paru -Suy  --needed --noconfirm wine winetricks wine-gecko wine-mono
+paru -Suy  --needed --noconfirm waydroid
+paru -Suy  --needed --noconfirm darling-bin
+paru -Suy  --needed --noconfirm gnome-boxes-git
+paru -Suy  --needed --noconfirm virtualbox-bin

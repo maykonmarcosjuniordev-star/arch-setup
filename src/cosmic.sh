@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "installing cosmic desktop environment"
-yay -Sy --needed --noconfirm - < ~/arch-setup/apps/cosmic.list
+paru -Sy --needed --noconfirm - < ~/arch-setup/apps/cosmic.list
 
 echo "enabling cosmic services"
 sudo systemctl enable cosmic-greeter.service

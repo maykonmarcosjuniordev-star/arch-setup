@@ -7,12 +7,12 @@ alias set-ssh='ssh-add -q ~/.ssh/id_rsa'
 alias maskrun='mask --maskfile README.md'
 
 ## Rust replacements
-alias diff='diff --color=auto'
 alias grep='rg --color=auto'
 alias find='fd --color=auto'
 alias ls='exa --color=auto'
 alias cat='bat'
 alias du='dust'
+alias cd='z'
 # core uutils
 alias dd='uu-dd'
 alias pwd='uu-pwd'

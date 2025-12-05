@@ -1,5 +1,28 @@
 mkdir -p ~/.ssh
 function create_symlinks() {
+	mkdir -p ~/.config
+	# ssh suport
+	ln -sfn ~/arch-setup/config/terminal/.profile ~/.profile
+	# custom colors
+	ln -sfn ~/arch-setup/config/terminal/starship.toml ~/.config/starship.toml
+	# bash
+	ln -sfn ~/arch-setup/config/terminal/.bashrc ~/
+	ln -sfn ~/arch-setup/config/terminal/.aliases ~/
+	ln -sfn ~/arch-setup/config/terminal/.bash_profile ~/
+	ln -sfn ~/arch-setup/config/terminal/.gitconfig ~/
+	ln -sfn ~/arch-setup/credentials/git-credentials ~/.git-credentials
+}
+
+function set_git() {
+	# Set identification from install inputs
+	read -p "Enter your git user.name (leave blank to skip): " USER_NAME
+	if [[ -n "${USER_NAME//[[:space:]]/}" ]]; then
+		git config --global user.name "$USER_NAME"
+	fi
+	read -p "Enter your git user.email (leave blank to skip): " USER_EMAIL
+	if [[ -n "${USER_EMAIL//[[:space:]]/}" ]]; then
+		git config --global user.email "$USER_EMAIL"
+	fi
 	if [ ! -f ~/.ssh/id_rsa ]; then
 		echo "moving ssh keys"
 		mv ~/arch-setup/credentials/id_rsa* ~/.ssh/
@@ -11,32 +34,19 @@ function create_symlinks() {
 		eval "$(ssh-agent -s)"
 		ssh-add ~/.ssh/id_rsa
 	fi
-	mkdir -p ~/.config
-	# ssh suport
-	ln -sfn ~/arch-setup/config/terminal/.profile ~/.profile
-	# custom colors
-	ln -sfn ~/arch-setup/config/terminal/starship.toml ~/.config/starship.toml
-	# bash
-	ln -sfn ~/arch-setup/config/terminal/.bashrc ~/
-	ln -sfn ~/arch-setup/config/terminal/.aliases ~/
-	ln -sfn ~/arch-setup/config/terminal/.bash_profile ~/
-	ln -sfn ~/arch-setup/config/terminal/.gitconfig ~/
-	# Set identification from install inputs
-	read -p "Enter your git user.name (leave blank to skip): " USER_NAME
-	if [[ -n "${USER_NAME//[[:space:]]/}" ]]; then
-		git config --global user.name "$USER_NAME"
-	fi
-	read -p "Enter your git user.email (leave blank to skip): " USER_EMAIL
-	if [[ -n "${USER_EMAIL//[[:space:]]/}" ]]; then
-		git config --global user.email "$USER_EMAIL"
-	fi
-	# read -p "Do you want to set zsh as default shell? (y/N) " choice
-	# if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
-	# 	chsh -s $(which zsh)
-	# else
-	# 	# set default shell to bash
-	# 	chsh -s $(which bash)
-	# fi
+	git remote set-url origin git@github.com:maykonmarcosjuniordev-star/arch-setup
+	echo "installing and configuring git lfs"
+	# import gpg key for git lfs
+	echo "importing gpg key for git lfs"
+	gpg --keyserver hkps://keys.openpgp.org --recv-keys 14F26682D0916CDD81E37B6D61B7B526D98F0353
+	git lfs install
+	# track the problematic asset paths with LFS and commit .gitattributes
+	# git lfs track "icons/*" "wallpapers/*"
+	# git add .gitattributes
+	# git commit -m "Track icons and wallpapers with Git LFS"
+	### rewrite history converting existing files into LFS objects across all refs
+	# git lfs migrate import --include="icons/*,wallpapers/*" --everything
+	git lfs pull
 }
 
 function gen_key() {
@@ -57,10 +67,13 @@ case $1 in
 	"symlinks")
 		create_symlinks
 		;;
+	"set_git")
+		set_git
+		;;
 	"genkey")
 		gen_key
 		;;
 	*)
-		echo "Usage: $0 {symlinks|genkey}"
+		echo "Usage: $0 {symlinks|set_git|genkey}"
 		exit
 esac

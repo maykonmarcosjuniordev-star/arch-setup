@@ -10,7 +10,7 @@
 [init]
 	defaultBranch = main
 [pull]
-	rebase = false		#
+	rebase = false			# Defaults to merge strategy on pull
 [push]
 	autoSetupRemote = true  # Automatically set upstream branch on push
 [diff]
@@ -20,7 +20,7 @@
 [commit]
 	verbose = true          # Include diff comment in commit message template
 [column]
-	ui = auto 		# Output in columns when possible
+	ui = auto 				# Output in columns when possible
 [branch]
 	sort = -committerdate   # Sort branches by most recent commit first
 [tag]
@@ -28,3 +28,6 @@
 [rerere]
 	enabled = true          # Record and reuse conflict resolutions
 	autoupdate = true       # Apply stored conflict resolutions automatically
+[credential]
+	helper = store		 	# Store credentials unencrypted on disk
+

@@ -18,18 +18,6 @@ loginctl enable-linger $USER
 systemctl enable sddm
 systemctl enable --now systemd-homed
 
-echo "installing and configuring git lfs"
-# import gpg key for git lfs
-echo "importing gpg key for git lfs"
-gpg --keyserver hkps://keys.openpgp.org --recv-keys 14F26682D0916CDD81E37B6D61B7B526D98F0353
-git lfs install
-# track the problematic asset paths with LFS and commit .gitattributes
-# git lfs track "icons/*" "wallpapers/*"
-# git add .gitattributes
-# git commit -m "Track icons and wallpapers with Git LFS"
-### rewrite history converting existing files into LFS objects across all refs
-# git lfs migrate import --include="icons/*,wallpapers/*" --everything
-
 # IBus configuration
 echo "configuring IBus"
 mkdir -p ~/.config/environment.d/

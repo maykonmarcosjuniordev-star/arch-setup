@@ -36,8 +36,9 @@ bash ~/arch-setup/src/crypt.sh d
 # create symlinks
 echo "creating symlinks for terminal settings"
 bash ~/arch-setup/src/terminal.sh symlinks
-git remote set-url origin git@github.com:maykonmarcosjuniordev-star/arch-setup
-git lfs pull
+bash ~/arch-setup/src/terminal.sh set_git
+
+echo "installing and setting up main desktop applications"
 bash ~/arch-setup/src/desktop.sh
 
 read -p "Do you want to use Hyprland? (y/N): " install_hyprland

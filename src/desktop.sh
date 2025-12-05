@@ -22,6 +22,7 @@ ln -sfn ~/arch-setup/.local/applications/* ~/.local/share/applications/
 # wallpapers
 mkdir -p ~/.local/share/
 ln -sfn ~/arch-setup/wallpapers ~/.local/share/backgrounds
+sudo ln -sfn ~/arch-setup/wallpapers /usr/share/backgrounds
 # custom bin scripts
 mkdir -p ~/.local/bin/
 sudo chmod +x ~/arch-setup/.local/bin/*

@@ -11,6 +11,14 @@ done
 # enable linger for user to allow services to run without active login
 echo "enabling linger for user $USER"
 loginctl enable-linger $USER
+
+
+echo "symlinking sddm config"
+sudo ln -sfn ~/arch-setup/config/sddm.conf /etc/sddm.conf
+# modifying background default on /usr/share/sddm/themes/archlinux/theme.conf
+# sudo sed -i 's|^background=.*|background=/usr/share/backgrounds/default.png|' /usr/share/sddm/themes/archlinux/theme.conf
+
+echo "enabling sddm and systemd-homed services"
 systemctl enable sddm
 systemctl enable --now systemd-homed
 

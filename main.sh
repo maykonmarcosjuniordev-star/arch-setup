@@ -11,6 +11,10 @@ if ! ping -c1 archlinux.org &>/dev/null; then
     bash ~/arch-setup/src/network.sh
 fi
 
+mkdir -p ~/.config/
+echo "creating symlink for pacman.conf"
+ln -sfn ~/arch-setup/config/aur/pacman.conf ~/.config/pacman.conf
+ln -sfn ~/arch-setup/config/aur/makepkg.conf ~/.config/makepkg.conf
 
 # essentials that need pacman
 echo "installing essential apps with pacman"

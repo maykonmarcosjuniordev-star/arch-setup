@@ -12,10 +12,6 @@ for app in $(cat ~/arch-setup/apps/cargo.list); do
     cargo install $app
 done
 
-# import gpg key for git lfs
-echo "importing gpg key for git lfs"
-gpg --keyserver hkps://keys.openpgp.org --recv-keys 14F26682D0916CDD81E37B6D61B7B526D98F0353
-
 # enable linger for user to allow services to run without active login
 echo "enabling linger for user $USER"
 loginctl enable-linger $USER
@@ -23,6 +19,9 @@ systemctl enable sddm
 systemctl enable --now systemd-homed
 
 echo "installing and configuring git lfs"
+# import gpg key for git lfs
+echo "importing gpg key for git lfs"
+gpg --keyserver hkps://keys.openpgp.org --recv-keys 14F26682D0916CDD81E37B6D61B7B526D98F0353
 git lfs install
 # track the problematic asset paths with LFS and commit .gitattributes
 # git lfs track "icons/*" "wallpapers/*"

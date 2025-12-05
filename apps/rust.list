@@ -8,7 +8,7 @@ hyperfine
 nushell
 ripgrep
 rust-src
-sscache 
+sccache
 uutils-coreutils
 uutils-diffutils
 uutils-findutils

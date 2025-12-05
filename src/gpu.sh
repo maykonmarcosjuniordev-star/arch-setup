@@ -22,7 +22,7 @@ if echo "$GPU_INFO" | grep -qi "NVIDIA"; then
         yay -Sy --needed --noconfirm nvidia-open
     fi 
     echo "installing auxiliar nvidia pkgs"
-    yay -Sy --needed --noconfirm nvidia-prime nvidia-utils libva-nvidia-driver.
+    yay -Sy --needed --noconfirm nvidia-prime nvidia-utils libva-nvidia-driver
     # sudo modprobe nvidia
 if echo "$GPU_INFO" | grep -qi "Intel"; then
     echo "installing intel drivers"

@@ -9,7 +9,6 @@ echo "creating symlinks for hyprland config"
 mkdir -p ~/.config/hypr
 ln -sfn ~/arch-setup/config/hyprland/hyprland.conf ~/.config/hypr/hyprland.conf
 ln -sfn ~/arch-setup/config/hyprland/conf ~/.config/hypr/conf
-chmod +x ~/arch-setup/config/hyprland/waybar/powermenu.sh
 ln -sfn ~/arch-setup/config/hyprland/waybar ~/.config/waybar
 ln -sfn ~/arch-setup/config/hyprland/wofi ~/.config/wofi
 ln -sfn ~/arch-setup/config/hyprland/hyprpaper.conf ~/.config/hypr/hyprpaper.conf
@@ -21,9 +20,6 @@ ln -sfn ~/arch-setup/config/hyprland/sunsetr.toml ~/.config/sunsetr/sunsetr.toml
 ln -sfn ~/arch-setup/config/hyprland/sunsetr.service ~/.config/systemd/user/default.target.wants/
 ln -sfn ~/arch-setup/config/hyprland/sunsetr.service ~/.config/systemd/user/graphical-session.target.wants/
 
-
-echo "removing needless kitty installation"
-yay -Rns --noconfirm kitty
 
 # enabling services
 echo "enabling hyprland-related services"

@@ -30,13 +30,6 @@ cd yay-bin
 makepkg -si --noconfirm
 cd ..
 rm -rf yay-bin
-# if [ ! -d /opt/yay-git]; then
-#     sudo git clone https://aur.archlinux.org/yay-git.git /opt/yay-git
-#     sudo chown -R $(whoami):$(whoami) /opt/yay-git/
-#     cd /opt/yay-git
-#     makepkg -sirc
-#     cd ~/arch-setup
-# fi
 
 echo "configuring yay"
 yay -Y --gendb

@@ -13,6 +13,7 @@ ln -sfn ~/arch-setup/config/hyprland/waybar ~/.config/waybar
 ln -sfn ~/arch-setup/config/hyprland/wofi ~/.config/wofi
 ln -sfn ~/arch-setup/config/hyprland/hyprpaper.conf ~/.config/hypr/hyprpaper.conf
 ln -sfn ~/arch-setup/config/hyprland/hyprlock.conf ~/.config/hypr/hyprlock.conf
+ln -sfn ~/arch-setup/config/hyprland/hypridle.conf ~/.config/hypr/hypridle.conf
 mkdir -p ~/.config/hypr/wl-kbptr
 ln -sfn ~/arch-setup/config/hyprland/wl-kbptr.conf ~/.config/hypr/wl-kbptr/config
 mkdir -p ~/.config/sunsetr
@@ -23,5 +24,6 @@ ln -sfn ~/arch-setup/config/hyprland/sunsetr.service ~/.config/systemd/user/grap
 
 # enabling services
 echo "enabling hyprland-related services"
-systemctl --user enable --now sunsetr
 systemctl --user enable --now hyprpolkitagent
+systemctl --user enable --now hypridle
+systemctl --user enable --now sunsetr

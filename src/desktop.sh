@@ -9,6 +9,8 @@ echo "creating symlinks for configuration files and directories"
 
 echo "Settings Default Applications"
 mkdir -p ~/.config
+mkdir -p ~/.config/handlr
+ln -sfn ~/arch-setup/config/handlr.toml ~/.config/handlr/handlr.toml
 ln -sfn ~/arch-setup/config/mimeapps.list ~/.config/mimeapps.list
 
 echo "linking icons, wallpapers, applications, and bin directories"

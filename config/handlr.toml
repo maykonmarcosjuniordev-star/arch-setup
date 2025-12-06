@@ -1,0 +1,4 @@
+enable_selector = true
+selector = "wofi -GI -y 0 -x 400 --show drun"
+term_exec_args = '-e'
+expand_wildcards = true

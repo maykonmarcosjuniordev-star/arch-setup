@@ -2,6 +2,7 @@ dust
 fd
 fish
 nushell
+handlr-regex
 rust-src
 sccache
 uutils-coreutils

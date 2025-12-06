@@ -39,6 +39,11 @@ ln -sfn ~/arch-setup/config/nvim/init.lua ~/.config/nvim/init.lua
 git clone --depth=1 https://github.com/github/copilot.vim.git \
   ~/.config/nvim/pack/github/start/copilot.vim
 
+echo "symlinking sddm config"
+sudo ln -sfn ~/arch-setup/config/sddm.conf /etc/sddm.conf
+# modifying background default on /usr/share/sddm/themes/archlinux/theme.conf
+# sudo sed -i 's|^background=.*|background=/usr/share/backgrounds/default.png|' /usr/share/sddm/themes/archlinux/theme.conf
+
 echo "setting up VS Code configuration"
 mkdir -p ~/.config/Code/User
 ln -sfn ~/arch-setup/config/vs-code/settings.json ~/.config/Code/User/settings.json
@@ -94,6 +99,8 @@ gsettings set org.gnome.desktop.interface gtk-theme "catppuccin-mocha-green-stan
 
 # to hide desktop entriees from the launcher
 hide_list=(
+  'arch-update'
+  'arch-update-tray'
   'avahi-discover'
   'bssh'
   'bvnc'

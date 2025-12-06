@@ -6,6 +6,7 @@ hypridle
 hyprland
 hyprlang
 hyprlock
+hyprpanel
 hyprpaper
 hyprshot
 hyprpolkitagent
@@ -17,7 +18,6 @@ playerctl
 polkit-kde-agent
 sunsetr
 swaync
-waybar
 wl-kbptr
 wlrctl
 wofi

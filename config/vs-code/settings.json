@@ -13,8 +13,6 @@
     //      stage the changes
     //      add the token back
     //      git update-index --skip-worktree config/vs-code/settings.json
-    "githubIssues.repoOwner": "maykonmarcosjuniordev-star",
-    "githubIssues.repoName": "arch-setup",
     "workbench.startupEditor": "none",
     "accessibility.dimUnfocused.enabled": true,
     "python.analysis.typeCheckingMode": "standard",
@@ -22,5 +20,15 @@
     "editor.tabCompletion": "on",
     "terminal.integrated.inheritEnv": false,
     "github.copilot.nextEditSuggestions.enabled": true,
-    "workbench.colorTheme": "Homebrew Dark"
+    "workbench.colorTheme": "matrixResolutions4128-2",
+    "github.copilot.enable": {
+        "*": true
+    },
+    "files.autoSave": "onFocusChange",
+    "git.ignoreRebaseWarning": true,
+    "editor.fontFamily": "'UbuntuMono Nerd Font Mono'",
+    "terminal.integrated.fontFamily": "'UbuntuMono Nerd Font Mono'",
+    "editor.codeLensFontFamily": "'Ubuntu Mono Nerd Font Mono Regular'",
+    "editor.fontSize": 16,
+    "terminal.integrated.fontLigatures.enabled": true
 }

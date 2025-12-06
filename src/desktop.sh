@@ -81,6 +81,7 @@ systemctl --user enable --now arch-update.timer
 # 	copy fonts and update font cache
 echo "copying fonts to /usr/local/share/fonts and updating font cache"
 sudo mkdir -p /usr/local/share/fonts
+sudo ln -sfn /usr/share/fontconfig/conf.avail/10-nerd-font-symbols.conf /etc/fonts/conf.d/
 sudo cp ~/arch-setup/fonts/* /usr/local/share/fonts
 sudo fc-cache -vf
 

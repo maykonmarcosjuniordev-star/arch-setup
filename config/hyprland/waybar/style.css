@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: Ubuntu Mono Nerd /*,  FontAwesome, Roboto, Helvetica, Arial, sans-serif*/;
+    font-family: 'UbuntuMono Nerd Font Mono Bold' /*,  FontAwesome, Roboto, Helvetica, Arial, sans-serif*/;
     font-size: 16px;
     min-height: 0;
     font-weight: bold;}
@@ -129,7 +129,7 @@ button:hover {
 }
 
 #battery {
-    background-color: #1ca000;
+    background-color: #2bff00;
     color: #000000;
 }
 

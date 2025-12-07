@@ -33,6 +33,7 @@ pipewire-pulse
 openssh
 openssl
 os-prober
+pass-secret-service
 power-profiles-daemon
 python-pip
 qt5ct

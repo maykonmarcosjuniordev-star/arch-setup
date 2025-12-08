@@ -77,13 +77,14 @@ ln -sfn ~/arch-setup/config/ghostty/ghostty.conf ~/.config/ghostty/config
 echo "linking fetchmail configuration to ~/.fetchmailrc"
 chmod 600 ~/arch-setup/credentials/fetchmailrc
 ln -sfn ~/arch-setup/credentials/fetchmailrc ~/.fetchmailrc
+mkdir -p ~/.config/gmail-tray
 ln -sfn ~/arch-setup/config/gmail-tray/gmail-tray-configs.json ~/.config/gmail-tray/
 
 echo "enabling gmail-tray service"
-systemctl --user enable --now gmail-tray.service
+systemctl --user enable gmail-tray.service
 
 echo "enabling arch-update timer"
-systemctl --user enable --now arch-update.timer
+systemctl --user enable arch-update.timer
 
 # 	copy fonts and update font cache
 echo "copying fonts to /usr/local/share/fonts and updating font cache"

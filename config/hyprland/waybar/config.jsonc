@@ -36,7 +36,7 @@
         // "custom/power"
     ],
     "custom/gmail": {
-        "exec": "/home/maykon/Github/gmail-tray-git/gmail-tray.py --once | grep '{'",
+        "exec": "gmail-tray.py --once | grep '{'",
         "interval": 30,
         "return-type": "json",
         "format": " @ {} "

@@ -238,6 +238,7 @@ user_pref("services.sync.prefs.sync-seen.privacy.trackingprotection.pbmode.enabl
 user_pref("services.sync.prefs.sync-seen.privacy.userContext.enabled", true);
 user_pref("services.sync.prefs.sync-seen.signon.generation.enabled", true);
 user_pref("services.sync.prefs.sync-seen.signon.rememberSignons", true);
+user_pref("services.sync.prefs.sync-seen.spellchecker.dictionary", true);
 user_pref("sidebar.main.tools", "aichat,syncedtabs,history,bookmarks,passwords");
 user_pref("sidebar.new-sidebar.has-used", true);
 user_pref("sidebar.revamp", true);
@@ -245,6 +246,7 @@ user_pref("sidebar.verticalTabs", true);
 user_pref("sidebar.verticalTabs.dragToPinPromo.dismissed", true);
 user_pref("signon.generation.enabled", false);
 user_pref("signon.rememberSignons", true);
+user_pref("spellchecker.dictionary", "en-US,pt-BR");
 
 user_pref("widget.wayland.vsync.enabled", true);
 // DMABUF = modern Linux method to share GPU buffers between apps.

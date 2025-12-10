@@ -3,7 +3,6 @@ alsa-utils
 alsa-firmware
 asar
 bash-completion
-bluetui
 ccache
 cdrkit
 curl
@@ -12,7 +11,6 @@ debtap
 ffmpeg
 fzf
 gcc
-ghostty
 git
 git-filter-repo
 git-lfs
@@ -41,7 +39,6 @@ qt5-wayland
 qt6-wayland
 sddm
 sof-firmware
-starship
 swtpm
 tar
 unzip

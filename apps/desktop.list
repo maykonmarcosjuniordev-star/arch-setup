@@ -1,12 +1,14 @@
 altus-appimage
 arch-update
 audacious
+bluetui
 brave-bin
 calibre
 calibre-server-systemd
 catppuccin-gtk-theme-mocha
 discord
 firefox-bin
+ghostty
 gitui
 gmail-tray-git
 megasync-bin
@@ -16,6 +18,7 @@ otf-font-awesome
 obsidian-appimage
 proton-authenticator-bin
 standardnotes-bin
+starship
 sddm-archlinux-theme-git
 ttf-font-awesome
 ttf-nerd-fonts-symbols-mono

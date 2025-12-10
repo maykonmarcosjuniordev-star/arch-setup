@@ -43,8 +43,6 @@ git clone --depth=1 https://github.com/github/copilot.vim.git \
 
 echo "symlinking sddm config"
 sudo ln -sfn ~/arch-setup/config/sddm.conf /etc/sddm.conf
-# modifying background default on /usr/share/sddm/themes/archlinux/theme.conf
-# sudo sed -i 's|^background=.*|background=/usr/share/backgrounds/default.png|' /usr/share/sddm/themes/archlinux/theme.conf
 
 echo "setting up VS Code configuration"
 mkdir -p ~/.config/Code/User

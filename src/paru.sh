@@ -4,7 +4,7 @@ then
     echo "paru is already installed"
     exit 0
 fi
-echo "installing paru and related apps"
+echo "installing paru and configuring it"
 git clone https://aur.archlinux.org/paru-bin.git
 cd paru-bin
 makepkg -si --noconfirm
@@ -15,6 +15,8 @@ echo "configuring paru"
 paru --gendb
 echo "setting paru configuration"
 mkdir -p ~/.config/paru/
+# rewrites the paru.conf to point to the user's pacman.conf absolute path, regardless of the username
+sed -i "s|^PacmanConf =.*|PacmanConf = $HOME/.config/pacman.conf|" ~/arch-setup/config/aur/paru.conf
 ln -sfn ~/arch-setup/config/aur/paru.conf ~/.config/paru/paru.conf
 
 # set paru configuration to use all cores for building packages

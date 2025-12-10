@@ -51,8 +51,8 @@ mkdir -p ~/.config/Code/User
 ln -sfn ~/arch-setup/config/vs-code/settings.json ~/.config/Code/User/settings.json
 ln -sfn ~/arch-setup/config/vs-code/keybindings.json ~/.config/Code/User/keybindings.json
 
-mkdir -p ~/.config/Altus
-ln -sfn ~/arch-setup/config/whatsapp/* ~/.config/Altus/
+mkdir -p ~/.config/wasistlos
+ln -sfn ~/arch-setup/config/whatsapp/* ~/.config/wasistlos/settings.conf
 
 echo "setting up Firefox configuration for multiple profiles"
 mkdir -p ~/.mozilla/firefox/Main/

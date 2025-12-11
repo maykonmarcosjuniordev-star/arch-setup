@@ -86,8 +86,7 @@ user_pref("doh-rollout.doneFirstRun", true);
 user_pref("doh-rollout.home-region", "US");
 user_pref("dom.forms.autocomplete.formautofill", true);
 user_pref("dom.ipc.forkserver.enable", false);
-// 2 process allow for gpu
-user_pref("dom.ipc.processCount", 2);
+user_pref("dom.ipc.processCount", 1);
 user_pref("dom.ipc.processCount.inference", 0);
 user_pref("dom.ipc.processCount.privilegedabout", 0);
 user_pref("dom.ipc.processCount.webIsolated", 1);

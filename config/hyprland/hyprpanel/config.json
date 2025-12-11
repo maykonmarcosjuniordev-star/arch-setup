@@ -7,13 +7,12 @@
   "tear": true,
   "menus.power.lowBatteryNotification": true,
   "theme.bar.buttons.modules.cpu.enableBorder": false,
-  "menus.dashboard.powermenu.avatar.image": "$HOME/Pictures/glasses.jpeg",
-  "menus.dashboard.recording.path": "$HOME/Videos",
+  "menus.dashboard.recording.path": "~/Videos",
   "menus.dashboard.stats.enable_gpu": true,
   "menus.dashboard.shortcuts.enabled": true,
   "bar.workspaces.show_numbered": true,
   "scalingPriority": "hyprland",
-  "wallpaper.image": "$HOME/arch-setup/wallpapers/default.png",
+  "wallpaper.image": "~/arch-setup/wallpapers/default.png",
   "theme.font.size": "1rem",
   "bar.layouts": {
     "0": {

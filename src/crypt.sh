@@ -9,8 +9,11 @@ function decrypt() {
     mkdir -p "$CRED"
     for file in $(ls -a "$VAULT"); do
         if [[ ! ("$file" == "." || "$file" == "..") ]]; then
-            echo "Decrypting file: $file"
-            openssl enc -aes-256-cbc -d -salt -pbkdf2 -in "$VAULT""$file" -out "$CRED""$file"
+            read -p "Do you want to decrypt the file $file? (y/n) " choice
+            if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
+                echo "Decrypting file: $file"
+                openssl enc -aes-256-cbc -d -salt -pbkdf2 -in "$VAULT""$file" -out "$CRED""$file"
+            fi
         fi
     done
 }

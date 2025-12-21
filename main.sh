@@ -49,18 +49,19 @@ bash ~/arch-setup/src/desktop.sh
 read -p "Do you want to use Hyprland? (y/N): " install_hyprland
 if [[ "$install_hyprland" == "y" || "$install_hyprland" == "Y" ]]; then
     bash ~/arch-setup/src/hyprland.sh
-fi
-read -p "Do you want to use GNOME? (y/N): " apply_gnome
-if [[ "$apply_gnome" == "y" || "$apply_gnome" == "Y" ]]; then
-    bash ~/arch-setup/src/gnome.sh apply
-    read -p "Do you want to load GNOME settings? (y/N): " copy_gnome_settings
-    if [[ "$copy_gnome_settings" == "y" || "$copy_gnome_settings" == "Y" ]]; then
-        bash ~/arch-setup/src/gnome.sh load
+else
+    read -p "Do you want to use GNOME? (y/N): " apply_gnome
+    if [[ "$apply_gnome" == "y" || "$apply_gnome" == "Y" ]]; then
+        bash ~/arch-setup/src/gnome.sh apply
+        read -p "Do you want to load GNOME settings? (y/N): " copy_gnome_settings
+        if [[ "$copy_gnome_settings" == "y" || "$copy_gnome_settings" == "Y" ]]; then
+            bash ~/arch-setup/src/gnome.sh load
+        fi
     fi
-fi
-read -p "Do you want to use Cosmic Desktop? (y/N): " apply_cosmic
-if [[ "$apply_cosmic" == "y" || "$apply_cosmic" == "Y" ]]; then
-    bash ~/arch-setup/src/cosmic.sh
+    read -p "Do you want to use Cosmic Desktop? (y/N): " apply_cosmic
+    if [[ "$apply_cosmic" == "y" || "$apply_cosmic" == "Y" ]]; then
+        bash ~/arch-setup/src/cosmic.sh
+    fi
 fi
 
 # reboot if allowed

@@ -81,9 +81,6 @@ ln -sfn ~/arch-setup/config/gmail-tray/gmail-tray-configs.json ~/.config/gmail-t
 echo "enabling gmail-tray service"
 systemctl --user enable gmail-tray.service
 
-echo "enabling arch-update timer"
-systemctl --user enable arch-update.timer
-
 # 	copy fonts and update font cache
 echo "copying fonts to /usr/local/share/fonts and updating font cache"
 sudo mkdir -p /usr/local/share/fonts
@@ -100,8 +97,6 @@ gsettings set org.gnome.desktop.interface gtk-theme "catppuccin-mocha-green-stan
 
 # to hide desktop entriees from the launcher
 hide_list=(
-  'arch-update'
-  'arch-update-tray'
   'avahi-discover'
   'bssh'
   'bvnc'

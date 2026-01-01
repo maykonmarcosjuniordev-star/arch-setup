@@ -78,7 +78,7 @@ ln -sfn ~/arch-setup/credentials/fetchmailrc ~/.fetchmailrc
 mkdir -p ~/.config/gmail-tray
 ln -sfn ~/arch-setup/config/gmail-tray/gmail-tray-configs.json ~/.config/gmail-tray/
 
-echo "enabling gmail-tray service"
+read -p "Press enter to enable gmail-tray service "
 systemctl --user enable gmail-tray.service
 
 # 	copy fonts and update font cache

@@ -12,7 +12,7 @@ done
 echo "enabling linger for user $USER"
 loginctl enable-linger $USER
 
-echo "enabling sddm and systemd-homed services"
+read -p "Press Enter to enable sddm and systemd-homed services "
 systemctl enable sddm
 systemctl enable --now systemd-homed
 
@@ -26,7 +26,7 @@ export XMODIFIERS=@im=ibus
 export INPUT_METHOD=ibus
 
 # Enable pipewire and bluetooth services
-echo "enabling pipewire and bluetooth services"
+read -p "Press Enter to enable pipewire and bluetooth services "
 systemctl --user enable --now pipewire pipewire-pulse wireplumber
 systemctl enable bluetooth.service
 wpctl settings --save bluetooth.autoswitch-to-headset-profile false
@@ -36,6 +36,6 @@ sudo modprobe -r uvcvideo
 sudo modprobe uvcvideo
 
 # Enable power-profiles-daemon service
-echo "enabling power-profiles-daemon service"
+read -p "Press Enter to enable power-profiles-daemon service "
 sudo systemctl enable power-profiles-daemon.service
 sudo systemctl start power-profiles-daemon.service

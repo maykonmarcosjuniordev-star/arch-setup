@@ -7,11 +7,9 @@ alias set-ssh='ssh-add -q ~/.ssh/id_rsa'
 alias maskrun='mask --maskfile README.md'
 
 ## Rust replacements
-alias grep='rg --color=auto'
-alias find='fd --color=auto'
-alias ls='exa --color=auto'
-alias cat='bat'
-alias du='dust'
+alias grep='rg --color=always'
+alias ls='exa --color=always --group-directories-first --icons'
+alias cat='bat --color=always'
 alias cd='z'
 # core uutils
 alias dd='uu-dd'

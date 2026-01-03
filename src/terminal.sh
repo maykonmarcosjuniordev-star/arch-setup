@@ -10,6 +10,11 @@ function create_symlinks() {
 	ln -sfn ~/arch-setup/config/terminal/.aliases ~/
 	ln -sfn ~/arch-setup/config/terminal/.bash_profile ~/
 	ln -sfn ~/arch-setup/config/terminal/.gitconfig ~/
+	# git credentials, if isn't already present, create
+	if [ ! -f ~/arch-setup/credentials/git-credentials ]; then
+		mkdir -p ~/arch-setup/credentials
+		touch ~/arch-setup/credentials/git-credentials
+	fi
 	ln -sfn ~/arch-setup/credentials/git-credentials ~/.git-credentials
 }
 
@@ -23,13 +28,13 @@ function set_git() {
 	if [[ -n "${USER_EMAIL//[[:space:]]/}" ]]; then
 		git config --global user.email "$USER_EMAIL"
 	fi
-	if [ ! -f ~/.ssh/id_rsa ]; then
+	chmod 700 ~/.ssh/
+	chown -R $(whoami):$(whoami) ~/.ssh
+	if [ (! -f ~/.ssh/id_rsa) && (-f ~/arch-setup/credentials/id_rsa) ]; then
 		echo "moving ssh keys"
 		mv ~/arch-setup/credentials/id_rsa* ~/.ssh/
-		chmod 700 ~/.ssh/
 		chmod 600 ~/.ssh/id_*
 		chmod 644 ~/.ssh/id_*.pub
-		chown -R $(whoami):$(whoami) ~/.ssh
 		chown -R $(whoami):$(whoami) ~/.ssh/id*
 		eval "$(ssh-agent -s)"
 		ssh-add ~/.ssh/id_rsa
@@ -39,14 +44,14 @@ function set_git() {
 	# import gpg key for git lfs
 	echo "importing gpg key for git lfs"
 	gpg --keyserver hkps://keys.openpgp.org --recv-keys 14F26682D0916CDD81E37B6D61B7B526D98F0353
-	git lfs install
+	# git lfs install
 	# track the problematic asset paths with LFS and commit .gitattributes
 	# git lfs track "icons/*" "wallpapers/*"
 	# git add .gitattributes
 	# git commit -m "Track icons and wallpapers with Git LFS"
 	### rewrite history converting existing files into LFS objects across all refs
 	# git lfs migrate import --include="icons/*,wallpapers/*" --everything
-	git lfs pull
+	# git lfs pull
 }
 
 function gen_key() {

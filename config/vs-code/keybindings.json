@@ -11,13 +11,8 @@
         "when": "inlineSuggestionVisible && !editorReadonly"
     },
     {
-        "key": "shift+alt+down",
-        "command": "editor.action.moveLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
         "key": "alt+down",
-        "command": "-editor.action.moveLinesDownAction",
+        "command": "editor.action.moveLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     },
     {
@@ -121,13 +116,8 @@
         "when": "listFocus && !inputFocus && !treestickyScrollFocused"
     },
     {
-        "key": "shift+alt+up",
-        "command": "editor.action.moveLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
         "key": "alt+up",
-        "command": "-editor.action.moveLinesUpAction",
+        "command": "editor.action.moveLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
     },
     {
@@ -136,18 +126,8 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+shift+alt+down",
-        "command": "-editor.action.copyLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
         "key": "ctrl+shift+alt+up",
         "command": "editor.action.copyLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+alt+up",
-        "command": "-editor.action.copyLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
     },
     {

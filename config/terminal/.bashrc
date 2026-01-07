@@ -13,7 +13,4 @@ fi
 if [ -f ~/.aliases ]; then
         source ~/.aliases
 fi
-
-export PATH="$HOME/.local/bin:$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
 eval "$(zoxide init bash)"

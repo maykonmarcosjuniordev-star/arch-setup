@@ -46,7 +46,7 @@ user=${user:-user}
 sgdisk -Z "/dev/$disk"  # zap all on disk
 sgdisk -n 1:0:+1G   -t 1:ef00 "/dev/$disk"
 sgdisk -n 2:0:+8G   -t 2:8200 "/dev/$disk"    # swap 8 GB
-sgdisk -n 3:0:0     -t 3:8304 "/dev/$disk"   # root on rest of disk 
+sgdisk -n 3:0:0     -t 3:8304 "/dev/$disk"   # root on rest of disk
 
 echo "=== Verificando partições montadas ==="
 for dev in "/dev/$part_fat" "/dev/$part_data" "/dev/$part_swap"; do
@@ -149,7 +149,7 @@ passwd
 
 sed -i 's/^# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
 
-git clone https://github.com/maykonmarcosjuniordev-star/arch-setup "home/$user/arch-setup"
+git clone https://github.com/maykon-marcos-jr/arch-setup "home/$user/arch-setup"
 
 echo "Configuração dentro do sistema concluída!"
 EOF

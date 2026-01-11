@@ -39,7 +39,7 @@ function set_git() {
 		eval "$(ssh-agent -s)"
 		ssh-add ~/.ssh/id_rsa
 	fi
-	git remote set-url origin git@github.com:maykonmarcosjuniordev-star/arch-setup
+	git remote set-url origin git@github.com:maykon-marcos-jr/arch-setup
 	echo "installing and configuring git lfs"
 	# import gpg key for git lfs
 	echo "importing gpg key for git lfs"

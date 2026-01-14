@@ -3,7 +3,5 @@
 #
 
 # [[ -f ~/.bashrc ]] && . ~/.bashrc
-if [ -f ~/.profile ]; then
-        source ~/.profile
-fi
 eval "$(starship init bash)"
+eval "$(zoxide init bash)"

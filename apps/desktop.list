@@ -5,7 +5,6 @@ brave-bin
 calibre
 calibre-server-systemd
 catppuccin-gtk-theme-mocha
-vesktop
 firefox-bin
 ghostty
 gitui
@@ -22,7 +21,13 @@ sddm-archlinux-theme-git
 ttf-font-awesome
 ttf-nerd-fonts-symbols-mono
 ttf-ubuntu-mono-nerd
+vesktop
 visual-studio-code-bin
 vlc
 yt-dlp
-wasistlos
+extra-cmake-modules
+kicontheme
+knotifications
+kstatusnotifieritem
+kwidgetsaddons
+whatsit

@@ -49,8 +49,8 @@ mkdir -p ~/.config/Code/User
 ln -sfn ~/arch-setup/config/vs-code/settings.json ~/.config/Code/User/settings.json
 ln -sfn ~/arch-setup/config/vs-code/keybindings.json ~/.config/Code/User/keybindings.json
 
-mkdir -p ~/.config/wasistlos
-ln -sfn ~/arch-setup/config/whatsapp/* ~/.config/wasistlos/settings.conf
+mkdir -p ~/.config/whatsit
+ln -sfn ~/arch-setup/config/whatsapp/whatsit.ini ~/.config/whatsit/whatsit.ini
 
 echo "setting up Firefox configuration for multiple profiles"
 mkdir -p ~/.mozilla/firefox/Main/
@@ -59,6 +59,8 @@ mkdir -p ~/.mozilla/firefox/UFSC/
 ln -sfn  ~/arch-setup/config/firefox/user.js ~/.mozilla/firefox/UFSC/user.js
 mkdir -p ~/.mozilla/firefox/Legacy/
 ln -sfn  ~/arch-setup/config/firefox/user.js ~/.mozilla/firefox/Legacy/user.js
+mkdir -p ~/.mozilla/firefox/Lax/
+ln -sfn  ~/arch-setup/config/firefox/user.js ~/.mozilla/firefox/Lax/user.js
 
 echo "setting up Audacious configuration"
 mkdir -p ~/.config/audacious
@@ -97,6 +99,7 @@ gsettings set org.gnome.desktop.interface gtk-theme "catppuccin-mocha-green-stan
 
 # to hide desktop entriees from the launcher
 hide_list=(
+  'assistant'
   'avahi-discover'
   'bssh'
   'bvnc'
@@ -106,10 +109,13 @@ hide_list=(
   'ccmake'
   'cmake'
   'cmake-gui'
+  'designer'
+  'linguist'
   'lstop'
   'mpv'
   'nm-connection-editor'
   'nvim'
+  'qdbusviewer'
   'qv4l2'
   'qvidcap'
   'wl-kbptr'

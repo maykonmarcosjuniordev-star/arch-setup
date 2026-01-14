@@ -42,5 +42,22 @@
     "editor.autoIndentOnPaste": true,
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
-    "security.workspace.trust.startupPrompt": "never"
+    "security.workspace.trust.startupPrompt": "never",
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        },
+        "fish": {
+            "path": "/usr/bin/fish"
+        },
+        "nu (2)": {
+            "path": "/usr/bin/nu"
+        }
+    },
+    "terminal.integrated.enableImages": true,
+    "terminal.integrated.gpuAcceleration": "on",
+    "terminal.integrated.hideOnStartup": "whenEmpty",
+    "terminal.integrated.suggest.insertTrailingSpace": true,
+    "workbench.secondarySideBar.defaultVisibility": "hidden"
 }

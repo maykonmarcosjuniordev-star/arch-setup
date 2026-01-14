@@ -1,11 +1,14 @@
 alias list='cat ~/.aliases'
 alias upd='paru -Suy --noconfirm && rustup update && sudo pacman -Qdtq | sudo xargs -r pacman -Rns --noconfirm'
-alias get_music='yt-dlp --format bestaudio --extract-audio --audio-format mp3 --audio-quality 192K --extract-thumbnail --output "%(title)s.%(ext)s"'
+alias get-music='yt-dlp --format bestaudio --extract-audio --audio-format mp3 --audio-quality 192K --embeded-thumbnail --output "%(title)s.%(ext)s"'
 alias fix-blue="pactl set-card-profile $(pactl list cards | grep 'Name: bluez' | awk '{print $2}') a2dp-sink"
 alias set-ssh='ssh-add -q ~/.ssh/id_rsa'
 alias maskrun='mask --maskfile README.md'
 
 ## Rust replacements
+alias core-grep='/usr/bin/grep'
+alias core-ls='/usr/bin/ls'
+alias core-cat='/usr/bin/cat'
 alias grep='rg --color=always'
 alias ls='exa --color=always --group-directories-first --icons'
 alias cat='bat --color=always'

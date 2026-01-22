@@ -37,12 +37,17 @@ python-pip
 qt5ct
 qt5-wayland
 qt6-wayland
+rust-src
+sccache
 sddm
 sof-firmware
 swtpm
 tar
 unzip
 usbutils
+uutils-coreutils
+uutils-diffutils
+uutils-findutils
 vlc-plugin-ffmpeg
 wget
 wiremix

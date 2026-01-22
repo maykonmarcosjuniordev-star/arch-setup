@@ -2,7 +2,6 @@
 
 echo "installing essential apps"
 paru -Sy --needed --noconfirm - < ~/arch-setup/apps/essentials.list
-paru -Sy --needed --noconfirm - < ~/arch-setup/apps/rust.list
 
 for app in $(cat ~/arch-setup/apps/cargo.list); do
     cargo install $app

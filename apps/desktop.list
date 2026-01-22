@@ -5,10 +5,13 @@ brave-bin
 calibre
 calibre-server-systemd
 catppuccin-gtk-theme-mocha
+dust
+fd
 firefox-bin
 ghostty
 gitui
 gmail-tray-git
+handlr-regex
 megasync-bin
 megasync-instances
 neovim
@@ -31,3 +34,4 @@ knotifications
 kstatusnotifieritem
 kwidgetsaddons
 whatsit
+yazi

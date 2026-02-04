@@ -21,6 +21,7 @@ ibus
 less
 libcamera
 libdecor
+libxcb
 linux-headers
 make
 networkmanager
@@ -32,6 +33,9 @@ openssh
 openssl
 os-prober
 pass-secret-service
+polkit
+polkit-qt5
+polkit-qt6
 power-profiles-daemon
 python-pip
 qt5ct
@@ -39,7 +43,6 @@ qt5-wayland
 qt6-wayland
 rust-src
 sccache
-sddm
 sof-firmware
 swtpm
 tar
@@ -51,6 +54,7 @@ uutils-findutils
 vlc-plugin-ffmpeg
 wget
 wiremix
+xcb-util-cursor
 xdg-desktop-portal
 xdg-utils
 wl-clip-persist

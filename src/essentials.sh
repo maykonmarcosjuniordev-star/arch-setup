@@ -27,7 +27,7 @@ export INPUT_METHOD=ibus
 # Enable pipewire and bluetooth services
 read -p "Press Enter to enable pipewire and bluetooth services "
 systemctl --user enable --now pipewire pipewire-pulse wireplumber
-systemctl enable bluetooth.service
+sudo systemctl enable bluetooth.service
 wpctl settings --save bluetooth.autoswitch-to-headset-profile false
 sudo usermod -aG video $USER
 sudo rmmod uvcvideo

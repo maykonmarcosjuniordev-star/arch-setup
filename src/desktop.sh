@@ -110,6 +110,8 @@ hide_list=(
   'cmake'
   'cmake-gui'
   'designer'
+  'kitty.desktop'
+  'kitty-open.desktop'
   'linguist'
   'lstop'
   'mpv'

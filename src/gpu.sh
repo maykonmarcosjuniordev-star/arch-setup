@@ -20,10 +20,19 @@ if echo "$GPU_INFO" | grep -qi "NVIDIA"; then
     else
         echo "GPU faamily not found, installing newest nvidia drivers (nvidia-open)"
         paru -Sy --needed --noconfirm nvidia-open
-    fi 
+    fi
     echo "installing auxiliar nvidia pkgs"
     paru -Sy --needed --noconfirm nvidia-prime nvidia-utils libva-nvidia-driver
     # sudo modprobe nvidia
+    if ! lsmod | grep -q nvidia; then
+        echo "nvidia module not loaded, loading it now"
+        sudo modprobe nvidia
+    fi
+    # Setting environment variable to improve performance with hybrid graphics setups
+    # first, check if the variable is already set
+    if ! grep -q "__NV_DISABLE_EXPLICIT_SYNC=1" /etc/profile; then
+        echo 'export __NV_DISABLE_EXPLICIT_SYNC=1' | sudo tee -a /etc/profile
+    fi
 if echo "$GPU_INFO" | grep -qi "Intel"; then
     echo "installing intel drivers"
     paru -Sy --needed --noconfirm intel-media-driver vulkan-intel lib32-vulkan-intel libva-intel-driver libva-utils

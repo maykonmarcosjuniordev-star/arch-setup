@@ -36,23 +36,13 @@
         "*.md": "default"
     },
     "editor.wordWrap": "on",
-    "files.exclude": {
-        "**/.git": false
-    },
     "editor.autoIndentOnPaste": true,
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
     "security.workspace.trust.startupPrompt": "never",
     "terminal.integrated.profiles.linux": {
         "bash": {
-            "path": "bash",
-            "icon": "terminal-bash"
-        },
-        "fish": {
-            "path": "/usr/bin/fish"
-        },
-        "nu (2)": {
-            "path": "/usr/bin/nu"
+            "path": "/usr/bin/bash"
         }
     },
     "terminal.integrated.enableImages": true,

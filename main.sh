@@ -46,23 +46,8 @@ bash ~/arch-setup/src/terminal.sh set_git
 echo "installing and setting up main desktop applications"
 bash ~/arch-setup/src/desktop.sh
 
-read -p "Do you want to use Hyprland? (y/N): " install_hyprland
-if [[ "$install_hyprland" == "y" || "$install_hyprland" == "Y" ]]; then
-    bash ~/arch-setup/src/hyprland.sh
-else
-    read -p "Do you want to use GNOME? (y/N): " apply_gnome
-    if [[ "$apply_gnome" == "y" || "$apply_gnome" == "Y" ]]; then
-        bash ~/arch-setup/src/gnome.sh apply
-        read -p "Do you want to load GNOME settings? (y/N): " copy_gnome_settings
-        if [[ "$copy_gnome_settings" == "y" || "$copy_gnome_settings" == "Y" ]]; then
-            bash ~/arch-setup/src/gnome.sh load
-        fi
-    fi
-    read -p "Do you want to use Cosmic Desktop? (y/N): " apply_cosmic
-    if [[ "$apply_cosmic" == "y" || "$apply_cosmic" == "Y" ]]; then
-        bash ~/arch-setup/src/cosmic.sh
-    fi
-fi
+echo "installing hyprland and related apps"
+bash ~/arch-setup/src/hyprland.sh
 
 # reboot if allowed
 read -p "Reboot now (recommended)? (y/N): " reboot_now

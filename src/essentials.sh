@@ -11,8 +11,7 @@ done
 echo "enabling linger for user $USER"
 loginctl enable-linger $USER
 
-read -p "Press Enter to enable sddm and systemd-homed services "
-systemctl enable sddm
+read -p "Press Enter to enable systemd-homed services "
 systemctl enable --now systemd-homed
 
 # IBus configuration

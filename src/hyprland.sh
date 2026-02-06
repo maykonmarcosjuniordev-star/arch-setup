@@ -27,4 +27,3 @@ ln -sfn ~/arch-setup/config/hyprland/sunsetr.service ~/.config/systemd/user/grap
 echo "enabling hyprland-related services"
 systemctl --user enable --now hypridle
 systemctl --user enable --now sunsetr
-sudo ln -sfn ~/arch-setup/wallpapers/* /usr/share/sysc-greet/wallpapers/

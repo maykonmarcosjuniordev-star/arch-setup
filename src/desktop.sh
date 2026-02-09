@@ -77,6 +77,19 @@ ln -sfn ~/arch-setup/credentials/fetchmailrc ~/.fetchmailrc
 mkdir -p ~/.config/gmail-tray
 ln -sfn ~/arch-setup/config/gmail-tray/gmail-tray-configs.json ~/.config/gmail-tray/
 
+# Setting up rclone settings
+mkdir -p ~/.config/rclone
+ln -sfn ~/arch-setup/credentials/rclone.conf ~/.config/rclone/
+bash ~/arch-setup/config/cloud/rclone_setup.sh
+read -p "Press enter to enable rclone-sync timer and service "
+sudo ln -sfn ~/arch-setup/config/cloud/sync_remote_folders.sh /usr/local/bin/sync_remote_folders.sh
+mkdir -p ~/.config/systemd/user
+ln -sfn ~/arch-setup/config/cloud/rclone-sync.service ~/.config/systemd/user/rclone-sync.service
+ln -sfn ~/arch-setup/config/cloud/rclone-sync.timer ~/.config/systemd/user/rclone-sync.timer
+systemctl --user daemon-reload
+systemctl --user enable --now rclone-sync.service
+systemctl --user enable --now rclone-sync.timer
+
 read -p "Press enter to enable gmail-tray service "
 systemctl --user enable gmail-tray.service
 

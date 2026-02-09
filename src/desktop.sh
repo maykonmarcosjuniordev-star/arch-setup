@@ -78,11 +78,13 @@ mkdir -p ~/.config/gmail-tray
 ln -sfn ~/arch-setup/config/gmail-tray/gmail-tray-configs.json ~/.config/gmail-tray/
 
 # Setting up rclone settings
+echo "Setting up remote folders"
 mkdir -p ~/.config/rclone
 ln -sfn ~/arch-setup/credentials/rclone.conf ~/.config/rclone/
 bash ~/arch-setup/config/cloud/rclone_setup.sh
 read -p "Press enter to enable rclone-sync timer and service "
 sudo ln -sfn ~/arch-setup/config/cloud/sync_remote_folders.sh /usr/local/bin/sync_remote_folders.sh
+ln -sfn ~/arch-setup/config/cloud/remote_folders.list ~/.config/rclone/
 mkdir -p ~/.config/systemd/user
 ln -sfn ~/arch-setup/config/cloud/rclone-sync.service ~/.config/systemd/user/rclone-sync.service
 ln -sfn ~/arch-setup/config/cloud/rclone-sync.timer ~/.config/systemd/user/rclone-sync.timer

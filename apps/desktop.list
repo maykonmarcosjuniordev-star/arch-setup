@@ -5,6 +5,7 @@ brave-bin
 calibre
 calibre-server-systemd
 catppuccin-gtk-theme-mocha
+discord
 dust
 fd
 firefox-bin
@@ -21,7 +22,6 @@ starship
 ttf-font-awesome
 ttf-nerd-fonts-symbols-mono
 ttf-ubuntu-mono-nerd
-vesktop
 visual-studio-code-bin
 vlc
 yt-dlp

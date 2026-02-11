@@ -2,7 +2,7 @@
 Description=Run Rclone Sync Every 3 Hours
 
 [Timer]
-OnCalendar=*:0/3
+OnActiveSec=3h
 Persistent=true
 
 [Install]

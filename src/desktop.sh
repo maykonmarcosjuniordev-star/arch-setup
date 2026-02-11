@@ -92,6 +92,16 @@ systemctl --user daemon-reload
 systemctl --user enable --now rclone-sync.service
 systemctl --user enable --now rclone-sync.timer
 
+echo "setting up calibre configuration"
+# if calibre configuration exists in ~/.config/calibre, remove it
+if [ -d ~/.config/calibre ]; then
+    rm -rf ~/.config/calibre
+fi
+# verify if calibre configuration backup exists in Books/calibre
+if [ -d ~/Books/calibre ]; then
+    ln -sfn ~/Books/calibre ~/.config/
+fi
+
 read -p "Press enter to enable gmail-tray service "
 systemctl --user enable gmail-tray.service
 

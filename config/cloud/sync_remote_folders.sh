@@ -13,8 +13,9 @@ fi
 while IFS=',' read -r remote_path local_path; do
   if [[ -n "$remote_path" && -n "$local_path" ]]; then
     echo "Syncing $remote_path to $local_path"
-    # Sync each remote folder to the local counterpart
-    rclone sync "$remote_path" "$local_path" --progress --log-file="$local_path/sync.log" --log-level=INFO --update
+    # Sync new and updated files from remote to local, and then from local to remote
+    rclone sync "$remote_path" "$local_path" --backup-dir="$local_path/backup" --progress --log-file="$local_path/sync.log" --log-level=INFO --update
+    rclone sync "$local_path" "$remote_path" --backup-dir="$local_path/backup" --progress --log-file="$local_path/sync.log" --log-level=INFO --update
   fi
 done < "$REMOTE_FOLDERS_FILE"
 
